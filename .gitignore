@@ -4,7 +4,6 @@
 [Bb]uild/
 [Bb]uilds/
 [Ll]ogs/
-[Ii]gnore/
 
 # Uncomment this line if you wish to ignore the asset store tools plugin
 # [Aa]ssets/AssetStoreTools*
@@ -37,7 +36,6 @@ ExportedObj/
 *.pidb.meta
 *.pdb.meta
 *.mdb.meta
-ignore.meta
 
 # Unity3D generated file on crash reports
 sysinfo.txt

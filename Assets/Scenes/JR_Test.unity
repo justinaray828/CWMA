@@ -423,6 +423,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BrainScene
       objectReference: {fileID: 0}
+    - target: {fileID: 8954817146648270564, guid: 3ebda203fdb25b849a6658325c1906b5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8954817146648270571, guid: 3ebda203fdb25b849a6658325c1906b5,
         type: 3}
       propertyPath: m_LocalPosition.x

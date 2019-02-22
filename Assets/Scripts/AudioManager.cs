@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
+    public AudioSource fxSource;
+    public AudioSource musicSource;
 
+    public Sound[] sounds;
     public static AudioManager instance;
 
     void Awake()
     {
+        //Ensure that only one instance of this class is created (we don't want a new AudioManager everytime a scene loads)
         if (instance == null)
             instance = this;
         else
@@ -16,8 +20,8 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-
         DontDestroyOnLoad(gameObject);
+
     }
 
     // Start is called before the first frame update
@@ -30,5 +34,10 @@ public class AudioManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    void Play(Sound s)
+    {
+
     }
 }

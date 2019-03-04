@@ -12,7 +12,7 @@ using UnityEngine;
 [RequireComponent(typeof(Camera))]
 public class CameraTransition : MonoBehaviour
 {
-    [Tooltip("How many seconds for the camera transisition to take")]
+    [Tooltip("How far the camera should move for each frame")]
     [SerializeField] private float transitionTime = 2f;
 
     [Header("Needed Brain Scene GameObjects")]

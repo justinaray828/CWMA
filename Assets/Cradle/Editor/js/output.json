@@ -1,0 +1,104 @@
+{
+    "console": [],
+    "result": {
+        "passages": [
+            {
+                "Body": "Jordy\nAnd that’s how I discovered where the cold sore came from.  I have no idea how that came up?  Sorry, I talk a lot when I’m driving.\n[[1-1]]\n",
+                "Name": "Cold Open",
+                "Pid": "1",
+                "Tags": ""
+            },
+            {
+                "Body": "Gina\n...\n[[1-2]]",
+                "Name": "1-1",
+                "Pid": "2",
+                "Tags": ""
+            },
+            {
+                "Body": "Player\n...\n[[1-3]]",
+                "Name": "1-2",
+                "Pid": "3",
+                "Tags": ""
+            },
+            {
+                "Body": "Jordy\n...\n[[1-4]]",
+                "Name": "1-3",
+                "Pid": "4",
+                "Tags": ""
+            },
+            {
+                "Body": "Gina\nSoo... 5 more minutes till the theater?\n[[1-5]]",
+                "Name": "1-4",
+                "Pid": "5",
+                "Tags": ""
+            },
+            {
+                "Body": "Jordy\nNope, 7 minutes. I missed two turns earlier.  Sorry.\n[[Internal 1-1]]",
+                "Name": "1-5",
+                "Pid": "6",
+                "Tags": ""
+            },
+            {
+                "Body": "Thoughts\nWell this is awkward, hopefully not too awkward… Okay, probably too awkward.\n[[Internal 1-2]]",
+                "Name": "Internal 1-1",
+                "Pid": "7",
+                "Tags": ""
+            },
+            {
+                "Body": "Anxiety\nJust play it cool, maybe they won’t notice how much of a mess you are.  Think about it, you haven’t had the chance to embarrass yourself (delay) yet.\n[[Internal 1-3]]",
+                "Name": "Internal 1-2",
+                "Pid": "8",
+                "Tags": ""
+            },
+            {
+                "Body": "Thoughts\nIs that supposed to make me feel better?\n[[Internal 1-4]]",
+                "Name": "Internal 1-3",
+                "Pid": "9",
+                "Tags": ""
+            },
+            {
+                "Body": "Anxiety\nLook on the bright side, you’ve made a wonderful new friend.  This Dryve driver, Jordy, who is good at oversharing and not so good at driving..  Which is exactly why you came out on this date, to talk to the rideshare guy. \n[[Internal 1-5]]",
+                "Name": "Internal 1-4",
+                "Pid": "10",
+                "Tags": ""
+            },
+            {
+                "Body": "Player\nNo, this is salvageable, what do I do?\n[[Question 1-1]]",
+                "Name": "Internal 1-5",
+                "Pid": "11",
+                "Tags": ""
+            },
+            {
+                "Body": "Player\nNo problem, the first few minutes are previews anyway.  Let it Ride.",
+                "Name": "Choice 1-1",
+                "Pid": "12",
+                "Tags": "Player"
+            },
+            {
+                "Body": "Player\nHey, I’ve got a joke!",
+                "Name": "Choice 1-2",
+                "Pid": "13",
+                "Tags": ""
+            },
+            {
+                "Body": "Player\nHow was your day?",
+                "Name": "Choice 1-3",
+                "Pid": "14",
+                "Tags": ""
+            },
+            {
+                "Body": "Player\n*Tries to unlock door*",
+                "Name": "Choice 1-4",
+                "Pid": "15",
+                "Tags": ""
+            },
+            {
+                "Body": "Player\n[[Play it cool|Choice 1-1]]\n[[Make a joke|Choice 1-2]]\n[[Ask her about her day|Choice 1-3]]\n[[Escape|Choice 1-4]]",
+                "Name": "Question 1-1",
+                "Pid": "16",
+                "Tags": ""
+            }
+        ],
+        "startPid": "1"
+    }
+}

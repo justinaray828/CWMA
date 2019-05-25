@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LevelManager : MonoBehaviour
+public class SceneHandler : MonoBehaviour
 {
-
     private int currentSceneIndex;
     [SerializeField] private int MainMenuSceneIndex = 0;
 
@@ -14,12 +13,12 @@ public class LevelManager : MonoBehaviour
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
     }
 
-    public void ResetLevel()
+    public void ResetScene()
     {
         SceneManager.LoadScene(currentSceneIndex);
     }
 
-    public void ResetGame()
+    public void ReturnToMainMenu()
     {
         SceneManager.LoadScene(MainMenuSceneIndex);
     }
@@ -29,19 +28,29 @@ public class LevelManager : MonoBehaviour
         Application.Quit();
     }
 
-    public void LoadLevel(string levelName)
+    public void LoadScene(string SceneName)
     {
-        SceneManager.LoadScene(levelName);
+        if(SceneNameCheck(SceneName))
+            SceneManager.LoadScene(SceneName);
     }
 
-    public void LoadLevel(int sceneIndex)
+    public void LoadScene(int sceneIndex)
     {
         SceneManager.LoadScene(sceneIndex);
     }
 
-    public void LoadNextLevel()
+    public void LoadNextScene()
     {
         SceneManager.LoadScene(currentSceneIndex + 1);
+    }
+
+    private bool SceneNameCheck(string sceneName)
+    {
+        if (SceneUtility.GetBuildIndexByScenePath(sceneName) >= 0)
+            return true;
+
+        Debug.LogError("Scene does not exist: " + sceneName);
+        return false;
     }
 
 }

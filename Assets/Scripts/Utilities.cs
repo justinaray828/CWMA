@@ -4,5 +4,5 @@ using UnityEngine;
 
 public static class Utilities
 {
-    public enum Tags { BrainSceneCube , BrainScene};
+    public enum Tags { BrainSceneCube , BrainScene };
 }

@@ -12,35 +12,36 @@ using UnityEngine;
 [RequireComponent(typeof(Camera))]
 public class CameraTransition : MonoBehaviour
 {
-    [Tooltip("How far the camera should move for each frame")]
+    [Tooltip("How far the camera will move for each frame")]
     [SerializeField] private float transitionTime = 2f;
 
     [Header("Needed Brain Scene GameObjects")]
     [SerializeField] private GameObject brainScene;
     [SerializeField] private GameObject brainSceneCube;
 
+    // Serialized for testing purposes
     [SerializeField] private bool zoomIn = true;
     [SerializeField] private bool startZoom = false;
     private bool cameraIsZoomedIn = false;
 
     private Camera mainCamera;
 
-    //Camera start values
+    //Camera starting values
     private float cameraStartSize;
-    private Vector3 cameraStartPosition; ///(0,0,-10)
+    private Vector3 cameraStartPosition;
 
     //Zoom in camera target values
     private float cameraZoomInSize = 2.66f;
-    private Vector3 cameraZoomPosition; //(0,12.7,-10)
+    private Vector3 cameraZoomPosition;
 
     //Needed to account for how far Lerp is off
     private float zoomTolerance = .01f;
 
-    // Start is called before the first frame update
+    public bool enableBrainScene;
+
     void Start()
     {
         mainCamera = GetComponent<Camera>();
-
         SetCameraPositions();
     }
 
@@ -51,8 +52,7 @@ public class CameraTransition : MonoBehaviour
     {
         cameraStartPosition = mainCamera.transform.position;
         Vector3 brainSceneCubePosition = brainSceneCube.transform.position;
-        cameraZoomPosition = new Vector3(brainSceneCubePosition.x, brainSceneCubePosition.y, -10);
-
+        cameraZoomPosition = new Vector3(brainSceneCubePosition.x, brainSceneCubePosition.y, cameraStartPosition.z);
         cameraStartSize = mainCamera.orthographicSize;
     }
 
@@ -91,8 +91,10 @@ public class CameraTransition : MonoBehaviour
             ZoomCamera();
             MoveCamera();
             CameraStateUpdate();
-            EnableBrainScene();
         }
+
+        EnableBrainScene();
+
     }
 
     /// <summary>
@@ -108,8 +110,6 @@ public class CameraTransition : MonoBehaviour
         {
             mainCamera.transform.position = Vector3.Lerp(mainCamera.transform.position, cameraStartPosition, transitionTime * Time.deltaTime);
         }
-
-
     }
 
     /// <summary>
@@ -161,7 +161,7 @@ public class CameraTransition : MonoBehaviour
     /// </summary>
     void EnableBrainScene()
     {
-        if (cameraIsZoomedIn)
+        if (cameraIsZoomedIn || enableBrainScene)
         {
             brainScene.SetActive(true);
             brainSceneCube.SetActive(true);
@@ -172,5 +172,4 @@ public class CameraTransition : MonoBehaviour
             brainSceneCube.SetActive(false);
         }
     }
-
 }

@@ -46,7 +46,7 @@ public class OptionsController : MonoBehaviour {
 
     void OnGUI()
     {
-        if (audioManager)
+        if (audioManager && GUI.changed)
         {
             masterVolumeValue = masterVolumeSlider.value;
             fxVolumeValue = fxVolumeSlider.value;

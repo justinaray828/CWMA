@@ -1,7 +1,9 @@
 title: Start
 ---
 <<setscene Dryve>>
-Jordy: And that’s how I discovered where the cold sore came from.  I have no idea how that came up?  Sorry, I talk a lot when I’m driving.
+Jordy: And that’s how I discovered where the cold sore came from.  
+I have no idea how that came up.  
+Sorry, I talk a lot when I’m driving.
 
 Gina: …
 

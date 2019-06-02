@@ -54,8 +54,8 @@ public class ExampleVariableStorage : VariableStorageBehaviour
     public DefaultVariable[] defaultVariables;
 
     [Header("Optional debugging tools")]
-    /// A UI.Text that can show the current list of all variables. Optional.
-    public UnityEngine.UI.Text debugTextView;
+
+    public UnityEngine.UI.Text speakerTextView;
 
     /// Reset to our default values when the game starts
     void Awake ()
@@ -140,15 +140,11 @@ public class ExampleVariableStorage : VariableStorageBehaviour
     /// If we have a debug view, show the list of all variables in it
     void Update ()
     {
-        if (debugTextView != null) {
-            var stringBuilder = new System.Text.StringBuilder ();
-            foreach (KeyValuePair<string,Yarn.Value> item in variables) {
-                stringBuilder.AppendLine (string.Format ("{0} = {1}",
-                                                         item.Key,
-                                                         item.Value));
+        foreach (KeyValuePair<string,Yarn.Value> item in variables) {
+            if (item.Key == "$speaker") {
+                speakerTextView.text = item.Value.AsString;
+                Debug.Log("Variables First Value" + item.Value.AsString);
             }
-            debugTextView.text = stringBuilder.ToString ();
         }
     }
-
 }

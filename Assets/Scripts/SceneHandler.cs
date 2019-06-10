@@ -7,6 +7,15 @@ public class SceneHandler : MonoBehaviour
 {
     private int currentSceneIndex;
     [SerializeField] private int MainMenuSceneIndex = 0;
+    public static Scene currentScene { get; set; }
+
+    public enum Scene
+    {
+        MAINMENU,
+        OPTIONS,
+        CAR,
+        BRAINROOM
+    }
 
     void Start()
     {
@@ -52,5 +61,4 @@ public class SceneHandler : MonoBehaviour
         Debug.LogError("Scene does not exist: " + sceneName);
         return false;
     }
-
 }

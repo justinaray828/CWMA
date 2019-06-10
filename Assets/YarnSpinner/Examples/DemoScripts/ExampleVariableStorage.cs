@@ -53,8 +53,6 @@ public class ExampleVariableStorage : VariableStorageBehaviour
     /// Our list of default variables, for debugging.
     public DefaultVariable[] defaultVariables;
 
-    [Header("Optional debugging tools")]
-
     public UnityEngine.UI.Text speakerTextView;
 
     /// Reset to our default values when the game starts
@@ -137,7 +135,6 @@ public class ExampleVariableStorage : VariableStorageBehaviour
         variables.Clear ();
     }
 
-    /// If we have a debug view, show the list of all variables in it
     void Update ()
     {
         foreach (KeyValuePair<string,Yarn.Value> item in variables) {

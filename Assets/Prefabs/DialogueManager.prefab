@@ -12,8 +12,7 @@ GameObject:
   - component: {fileID: 6342058791218613630}
   - component: {fileID: 6342058791218613601}
   - component: {fileID: 6342058791218613600}
-  - component: {fileID: 6342058791218613602}
-  - component: {fileID: 3667391099348497182}
+  - component: {fileID: 152393893}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -61,11 +60,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sourceText:
-  - {fileID: 4900000, guid: 53ba3a935211841ae8cf79c3ecca0a0f, type: 3}
+  - {fileID: 4900000, guid: 46d00c240daca4525a5ce5387e5a8f04, type: 3}
   stringGroups: []
   shouldOverrideLanguage: 0
   overrideLanguage: 10
-  variableStorage: {fileID: 6342058791218613602}
+  variableStorage: {fileID: 152393893}
   dialogueUI: {fileID: 6342058791218613600}
   startNode: Start
   startAutomatically: 1
@@ -83,13 +82,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueContainer: {fileID: 0}
-  lineText: {fileID: 0}
   continuePrompt: {fileID: 0}
   textSpeed: 0.025
-  optionButtons: []
+  optionButtons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   gameControlsContainer: {fileID: 0}
   dialoguePanelController: {fileID: 0}
---- !u!114 &6342058791218613602
+  cameraTransition: {fileID: 0}
+--- !u!114 &152393893
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -98,25 +101,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 6342058791218613629}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 610c541718d694070a21327d1ae62e75, type: 3}
+  m_Script: {fileID: 11500000, guid: 0521b0f22d6a3364e8f30999c288577d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   defaultVariables: []
-  debugTextView: {fileID: 0}
---- !u!114 &3667391099348497182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6342058791218613629}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3aa251f6dd702164a914daf76f81ea76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialoguePanelRectTransform: {fileID: 0}
-  nameText: {fileID: 0}
-  dialogueText: {fileID: 0}
-  smoothTime: 0.3
-  yVelocity: 0.3
+  dialoguePanelController: {fileID: 0}

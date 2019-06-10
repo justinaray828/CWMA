@@ -14,24 +14,35 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
     public RectTransform gameControlsContainer;
     [Tooltip("This will be attached to UICanvas")]
     public DialoguePanelController dialoguePanelController;
+    public CameraTransition cameraTransition;
 
     private Yarn.OptionChooser SetSelectedOption;
 
     private void Awake()
     {
-
+        
     }
 
     public override IEnumerator RunLine(Yarn.Line line)
     {
+        while (SceneHandler.currentScene == SceneHandler.Scene.BRAINROOM && !cameraTransition.isCameraZoomedIn())
+        {
+            dialoguePanelController.dialogueText.gameObject.SetActive(false);
+            dialoguePanelController.nameText.gameObject.SetActive(false);
+            yield return null;//Wait until the camera is all the way zoomed in to continue
+        }
+
         // Show the text
         dialoguePanelController.PopUp = true;
         dialoguePanelController.dialogueText.gameObject.SetActive(true);
+        dialoguePanelController.nameText.gameObject.SetActive(true);
 
         if (textSpeed > 0.0f)
         {
             // Display the line one character at a time
             var stringBuilder = new StringBuilder();
+
+            float previousTextSpeed = textSpeed;
 
             foreach (char c in line.text)
             {
@@ -56,13 +67,9 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
             yield return null;
         }
 
-        // Hide the text and prompt
-        dialoguePanelController.dialogueText.gameObject.SetActive(false);
-
         if (continuePrompt != null)
             continuePrompt.SetActive(false);
 
-        dialoguePanelController.PopUp = false;
     }
 
     public override IEnumerator RunOptions(Yarn.Options optionsCollection,
@@ -105,6 +112,18 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
     {
         // "Perform" the command
         Debug.Log("Command: " + command.text);
+        string InnerDateScene = "setscene innerDate";
+
+        if (command.text.Equals(InnerDateScene))
+        {
+            cameraTransition.ZoomIn();
+            SceneHandler.currentScene = SceneHandler.Scene.BRAINROOM;
+        }
+        else
+        {
+            cameraTransition.ZoomOut();
+            SceneHandler.currentScene = SceneHandler.Scene.CAR;
+        }
 
         yield break;
     }

@@ -13,31 +13,31 @@ using UnityEngine;
 public class CameraTransition : MonoBehaviour
 {
     [Tooltip("How far the camera will move for each frame")]
-    [SerializeField] private float transitionTime = 2f;
+    public float transitionTime = 2f;
 
     [Header("Needed Brain Scene GameObjects")]
-    [SerializeField] private GameObject brainScene;
-    [SerializeField] private GameObject brainSceneCube;
+    public GameObject brainScene;
+    public GameObject brainSceneCube;
+    public bool enableBrainScene;
 
     // Serialized for testing purposes
-    [SerializeField] private bool zoomIn = true;
-    [SerializeField] private bool startZoom = false;
-    private bool cameraIsZoomedIn = false;
+    public bool zoomIn = true;
+    public bool startZoom = false;
 
-    private Camera mainCamera;
+    bool cameraIsZoomedIn = false;
+
+    Camera mainCamera;
 
     //Camera starting values
-    private float cameraStartSize;
-    private Vector3 cameraStartPosition;
+    float cameraStartSize;
+    Vector3 cameraStartPosition;
 
     //Zoom in camera target values
-    private float cameraZoomInSize = 2.66f;
-    private Vector3 cameraZoomPosition;
+    float cameraZoomInSize = 2.66f;
+    Vector3 cameraZoomPosition;
 
-    //Needed to account for how far Lerp is off
-    private float zoomTolerance = .01f;
-
-    public bool enableBrainScene;
+    float zoomTolerance = .01f; //Needed to account for how far Lerp is off
+    public float brainSceneTransitionFadeStart;
 
     void Start()
     {
@@ -91,6 +91,7 @@ public class CameraTransition : MonoBehaviour
             ZoomCamera();
             MoveCamera();
             CameraStateUpdate();
+            if (mainCamera.orthographicSize <= brainSceneTransitionFadeStart) ;
         }
 
         EnableBrainScene();
@@ -112,6 +113,9 @@ public class CameraTransition : MonoBehaviour
         }
     }
 
+    public float smoothTime = 0.3f;
+    public float yVelocity = 0.3f;
+
     /// <summary>
     /// Adjust camera size to zoom in or out
     /// </summary>
@@ -120,10 +124,12 @@ public class CameraTransition : MonoBehaviour
         if (zoomIn)
         {
             mainCamera.orthographicSize = Mathf.Lerp(mainCamera.orthographicSize, cameraZoomInSize, transitionTime * Time.deltaTime);
+            //mainCamera.orthographicSize = Mathf.SmoothDamp(mainCamera.orthographicSize, cameraZoomInSize, ref yVelocity, smoothTime);
         }
         else
         {
             mainCamera.orthographicSize = Mathf.Lerp(mainCamera.orthographicSize, cameraStartSize, transitionTime * Time.deltaTime);
+            //mainCamera.orthographicSize = Mathf.SmoothDamp(mainCamera.orthographicSize, cameraStartSize, ref yVelocity, smoothTime);
         }
     }
 
@@ -138,8 +144,8 @@ public class CameraTransition : MonoBehaviour
             {
                 cameraIsZoomedIn = true;
                 startZoom = false;
-                mainCamera.orthographicSize = cameraZoomInSize;
-                mainCamera.transform.position = cameraZoomPosition;
+                //orthographicSize = cameraZoomInSize;
+                //mainCamera.transform.position = cameraZoomPosition;
             }
         }
         else
@@ -149,8 +155,8 @@ public class CameraTransition : MonoBehaviour
             if (mainCamera.orthographicSize >= cameraStartSize - zoomTolerance)
             {
                 startZoom = false;
-                mainCamera.orthographicSize = cameraStartSize;
-                mainCamera.transform.position = cameraStartPosition;
+                //mainCamera.orthographicSize = cameraStartSize;
+                //mainCamera.transform.position = cameraStartPosition;
             }
         }
     }
@@ -171,5 +177,10 @@ public class CameraTransition : MonoBehaviour
             brainScene.SetActive(false);
             brainSceneCube.SetActive(false);
         }
+    }
+
+    public bool isCameraZoomedIn()
+    {
+        return cameraIsZoomedIn;
     }
 }

@@ -47,6 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fxSource: {fileID: 3824741328796003454}
   musicSource: {fileID: 1492701572112908278}
+  mixer: {fileID: 24100000, guid: 8470804748a124767a11093462dd9bf8, type: 2}
   sounds:
   - name: s1
     clip: {fileID: 0}
@@ -73,7 +74,8 @@ AudioSource:
   m_GameObject: {fileID: 7157669737519867622}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 8470804748a124767a11093462dd9bf8,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -169,8 +171,9 @@ AudioSource:
   m_GameObject: {fileID: 7157669737519867622}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 8470804748a124767a11093462dd9bf8,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 9f21e3fc197ef404f8f09327630a5aa7, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

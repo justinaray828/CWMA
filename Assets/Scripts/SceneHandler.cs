@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneHandler : MonoBehaviour
@@ -17,7 +15,7 @@ public class SceneHandler : MonoBehaviour
         BRAINROOM
     }
 
-    void Start()
+    private void Start()
     {
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
     }
@@ -39,7 +37,7 @@ public class SceneHandler : MonoBehaviour
 
     public void LoadScene(string SceneName)
     {
-        if(SceneNameCheck(SceneName))
+        if (SceneNameCheck(SceneName))
             SceneManager.LoadScene(SceneName);
     }
 

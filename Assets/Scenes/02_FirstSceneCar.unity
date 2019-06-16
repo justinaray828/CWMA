@@ -679,6 +679,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ebda203fdb25b849a6658325c1906b5, type: 3}
+--- !u!114 &1467781974 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6342058791218613600, guid: 0b27a32d1158aae42ad9ee2969dadf91,
+    type: 3}
+  m_PrefabInstance: {fileID: 6342058791182763184}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38d49e780f38c544a8374486ff3cdfdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1586598574
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -905,6 +917,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: UICanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 80447413, guid: 135f5271ed3a47442b13d906c8411010, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1467781974}
+    - target: {fileID: 550677435, guid: 135f5271ed3a47442b13d906c8411010, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1467781974}
+    - target: {fileID: 1099178484, guid: 135f5271ed3a47442b13d906c8411010, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1467781974}
+    - target: {fileID: 1217865008, guid: 135f5271ed3a47442b13d906c8411010, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1467781974}
     - target: {fileID: 4921888667557411804, guid: 135f5271ed3a47442b13d906c8411010,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1010,26 +1038,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 924488485, guid: 135f5271ed3a47442b13d906c8411010, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 80447411, guid: 135f5271ed3a47442b13d906c8411010, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 550677433, guid: 135f5271ed3a47442b13d906c8411010, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1099178482, guid: 135f5271ed3a47442b13d906c8411010, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1217865006, guid: 135f5271ed3a47442b13d906c8411010, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 135f5271ed3a47442b13d906c8411010, type: 3}
 --- !u!1001 &6342058791182763184
@@ -1133,5 +1141,10 @@ PrefabInstance:
       propertyPath: dialoguePanelController
       value: 
       objectReference: {fileID: 351506528}
+    - target: {fileID: 6342058791218613601, guid: 0b27a32d1158aae42ad9ee2969dadf91,
+        type: 3}
+      propertyPath: sourceText.Array.data[0]
+      value: 
+      objectReference: {fileID: 4900000, guid: 46d00c240daca4525a5ce5387e5a8f04, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b27a32d1158aae42ad9ee2969dadf91, type: 3}

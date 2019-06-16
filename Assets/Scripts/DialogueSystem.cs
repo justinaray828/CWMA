@@ -1,30 +1,40 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
-using System.Text;
 
 public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
 {
     public GameObject dialogueContainer;
     public GameObject continuePrompt;
+    public float textSpeed;
+
     [Tooltip("How quickly to show the text, in seconds per character")]
-    public float textSpeed = 0.025f;
+    public float textSpeedDefault = 0.025f;
+
+    public float textSpeedSlow = 0.05f;
+    public float textSpeedFast = 0f;
     public List<Button> optionButtons;
     public RectTransform gameControlsContainer;
+
     [Tooltip("This will be attached to UICanvas")]
     public DialoguePanelController dialoguePanelController;
+
     public CameraTransition cameraTransition;
 
     private Yarn.OptionChooser SetSelectedOption;
 
     private void Awake()
     {
-        
+        textSpeed = textSpeedDefault;
     }
 
     public override IEnumerator RunLine(Yarn.Line line)
     {
+        bool speedInput = false;
+        bool firstInput = true;
+
         while (SceneHandler.currentScene == SceneHandler.Scene.BRAINROOM && !cameraTransition.isCameraZoomedIn())
         {
             dialoguePanelController.dialogueText.gameObject.SetActive(false);
@@ -42,12 +52,19 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
             // Display the line one character at a time
             var stringBuilder = new StringBuilder();
 
-            float previousTextSpeed = textSpeed;
-
             foreach (char c in line.text)
             {
+                //GetButtonDown happens when text starts and requires the bool firstInput to stop if statement from always happening
+                if (Input.GetButtonDown("Input") == true && firstInput == false)
+                {
+                    dialoguePanelController.dialogueText.text = line.text;
+                    speedInput = true;
+                    break;
+                }
+
                 stringBuilder.Append(c);
                 dialoguePanelController.dialogueText.text = stringBuilder.ToString();
+                firstInput = false;
                 yield return new WaitForSeconds(textSpeed);
             }
         }
@@ -62,14 +79,21 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
             continuePrompt.SetActive(true);
 
         // Wait for any user input
-        while (Input.anyKeyDown == false)
+        while (Input.anyKeyDown == false || speedInput == true)
         {
+            if (speedInput == true && Input.GetButtonUp("Input") == true)
+            {
+                speedInput = false;
+            }
             yield return null;
         }
 
         if (continuePrompt != null)
             continuePrompt.SetActive(false);
+    }
 
+    private void SpeedUpText(bool firstInput)
+    {
     }
 
     public override IEnumerator RunOptions(Yarn.Options optionsCollection,
@@ -105,6 +129,17 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
         {
             button.gameObject.SetActive(false);
         }
+    }
+
+    /// Called by buttons to make a selection.
+    public void SetOption(int selectedOption)
+    {
+        // Call the delegate to tell the dialogue system that we've
+        // selected an option.
+        SetSelectedOption(selectedOption);
+
+        // Now remove the delegate so that the loop in RunOptions will exit
+        SetSelectedOption = null;
     }
 
     /// Run an internal command.
@@ -162,5 +197,15 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
         }
 
         yield break;
+    }
+
+    public void SetTextSpeedDefault()
+    {
+        textSpeed = textSpeedDefault;
+    }
+
+    public void SetTextSpeedSlow()
+    {
+        textSpeed = textSpeedSlow;
     }
 }

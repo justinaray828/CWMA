@@ -1,6 +1,5 @@
-﻿using UnityEngine.Audio;
-using System;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
@@ -11,7 +10,7 @@ public class AudioManager : MonoBehaviour
     public Sound[] sounds;
     public static AudioManager instance;
 
-    void Awake()
+    private void Awake()
     {
         //Ensure that only one instance of this class is created (we don't want a new AudioManager everytime a scene loads)
         if (instance == null)
@@ -22,19 +21,16 @@ public class AudioManager : MonoBehaviour
             return;
         }
         DontDestroyOnLoad(gameObject);
-
     }
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-
     }
 
     public void SetMasterVolume(float vol)
@@ -52,8 +48,7 @@ public class AudioManager : MonoBehaviour
         fxSource.volume = vol;
     }
 
-    void Play(Sound s)
+    private void Play(Sound s)
     {
-
     }
 }

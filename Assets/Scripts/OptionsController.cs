@@ -1,10 +1,8 @@
-﻿using System.Collections;
+﻿using UnityEngine;
 using UnityEngine.UI;
-using System.Collections.Generic;
-using UnityEngine;
 
-public class OptionsController : MonoBehaviour {
-
+public class OptionsController : MonoBehaviour
+{
     public Slider masterVolumeSlider;
     public Slider fxVolumeSlider;
     public Slider musicVolumeSlider;
@@ -12,22 +10,23 @@ public class OptionsController : MonoBehaviour {
 
     [Range(-80f, 0f)]
     public float masterVolumeValue;
+
     public float fxVolumeValue;
     public float musicVolumeValue;
 
     // Use this for initialization
-    void Start()
+    private void Start()
     {
         FindObjects();
         InitilizeValues();
     }
 
-    void FindObjects()
+    private void FindObjects()
     {
         audioManager = GameObject.FindObjectOfType<AudioManager>();
     }
 
-    void InitilizeValues()
+    private void InitilizeValues()
     {
         masterVolumeSlider.minValue = -80f;
         masterVolumeSlider.maxValue = 0f;
@@ -51,7 +50,6 @@ public class OptionsController : MonoBehaviour {
         masterVolumeSlider.onValueChanged.AddListener(delegate { UpdateValues(); });
         fxVolumeSlider.onValueChanged.AddListener(delegate { UpdateValues(); });
         musicVolumeSlider.onValueChanged.AddListener(delegate { UpdateValues(); });
-
     }
 
     public void UpdateValues()
@@ -87,7 +85,4 @@ public class OptionsController : MonoBehaviour {
     {
         SaveSystem.SaveOptionsData(this);
     }
-
 }
-
-

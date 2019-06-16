@@ -1,22 +1,24 @@
-﻿using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using Yarn.Unity;
 
 public class VariableManager : VariableStorageBehaviour
 {
     /// Where we actually keeping our variables
-    Dictionary<string, Yarn.Value> variables = new Dictionary<string, Yarn.Value>();
+    private Dictionary<string, Yarn.Value> variables = new Dictionary<string, Yarn.Value>();
 
     /// A default value to apply when the object wakes up, or
     /// when ResetToDefaults is called
+    [RequireComponent(typeof(DialogueSystem))]
     [System.Serializable]
     public class DefaultVariable
     {
         /// Name of the variable
         public string name;
+
         /// Value of the variable
         public string value;
+
         /// Type of the variable
         public Yarn.Value.Type type;
     }
@@ -26,10 +28,13 @@ public class VariableManager : VariableStorageBehaviour
 
     public DialoguePanelController dialoguePanelController;
 
+    private DialogueSystem dialogueSystem;
+
     /// Reset to our default values when the game starts
-    void Awake()
+    private void Awake()
     {
         ResetToDefaults();
+        dialogueSystem = GetComponent<DialogueSystem>();
     }
 
     /// Erase all variables and reset to default values
@@ -41,7 +46,6 @@ public class VariableManager : VariableStorageBehaviour
         // that the user typed in in Unity and store the variable
         foreach (var variable in defaultVariables)
         {
-
             object value;
 
             switch (variable.type)
@@ -76,7 +80,6 @@ public class VariableManager : VariableStorageBehaviour
 
                 default:
                     throw new System.ArgumentOutOfRangeException();
-
             }
 
             var v = new Yarn.Value(value);
@@ -108,9 +111,9 @@ public class VariableManager : VariableStorageBehaviour
         variables.Clear();
     }
 
-    string currentSpeaker;
+    private string currentSpeaker;
 
-    void Update()
+    private void Update()
     {
         foreach (KeyValuePair<string, Yarn.Value> item in variables)
         {

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Delay
 {
@@ -14,7 +12,6 @@ public class Delay
     /// </summary>
     public Delay()
     {
-        
     }
 
     /// <summary>
@@ -44,7 +41,7 @@ public class Delay
     {
         IncreaseTime();
 
-        if(currentTime >= delayTime || firstCall)
+        if (currentTime >= delayTime || firstCall)
         {
             ResetTime();
             firstCall = false;

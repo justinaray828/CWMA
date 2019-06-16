@@ -1,13 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 /// <summary>
 /// CameraTransition requires a brainscene to be present in the scene as well as a cube with a render texture of the scene on
-/// the main character. Use TransitionTime to set how long in seconds the transistion will take place. 
-/// 
+/// the main character. Use TransitionTime to set how long in seconds the transistion will take place.
+///
 /// To Call the transistion call ZoomIn() or ZoomOut()
-/// 
+///
 /// </summary>
 [RequireComponent(typeof(Camera))]
 public class CameraTransition : MonoBehaviour
@@ -17,29 +15,33 @@ public class CameraTransition : MonoBehaviour
 
     [Header("Needed Brain Scene GameObjects")]
     public GameObject brainScene;
+
     public GameObject brainSceneCube;
     public bool enableBrainScene;
 
     // Serialized for testing purposes
     public bool zoomIn = true;
+
     public bool startZoom = false;
 
-    bool cameraIsZoomedIn = false;
+    private bool cameraIsZoomedIn = false;
 
-    Camera mainCamera;
+    private Camera mainCamera;
 
     //Camera starting values
-    float cameraStartSize;
-    Vector3 cameraStartPosition;
+    private float cameraStartSize = 10.8f;
+
+    private Vector3 cameraStartPosition;
 
     //Zoom in camera target values
-    float cameraZoomInSize = 2.66f;
-    Vector3 cameraZoomPosition;
+    private float cameraZoomInSize = 2.66f;
 
-    float zoomTolerance = .01f; //Needed to account for how far Lerp is off
+    private Vector3 cameraZoomPosition;
+
+    private float zoomTolerance = .01f; //Needed to account for how far Lerp is off
     public float brainSceneTransitionFadeStart;
 
-    void Start()
+    private void Start()
     {
         mainCamera = GetComponent<Camera>();
         SetCameraPositions();
@@ -50,10 +52,10 @@ public class CameraTransition : MonoBehaviour
     /// </summary>
     private void SetCameraPositions()
     {
-        cameraStartPosition = mainCamera.transform.position;
-        Vector3 brainSceneCubePosition = brainSceneCube.transform.position;
-        cameraZoomPosition = new Vector3(brainSceneCubePosition.x, brainSceneCubePosition.y, cameraStartPosition.z);
-        cameraStartSize = mainCamera.orthographicSize;
+        cameraStartPosition = new Vector3(0f, 0f, -10f);
+        cameraZoomPosition = new Vector3(brainSceneCube.transform.position.x,
+                                         brainSceneCube.transform.position.y,
+                                         cameraStartPosition.z);
     }
 
     /// <summary>
@@ -76,7 +78,7 @@ public class CameraTransition : MonoBehaviour
         SetCameraPositions();
     }
 
-    void Update()
+    private void Update()
     {
         CameraZoom();
     }
@@ -84,7 +86,7 @@ public class CameraTransition : MonoBehaviour
     /// <summary>
     /// Handles camera zoom in or out
     /// </summary>
-    void CameraZoom()
+    private void CameraZoom()
     {
         if (startZoom)
         {
@@ -95,13 +97,12 @@ public class CameraTransition : MonoBehaviour
         }
 
         EnableBrainScene();
-
     }
 
     /// <summary>
     /// Moves the position of the camera into required place
     /// </summary>
-    void MoveCamera()
+    private void MoveCamera()
     {
         if (zoomIn)
         {
@@ -119,7 +120,7 @@ public class CameraTransition : MonoBehaviour
     /// <summary>
     /// Adjust camera size to zoom in or out
     /// </summary>
-    void ZoomCamera()
+    private void ZoomCamera()
     {
         if (zoomIn)
         {
@@ -136,7 +137,7 @@ public class CameraTransition : MonoBehaviour
     /// <summary>
     /// Checks if the Orthographic size is zoomed in or not to update the state of the transition
     /// </summary>
-    void CameraStateUpdate()
+    private void CameraStateUpdate()
     {
         if (zoomIn)
         {
@@ -165,7 +166,7 @@ public class CameraTransition : MonoBehaviour
     /// Enables the brain scene
     /// This is where code needs to go to trigger animation of head opening up.
     /// </summary>
-    void EnableBrainScene()
+    private void EnableBrainScene()
     {
         if (cameraIsZoomedIn || enableBrainScene)
         {

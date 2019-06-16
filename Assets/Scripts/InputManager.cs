@@ -1,22 +1,19 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class InputManager : MonoBehaviour
 {
-    
     public DialoguePanelController dialoguePanelController;
 
-    bool keyPress = false;
+    private bool keyPress = false;
 
-    string inputString = Inputs.STRINGS.Input.ToString();
+    private string inputString = Inputs.STRINGS.Input.ToString();
 
-    void Update()
+    private void Update()
     {
         InputKeyPress();
     }
 
-    void InputKeyPress()
+    private void InputKeyPress()
     {
         if (Input.GetButtonDown(inputString) && keyPress == false)
         {

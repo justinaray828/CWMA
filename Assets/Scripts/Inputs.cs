@@ -1,6 +1,4 @@
-﻿
-
-namespace Inputs
+﻿namespace Inputs
 {
     public enum STRINGS
     {

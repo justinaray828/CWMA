@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 //Enum values need to be the same as the Facial Expression Animator Parameters
 public enum Expressions { Happy, Sad, Uncomfortable, Relief, Shocked };
@@ -15,7 +13,7 @@ public class FacialExpressions : MonoBehaviour
     private Animator animator;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         animator = facialExpressionGameObject.GetComponent<Animator>();
         animator.SetBool(currentExpression.ToString(), true);

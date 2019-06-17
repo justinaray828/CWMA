@@ -1,0 +1,1007 @@
+title: Start
+---
+<<setscene Dryve>>
+Jordy: And that’s how I discovered where the cold sore came from.  I have no idea how that came up?  Sorry, I talk a lot when I’m driving.
+
+Gina: …
+
+Player Character: …
+
+Jordy: ...
+
+Gina: Sooo…  5 more minutes till the theater?
+
+Jordy: Nope, 7 minutes. I missed two turns earlier.  Sorry.
+
+<<setscene innerDate>>
+
+Player Character’s Thoughts: Well this is awkward, hopefully not too awkward… Okay, probably too awkward.
+
+Player Character’s Anxiety: Just play it cool, maybe they won’t notice how much of a mess you are.  Think about it, you haven’t had the chance to embarrass yourself (delay) yet.
+
+Player Character’s Thoughts: Is that supposed to make me feel better?
+
+Player Character’s Anxiety: Look on the bright side, you’ve made a wonderful new friend.  This Dryve driver, Jordy, who is good at oversharing and not so good at driving..  Which is exactly why you came out on this date, to talk to the ride-share guy. 
+
+Player Character’s Thoughts: No, this is salvageable, what do I do?
+
+[[Play it cool|PlayItCool]]
+[[Make a joke| MakeAJoke]]
+[[Ask her about her day|AskHerAboutHerDay]]
+[[ESCAPE|Escape]]
+===
+
+title: PlayItCool
+---
+<<setscene Dryve>>
+Player Character’s Dialog: No problem, the first few minutes are previews anyway.  Let it Ride.
+
+Gina: Aww, I like watching previews
+
+Jordy: I heard they were showing a trailer for the big superhero flick before your movie.  Honestly, that trailer is probably better than what you’re seeing.  Rotten Potatoes says this movie is certified trash.
+
+Player Character’s Dialog: Critics think every movie is bad.
+
+Jordy: Nah dude. It was in the 30s for Critics AND User Reviews.
+
+Gina: Great (Need a good eye roll animation), we’re about to sit through a 2 hour bomb.
+
+Jordy: 2 hours and 45 minutes.
+
+Gina: Why did you pick this movie again?
+
+Player Character’s Dialog: Maybe it will be so bad it’s good?  
+
+Jordy: And We’re Here! I hope that you are in the 30 percent of people with incorrect err… ‘unique’ opinions!  Remember to tip!
+===
+
+title: MakeAJoke
+---
+<<setscene Dryve>>
+Player Character’s Dialog: Hey, I’ve got a joke!
+
+Gina: Great!  We still have 6 minutes left to kill. 
+
+Jordy: Probably closer to 5 (new window) Just ran that red light. (both characters get Wtf looks)
+
+Player Character’s Dialog: Anyway… (typed out slowly) I tried to be a Dryver driver once. Trouble is, my passengers didn’t appreciate when I went the extra mile. 
+
+Gina: ...
+
+Player Character’s Dialog: ...
+
+Jordy: Hey man, I don’t like when you make fun of my job. I love my job.
+		
+Gina: I think he was just making a bad joke... 
+
+Jordy: So the gig economy is a joke?
+
+Player Character’s Dialog: No.. yes…. How do I answer that?
+
+Gina: From a labor perspective it exploits workers while concentrating capital towards the top.
+
+Player Character’s Dialog: I’m sorry, I didn’t mean anything by it
+
+Jordy: That’s obvious.  I mean you’re not wrong, but when you work 9 to 5, just $2 above minimum wage, you’ve got to be creative to make a legal living.  
+
+Gina: That’s respectable.
+
+Jordy: Plus, I’m my own boss. Nobody tells me what to do.
+
+Player Character’s Dialog: Turn left here
+
+(Awkward back and forth stare down between Jordy and Player)
+
+Jordy: Get out...
+===
+
+title: Escape
+---
+<<setscene Dryve>>
+Player Character’s Dialog: *Tries to unlock door*
+
+Gina: Ummm are you trying to open the door while we’re in a moving car?
+
+Player Character’s Dialog: No… (New window) Yes
+
+Jordy: Dude.  Not cool.
+
+Gina: Ok… 
+
+<<setscene innerDate>>
+
+Player Character’s Thoughts: Oh my god, why was that an option?
+
+Player Character’s Anxiety: I wasn’t serious, Why did you pick that option? 
+
+Player Character’s Thoughts: I’m an idiot.
+
+Player Character’s Anxiety: Yeah, you are! 
+
+[[Play it cool|PlayItCool_B]]
+[[Make a joke|MakeAJoke]]
+[[Ask her about her day|AskHerAboutHerDay]]
+===
+
+title: PlayItCool_B
+---
+<<setscene Dryve>>
+Player Character’s Dialog: It’s alright, Cool people don’t arrive early.
+
+Gina: I’m less concerned about being cool than missing the beginning of the damn movie.
+
+Player Character’s Dialog: I heard the first 20 minutes of the movie is a dream… Spoiler Warning
+
+Gina: If you say ‘Spoiler Warning’ after the spoiler, it isn’t really a warning. It’s a Spoiler Announcement
+
+Player Character’s Dialog: Oops, sorry
+
+Jordy: That’s a good point, I’m going to start using that when I spoil things accidentally.  Spoiler Announcement!  At the end of the movie the main character…
+
+Gina: Could you not!!!!
+
+Jordy: … Arrives at their destination on time!  We’re here!  
+===
+
+title: AskHerAboutHerDay
+---
+<<setscene Dryve>>
+Player Character’s Dialog: How was your day?
+
+Gina: Okay, could have been better.
+
+Player Character’s Dialog: Oh ok…
+
+Gina: …
+
+Player Character’s Dialog: ... 
+
+Jordy: Did something crappy happen?
+
+Gina: Yeah Sorta, over the past few weeks my pens keep going missing.
+
+Player Character’s Dialog: Like a pen thief?
+
+Gina: Yup, full scale office supply larceny.  It wouldn’t be a big deal if I hadn’t went and purchased my own pens.
+
+Player Character’s Dialog: That sucks, do you know who did it?
+
+Gina: Yeah maybe, but how do you ask your coworker that?
+
+Player Character’s Dialog: Right, that’s a struggle.
+
+<<setscene innerDate>>
+
+Player Character’s Thoughts: Should I give some advice.
+
+Player Character’s Anxiety: Yeah, you’ve got experience with office supply theft.
+
+Player Character’s Thoughts: I feel like I should say something to show that I care?
+
+[[That sounds rough, but I believe in your ability to handle it well.|ThatSoundsRough]]
+[[Sneak in at night and search everyone’s desks|Sneak]]
+===
+
+title: ThatSoundsRough
+---
+<<setscene Dryve>>
+Player Character’s Dialog: That sounds rough, but I believe in your ability to handle it.
+
+Gina: Thanks… I think I just needed someone to listen to me rant a bit
+
+Player Character’s Dialog: Oh, Well I’m glad to help
+
+Gina: I’ll figure out a way to handle it Monday morning
+
+Jordy: And we’re here!!!  Hope y’all enjoy the movie!
+
+$Inspiration is true
+===
+
+title: Sneak
+---
+<<setscene Dryve>>
+Player Character’s Dialog: You should sneak in at night and search everyone’s desks
+
+Gina: Yeah that sounds like…
+
+Jordy: A terrible idea
+
+Gina: A great idea
+
+Player Character’s Dialog: Oh, Well I’m glad to help..
+
+Gina: I’ll be the crazy person sneaking into my office to look through desks for my pens.
+
+Player Character’s Dialog: Yeah, I see your point...
+
+Gina: If the janitors or any of my late working coworkers are there, I’ll just explain how I was wronged and deserve pen justice
+
+Player Character’s Dialog: Yeah, I was mostly joking but you seem pretty set on this...
+
+Gina: Oh, You were joking about Breaking and Entering at my place of employment to get my $10 pack of gel pens?
+
+Jordy: You’d be justified with Gel pens.
+
+Player Character’s Dialog: How far are we from...
+
+Jordy: And we’re here!!!  Hope y’all enjoy the movie!
+===
+
+title: Theater
+---
+<<setscene Theater>>
+Player Character’s Dialog: Finally, we made it!
+
+Gina: I feel like we could have walked here faster.
+
+Player Character’s Dialog: That driver found a way to speed through every light and miss nearly every turn.
+
+Gina: I feel like it takes skills to be that terrible.
+
+Player Character’s Dialog: So Five Stars?
+
+Gina: Haha, definitely.
+
+Emily: What movie are you seeing?
+
+Player Character’s Dialog: I bought tickets online.
+
+Emily: Ok.. I still need to know the name of the movie to find the tickets.
+
+<<setscene innerDate>>
+
+Player Character’s Thoughts: Oh god… I forgot the name of the movie.
+
+Player Character’s Anxiety: You what?
+
+Player Character’s Thoughts: I think it’s either Love in New York or Brooklyn Hearts, or something like that.  How many date movies could there be?
+
+Player Character’s Anxiety: Well that’s a 50% chance of looking like an idiot.
+
+[[Umm.  Love in New York|LoveInNewYork]]
+[[I believe Brooklyn Hearts|BrooklynHearts]]
+===
+
+title: LoveInNewYork 
+---
+<<setscene Theater>>
+Player Character’s Dialog: I think it was...
+
+Gina: Brooklyn Sleeps Alone Tonight!!!
+
+Emily: Great… glad someone knew.
+
+Gina: Saw you were struggling a bit, these names are a little generic.
+
+Player Character’s Dialog: Thanks for the save there.
+
+Emily: CARD
+
+Player Character’s Dialog: Huh… 
+
+Emily: Give me the your card so I can pull up your ticket order for the movie you totally forgot the title to.
+===
+
+title: BrooklynHearts
+---
+<<setscene Theater>>
+Player Character’s Dialog: I think it was Movie Name.
+
+Gina: That is definitely not the movie.
+
+Emily: Great… you bought a ticket for movie you can’t even remember the title for.  Real art connoisseurs.
+
+Gina: I am pretty sure it is Brooklyn sleeps alone tonight. 
+
+Player Character’s Dialog: Right, Thanks for the save there.
+
+Gina: Let’s just get inside.
+
+Emily: CARD
+
+Player Character’s Dialog: Huh… 
+
+Emily: Give me the your card so I can pull up your ticket order for the movie you totally forgot the title to.
+
+<<setscene innerDate>>
+
+Player Character’s Anxiety: Busted!
+
+Player Character’s Thoughts: I have a bad memory! I won't let this woundingly sarcastic teen ruin my date.
+
+Player Character’s Anxiety: No, but being awkward and going through the 3 different cards in your wallet to find the one that you bought the ticket on will. 
+
+Player Character’s Thoughts: Wow, who’s side are you on.
+
+[[Credit Card|CreditCard]]
+[[Other Credit Card|CreditCard]]
+[[Other Other Credit Card|CreditCard]]
+===
+
+title: CreditCard
+---
+<<setscene Theater>>
+Player Character’s Dialog: I think it was this one.
+
+Emily: You think!  How many credit cards do you have?
+
+Gina: Oh my god, Just run the card.
+
+Emily: Fine… Bingo
+
+Player Character’s Dialog: Great, I sorta just guessed.
+
+Emily: Not! Try Again.
+
+Player Character’s Dialog: Why are you like this?
+ 
+Gina: We are definitely missing the beginning of this movie.
+
+<<setscene innerDate>>
+
+Player Character’s Anxiety: Okay, Genius. Let’s try this again
+
+Player Character’s Thoughts: Also, why are teenagers so scary and why do I feel I need their approval?  I’m an adult!
+
+[[Credit Card|OtherCreditCard]]
+[[Other Credit Card|OtherCreditCard]]
+[[Other Other Credit Card|OtherCreditCard]]
+[[Just buy a new ticket|BuyANewTicket]]
+===
+
+title: OtherCreditCard
+---
+<<setscene Theater>>
+Player Character’s Dialog: Let’s try this one.
+
+Emily: Are you sure this time?
+
+Player Character’s Dialog: Yep… I think.
+
+Emily: Because if you aren’t you can pick...
+
+Gina: Oh my god, is this a circle of hell.  RUN THE CARD!!!
+
+Emily: Jeez, I’m running it.  And it’s printing.  Enjoy the show.
+
+Player Character’s Dialog: YES, and you’re not joking this time.
+
+Emily: I don’t joke.
+
+Player Character’s Dialog: But.. just a minute ago.
+
+Gina: Let’s go inside, finally.
+
+Emily: Yeah. Finally.
+===
+
+title: BuyANewTicket
+---
+<<setscene Theater>>
+Player Character’s Dialog: I don’t know what card it was, I’m just going to buy a new ticket.
+
+Emily: The theater is sold out, it’s a Friday Night and y’all are late to this showing.
+
+Player Character’s Dialog: Seriously?  The previews are just starting, we aren’t that late.
+
+Gina: Can you check again?  We aren’t that late.
+
+Emily: If I can handle getting to the bus stop 45 minutes early for the one bus with a ramp, y’all can think to call your Dryve a whole 5 minutes earlier.  And I’ve already checked the occupancy count... twice.
+
+Gina: Can we just try the cards?
+
+<<setscene innerDate>>
+
+Player Character’s Anxiety: Ok, Genius, Let’s try this again
+
+[[Credit Card|OtherCreditCard]]
+[[Other Credit Card|OtherCreditCard]]
+[[Other Other Credit Card|OtherCreditCard]]
+===
+
+title: Dryve to the Restaurant
+---
+<<setscene Dryve>>
+Player Character’s Dialog: …
+
+Gina: …
+
+Jordy: …
+
+Gina: Well here we are again
+
+Jordy: Crazy the Dryve app put y’all in my car again.
+
+Player Character’s Dialog: Yeah…
+
+Gina: Crazy
+
+Jordy: Must be the universe saying “This is a great driver!!!”  Btw remember to rate, I noticed I didn’t get any feedback on the last one.
+
+Gina: We were running late
+
+Jordy: Hey, I’ve got this awesome story…
+
+<<setscene innerDate>>
+
+Player Character’s Anxiety: This is just great
+
+Player Character’s Thoughts: I have to change the subject.  Gotta turn this back into a date instead of story time with the Dryver.
+
+Player Character’s Anxiety: All the pressure is on you.
+
+Player Character’s Thoughts: Ok I can do this…
+
+[[Listen to the Story (Option not available if you made a joke about Jordy)|ListenToTheStory]]
+[[Ask your date about their day|AskHerAboutHerDay_B]]
+[[Discuss the movie|DiscussTheMovie]]
+===
+
+title: ListenToTheStory
+---
+<<setscene Dryve>>
+Player Character’s Dialog: Let’s hear the story.
+
+Gina: Really?
+
+Player Character’s Dialog: He seems excited about it
+
+Jordy: Great, so after I dropped you off I realized something.  I think you two were on a date!
+
+Gina: You realized that after you…
+
+Jordy: Guess I was so distracted earlier… Oops I just missed another turn.
+
+Gina: Oh my god.
+
+Jordy: Anyway, I decided I need to do something nice since I talked so much during your date.  So I ran to the store, grabbed some chocolates and a tall boy.  Then I turned down all the other ride request until you two got out of the movie. That way I could apologize for earlier.
+
+Player Character’s Dialog: Wow, that’s actually really nice.
+
+Gina: Yeah, thank you.
+
+Player Character’s Dialog: Definitely getting 5 stars!
+
+Jordy: No problem, now I’ll shut up and leave you to the rest of your date.  Because we’re here!!
+
+Player Character’s Dialog: Thanks man!
+
+Gina: Above and beyond the call of duty.
+
+Jordy: No problem.  G’ Night!
+===
+
+title: AskHerAboutHerDay_B
+---
+<<setscene Dryve>>
+Player Character’s Dialog: Hey, can you tell me about your day
+
+Gina: Me?
+
+Player Character’s Dialog: Yeah
+
+Gina: Um you already asked that already
+
+<<setscene innerDate>>
+
+Player Character’s Anxiety: Wow, you seriously asked that again.
+
+Player Character’s Thoughts: I forgot… And now I feel like an idiot..
+
+Player Character’s Anxiety: I’m sure you can save this.
+
+Player Character’s Thoughts: Really?
+
+Player Character’s Anxiety: Haha, No. You are still an idiot. 
+
+[[Listen to the Story (Option not available if you made a joke about Jordy)|ListenToTheStory]]
+[[Discuss the movie|DiscussTheMovie]]
+===
+
+title: DiscussTheMovie
+---
+<<setscene Dryve>>
+Player Character’s Dialog: What did you think of the movie.
+
+Gina: It was ok.
+
+Player Character’s Dialog: Really? 
+
+Gina: What did you think?
+
+<<setscene innerDate>>
+
+Player Character’s Anxiety: Here’s your chance to relate.
+
+Player Character’s Thoughts: Great, but how should I respond?
+
+Player Character’s Anxiety: You have two choices. Do you want to be like a parrot and repeat what she said? Or do you want to form your own opinion and give an honest, well thought out answer?
+
+Player Character’s Thoughts: I feel like there should be more choices.
+
+Player Character’s Anxiety: Nope.  Only two possibilities.  In existence.  Two choices.  Pick One.
+
+[[I liked it, I think the critics were wrong.|CriticsWereWrong]]
+[[The critics were right, I don’t know how that terrible movie got made.|CriticsWereRight]]
+[[I don’t really know.|IDontKnow]]
+===
+
+title: CriticsWereWrong
+---
+<<setscene Dryve>>
+Player Character’s Dialog: I liked it. I don’t know why the critics rated it so low. 
+
+Gina: I can see why the movie got rated in the 30s.
+
+Player Character’s Dialog: But I thought you liked it.
+
+Gina: The movie was far from perfect, but I still enjoyed it.
+
+Player Character’s Dialog: But the critics were still wrong.
+
+Gina: Everyone is entitled to their opinion whether you agree or not. Not everything has to be made for everyone.
+
+Player Character’s Dialog: …
+
+Gina: …
+
+Jordy: Wise words. (delay) Also, We’re here!
+===
+
+title: CriticsWereRight
+---
+<<setscene Dryve>>
+Player Character’s Dialog: The critics were right, I don’t know how that terrible movie got made.
+
+Gina: Oh, ok.  What didn’t you like about it?
+
+Player Character’s Dialog: Umm.. The pacing was off.
+
+Gina: Ok, in what act did you think it fell apart?
+
+Player Character’s Dialog: I mean it was all off paced.
+
+Gina: Cool.
+
+Player Character’s Dialog: …
+
+Gina: …
+
+Player Character’s Dialog: It’s cool that you liked it though
+
+Gina: Is it cool that I liked it?  You said, and I quote “I don’t know how that terrible movie was made.”
+
+<<setscene innerDate>>
+
+Player Character’s Anxiety: Great now you’ve screwed yourself
+
+Player Character’s Thoughts: No, I can find a way out of this.
+
+[[It was wrong to say that.|WrongToSayThat]]
+[[Defend both statements.|DefendBoth]]
+===
+
+title: WrongToSayThat
+---
+<<setscene Dryve>>
+Player Character’s Dialog: I’m sorry, I shouldn’t have said that.  It’s ok for different people to like different things.  Just because me and bunch of other people hated something that doesn’t mean you have to too.
+
+Gina: Thanks for apologizing.
+
+Jordy: And we’re here!  Hope you two have a good night.
+
+Player Character’s Dialog: Hopefully we both enjoy dinner.
+
+$Inspiration is true
+===
+
+title: DefendBoth
+---
+<<setscene Dryve>>
+Player Character’s Dialog: The movie can both be trash AND I can have no idea how that movie could have been made.
+
+Gina: Which was trash?  Are you saying that I like trash?
+
+Player Character’s Dialog: No, I’m saying you like things that everyone thinks is trash.
+
+Jordy: Um… wow
+
+Player Character’s Dialog: And that’s ok.
+
+Gina: … Look, I’m ok with us not liking the same things and having different opinions.  But I feel like you’re more focused on your opinions being right and legitimate, and everyone else’s being wrong and ‘trash.’
+
+Player Character’s Dialog: That’s not what I meant.
+
+Jordy: Dude, You referenced Trash like 3 times in 4 sentences.
+
+Player Character’s Dialog: Not helping.
+
+Gina: I’m sure you’re a nice guy… no actually I’m not sure of that.  Dryver can you drop me off here, I’ll get another ride.
+
+Jordy: Sure.
+
+Player Character’s Dialog: No, wait…
+
+Gina: Have a nice life.
+
+[[Finish The Night|EndingAlone]]
+===
+
+title: IDontKnow
+---
+<<setscene Dryve>>
+Player Character’s Dialog: I don’t really know.  There were things I liked and things I didn’t.
+
+Gina: I respect that.  It feels like everyone needs to have an opinion on everything immediately.
+
+Player Character’s Dialog: Words like mediocre or ‘just ok’ have such a negative connotation, but I feel like both sorta fit for what we just watched.
+
+Gina: Some things in life are just mediocre, and that is ok.
+
+Jordy: And we’re here!  Hope you two have a good night.
+
+Player Character’s Dialog: Hopefully we both enjoy dinner.
+
+$Inspiration is true
+===
+
+title: Restaurant
+---
+<<setscene Restaurant>>
+Player Character’s Dialog: Here we are, this place got great reviews.
+
+Gina: Great! I’m looking forward to it. I’m heading to the bathroom.  Be right back.
+
+Player Character’s Dialog: Oh ok, see you soon.
+
+Gina: Back in a bit
+
+<<setscene innerDate>>
+
+Player Character’s Anxiety: She just bailed on you.
+
+Player Character’s Thoughts: We don’t know that.  We’ve had an okey-dokey time.
+
+Player Character’s Anxiety: Let’s not use okey-dokey… ever.
+
+Player Character’s Thoughts: Yeah, that’s probably a good call.
+
+Player Character’s Anxiety: I am surprised she waited this long to ditch you. 
+
+<<setscene Restaurant>>
+
+Rea: Hey there.  Name’s Rea.  I’ll be your server.  Can I get you something to drink?
+
+Player Character’s Dialog: Sure, can you get me a bottle of your favorite red and two waters.  My date will be back in a second.
+
+Rea: Sure cap, ya want an appetizer?
+
+Player Character’s Dialog: Sounds good, any recommendations?
+
+Rea: I love the flaming shrimp.  Couldn’t have them before, because my ex was super allergic.
+
+Player Character’s Dialog: Good thing your ex isn’t here, because I love shrimp. I’ll get an order of those.
+
+Rea: Great be back in a second.
+
+Player Character’s Dialog: Sounds good.
+
+<<setscene innerDate>>
+
+Player Character’s Anxiety: This is going too well.
+
+Player Character’s Thoughts: Yeah, because this is actually a good date.  Just with a few awkward moments
+
+Player Character’s Anxiety: Yeah, let’s go with that.
+
+<<setscene Restaurant>>
+
+Gina: I need to give you heads up about something.
+
+Player Character’s Dialog: Everything ok in the bathroom?
+
+Gina: Yeah, but that’s not it.  I was scrolling through my apps and noticed something. Rea!
+
+Rea: Oh hey, wait are you on a date with…
+
+Gina: ....
+
+Player Character’s Dialog: Yep, me.  Do you two know each other?
+
+Rea: I’m gonna go cancel that order of flaming shrimp.
+
+Player Character’s Dialog: Oh, I was looking forward to...ooohhh wait.  You two were..
+
+Gina: Yep.
+
+Rea: I’m heading back to the kitchen.
+
+Player Character’s Dialog: Should we go?
+
+Gina: No, she must have gotten a new job.  It’s ok.  I’ll ask if we can get a new server.  She’ll understand.
+
+Player Character’s Dialog: Let’s try and leave quickly and go somewhere else.  (Said as Rea slides back in)
+
+Rea: And I’m back.  With the wine, and no shrimp. So...Ready to order?
+
+<<setscene innerDate>>
+
+Player Character’s Anxiety: Time to go.
+
+Player Character’s Thoughts: Gina said that we should stay.  This’ll work out.
+
+Player Character’s Anxiety: Yeah, I don’t see why not.  I’m sure you’re going to have a great date with an ex literally watching you the whole time.
+
+Player Character’s Thoughts: Yeah..
+
+[[Trust Gina|TrustGina]]
+[[Say you’re going to leave|Leave]]
+===
+
+title: TrustGina
+---
+<<setscene Restaurant>>
+Player Character’s Dialog: I am ready to order. Gina do you want to start?
+
+Gina: Hold on! I still need another minute.
+
+Rea: I see that you’re still as indecisive as ever. 
+
+Gina: Excuse me? I fail to see how deciding what I want to eat and deciding if we should run off and get married are the same. 
+
+Player Character’s Dialog: You two were going to get married!?
+
+Gina: No! We only dated for a year and I am not ready for marriage. 
+
+Rea: A year is more than enough time to know if you want to spend the rest of your life with someone. 
+
+<<setscene innerDate>>
+Player Character’s Anxiety: What have you gotten yourself into? 
+
+Player Character’s Thoughts: A totally normal date… where my date’s ex feels burned about a denied marriage proposal.
+
+Player Character’s Anxiety: Yeah. Very normal.  A first date is a GREAT place to be discussing marriage and exes.
+
+Player Character’s Thoughts: We can make this work.. I think.
+
+Player Character’s Anxiety: Go ahead, weigh in on whether your date made a mistake in denying their exes marriage proposal.
+
+<<setscene Restaurant>>
+
+[[Gina was justified|Justified]]
+[[Rea's Got a Point|ReaRight]]
+[[I have made a huge mistake|MistakeRestaurant]]
+[[We should go|WeShouldGo]]
+
+<<setscene Restaurant>>
+===
+
+title: ReaRight
+---
+<<setscene Restaurant>>
+Player Character’s Dialog: She has a point. A year is a long time to spend with someone in a relationship. 
+
+Rea: See!  He feels the same way. I will let you two have a minute. 
+
+(Rea walks off)
+
+Gina: What are you doing? 
+
+Player Character’s Dialog: I’m hungry. I told her what she wanted to hear to get her to leave. 
+
+Gina: So you don’t actually believe that a year is too long to decide? 
+
+Player Character’s Dialog: How am I supposed to know the answer? I have to date a girl for more than a year first. 
+
+(Gina laughs)
+
+Gina: You have a point. Lucky for you it won’t take me that long to figure out what to order.
+
+Player Character’s Dialog: If you take a year to decide what to eat then wouldn’t this date last a year, therefore, we would have been dating for a year.
+
+Gina: You’re annoying. But in a good way. So unlucky for you I know what I want. 
+===
+
+title: MistakeRestaurant
+---
+<<setscene Restaurant>>
+(Looks around for the exit while Rea and Gina start to argue). (The argument should continue and continue while the camera slowly zooms in on the main players face.)
+
+Gina: A year isn’t enough time to decide if should spend your life with someone! Rom coms and reality tv has warped your perception of relationships.
+
+Rea: My uncle Carl proposed to his wife after two weeks when he was eighteen and has been happily married ever since!
+
+Gina: This is insane. I’m on a date. I don’t need this from you right now. 
+
+Rea: Gina, you are telling me that you need more time to figure out if you want to be with someone forever. But you’re instantly dating again after we broke up. 
+
+Gina: We broke up SIX MONTHS AGO! It is just a date. I’m not getting married.
+
+Rea: It sounds like you don’t ever want to get married.
+
+Gina: That’s not your concern. My life is none of your business.  This is why I blocked you online.
+
+Rea: You never blocked Janice.
+
+Gina: YOU HAVE JANICE SPYING ON ME!?
+
+Rea: No, she just logged into Facestory on my laptop last year and I’ve been using her account. 
+
+Gina: You do what!? I’m texting Janice to change her password. 
+
+Rea: No!!!! She can’t know I was using her account. 
+
+Gina: This is unbelievable. I’m done! (Gina walks out while still zoomed in on the characters face)
+
+(Camera zooms back out)
+
+Player Character’s Dialog: I’ll have the shrimp tacos, please. 
+<<if visited("ListenToTheStory) is true>>
+    [[Finish The Night|EndingJordy]]
+<<else>>
+    [[Finish The Night|EndingAlone]]
+<<endif>>
+===
+
+title: Justified
+---
+<<setscene Restaurant>>
+Player Character’s Dialog: Gina, I think you are completely justified in believing that a year is not enough time. My parents separated when I was a kid and I don’t want to live through that again. 
+
+Gina: Right!  Rea, could you give us a minute to decide what we want to eat.  I’m sure there are some other tables you’ve left waiting.
+
+(These two choices then lead into the same conversation)
+
+Rea: Wow. You all are made for each other.  (Walks away)
+
+Gina: Thanks for backing me up.  Also, I’m sorry about your parents.  That’s rough.
+
+Player Character’s Dialog: No problem and you don’t have to be sorry.  I’m way past over it.  Are you a two Christmas kid too?
+
+Gina: Nope.  They are happily terrible together.  They were made to torment each other.  I feel bad for thinking this, but I almost wish they would get divorced so I’d be less worried about getting a call from one to help bury the other.
+
+Player Character’s Dialog: Yikes and Yikes.
+
+Gina: Right! 
+
+[[Finish the Night|EndingSecondDate]]
+===
+
+title: WeShouldGo
+---
+<<setscene Restaurant>>
+Player Character’s Dialog: Gina, I think we should just get dinner somewhere else. 
+
+Gina: Hold on, I’m not going to let an evil ex keep me from enjoying myself.
+
+Rea: Evil Ex?
+
+Gina: And I hope someone I just started dating would be willing to respect my feelings more than their fear of an awkward conversation.
+
+Player Character’s Dialog: Ouch
+
+Rea: Yikes!
+
+Gina: I need a minute to order, it would be nice to do that without commentary, Rea.
+
+Player Character’s Dialog: Same.
+
+Rea: Don’t worry, I was just about to head to a less dramatic table.
+
+(Rea leaves)
+
+Gina: Look, I know this is a little uncomfortable.  But I need you to trust that I can take care of myself and I’m being honest when I say I’m ok with a situation.
+
+<<setscene innerDate>>
+
+Player’s Anxiety: Wow, She’s guilting you for feeling concerned about her.
+
+Player’s Thoughts: I wasn’t being very thoughtful, but this is uncomfortable for me too.
+
+Player’s Anxiety: She’s too wrapped up in her feeling to even notice others.
+
+Player’s Thoughts: I don’t know, maybe? 
+
+<<setscene innerDate>>
+
+Player Character’s Dialog: I'm sorry.  I guess I’m a little too wrapped up in my own nervousness that I wasn’t really thinking about what you’re going through.
+
+Gina: Oh, well thank you for apologizing.
+
+Player Character’s Dialog: Not done yet. I get that you want to stay in this uncomfortable situation, but maybe I don’t.  And you’re ignoring that.  And that doesn't seem fair either.
+
+Gina: hmmm
+
+Player Character’s Dialog: yeah...
+[[Finish the Night|EndingSecondDate]]
+===
+
+title: EndingSecondDate
+---
+Player Character’s Dialog: I really enjoyed that, in spite of all the awkwardness!
+
+Gina: Actually, me too!
+
+Player Character’s Dialog: Maybe first dates are supposed to be like that.
+
+Gina: Like what?
+
+Player Character’s Dialog: Full of awkward moments.  We’re both dealing with the anxiety and the promise of something new.
+
+Gina: Yeah, it’s a little terrifying but I’m glad we did it.
+
+Player Character’s Dialog: Yeah, me too!
+
+Gina: Maybe we could have a second first date in a week?
+
+Player Character’s Dialog: That might be a good idea, and there's less pressure.
+
+Gina: Yeah, It couldn't get much worse.
+===
+
+title: EndingJordy
+---
+Jordy: So I take it that didn’t work out
+
+Player Character’s Dialog: Of course not.  We weren’t compatible.  Or I wasn’t ready.  Or I wasn’t worth it.  I don’t know.
+
+Jordy: Well which one is it?
+
+[[We Weren’t Compatible|EndingJordy_Continued]]
+[[I Wasn’t Ready|EndingJordy_Continued]]
+[[I’m Not Worth it|EndingJordy_Continued]]
+===
+
+title: EndingJordy_Continued
+---
+Jordy: I’ll tell you, that’s all crap you’re telling yourself.  You were nice to the rideshare guy while simultaneously trying to have a date yourself.
+
+Player Character’s Dialog: Yeah, but didn’t get a second date…
+
+Jordy: But you will.  You will get a second date with someone.. eventually.
+
+Player Character’s Dialog: Thanks, I needed to hear that.
+
+Jordy: I can tell you’re a nice guy, you just had a bad night.
+
+Player Character’s Dialog: I think I could use some time to spend on myself before I try this again.
+===
+
+title: EndingAlone
+---
+Player Character’s Anxiety: Great job.  You nailed it!
+
+Player Character’s Thoughts: Shut up.
+
+Player Character’s Anxiety: You found a way to fail out of this date too.  How many has it been?
+
+Player Character’s Thoughts: Too many, I’m well aware.
+
+Player Character’s Anxiety: I toast to many more.  At least you’ve got me.  Always there to remind you how much of a stud you are.
+
+Player Character’s Thoughts: I think that’s the problem.
+
+Player Character’s Anxiety: What?
+
+Player Character’s Thoughts: I was more focused on how nervous I was than how nervous they were.  They were probably dealing with the same thing. I was too caught up in my own anxiety to focus on having a good date.
+
+Player Character’s Anxiety: Yeah, but not as much as a failure as you…
+
+Player Character’s Thoughts: Maybe, Maybe Not.  I don’t know that, and you don’t either.  
+
+Player Character’s Anxiety: But you know you failed.
+
+Player Character’s Thoughts: But what’s succeeding?  I think going on a bad date might mean I just avoided a bad relationship.
+
+Player Character’s Anxiety: Relationship??? When was the last time you went on a second date?
+
+Player Character’s Thoughts: I need confidence.  And I won’t have any confidence if I stay in this toxic relationship with you.
+
+Player Character’s Anxiety: Here’s the truth.  You wouldn’t date yourself.  You’ve spent this entire night arguing with and ridiculing yourself.  No one would find that appealing.  Until you make peace with that, you’re going to be single.
+
+Player Character’s Thoughts: Maybe, maybe not.
+
+Player Character’s Anxiety: Whether you think it’s true, or you think it’s a lie - you’re right. 
+===
+END GAME

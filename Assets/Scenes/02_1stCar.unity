@@ -333,111 +333,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1076533895}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1038502572
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1038502575}
-  - component: {fileID: 1038502574}
-  - component: {fileID: 1038502573}
-  - component: {fileID: 1038502576}
-  m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!81 &1038502573
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1038502572}
-  m_Enabled: 1
---- !u!20 &1038502574
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1038502572}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 1
-  orthographic size: 10.8
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!4 &1038502575
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1038502572}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1038502576
+--- !u!114 &1038502576 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 2146323475663950386, guid: 641d8518d5fa7eb4890b695feb6cd638,
+    type: 3}
+  m_PrefabInstance: {fileID: 2146323476031363202}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1038502572}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 362cd50d7ffbfa943b4fd1ab7969b275, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionTime: 2
-  brainScene: {fileID: 274825757}
-  brainSceneCube: {fileID: 875215880}
-  enableBrainScene: 0
-  zoomIn: 1
-  startZoom: 0
-  brainSceneTransitionFadeStart: 0
-  smoothTime: 0.3
-  yVelocity: 0.3
 --- !u!1001 &1040187519
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -905,6 +812,85 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2146323476031363202
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2146323475663950382, guid: 641d8518d5fa7eb4890b695feb6cd638,
+        type: 3}
+      propertyPath: m_Name
+      value: Main Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 2146323475663950381, guid: 641d8518d5fa7eb4890b695feb6cd638,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2146323475663950381, guid: 641d8518d5fa7eb4890b695feb6cd638,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2146323475663950381, guid: 641d8518d5fa7eb4890b695feb6cd638,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2146323475663950381, guid: 641d8518d5fa7eb4890b695feb6cd638,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2146323475663950381, guid: 641d8518d5fa7eb4890b695feb6cd638,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2146323475663950381, guid: 641d8518d5fa7eb4890b695feb6cd638,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2146323475663950381, guid: 641d8518d5fa7eb4890b695feb6cd638,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2146323475663950381, guid: 641d8518d5fa7eb4890b695feb6cd638,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2146323475663950381, guid: 641d8518d5fa7eb4890b695feb6cd638,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2146323475663950381, guid: 641d8518d5fa7eb4890b695feb6cd638,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2146323475663950381, guid: 641d8518d5fa7eb4890b695feb6cd638,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2146323475663950386, guid: 641d8518d5fa7eb4890b695feb6cd638,
+        type: 3}
+      propertyPath: brainScene
+      value: 
+      objectReference: {fileID: 274825757}
+    - target: {fileID: 2146323475663950386, guid: 641d8518d5fa7eb4890b695feb6cd638,
+        type: 3}
+      propertyPath: brainSceneCube
+      value: 
+      objectReference: {fileID: 875215880}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 641d8518d5fa7eb4890b695feb6cd638, type: 3}
 --- !u!1001 &4921888666578402220
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1052,6 +1038,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueManager
       objectReference: {fileID: 0}
+    - target: {fileID: 6342058791218613600, guid: 0b27a32d1158aae42ad9ee2969dadf91,
+        type: 3}
+      propertyPath: optionButtons.Array.data[0]
+      value: 
+      objectReference: {fileID: 80447413}
+    - target: {fileID: 6342058791218613600, guid: 0b27a32d1158aae42ad9ee2969dadf91,
+        type: 3}
+      propertyPath: optionButtons.Array.data[1]
+      value: 
+      objectReference: {fileID: 1099178484}
+    - target: {fileID: 6342058791218613600, guid: 0b27a32d1158aae42ad9ee2969dadf91,
+        type: 3}
+      propertyPath: optionButtons.Array.data[2]
+      value: 
+      objectReference: {fileID: 550677435}
+    - target: {fileID: 6342058791218613600, guid: 0b27a32d1158aae42ad9ee2969dadf91,
+        type: 3}
+      propertyPath: optionButtons.Array.data[3]
+      value: 
+      objectReference: {fileID: 1217865008}
+    - target: {fileID: 6342058791218613600, guid: 0b27a32d1158aae42ad9ee2969dadf91,
+        type: 3}
+      propertyPath: dialoguePanelController
+      value: 
+      objectReference: {fileID: 351506528}
+    - target: {fileID: 6342058791218613600, guid: 0b27a32d1158aae42ad9ee2969dadf91,
+        type: 3}
+      propertyPath: cameraTransition
+      value: 
+      objectReference: {fileID: 1038502576}
     - target: {fileID: 6342058791218613631, guid: 0b27a32d1158aae42ad9ee2969dadf91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1107,44 +1123,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6342058791218613600, guid: 0b27a32d1158aae42ad9ee2969dadf91,
-        type: 3}
-      propertyPath: optionButtons.Array.data[0]
-      value: 
-      objectReference: {fileID: 80447413}
-    - target: {fileID: 6342058791218613600, guid: 0b27a32d1158aae42ad9ee2969dadf91,
-        type: 3}
-      propertyPath: optionButtons.Array.data[1]
-      value: 
-      objectReference: {fileID: 1099178484}
-    - target: {fileID: 6342058791218613600, guid: 0b27a32d1158aae42ad9ee2969dadf91,
-        type: 3}
-      propertyPath: optionButtons.Array.data[2]
-      value: 
-      objectReference: {fileID: 550677435}
-    - target: {fileID: 6342058791218613600, guid: 0b27a32d1158aae42ad9ee2969dadf91,
-        type: 3}
-      propertyPath: optionButtons.Array.data[3]
-      value: 
-      objectReference: {fileID: 1217865008}
-    - target: {fileID: 6342058791218613600, guid: 0b27a32d1158aae42ad9ee2969dadf91,
-        type: 3}
-      propertyPath: dialoguePanelController
-      value: 
-      objectReference: {fileID: 351506528}
-    - target: {fileID: 6342058791218613600, guid: 0b27a32d1158aae42ad9ee2969dadf91,
-        type: 3}
-      propertyPath: cameraTransition
-      value: 
-      objectReference: {fileID: 1038502576}
     - target: {fileID: 152393893, guid: 0b27a32d1158aae42ad9ee2969dadf91, type: 3}
       propertyPath: dialoguePanelController
       value: 
       objectReference: {fileID: 351506528}
-    - target: {fileID: 6342058791218613601, guid: 0b27a32d1158aae42ad9ee2969dadf91,
-        type: 3}
-      propertyPath: sourceText.Array.data[0]
-      value: 
-      objectReference: {fileID: 4900000, guid: 46d00c240daca4525a5ce5387e5a8f04, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b27a32d1158aae42ad9ee2969dadf91, type: 3}

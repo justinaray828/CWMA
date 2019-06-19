@@ -69,6 +69,7 @@ title: PlayItCool
 
 title: MakeAJoke
 ---
+<<setscene Dryve>>
 <<set $speaker to "Player Character">> Hey, I’ve got a joke!
 
 <<set $speaker to "Gina">> Great!  We still have 6 minutes left to kill. 

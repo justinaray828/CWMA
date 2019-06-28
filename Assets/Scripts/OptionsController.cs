@@ -31,21 +31,27 @@ public class OptionsController : MonoBehaviour {
     {
         masterVolumeSlider.minValue = -80f;
         masterVolumeSlider.maxValue = 0f;
+        musicVolumeSlider.minValue = 0f;
+        musicVolumeSlider.maxValue = 1f;
 
         OptionData data = SaveSystem.LoadOptionData();
+
         if (data != null)
         {
-            Debug.Log("setting saved data values");
             masterVolumeSlider.value = data.masterVolume;
+            masterVolumeValue = data.masterVolume;
+
             fxVolumeSlider.value = data.fxVolume;
+            fxVolumeValue = data.fxVolume;
+
             musicVolumeSlider.value = data.musicVolume;
+            musicVolumeValue = data.musicVolume;
         }
         else
         {
-            Debug.Log("setting default option values");
             masterVolumeSlider.value = 0f;
-            fxVolumeSlider.value = 1;
-            musicVolumeSlider.value = 1;
+            fxVolumeSlider.value = 1f;
+            musicVolumeSlider.value = 1f;
         }
 
         masterVolumeSlider.onValueChanged.AddListener(delegate { UpdateValues(); });

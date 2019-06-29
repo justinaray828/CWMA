@@ -153,21 +153,36 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
         Debug.Log("Command: " + command.text);
         string InnerDateScene = "setscene innerDate";
 
-        if (command.text.Equals(InnerDateScene))
+        switch (command.text)
         {
-            cameraTransition.ZoomIn();
-            inBrainRoom = true;
-        }
-        else
-        {
-            cameraTransition.ZoomOut();
-            inBrainRoom = false;
+            case "setscene innerDate":
+                cameraTransition.ZoomIn();
+                inBrainRoom = true;
+                break;
+            case "setScene nextScene":
+                sceneHandler.LoadNextScene();
+                break;
+            default:
+                cameraTransition.ZoomOut();
+                inBrainRoom = false;
+                break;
         }
 
-        if(command.text.Equals("setScene nextScene"))
-        {
-            sceneHandler.LoadNextScene();
-        }
+        //if (command.text.Equals(InnerDateScene))
+        //{
+        //    cameraTransition.ZoomIn();
+        //    inBrainRoom = true;
+        //}
+        //else
+        //{
+        //    cameraTransition.ZoomOut();
+        //    inBrainRoom = false;
+        //}
+
+        //if(command.text.Equals("setScene nextScene"))
+        //{
+        //    sceneHandler.LoadNextScene();
+        //}
 
         yield break;
     }

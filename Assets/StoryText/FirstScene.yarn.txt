@@ -65,6 +65,7 @@ title: PlayItCool
 <<set $speaker to "Player Character">> Maybe it will be so bad it’s good?  
 
 <<set $speaker to "Jordy">> And We’re Here! I hope that you are in the 30 percent of people with incorrect err… ‘unique’ opinions!  Remember to tip!
+<<setScene nextScene>>
 ===
 
 title: MakeAJoke
@@ -105,10 +106,12 @@ title: MakeAJoke
 (Awkward back and forth stare down between Jordy and Player)
 
 <<set $speaker to "Jordy">> Get out...
+<<setscene nextScene>>
 ===
 
 title: Escape
 ---
+<<setscene Dryve>>
 <<set $speaker to "Player Character">> *Tries to unlock door*
 
 <<set $speaker to "Gina">> Ummm are you trying to open the door while we’re in a moving car?
@@ -137,6 +140,7 @@ title: Escape
 
 title: PlayItCool_B
 ---
+<<setscene Dryver>>
 <<set $speaker to "Player Character">> It’s alright, Cool people don’t arrive early.
 
 <<set $speaker to "Gina">> I’m less concerned about being cool than missing the beginning of the damn movie.
@@ -152,6 +156,7 @@ title: PlayItCool_B
 <<set $speaker to "Gina">> Could you not!!!!
 
 <<set $speaker to "Jordy">> … Arrives at their destination on time!  We’re here!  
+<<setscene nextScene>>
 ===
 
 title: AskHerAboutHerDay
@@ -235,4 +240,5 @@ title: Sneak
 <<set $speaker to "Player Character">> How far are we from...
 
 <<set $speaker to "Jordy">> And we’re here!!!  Hope y’all enjoy the movie!
+<<setscene nextScene>>
 ===

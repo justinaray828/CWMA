@@ -23,7 +23,11 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
 
     public CameraTransition cameraTransition;
 
+    public SceneHandler sceneHandler;
+
     private Yarn.OptionChooser SetSelectedOption;
+
+    private bool inBrainRoom = false;
 
     private void Awake()
     {
@@ -35,7 +39,7 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
         bool speedInput = false;
         bool firstInput = true;
 
-        while (SceneHandler.currentScene == SceneHandler.Scene.BRAINROOM && !cameraTransition.isCameraZoomedIn())
+        while (inBrainRoom && !cameraTransition.isCameraZoomedIn())
         {
             dialoguePanelController.dialogueText.gameObject.SetActive(false);
             dialoguePanelController.nameText.gameObject.SetActive(false);
@@ -152,12 +156,17 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
         if (command.text.Equals(InnerDateScene))
         {
             cameraTransition.ZoomIn();
-            SceneHandler.currentScene = SceneHandler.Scene.BRAINROOM;
+            inBrainRoom = true;
         }
         else
         {
             cameraTransition.ZoomOut();
-            SceneHandler.currentScene = SceneHandler.Scene.CAR;
+            inBrainRoom = false;
+        }
+
+        if(command.text.Equals("setscene nextScene"))
+        {
+            sceneHandler.LoadNextScene();
         }
 
         yield break;

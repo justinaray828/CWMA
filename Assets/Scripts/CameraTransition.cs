@@ -5,7 +5,8 @@
 /// the main character. Use TransitionTime to set how long in seconds the transistion will take place.
 ///
 /// To Call the transistion call ZoomIn() or ZoomOut()
-///
+/// 
+/// ToggleBrainRoomCut() will cut between brainroom and scene
 /// </summary>
 [RequireComponent(typeof(Camera))]
 public class CameraTransition : MonoBehaviour
@@ -14,32 +15,33 @@ public class CameraTransition : MonoBehaviour
     public float transitionTime = 2f;
 
     [Header("Needed Brain Scene GameObjects")]
+    [Tooltip("Found under GameManager")]
     public GameObject brainScene;
-
+    [Tooltip("Found under BrainScene")]
+    public GameObject brainCameraCut;
+    [Tooltip("Found under Main Character")]
     public GameObject brainSceneCube;
-    public bool enableBrainScene;
 
-    // Serialized for testing purposes
-    public bool zoomIn = true;
-
-    public bool startZoom = false;
-
+    //private bool enableBrainScene;
+    private bool zoomIn = true;
+    private bool startZoom = false;
     private bool cameraIsZoomedIn = false;
+    private bool turnCameraOn = false; //Used for ToggleBrainRoomCut()
 
     private Camera mainCamera;
-
-    //Camera starting values
+    
     private float cameraStartSize = 10.8f;
+    private float cameraZoomInSize = 2.66f;
+    private float zoomTolerance = .01f; //Needed to account for how far Lerp is off
+    private float smoothTime = 0.3f;
+    private float yVelocity = 0.3f;
+    private float cameraStatPositionX = 0;
+    private float cameraStatPositionY = 0;
+    private float cameraStatPositionZ = -10;
 
     private Vector3 cameraStartPosition;
-
-    //Zoom in camera target values
-    private float cameraZoomInSize = 2.66f;
-
     private Vector3 cameraZoomPosition;
 
-    private float zoomTolerance = .01f; //Needed to account for how far Lerp is off
-    public float brainSceneTransitionFadeStart;
 
     private void Start()
     {
@@ -52,7 +54,7 @@ public class CameraTransition : MonoBehaviour
     /// </summary>
     private void SetCameraPositions()
     {
-        cameraStartPosition = new Vector3(0f, 0f, -10f);
+        cameraStartPosition = new Vector3(cameraStatPositionX, cameraStatPositionY, cameraStatPositionZ);
         cameraZoomPosition = new Vector3(brainSceneCube.transform.position.x,
                                          brainSceneCube.transform.position.y,
                                          cameraStartPosition.z);
@@ -80,7 +82,8 @@ public class CameraTransition : MonoBehaviour
 
     private void Update()
     {
-        CameraZoom();
+        if (!turnCameraOn) //Check if camera is currently cut to brainroom
+            CameraZoom();
     }
 
     /// <summary>
@@ -90,10 +93,8 @@ public class CameraTransition : MonoBehaviour
     {
         if (startZoom)
         {
-            ZoomCamera();
-            MoveCamera();
+            MoveAndZoomCamera();
             CameraStateUpdate();
-            if (mainCamera.orthographicSize <= brainSceneTransitionFadeStart) ;
         }
 
         EnableBrainScene();
@@ -102,35 +103,17 @@ public class CameraTransition : MonoBehaviour
     /// <summary>
     /// Moves the position of the camera into required place
     /// </summary>
-    private void MoveCamera()
+    private void MoveAndZoomCamera()
     {
         if (zoomIn)
         {
             mainCamera.transform.position = Vector3.Lerp(mainCamera.transform.position, cameraZoomPosition, transitionTime * Time.deltaTime);
+            mainCamera.orthographicSize = Mathf.Lerp(mainCamera.orthographicSize, cameraZoomInSize, transitionTime * Time.deltaTime);
         }
-        else
+        else //Zoomout
         {
             mainCamera.transform.position = Vector3.Lerp(mainCamera.transform.position, cameraStartPosition, transitionTime * Time.deltaTime);
-        }
-    }
-
-    public float smoothTime = 0.3f;
-    public float yVelocity = 0.3f;
-
-    /// <summary>
-    /// Adjust camera size to zoom in or out
-    /// </summary>
-    private void ZoomCamera()
-    {
-        if (zoomIn)
-        {
-            mainCamera.orthographicSize = Mathf.Lerp(mainCamera.orthographicSize, cameraZoomInSize, transitionTime * Time.deltaTime);
-            //mainCamera.orthographicSize = Mathf.SmoothDamp(mainCamera.orthographicSize, cameraZoomInSize, ref yVelocity, smoothTime);
-        }
-        else
-        {
             mainCamera.orthographicSize = Mathf.Lerp(mainCamera.orthographicSize, cameraStartSize, transitionTime * Time.deltaTime);
-            //mainCamera.orthographicSize = Mathf.SmoothDamp(mainCamera.orthographicSize, cameraStartSize, ref yVelocity, smoothTime);
         }
     }
 
@@ -145,8 +128,6 @@ public class CameraTransition : MonoBehaviour
             {
                 cameraIsZoomedIn = true;
                 startZoom = false;
-                //orthographicSize = cameraZoomInSize;
-                //mainCamera.transform.position = cameraZoomPosition;
             }
         }
         else
@@ -156,10 +137,10 @@ public class CameraTransition : MonoBehaviour
             if (mainCamera.orthographicSize >= cameraStartSize - zoomTolerance)
             {
                 startZoom = false;
-                //mainCamera.orthographicSize = cameraStartSize;
-                //mainCamera.transform.position = cameraStartPosition;
             }
         }
+
+        
     }
 
     /// <summary>
@@ -168,16 +149,20 @@ public class CameraTransition : MonoBehaviour
     /// </summary>
     private void EnableBrainScene()
     {
-        if (cameraIsZoomedIn || enableBrainScene)
-        {
-            brainScene.SetActive(true);
-            brainSceneCube.SetActive(true);
-        }
-        else
-        {
-            brainScene.SetActive(false);
-            brainSceneCube.SetActive(false);
-        }
+        bool cameraStatus = (cameraIsZoomedIn) ? true : false;
+        brainScene.SetActive(cameraStatus);
+        brainSceneCube.SetActive(cameraStatus);
+    }
+
+    /// <summary>
+    /// Toggle between brainroom cut and scene
+    /// </summary>
+    public void ToggleBrainRoomCut()
+    {
+        turnCameraOn = !turnCameraOn;
+        brainScene.SetActive(turnCameraOn);
+        brainCameraCut.SetActive(turnCameraOn);
+        brainSceneCube.SetActive(!turnCameraOn);
     }
 
     public bool isCameraZoomedIn()

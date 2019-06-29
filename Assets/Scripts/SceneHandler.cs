@@ -7,14 +7,6 @@ public class SceneHandler : MonoBehaviour
     [SerializeField] private int MainMenuSceneIndex = 0;
     public static Scene currentScene { get; set; }
 
-    public enum Scene
-    {
-        MAINMENU,
-        OPTIONS,
-        CAR,
-        BRAINROOM
-    }
-
     private void Start()
     {
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;

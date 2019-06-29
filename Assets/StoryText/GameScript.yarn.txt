@@ -53,6 +53,7 @@ Gina: Why did you pick this movie again?
 Player Character’s Dialog: Maybe it will be so bad it’s good?  
 
 Jordy: And We’re Here! I hope that you are in the 30 percent of people with incorrect err… ‘unique’ opinions!  Remember to tip!
+<<setscene Theater>>
 ===
 
 title: MakeAJoke
@@ -93,6 +94,7 @@ Player Character’s Dialog: Turn left here
 (Awkward back and forth stare down between Jordy and Player)
 
 Jordy: Get out...
+<<setscene Theater>>
 ===
 
 title: Escape
@@ -140,7 +142,8 @@ Jordy: That’s a good point, I’m going to start using that when I spoil thing
 
 Gina: Could you not!!!!
 
-Jordy: … Arrives at their destination on time!  We’re here!  
+Jordy: … Arrives at their destination on time!  We’re here! 
+<<setscene Theater>>
 ===
 
 title: AskHerAboutHerDay
@@ -196,6 +199,7 @@ Gina: I’ll figure out a way to handle it Monday morning
 Jordy: And we’re here!!!  Hope y’all enjoy the movie!
 
 $Inspiration is true
+<<setscene Theater>>
 ===
 
 title: Sneak
@@ -226,11 +230,11 @@ Jordy: You’d be justified with Gel pens.
 Player Character’s Dialog: How far are we from...
 
 Jordy: And we’re here!!!  Hope y’all enjoy the movie!
+<<setscene Theater>>
 ===
 
 title: Theater
 ---
-<<setscene Theater>>
 Player Character’s Dialog: Finally, we made it!
 
 Gina: I feel like we could have walked here faster.

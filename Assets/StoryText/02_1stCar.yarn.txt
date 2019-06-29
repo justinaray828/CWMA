@@ -70,6 +70,7 @@ Rotten Potatoes says this movie is certified trash.
 I hope that you are in the 30 percent of people with incorrect err… ‘unique’ opinions! 
 Remember to tip!
 5 Star Ride Times, 5 Star Ratings!
+<<setScene nextScene>>
 ===
 
 title: MakeAJoke
@@ -114,6 +115,7 @@ Nobody tells me what to do.
 (Awkward back and forth stare down between Jordy and Player)
 
 <<set $speaker to "Jordy">> Get out...
+<<setScene nextScene>>
 ===
 
 title: Escape
@@ -160,7 +162,8 @@ title: PlayItCool_B
 
 <<set $speaker to "Gina">> Could you not!!!!
 
-<<set $speaker to "Jordy">> … Arrives at their destination on time!  We’re here!  
+<<set $speaker to "Jordy">> … Arrives at their destination on time!  We’re here!
+<<setScene nextScene>>  
 ===
 
 title: AskHerAboutHerDay
@@ -215,6 +218,7 @@ title: ThatSoundsRough
 <<set $speaker to "Jordy">> And we’re here!!!  Hope y’all enjoy the movie!
 
 $inspiraton is true
+<<setScene nextScene>>
 ===
 
 title: Sneak
@@ -244,4 +248,5 @@ title: Sneak
 <<set $speaker to "Player Character">> How far are we from...
 
 <<set $speaker to "Jordy">> And we’re here!!!  Hope y’all enjoy the movie!
+<<setScene nextScene>>
 ===

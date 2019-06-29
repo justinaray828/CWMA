@@ -120,6 +120,7 @@ Nobody tells me what to do.
 
 title: Escape
 ---
+<<setscene Dryve>>
 <<set $speaker to "Player Character">> *Tries to unlock door*
 
 <<set $speaker to "Gina">> Ummm, are you trying to open the door while we’re in a moving car?

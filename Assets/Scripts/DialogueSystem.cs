@@ -164,7 +164,7 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
             inBrainRoom = false;
         }
 
-        if(command.text.Equals("setscene nextScene"))
+        if(command.text.Equals("setScene nextScene"))
         {
             sceneHandler.LoadNextScene();
         }

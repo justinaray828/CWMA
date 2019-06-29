@@ -1,5 +1,20 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &2067236814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3269315598440971576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aa251f6dd702164a914daf76f81ea76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialoguePanelRectTransform: {fileID: 3269315598440971575}
+  nameText: {fileID: 3269315598388950622}
+  dialogueText: {fileID: 3269315600042501286}
 --- !u!1 &3269315599569946860
 GameObject:
   m_ObjectHideFlags: 0
@@ -495,6 +510,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4921888665969823900, guid: 135f5271ed3a47442b13d906c8411010,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 479
+      objectReference: {fileID: 0}
+    - target: {fileID: 4921888665969823901, guid: 135f5271ed3a47442b13d906c8411010,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Player Character''s Anxiety:'
+      objectReference: {fileID: 0}
     - target: {fileID: 80447413, guid: 135f5271ed3a47442b13d906c8411010, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -511,7 +536,8 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 3269315599032571071}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 351506528, guid: 135f5271ed3a47442b13d906c8411010, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 135f5271ed3a47442b13d906c8411010, type: 3}
 --- !u!224 &3269315600030981407 stripped
 RectTransform:
@@ -519,16 +545,40 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 7570830923935704771}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7570830924263814819 stripped
+--- !u!1 &3269315598440971576 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4921888665917807611, guid: 135f5271ed3a47442b13d906c8411010,
+    type: 3}
+  m_PrefabInstance: {fileID: 7570830923935704771}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &3269315598440971575 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4921888665917807604, guid: 135f5271ed3a47442b13d906c8411010,
+    type: 3}
+  m_PrefabInstance: {fileID: 7570830923935704771}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3269315598388950622 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 351506528, guid: 135f5271ed3a47442b13d906c8411010,
+  m_CorrespondingSourceObject: {fileID: 4921888665969823901, guid: 135f5271ed3a47442b13d906c8411010,
     type: 3}
   m_PrefabInstance: {fileID: 7570830923935704771}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3aa251f6dd702164a914daf76f81ea76, type: 3}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3269315600042501286 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4921888667537490533, guid: 135f5271ed3a47442b13d906c8411010,
+    type: 3}
+  m_PrefabInstance: {fileID: 7570830923935704771}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &7570830923997995382 stripped
@@ -646,6 +696,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6342058791218613630, guid: 0b27a32d1158aae42ad9ee2969dadf91,
+        type: 3}
+      propertyPath: dialoguePanelController
+      value: 
+      objectReference: {fileID: 2067236814}
+    - target: {fileID: 6342058791218613601, guid: 0b27a32d1158aae42ad9ee2969dadf91,
+        type: 3}
+      propertyPath: sourceText.Array.data[0]
+      value: 
+      objectReference: {fileID: 4900000, guid: 18a2d051f62af1d4cb71102b6c8835f4, type: 3}
+    - target: {fileID: 6342058791218613600, guid: 0b27a32d1158aae42ad9ee2969dadf91,
+        type: 3}
+      propertyPath: dialogueContainer
+      value: 
+      objectReference: {fileID: 3269315598440971576}
     - target: {fileID: 6342058791218613600, guid: 0b27a32d1158aae42ad9ee2969dadf91,
         type: 3}
       propertyPath: optionButtons.Array.data[0]
@@ -670,7 +735,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialoguePanelController
       value: 
-      objectReference: {fileID: 7570830924263814819}
+      objectReference: {fileID: 2067236814}
     - target: {fileID: 6342058791218613600, guid: 0b27a32d1158aae42ad9ee2969dadf91,
         type: 3}
       propertyPath: cameraTransition
@@ -684,7 +749,7 @@ PrefabInstance:
     - target: {fileID: 152393893, guid: 0b27a32d1158aae42ad9ee2969dadf91, type: 3}
       propertyPath: dialoguePanelController
       value: 
-      objectReference: {fileID: 7570830924263814819}
+      objectReference: {fileID: 2067236814}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b27a32d1158aae42ad9ee2969dadf91, type: 3}
 --- !u!4 &3269315599032571040 stripped

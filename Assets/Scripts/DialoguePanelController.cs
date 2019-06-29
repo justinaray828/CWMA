@@ -11,8 +11,8 @@ public class DialoguePanelController : MonoBehaviour
     public Text nameText;
     public Text dialogueText;
 
-    public float smoothTime = 0.3f;
-    public float yVelocity = 0.3f;
+    private float smoothTime = 0.3f;
+    private float yVelocity = 0.3f;
 
     private float highestPanelLocation = 74f;
     private float lowestPanelLocation = -90f;

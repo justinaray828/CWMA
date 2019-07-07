@@ -373,7 +373,8 @@ PrefabInstance:
       propertyPath: brainCameraCut
       value: 
       objectReference: {fileID: 106347764638230936}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2146323475663950383, guid: 641d8518d5fa7eb4890b695feb6cd638, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 641d8518d5fa7eb4890b695feb6cd638, type: 3}
 --- !u!4 &3269315598130190272 stripped
 Transform:
@@ -515,11 +516,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 479
       objectReference: {fileID: 0}
-    - target: {fileID: 4921888665969823901, guid: 135f5271ed3a47442b13d906c8411010,
-        type: 3}
-      propertyPath: m_Text
-      value: 'Player Character''s Anxiety:'
-      objectReference: {fileID: 0}
     - target: {fileID: 80447413, guid: 135f5271ed3a47442b13d906c8411010, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -536,8 +532,12 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 3269315599032571071}
-    m_RemovedComponents:
-    - {fileID: 351506528, guid: 135f5271ed3a47442b13d906c8411010, type: 3}
+    - target: {fileID: 4921888665969823901, guid: 135f5271ed3a47442b13d906c8411010,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Player Character''s Anxiety:'
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 135f5271ed3a47442b13d906c8411010, type: 3}
 --- !u!224 &3269315600030981407 stripped
 RectTransform:

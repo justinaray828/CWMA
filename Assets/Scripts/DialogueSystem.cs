@@ -11,7 +11,7 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
     public float textSpeed;
 
     [Tooltip("How quickly to show the text, in seconds per character")]
-    public float textSpeedDefault = 1f;
+    public float textSpeedDefault = 0.025f;
 
     public float textSpeedSlow = 0.05f;
     public float textSpeedFast = 0f;
@@ -40,15 +40,11 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
         if (Input.anyKeyDown)
         {
             inputPressed = true;
-            Debug.Log("Pressed!");
         }
     }
 
     public override IEnumerator RunLine(Yarn.Line line)
     {
-        bool speedInput = false;
-        bool firstInput = true;
-
         while (inBrainRoom && !cameraTransition.isCameraZoomedIn())
         {
             dialoguePanelController.dialogueText.gameObject.SetActive(false);
@@ -61,36 +57,22 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
         dialoguePanelController.dialogueText.gameObject.SetActive(true);
         dialoguePanelController.nameText.gameObject.SetActive(true);
 
-        //int bigcounter = 0;
-        //int smallcounter = 0;
-
         if (textSpeed > 0.0f)
         {
-
-            //bigcounter++;
-            //Debug.Log("big loop: "+bigcounter);
-
             // Display the line one character at a time
             var stringBuilder = new StringBuilder();
 
             foreach (char c in line.text)
             {
-                //smallcounter++;
-                //Debug.Log("small loop: " + smallcounter);
-
-                //GetButtonDown happens when text starts and requires the bool firstInput to stop if statement from always happening
-                if (inputPressed && firstInput == false)
+                //InputPressed is set to true via the Update method (which is run before coroutines each frame)
+                if (inputPressed)
                 {
-                    Debug.Log("hit the input section!");
                     dialoguePanelController.dialogueText.text = line.text;
                     inputPressed = false;
-                    //speedInput = true;
                     break;
                 }
-
                 stringBuilder.Append(c);
                 dialoguePanelController.dialogueText.text = stringBuilder.ToString();
-                firstInput = false;
                 yield return new WaitForSeconds(textSpeed);
             }
         }
@@ -105,14 +87,8 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
             continuePrompt.SetActive(true);
 
         // Wait for any user input
-        //while (Input.anyKeyDown == false || speedInput == true)
         while (inputPressed == false)
         {
-            /*if (speedInput == true && inputPressed)
-            {
-                speedInput = false;
-                inputPressed = false;
-            }*/
             yield return null;
         }
 

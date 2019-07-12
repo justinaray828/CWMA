@@ -28,17 +28,23 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
     private Yarn.OptionChooser SetSelectedOption;
 
     private bool inBrainRoom = false;
+    private bool inputPressed = false;
 
     private void Awake()
     {
         textSpeed = textSpeedDefault;
     }
 
+    private void Update()
+    {
+        if (Input.anyKeyDown)
+        {
+            inputPressed = true;
+        }
+    }
+
     public override IEnumerator RunLine(Yarn.Line line)
     {
-        bool speedInput = false;
-        bool firstInput = true;
-
         while (inBrainRoom && !cameraTransition.isCameraZoomedIn())
         {
             dialoguePanelController.dialogueText.gameObject.SetActive(false);
@@ -58,17 +64,15 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
 
             foreach (char c in line.text)
             {
-                //GetButtonDown happens when text starts and requires the bool firstInput to stop if statement from always happening
-                if (Input.GetButtonDown("Input") == true && firstInput == false)
+                //InputPressed is set to true via the Update method (which is run before coroutines each frame)
+                if (inputPressed)
                 {
                     dialoguePanelController.dialogueText.text = line.text;
-                    speedInput = true;
+                    inputPressed = false;
                     break;
                 }
-
                 stringBuilder.Append(c);
                 dialoguePanelController.dialogueText.text = stringBuilder.ToString();
-                firstInput = false;
                 yield return new WaitForSeconds(textSpeed);
             }
         }
@@ -83,15 +87,12 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
             continuePrompt.SetActive(true);
 
         // Wait for any user input
-        while (Input.anyKeyDown == false || speedInput == true)
+        while (inputPressed == false)
         {
-            if (speedInput == true && Input.GetButtonUp("Input") == true)
-            {
-                speedInput = false;
-            }
             yield return null;
         }
 
+        inputPressed = false;
         if (continuePrompt != null)
             continuePrompt.SetActive(false);
     }

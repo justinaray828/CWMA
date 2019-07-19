@@ -156,6 +156,10 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
 
         switch (command.text)
         {
+            case "setscene innerDateCut":
+                cameraTransition.ToggleBrainRoomCut();
+                inBrainRoom = true;
+                break;
             case "setscene innerDate":
                 cameraTransition.ZoomIn();
                 inBrainRoom = true;

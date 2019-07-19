@@ -37,8 +37,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 160, y: -91.25}
-  m_SizeDelta: {x: 300, y: 111}
+  m_AnchoredPosition: {x: 160, y: -96.25}
+  m_SizeDelta: {x: 300, y: 172.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &80447415
 CanvasRenderer:
@@ -269,8 +269,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 160, y: -91.25}
-  m_SizeDelta: {x: 300, y: 111}
+  m_AnchoredPosition: {x: 160, y: -96.25}
+  m_SizeDelta: {x: 300, y: 172.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &550677437
 CanvasRenderer:
@@ -578,7 +578,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.040317703, y: 0.164}
   m_AnchorMax: {x: 0.98100007, y: 0.754}
-  m_AnchoredPosition: {x: 0.6, y: -27.5}
+  m_AnchoredPosition: {x: 0.6000061, y: -27.5}
   m_SizeDelta: {x: 3.1999998, y: 72}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &7238917122708231870
@@ -643,8 +643,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 160, y: -119}
-  m_SizeDelta: {x: 300, y: 111}
+  m_AnchoredPosition: {x: 160, y: -114}
+  m_SizeDelta: {x: 300, y: 228}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1099178486
 CanvasRenderer:
@@ -875,8 +875,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 160, y: -119}
-  m_SizeDelta: {x: 300, y: 111}
+  m_AnchoredPosition: {x: 160, y: -114}
+  m_SizeDelta: {x: 300, y: 228}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1217865010
 CanvasRenderer:
@@ -1049,7 +1049,7 @@ MonoBehaviour:
   m_ChildAlignment: 4
   m_Spacing: 10
   m_ChildForceExpandWidth: 0
-  m_ChildForceExpandHeight: 0
+  m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
   m_ChildControlHeight: 1
   m_ChildScaleWidth: 0
@@ -1457,12 +1457,12 @@ MonoBehaviour:
   m_Padding:
     m_Left: 10
     m_Right: 10
-    m_Top: 0
-    m_Bottom: 0
+    m_Top: 10
+    m_Bottom: 10
   m_ChildAlignment: 4
   m_Spacing: 10
   m_ChildForceExpandWidth: 0
-  m_ChildForceExpandHeight: 0
+  m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
   m_ChildControlHeight: 1
   m_ChildScaleWidth: 0

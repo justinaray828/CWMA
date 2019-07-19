@@ -10,11 +10,12 @@ public class DialoguePanelController : MonoBehaviour
 
     public Text nameText;
     public Text dialogueText;
+    //public Animator animator;
 
     private float smoothTime = 0.3f;
     private float yVelocity = 0.3f;
 
-    private float highestPanelLocation = 74f;
+    public float highestPanelLocation;
     private float lowestPanelLocation = -90f;
     private float panelLocation;
 
@@ -39,6 +40,7 @@ public class DialoguePanelController : MonoBehaviour
     private void Start()
     {
         panelLocation = lowestPanelLocation;
+        //OpenDialoguePanel();
     }
 
     private void FixedUpdate()
@@ -53,6 +55,16 @@ public class DialoguePanelController : MonoBehaviour
 
         nameText.text = speakerName + ":";
         dialogueText.text = speakerText;
+    }
+
+    public void OpenDialoguePanel()
+    {
+        //animator.SetBool("IsOpen", true);
+    }
+
+    public void CloseDialoguePanel()
+    {
+       // animator.SetBool("IsOpen", false);
     }
 
     /// <summary>
@@ -83,4 +95,5 @@ public class DialoguePanelController : MonoBehaviour
         nameText.enabled = textState;
         dialogueText.enabled = textState;
     }
+
 }

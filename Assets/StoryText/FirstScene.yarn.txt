@@ -17,7 +17,7 @@ Sorry, I talk a lot when I’m driving.
 Missed another turn... or two.  
 Sorry.
 
-<<setscene innerDateCut>>
+<<setscene innerDate>>
 
 <<set $speaker to "Player Character's Thoughts">> Well, this is an awkward ride. 
 But first dates are supposed to be sorta awkward.
@@ -128,7 +128,7 @@ title: Escape
 
 <<set $speaker to "Gina">> Ok… 
 
-<<setscene innerDateCut>>
+<<setscene innerDate>>
 
 <<set $speaker to "Player Character's Thoughts">> Oh my god, why was that an option?
 
@@ -189,7 +189,7 @@ title: AskHerAboutHerDay
 
 <<set $speaker to "Player Character">> Right, that’s a struggle.
 
-<<setscene innerDateCut>>
+<<setscene innerDate>>
 
 <<set $speaker to "Player Character's Thoughts">> Should I give some advice.
 

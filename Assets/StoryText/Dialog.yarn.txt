@@ -15,7 +15,7 @@ Gina: Sooo…  5 more minutes till the theater?
 
 Jordy: Nope, 7 minutes. I missed two turns earlier.  Sorry.
 
-<<setscene innerDateCut>>
+<<setscene innerDate>>
 
 Gordo: Well this is awkward, hopefully not too awkward… Okay, probably too awkward.
 

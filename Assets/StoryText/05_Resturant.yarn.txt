@@ -9,7 +9,7 @@ title: Start
 
 <<set $speaker to "Gina">> Back in a bit
 
-<<setscene innerDateCut>>
+<<setscene innerDate>>
 
 <<set $speaker to "Player Character’s Anxiety">> She just bailed on you.
 
@@ -39,7 +39,7 @@ title: Start
 
 <<set $speaker to "Player Character">> Sounds good.
 
-<<setscene innerDateCut>>
+<<setscene innerDate>>
 
 <<set $speaker to "Player Character’s Anxiety">> This is going too well.
 
@@ -77,7 +77,7 @@ title: Start
 
 <<set $speaker to "Rea">> And I’m back.  With the wine, and no shrimp. So...Ready to order?
 
-<<setscene innerDateCut>>
+<<setscene innerDate>>
 
 <<set $speaker to "Player Character’s Anxiety">> Time to go.
 
@@ -108,7 +108,7 @@ title: TrustGina
 
 <<set $speaker to "Rea">> A year is more than enough time to know if you want to spend the rest of your life with someone. 
 
-<<setscene innerDateCut>>
+<<setscene innerDate>>
 <<set $speaker to "Player Character’s Anxiety">> What have you gotten yourself into? 
 
 <<set $speaker to "Player Character's Thoughts">>: A totally normal date… where my date’s ex feels burned about a denied marriage proposal.
@@ -246,7 +246,7 @@ title: WeShouldGo
 
 <<set $speaker to "Gina">> Look, I know this is a little uncomfortable.  But I need you to trust that I can take care of myself and I’m being honest when I say I’m ok with a situation.
 
-<<setscene innerDateCut>>
+<<setscene innerDate>>
 
 Player’s Anxiety: Wow, She’s guilting you for feeling concerned about her.
 
@@ -256,7 +256,7 @@ Player’s Anxiety: She’s too wrapped up in her feeling to even notice others.
 
 Player’s Thoughts: I don’t know, maybe? 
 
-<<setscene innerDateCut>>
+<<setscene innerDate>>
 
 <<set $speaker to "Player Character">> I'm sorry.  I guess I’m a little too wrapped up in my own nervousness that I wasn’t really thinking about what you’re going through.
 

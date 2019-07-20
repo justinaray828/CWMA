@@ -21,7 +21,7 @@ title: Start
 
 <<set $speaker to "Jordy">> Hey, I’ve got this awesome story…
 
-<<setscene innerDateCut>>
+<<setscene innerDate>>
 
 <<set $speaker to "Player Character's Anxiety">>: This is just great
 
@@ -82,7 +82,7 @@ title: AskHerAboutHerDay_B
 
 <<set $speaker to "Gina">> Um you already asked that already
 
-<<setscene innerDateCut>>
+<<setscene innerDate>>
 
 <<set $speaker to "Player Character's Anxiety">>: Wow, you seriously asked that again.
 
@@ -109,7 +109,7 @@ title: DiscussTheMovie
 
 <<set $speaker to "Gina">> What did you think?
 
-<<setscene innerDateCut>>
+<<setscene innerDate>>
 
 <<set $speaker to "Player Character's Anxiety">>: Here’s your chance to relate.
 
@@ -172,7 +172,7 @@ title: CriticsWereRight
 
 <<set $speaker to "Gina">> Is it cool that I liked it?  You said, and I quote “I don’t know how that terrible movie was made.”
 
-<<setscene innerDateCut>>
+<<setscene innerDate>>
 
 <<set $speaker to "Player Character's Anxiety">>: Great now you’ve screwed yourself
 

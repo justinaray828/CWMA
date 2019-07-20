@@ -1066,6 +1066,7 @@ GameObject:
   - component: {fileID: 4921888665917807606}
   - component: {fileID: 4921888665917807605}
   - component: {fileID: 217247718021638394}
+  - component: {fileID: 665432273312927832}
   m_Layer: 5
   m_Name: DialoguePanel
   m_TagString: Untagged
@@ -1147,7 +1148,27 @@ MonoBehaviour:
   dialoguePanelRectTransform: {fileID: 4921888665917807604}
   nameText: {fileID: 4921888665969823901}
   dialogueText: {fileID: 4921888667537490533}
+  animator: {fileID: 665432273312927832}
   highestPanelLocation: 60
+--- !u!95 &665432273312927832
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4921888665917807611}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8bd868e66234b492eb80ecc85dc33352, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4921888665969823875
 GameObject:
   m_ObjectHideFlags: 0
@@ -1381,7 +1402,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1024, y: 768}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3

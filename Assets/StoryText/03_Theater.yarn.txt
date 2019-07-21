@@ -19,7 +19,7 @@ title: Start
 
 <<set $speaker to "Emily">> Ok.. I still need to know the name of the movie to find the tickets.
 
-<<setscene brainRoomCut>>
+<<setscene innerDateCut>>
 
 <<set $speaker to "Player Character's Thoughts">> Oh god… I forgot the name of the movie.
 
@@ -35,7 +35,7 @@ title: Start
 
 title: LoveInNewYork 
 ---
-<<setscene brainRoomCut>>
+<<setscene innerDateCut>>
 <<setscene Theater>>
 <<set $speaker to "Player Character">> I think it was...
 
@@ -56,7 +56,7 @@ title: LoveInNewYork
 
 title: BrooklynHearts
 ---
-<<setscene brainRoomCut>>
+<<setscene innerDateCut>>
 <<setscene Theater>>
 <<set $speaker to "Player Character">> I think it was Movie Name.
 
@@ -76,7 +76,7 @@ title: BrooklynHearts
 
 <<set $speaker to "Emily">> Give me the your card so I can pull up your ticket order for the movie you totally forgot the title to.
 
-<<setscene brainRoomCut>>
+<<setscene innerDateCut>>
 
 <<set $speaker to "Player Character's Anxiety">> Busted!
 
@@ -93,7 +93,7 @@ title: BrooklynHearts
 
 title: CreditCard
 ---
-<<setscene brainRoomCut>>
+<<setscene innerDateCut>>
 <<setscene Theater>>
 <<set $speaker to "Player Character">> I think it was this one.
 
@@ -111,7 +111,7 @@ title: CreditCard
  
 <<set $speaker to "Gina">> We are definitely missing the beginning of this movie.
 
-<<setscene brainRoomCut>>
+<<setscene innerDateCut>>
 
 <<set $speaker to "Player Character's Anxiety">> Okay, Genius. Let’s try this again
 
@@ -125,7 +125,7 @@ title: CreditCard
 
 title: OtherCreditCard
 ---
-<<setscene brainRoomCut>>
+<<setscene innerDateCut>>
 <<setscene Theater>>
 <<set $speaker to "Player Character">> Let’s try this one.
 
@@ -153,7 +153,7 @@ title: OtherCreditCard
 
 title: BuyANewTicket
 ---
-<<setscene brainRoomCut>>
+<<setscene innerDateCut>>
 <<setscene Theater>>
 <<set $speaker to "Player Character">> I don’t know what card it was, I’m just going to buy a new ticket.
 
@@ -167,7 +167,7 @@ title: BuyANewTicket
 
 <<set $speaker to "Gina">> Can we just try the cards?
 
-<<setscene brainRoomCut>>
+<<setscene innerDateCut>>
 
 <<set $speaker to "Player Character's Anxiety">> Ok, Genius, Let’s try this again
 

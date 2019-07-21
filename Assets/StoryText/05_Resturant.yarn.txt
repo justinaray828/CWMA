@@ -21,6 +21,7 @@ title: Start
 
 <<set $speaker to "Player Character’s Anxiety">> I am surprised she waited this long to ditch you. 
 
+<<setscene innerDateCut>>
 <<setscene Restaurant>>
 
 <<set $speaker to "Rea">> Hey there.  Name’s Rea.  I’ll be your server.  Can I get you something to drink?
@@ -47,6 +48,7 @@ title: Start
 
 <<set $speaker to "Player Character’s Anxiety">> Yeah, let’s go with that.
 
+<<setscene innerDateCut>>
 <<setscene Restaurant>>
 
 <<set $speaker to "Gina">> I need to give you heads up about something.
@@ -93,6 +95,7 @@ title: Start
 
 title: TrustGina
 ---
+<<setscene innerDateCut>>
 <<setscene Restaurant>>
 <<set $speaker to "Player Character">> I am ready to order. Gina do you want to start?
 
@@ -119,8 +122,6 @@ title: TrustGina
 
 <<set $speaker to "Player Character’s Anxiety">> Go ahead, weigh in on whether your date made a mistake in denying their exes marriage proposal.
 
-<<setscene Restaurant>>
-
 [[Gina was justified|Justified]]
 [[Rea's Got a Point|ReaRight]]
 [[I have made a huge mistake|MistakeRestaurant]]
@@ -129,6 +130,7 @@ title: TrustGina
 
 title: ReaRight
 ---
+<<setscene innerDateCut>>
 <<setscene Restaurant>>
 <<set $speaker to "Player Character">> She has a point. A year is a long time to spend with someone in a relationship. 
 
@@ -156,6 +158,7 @@ title: ReaRight
 
 title: MistakeRestaurant
 ---
+<<setscene innerDateCut>>
 <<setscene Restaurant>>
 
 <<set $speaker to "Gina">> A year isn’t enough time to decide if should spend your life with someone! Rom coms and reality tv has warped your perception of relationships.
@@ -194,6 +197,7 @@ title: MistakeRestaurant
 ===
 title: Justified
 ---
+<<setscene innerDateCut>>
 <<setscene Restaurant>>
 <<set $speaker to "Player Character">> Gina, I think you are completely justified in believing that a year is not enough time. My parents separated when I was a kid and I don’t want to live through that again. 
 
@@ -219,6 +223,7 @@ title: Justified
 
 title: WeShouldGo
 ---
+<<setscene innerDateCut>>
 <<setscene Restaurant>>
 <<set $speaker to "Player Character">> Gina, I think we should just get dinner somewhere else. 
 

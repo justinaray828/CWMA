@@ -169,6 +169,7 @@ title: PlayItCool_B
 
 title: AskHerAboutHerDay
 ---
+<<setscene Dryve>>
 <<set $speaker to "Player Character">> How was your day?
 
 <<set $speaker to "Gina">> Okay, could have been better.
@@ -208,6 +209,7 @@ title: AskHerAboutHerDay
 
 title: ThatSoundsRough
 ---
+<<setscene Dryve>>
 <<set $speaker to "Player Character">> That sounds rough, but I believe in your ability to handle it.
 
 <<set $speaker to "Gina">> Thanks… I think I just needed someone to listen to me rant a bit
@@ -224,6 +226,7 @@ $inspiraton is true
 
 title: Sneak
 ---
+<<setscene Dryve>>
 <<set $speaker to "Player Character">> You should sneak in at night and search everyone’s desks
 
 <<set $speaker to "Gina">> Yeah that sounds like…

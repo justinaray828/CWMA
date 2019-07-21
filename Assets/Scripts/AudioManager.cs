@@ -41,12 +41,12 @@ public class AudioManager : MonoBehaviour
 
     public void SetMusicVolume(float vol)
     {
-        musicSource.volume = vol;
+        mixer.SetFloat("MusicVolume", vol);
     }
 
     public void SetFxVolume(float vol)
     {
-        fxSource.volume = vol;
+        mixer.SetFloat("SFXVolume", vol);
     }
 
     private void Play(Sound s)

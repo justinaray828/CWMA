@@ -1,0 +1,27 @@
+title: Start
+---
+<<setscene Dryve>>
+<<set $speaker to "Jordy">> So I take it that didn’t work out
+
+<<set $speaker to "Player Character">> Of course not.  We weren’t compatible.  Or I wasn’t ready.  Or I wasn’t worth it.  I don’t know.
+
+<<set $speaker to "Jordy">> Well which one is it?
+
+[[We Weren’t Compatible|EndingJordy_Continued]]
+[[I Wasn’t Ready|EndingJordy_Continued]]
+[[I’m Not Worth it|EndingJordy_Continued]]
+===
+title: EndingJordy_Continued
+---
+<<set $speaker to "Jordy">> I’ll tell you, that’s all crap you’re telling yourself.  You were nice to the rideshare guy while simultaneously trying to have a date yourself.
+
+<<set $speaker to "Player Character">> Yeah, but didn’t get a second date…
+
+<<set $speaker to "Jordy">> But you will.  You will get a second date with someone.. eventually.
+
+<<set $speaker to "Player Character">> Thanks, I needed to hear that.
+
+<<set $speaker to "Jordy">> I can tell you’re a nice guy, you just had a bad night.
+
+<<set $speaker to "Player Character">> I think I could use some time to spend on myself before I try this again.
+===

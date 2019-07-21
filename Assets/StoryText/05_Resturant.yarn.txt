@@ -157,7 +157,6 @@ title: ReaRight
 title: MistakeRestaurant
 ---
 <<setscene Restaurant>>
-(Looks around for the exit while Rea and Gina start to argue). (The argument should continue and continue while the camera slowly zooms in on the main players face.)
 
 <<set $speaker to "Gina">> A year isn’t enough time to decide if should spend your life with someone! Rom coms and reality tv has warped your perception of relationships.
 
@@ -184,18 +183,15 @@ title: MistakeRestaurant
 <<set $speaker to "Rea">> No!!!! She can’t know I was using her account. 
 
 <<set $speaker to "Gina">> This is unbelievable. I’m done! (Gina walks out while still zoomed in on the characters face)
-
 (Camera zooms back out)
 
 <<set $speaker to "Player Character">> I’ll have the shrimp tacos, please. 
-<<if visited("ListenToTheStory) is true>>
+<<if visited("ListenToTheStory") is true>>
     [[Finish The Night|EndingJordy]]
 <<else>>
     [[Finish The Night|EndingAlone]]
 <<endif>>
-<<setScene nextScene>>
-===
-
+===
 title: Justified
 ---
 <<setscene Restaurant>>
@@ -248,13 +244,13 @@ title: WeShouldGo
 
 <<setscene innerDateCut>>
 
-Player’s Anxiety: Wow, She’s guilting you for feeling concerned about her.
+<<set $speaker to "Player Character’s Anxiety">>  Wow, She’s guilting you for feeling concerned about her.
 
-Player’s Thoughts: I wasn’t being very thoughtful, but this is uncomfortable for me too.
+<<set $speaker to "Player Character’s Thoughts">>  I wasn’t being very thoughtful, but this is uncomfortable for me too.
 
-Player’s Anxiety: She’s too wrapped up in her feeling to even notice others.
+<<set $speaker to "Player Character’s Anxiety">>  She’s too wrapped up in her feeling to even notice others.
 
-Player’s Thoughts: I don’t know, maybe? 
+<<set $speaker to "Player Character’s Thoughts">>  I don’t know, maybe? 
 
 <<setscene innerDateCut>>
 
@@ -269,4 +265,16 @@ Player’s Thoughts: I don’t know, maybe?
 <<set $speaker to "Player Character">> yeah...
 [[Finish the Night|EndingSecondDate]]
 <<setScene nextScene>>
+===
+title: EndingJordy
+---
+<<setScene endingJordy>>
+===
+title: EndingAlone
+---
+<<setScene endingAlone>>
+===
+title: EndingSecondDate
+---
+<<setScene endingSecondDate>>
 ===

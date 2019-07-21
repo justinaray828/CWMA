@@ -29,11 +29,10 @@ title: Start
 
 <<set $speaker to "Player Character's Anxiety">> Well that’s a 50% chance of looking like an idiot.
 
-[[Umm.  Love in New York|LoveInNewYork]]
+[[Umm Love in New York|LoveInNewYork]]
 [[I believe Brooklyn Hearts|BrooklynHearts]]
 ===
-
-title: LoveInNewYork 
+title: LoveInNewYork
 ---
 <<setscene innerDateCut>>
 <<setscene Theater>>
@@ -52,8 +51,19 @@ title: LoveInNewYork
 <<set $speaker to "Player Character">> Huh… 
 
 <<set $speaker to "Emily">> Give me the your card so I can pull up your ticket order for the movie you totally forgot the title to.
-===
 
+<<setscene innerDateCut>>
+
+<<set $speaker to "Player Character's Thoughts">> I have a bad memory! I won't let this woundingly sarcastic teen ruin my date.
+
+<<set $speaker to "Player Character's Anxiety">> No, but being awkward and going through the 3 different cards in your wallet to find the one that you bought the ticket on will. 
+
+<<set $speaker to "Player Character's Thoughts">> Wow, who’s side are you on?
+
+[[Credit Card|CreditCard]]
+[[Other Credit Card|CreditCard]]
+[[Other Other Credit Card|CreditCard]]
+===
 title: BrooklynHearts
 ---
 <<setscene innerDateCut>>
@@ -84,7 +94,7 @@ title: BrooklynHearts
 
 <<set $speaker to "Player Character's Anxiety">> No, but being awkward and going through the 3 different cards in your wallet to find the one that you bought the ticket on will. 
 
-<<set $speaker to "Player Character's Thoughts">> Wow, who’s side are you on.
+<<set $speaker to "Player Character's Thoughts">> Wow, who’s side are you on?
 
 [[Credit Card|CreditCard]]
 [[Other Credit Card|CreditCard]]

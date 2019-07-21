@@ -171,6 +171,15 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
             case "setScene nextScene":
                 sceneHandler.LoadNextScene();
                 break;
+            case "setScene endingSecondDate":
+                sceneHandler.LoadScene("06_Ending_SecondDate");
+                break;
+            case "setScene endingJordy":
+                sceneHandler.LoadScene("07_Ending_Jordy");
+                break;
+            case "setScene endingAlone":
+                sceneHandler.LoadScene("08_Ending_Alone");
+                break;
             default:
                 cameraTransition.ZoomOut();
                 inBrainRoom = false;

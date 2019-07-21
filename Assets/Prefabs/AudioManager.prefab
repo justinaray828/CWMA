@@ -48,21 +48,50 @@ MonoBehaviour:
   fxSource: {fileID: 3824741328796003454}
   musicSource: {fileID: 1492701572112908278}
   mixer: {fileID: 24100000, guid: 8470804748a124767a11093462dd9bf8, type: 2}
-  sounds:
-  - name: s1
-    clip: {fileID: 0}
-    output: {fileID: 0}
-    volume: 0
-    pitch: 0
-    loop: 0
+  MusicSounds:
+  - name: Scene1
+    clip: {fileID: 8300000, guid: 9f21e3fc197ef404f8f09327630a5aa7, type: 3}
+    output: {fileID: -8622729306382389199, guid: 8470804748a124767a11093462dd9bf8,
+      type: 2}
+    volume: 1
+    pitch: 1
+    loop: 1
     playonawake: 0
     originalVolume: 0
-  - name: s2
-    clip: {fileID: 0}
-    output: {fileID: 0}
-    volume: 0
-    pitch: 0
-    loop: 0
+  - name: Scene2
+    clip: {fileID: 8300000, guid: 3e12951184f7e4627beb9dfa70095445, type: 3}
+    output: {fileID: -8622729306382389199, guid: 8470804748a124767a11093462dd9bf8,
+      type: 2}
+    volume: 1
+    pitch: 1
+    loop: 1
+    playonawake: 0
+    originalVolume: 0
+  - name: Scene3
+    clip: {fileID: 8300000, guid: 9f21e3fc197ef404f8f09327630a5aa7, type: 3}
+    output: {fileID: -8622729306382389199, guid: 8470804748a124767a11093462dd9bf8,
+      type: 2}
+    volume: 1
+    pitch: 1
+    loop: 1
+    playonawake: 0
+    originalVolume: 0
+  - name: Scene4
+    clip: {fileID: 8300000, guid: 3e12951184f7e4627beb9dfa70095445, type: 3}
+    output: {fileID: -8622729306382389199, guid: 8470804748a124767a11093462dd9bf8,
+      type: 2}
+    volume: 1
+    pitch: 1
+    loop: 1
+    playonawake: 0
+    originalVolume: 0
+  - name: Scene5
+    clip: {fileID: 8300000, guid: 9f21e3fc197ef404f8f09327630a5aa7, type: 3}
+    output: {fileID: -8622729306382389199, guid: 8470804748a124767a11093462dd9bf8,
+      type: 2}
+    volume: 1
+    pitch: 1
+    loop: 1
     playonawake: 0
     originalVolume: 0
 --- !u!82 &3824741328796003454

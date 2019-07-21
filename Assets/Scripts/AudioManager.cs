@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System;
 using UnityEngine;
 using UnityEngine.Audio;
 
@@ -8,7 +9,7 @@ public class AudioManager : MonoBehaviour
     public AudioSource musicSource;
     public AudioMixer mixer;
 
-    public Sound[] sounds;
+    public Sound[] MusicSounds;
     public static AudioManager instance;
 
     private void Awake()
@@ -47,6 +48,33 @@ public class AudioManager : MonoBehaviour
     public void SetFxVolume(float vol)
     {
         mixer.SetFloat("SFXVolume", vol);
+    }
+
+    public void SceneTransition(int nextSceneNumber)
+    {
+        string nextSoundName = "Scene" + nextSceneNumber;
+        string currentSoundName = "Scene" + (nextSceneNumber - 1);
+
+        Sound nextS = Array.Find(MusicSounds, sound => sound.name == nextSoundName);
+        if (nextS == null)
+        {
+            Debug.LogWarning("Sound: " + nextSoundName + " was not found!");
+            return;
+        }
+        Sound currentS = Array.Find(MusicSounds, sound => sound.name == currentSoundName);
+
+        nextS.source = gameObject.AddComponent<AudioSource>();
+        nextS.source.clip = nextS.clip;
+        nextS.source.volume = nextS.volume;
+        nextS.source.outputAudioMixerGroup = nextS.output;
+        nextS.source.pitch = nextS.pitch;
+        nextS.source.loop = nextS.loop;
+        nextS.source.playOnAwake = nextS.playonawake;
+
+        StartCoroutine(FadeIn(nextS.source, 2f));
+        StartCoroutine(FadeOut(currentS.source, 2f));
+
+        return;
     }
 
     private void Play(Sound s)

@@ -28,6 +28,7 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
     private Yarn.OptionChooser SetSelectedOption;
 
     private bool inBrainRoom = false;
+    private bool inBrainRoomCut = false;
     private bool inputPressed = false;
 
     private void Awake()
@@ -160,9 +161,8 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
 
         switch (command.text)
         {
-            case "setscene innerDateCut":
+            case "setscene brainRoomCut":
                 cameraTransition.ToggleBrainRoomCut();
-                inBrainRoom = true;
                 break;
             case "setscene innerDate":
                 cameraTransition.ZoomIn();

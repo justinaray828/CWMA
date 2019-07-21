@@ -35,6 +35,7 @@ title: Start
 
 title: LoveInNewYork 
 ---
+<<setscene brainRoomCut>>
 <<setscene Theater>>
 <<set $speaker to "Player Character">> I think it was...
 
@@ -55,6 +56,7 @@ title: LoveInNewYork
 
 title: BrooklynHearts
 ---
+<<setscene brainRoomCut>>
 <<setscene Theater>>
 <<set $speaker to "Player Character">> I think it was Movie Name.
 
@@ -91,6 +93,7 @@ title: BrooklynHearts
 
 title: CreditCard
 ---
+<<setscene brainRoomCut>>
 <<setscene Theater>>
 <<set $speaker to "Player Character">> I think it was this one.
 
@@ -122,6 +125,7 @@ title: CreditCard
 
 title: OtherCreditCard
 ---
+<<setscene brainRoomCut>>
 <<setscene Theater>>
 <<set $speaker to "Player Character">> Let’s try this one.
 
@@ -149,6 +153,7 @@ title: OtherCreditCard
 
 title: BuyANewTicket
 ---
+<<setscene brainRoomCut>>
 <<setscene Theater>>
 <<set $speaker to "Player Character">> I don’t know what card it was, I’m just going to buy a new ticket.
 

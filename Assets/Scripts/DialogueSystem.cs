@@ -111,6 +111,10 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
                              "buttons to present them in. This will cause problems.");
         }
 
+        //empty dialogue box text
+        dialoguePanelController.nameText.text = "";
+        dialoguePanelController.dialogueText.text = "";
+
         // Display each option in a button, and make it visible
         int i = 0;
         foreach (var optionString in optionsCollection.options)

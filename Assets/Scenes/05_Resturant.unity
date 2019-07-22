@@ -601,6 +601,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6179828911605785465, guid: 5479a4882c427ff4f8f43768d58d7ed6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 247.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6179828911605785465, guid: 5479a4882c427ff4f8f43768d58d7ed6,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 439.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 5184432828398310271, guid: 5479a4882c427ff4f8f43768d58d7ed6,
+        type: 3}
+      propertyPath: m_Name
+      value: NamePanel
+      objectReference: {fileID: 0}
     - target: {fileID: 4766002247114661776, guid: 5479a4882c427ff4f8f43768d58d7ed6,
         type: 3}
       propertyPath: m_Name
@@ -661,11 +676,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3269315599032571070, guid: 5479a4882c427ff4f8f43768d58d7ed6,
-        type: 3}
-      propertyPath: sourceText.Array.data[0]
-      value: 
-      objectReference: {fileID: 4900000, guid: 09b828c7b0784b84498612a9e4cd6b77, type: 3}
     - target: {fileID: 794510912338732659, guid: 5479a4882c427ff4f8f43768d58d7ed6,
         type: 3}
       propertyPath: m_AnchorMin.y

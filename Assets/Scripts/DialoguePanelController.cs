@@ -8,15 +8,20 @@ public class DialoguePanelController : MonoBehaviour
 {
     public RectTransform dialoguePanelRectTransform;
 
-    public Text nameText;
+    public float highestPanelLocation;
+
     public Text dialogueText;
+    public Text nameText;
+
     public Animator animator;
+
+    public GameObject nameTextPanel;
+
+    
 
     private float smoothTime = 0.3f;
     private float yVelocity = 0.3f;
-
-    public float highestPanelLocation;
-    private float lowestPanelLocation = -90f;
+    private float lowestPanelLocation = -115f;
     private float panelLocation;
 
     /// <summary>
@@ -30,16 +35,21 @@ public class DialoguePanelController : MonoBehaviour
 
     public void AdvanceDialogue(string speakerName, string speakerText)
     {
-        if (speakerText.Length > 100)
-            Debug.LogError("speakerText is over 100 characters");
-
         nameText.text = speakerName + ":";
         dialogueText.text = speakerText;
+    }
+
+    public void EnableDialogue(bool boolean)
+    {
+        dialogueText.gameObject.SetActive(boolean);
+        nameText.gameObject.SetActive(boolean);
+        nameTextPanel.SetActive(boolean);
     }
 
     private void ToggleDialogueText(bool textState)
     {
         nameText.enabled = textState;
+        nameTextPanel.SetActive(textState);
         dialogueText.enabled = textState;
     }
 

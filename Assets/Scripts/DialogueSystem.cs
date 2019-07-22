@@ -48,15 +48,13 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
     {
         while (inBrainRoom && !cameraTransition.isCameraZoomedIn())
         {
-            dialoguePanelController.dialogueText.gameObject.SetActive(false);
-            dialoguePanelController.nameText.gameObject.SetActive(false);
+            dialoguePanelController.EnableDialogue(false);
             yield return null;//Wait until the camera is all the way zoomed in to continue
         }
 
         // Show the text
         dialoguePanelController.PopUp = true;
-        dialoguePanelController.dialogueText.gameObject.SetActive(true);
-        dialoguePanelController.nameText.gameObject.SetActive(true);
+        dialoguePanelController.EnableDialogue(true);
 
         if (textSpeed > 0.0f)
         {
@@ -115,6 +113,7 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
         //empty dialogue box text
         dialoguePanelController.nameText.text = "";
         dialoguePanelController.dialogueText.text = "";
+        dialoguePanelController.nameTextPanel.SetActive(false);
 
         // Display each option in a button, and make it visible
         int i = 0;

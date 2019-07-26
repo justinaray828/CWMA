@@ -21,6 +21,8 @@ public class CameraTransition : MonoBehaviour
     public GameObject brainCameraCut;
     [Tooltip("Found under Main Character")]
     public GameObject brainSceneCube;
+    [Tooltip("Found under Main Character")]
+    public Animator brainOpenAnimator;
 
     //private bool enableBrainScene;
     private bool zoomIn = true;
@@ -96,8 +98,6 @@ public class CameraTransition : MonoBehaviour
             MoveAndZoomCamera();
             CameraStateUpdate();
         }
-
-        EnableBrainScene();
     }
 
     /// <summary>
@@ -107,11 +107,13 @@ public class CameraTransition : MonoBehaviour
     {
         if (zoomIn)
         {
+            EnableBrainScene(true);
             mainCamera.transform.position = Vector3.Lerp(mainCamera.transform.position, cameraZoomPosition, transitionTime * Time.deltaTime);
             mainCamera.orthographicSize = Mathf.Lerp(mainCamera.orthographicSize, cameraZoomInSize, transitionTime * Time.deltaTime);
         }
         else //Zoomout
         {
+            EnableBrainScene(false);
             mainCamera.transform.position = Vector3.Lerp(mainCamera.transform.position, cameraStartPosition, transitionTime * Time.deltaTime);
             mainCamera.orthographicSize = Mathf.Lerp(mainCamera.orthographicSize, cameraStartSize, transitionTime * Time.deltaTime);
         }
@@ -147,11 +149,12 @@ public class CameraTransition : MonoBehaviour
     /// Enables the brain scene
     /// This is where code needs to go to trigger animation of head opening up.
     /// </summary>
-    private void EnableBrainScene()
+    private void EnableBrainScene(bool boolean)
     {
-        bool cameraStatus = (cameraIsZoomedIn) ? true : false;
-        brainScene.SetActive(cameraStatus);
-        brainSceneCube.SetActive(cameraStatus);
+        //bool cameraStatus = (cameraIsZoomedIn) ? true : false;
+        //brainScene.SetActive(boolean);
+        //brainSceneCube.SetActive(boolean);
+        brainOpenAnimator.SetBool("Open", boolean);
     }
 
     /// <summary>

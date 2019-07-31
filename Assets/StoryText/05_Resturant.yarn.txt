@@ -9,6 +9,7 @@ title: Start
 
 <<set $speaker to "Gina">> Back in a bit
 
+<<ginaLeaves Gina>>
 <<setscene innerDateCut>>
 
 <<set $speaker to "Player Character’s Anxiety">> She just bailed on you.
@@ -23,6 +24,7 @@ title: Start
 
 <<setscene innerDateCut>>
 <<setscene Restaurant>>
+<<reaReturns Rea>>
 
 <<set $speaker to "Rea">> Hey there.  Name’s Rea.  I’ll be your server.  Can I get you something to drink?
 

@@ -163,43 +163,33 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
             case "setscene innerDateCut":
                 cameraTransition.ToggleBrainRoomCut();
                 break;
+
             case "setscene innerDate":
                 cameraTransition.ZoomIn();
                 inBrainRoom = true;
                 break;
+
             case "setScene nextScene":
                 sceneHandler.LoadNextScene();
                 break;
+
             case "setScene endingSecondDate":
                 sceneHandler.LoadScene("06_Ending_SecondDate");
                 break;
+
             case "setScene endingJordy":
                 sceneHandler.LoadScene("07_Ending_Jordy");
                 break;
+
             case "setScene endingAlone":
                 sceneHandler.LoadScene("08_Ending_Alone");
                 break;
+
             default:
                 cameraTransition.ZoomOut();
                 inBrainRoom = false;
                 break;
         }
-
-        //if (command.text.Equals(InnerDateScene))
-        //{
-        //    cameraTransition.ZoomIn();
-        //    inBrainRoom = true;
-        //}
-        //else
-        //{
-        //    cameraTransition.ZoomOut();
-        //    inBrainRoom = false;
-        //}
-
-        //if(command.text.Equals("setScene nextScene"))
-        //{
-        //    sceneHandler.LoadNextScene();
-        //}
 
         yield break;
     }

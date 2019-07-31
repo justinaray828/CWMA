@@ -12,7 +12,7 @@ public class TestButton : Editor {
         FacialAnimation myScript = (FacialAnimation)target;
         if (GUILayout.Button("Test"))
         {
-            
+           
         }
     }
 }

@@ -257,15 +257,21 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
         List<KeyValuePair<int, int>> removals = new List<KeyValuePair<int, int>>();
 
         int l = line.Length;
+
+        //iterate through the line character by character
         for (int i = 0; i < l; i++)
         {
+            //if a bracket is encountered, turn on the flag for the beginning of a markup
             if (line[i] == '[')
             {
                 lineMarkUp = true;
                 continue;
             }
+            //if we are currenty in a markup
             if (lineMarkUp)
             {
+                //if we are at the end of the markup, then add the build markup command 
+                //to a key value pair, marking the index location within the string
                 if (line[i] == ']')
                 {
                     commands.Add(new KeyValuePair<int, string>(count, command));
@@ -274,12 +280,16 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
                     lineMarkUp = false;
                     continue;
                 }
+                //otherwise, add the current character to the command string being built
                 command = command + line[i];
                 continue;
             }
+            //we only increase the count when we are not inside a markup. 
+            //aka we are only counting indexes of the final string text, with markups removed
             count++;
         }
 
+        //once the markups have been stored, remove them from the line.
         foreach (KeyValuePair<int, int> r in removals)
         {
             line = line.Remove(r.Key, r.Value);
@@ -290,11 +300,11 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
 
     private void ExecuteMarkUp(string s)
     {
-        Debug.Log("string s:" + s);
         var words = s.Split('=');
-
+        //if syntax includes setting a variable equal to a value, then attempt to do so
         if (words.Length == 2)
         {
+            //searches variables in this object to see if one matches the name given
             System.Reflection.PropertyInfo propName = this.GetType().GetProperty(words[0]);
             if (propName != null)
             {
@@ -308,17 +318,21 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
         }
         else
         {
-            string word = s;
             bool stopCommand = false;
+
             if (s.Contains("/"))
             {
                 words = s.Split('/');
                 if (words.Length != 2) { Debug.LogWarning("Invalid markup : " + s + " - too many slashes"); }
                 stopCommand = true;
-                word = words[1];
+                s = words[1];
             }
-            Debug.Log("word = " + word);
-            switch (word)
+
+            /* we could do this without a switch statement by either using a hashtable 
+             * or by using other functions that would be called via reflection. 
+             * but this is easiest for now.
+             */            
+            switch (s)
             {
                 case "slow":
                     if (stopCommand) { textSpeed = textSpeedDefault; }

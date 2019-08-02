@@ -305,15 +305,15 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
         if (words.Length == 2)
         {
             //searches variables in this object to see if one matches the name given
-            System.Reflection.PropertyInfo propName = this.GetType().GetProperty(words[0]);
-            if (propName != null)
+            System.Reflection.FieldInfo fieldName = this.GetType().GetField(words[0]);
+            if (fieldName != null)
             {
-                if(float.TryParse(words[1],out float value)) { propName.SetValue(this, value); }
-                else { Debug.LogWarning("propety- " + words[0] + " not set to valid float"); }
+                if(float.TryParse(words[1],out float value)) { fieldName.SetValue(this, value); }
+                else { Debug.LogWarning("field- " + words[0] + " not set to valid float"); }
             }
             else
             {
-                Debug.LogWarning("Property name not found: " + words[0]);
+                Debug.LogWarning("Field name not found: " + words[0]);
             }
         }
         else

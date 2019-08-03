@@ -80,10 +80,12 @@ title: MakeAJoke
 
 <<set $speaker to "Gina">> Great!  We still have 6 minutes left to kill. 
 
-<<set $speaker to "Jordy">> Probably closer to 5 (new window) Just ran that red light. (both characters get Wtf looks)
+<<set $speaker to "Jordy">> Probably closer to 5.
+<<set $speaker to "Jordy">> Just ran that red light. 
+(both characters get Wtf looks)
 
 <<set $speaker to "Player Character">> Anyway… (typed out slowly) I tried to be a Dryver driver once. 
-Trouble is, my passengers didn’t appreciate when I went the extra mile. 
+<<set $speaker to "Player Character">> Trouble is, my passengers didn’t appreciate when I went the extra mile. 
 
 <<set $speaker to "Gina">> ...
 
@@ -96,7 +98,9 @@ I love my job.
 
 <<set $speaker to "Jordy">> So the gig economy is a joke?
 
-<<set $speaker to "Player Character">> No.. yes…. How do I answer that?
+<<set $speaker to "Player Character">> No.. 
+yes...
+How do I answer that?
 
 <<set $speaker to "Gina">> From a labor perspective it exploits workers while concentrating capital towards the top.
 
@@ -111,10 +115,13 @@ I mean you’re not wrong, but when you work 9 to 5, just $2 above minimum wage,
 Nobody tells me what to do.
 
 <<set $speaker to "Player Character">> Turn left here
+...
 
 (Awkward back and forth stare down between Jordy and Player)
 
-<<set $speaker to "Jordy">> Get out...
+<<set $speaker to "Jordy">> 
+...
+Get out...
 <<setScene nextScene>>
 ===
 
@@ -125,7 +132,8 @@ title: Escape
 
 <<set $speaker to "Gina">> Ummm, are you trying to open the door while we’re in a moving car?
 
-<<set $speaker to "Player Character">> No… (New window) Yes
+<<set $speaker to "Player Character">> No…
+<<set $speaker to "Player Character">> ...Yes
 
 <<set $speaker to "Jordy">> Dude.  Not cool.
 

@@ -15,26 +15,26 @@ title: Start
 
 <<set $speaker to "Emily">> What movie are you seeing?
 
-<<set $speaker to "Player Character">> I bought tickets online.
+<<set $speaker to "Player Character">> Uhh.. I bought tickets online.
 
 <<set $speaker to "Emily">> Ok.. I still need to know the name of the movie to find the tickets.
 
-<<setscene brainRoomCut>>
+<<setscene innerDateCut>>
 
 <<set $speaker to "Player Character's Thoughts">> Oh god… I forgot the name of the movie.
 
-<<set $speaker to "Player Character's Anxiety">> You what?
+<<set $speaker to "Player Character's Anxiety">> You what?!
 
 <<set $speaker to "Player Character's Thoughts">> I think it’s either Love in New York or Brooklyn Hearts, or something like that.  How many date movies could there be?
 
 <<set $speaker to "Player Character's Anxiety">> Well that’s a 50% chance of looking like an idiot.
 
-[[Umm.  Love in New York|LoveInNewYork]]
+[[I think Love in New York|LoveInNewYork]]
 [[I believe Brooklyn Hearts|BrooklynHearts]]
 ===
-
-title: LoveInNewYork 
+title: LoveInNewYork
 ---
+<<setscene innerDateCut>>
 <<setscene Theater>>
 <<set $speaker to "Player Character">> I think it was...
 
@@ -50,11 +50,24 @@ title: LoveInNewYork
 
 <<set $speaker to "Player Character">> Huh… 
 
-<<set $speaker to "Emily">> Give me the your card so I can pull up your ticket order for the movie you totally forgot the title to.
-===
+<<set $speaker to "Emily">> Give me your card so I can verify the purchase for the movie you totally forgot the title to.
 
+<<setscene innerDateCut>>
+
+<<set $speaker to "Player Character's Thoughts">> I have a bad memory! 
+But I won't let this woundingly sarcastic teen ruin my date.
+
+<<set $speaker to "Player Character's Anxiety">> No, but being awkward and going through the 3 different cards in your wallet to find the one that you bought the ticket on will. 
+
+<<set $speaker to "Player Character's Thoughts">> Wow, who’s side are you on?
+
+[[Credit Card|CreditCard]]
+[[Other Credit Card|CreditCard]]
+[[Other Other Credit Card|CreditCard]]
+===
 title: BrooklynHearts
 ---
+<<setscene innerDateCut>>
 <<setscene Theater>>
 <<set $speaker to "Player Character">> I think it was Movie Name.
 
@@ -74,7 +87,7 @@ title: BrooklynHearts
 
 <<set $speaker to "Emily">> Give me the your card so I can pull up your ticket order for the movie you totally forgot the title to.
 
-<<setscene brainRoomCut>>
+<<setscene innerDateCut>>
 
 <<set $speaker to "Player Character's Anxiety">> Busted!
 
@@ -82,7 +95,7 @@ title: BrooklynHearts
 
 <<set $speaker to "Player Character's Anxiety">> No, but being awkward and going through the 3 different cards in your wallet to find the one that you bought the ticket on will. 
 
-<<set $speaker to "Player Character's Thoughts">> Wow, who’s side are you on.
+<<set $speaker to "Player Character's Thoughts">> Wow, who’s side are you on?
 
 [[Credit Card|CreditCard]]
 [[Other Credit Card|CreditCard]]
@@ -91,6 +104,7 @@ title: BrooklynHearts
 
 title: CreditCard
 ---
+<<setscene innerDateCut>>
 <<setscene Theater>>
 <<set $speaker to "Player Character">> I think it was this one.
 
@@ -108,7 +122,7 @@ title: CreditCard
  
 <<set $speaker to "Gina">> We are definitely missing the beginning of this movie.
 
-<<setscene brainRoomCut>>
+<<setscene innerDateCut>>
 
 <<set $speaker to "Player Character's Anxiety">> Okay, Genius. Let’s try this again
 
@@ -122,12 +136,14 @@ title: CreditCard
 
 title: OtherCreditCard
 ---
+<<setscene innerDateCut>>
 <<setscene Theater>>
 <<set $speaker to "Player Character">> Let’s try this one.
 
 <<set $speaker to "Emily">> Are you sure this time?
 
-<<set $speaker to "Player Character">> Yep… I think.
+<<set $speaker to "Player Character">> Yep… 
+I think.
 
 <<set $speaker to "Emily">> Because if you aren’t you can pick...
 
@@ -139,7 +155,7 @@ title: OtherCreditCard
 
 <<set $speaker to "Emily">> I don’t joke.
 
-<<set $speaker to "Player Character">> But.. just a minute ago.
+<<set $speaker to "Player Character">> But..
 
 <<set $speaker to "Gina">> Let’s go inside, finally.
 
@@ -149,20 +165,25 @@ title: OtherCreditCard
 
 title: BuyANewTicket
 ---
+<<setscene innerDateCut>>
 <<setscene Theater>>
 <<set $speaker to "Player Character">> I don’t know what card it was, I’m just going to buy a new ticket.
 
 <<set $speaker to "Emily">> The theater is sold out, it’s a Friday Night and y’all are late to this showing.
 
-<<set $speaker to "Player Character">> Seriously?  The previews are just starting, we aren’t that late.
+<<set $speaker to "Player Character">> Seriously?  
+The previews are just starting. 
+We aren’t THAT late.
 
 <<set $speaker to "Gina">> Can you check again?  We aren’t that late.
 
-<<set $speaker to "Emily">> If I can handle getting to the bus stop 45 minutes early for the one bus with a ramp, y’all can think to call your Dryve a whole 5 minutes earlier.  And I’ve already checked the occupancy count... twice.
+<<set $speaker to "Emily">> If I can handle getting to the bus stop 45 minutes early for the one bus with a ramp, 
+Y’all can think to call your Dryve a whole 5 MINUTES earlier.  
+And I’ve already checked the occupancy count... twice.
 
 <<set $speaker to "Gina">> Can we just try the cards?
 
-<<setscene brainRoomCut>>
+<<setscene innerDateCut>>
 
 <<set $speaker to "Player Character's Anxiety">> Ok, Genius, Let’s try this again
 

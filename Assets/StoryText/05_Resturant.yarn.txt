@@ -3,7 +3,8 @@ title: Start
 <<setscene Restaurant>>
 <<set $speaker to "Player Character">> Here we are, this place got great reviews.
 
-<<set $speaker to "Gina">> Great! I’m looking forward to it. I’m heading to the bathroom.  Be right back.
+<<set $speaker to "Gina">> Great! I’m looking forward to it. 
+I’m heading to the bathroom.  Be right back.
 
 <<set $speaker to "Player Character">> Oh ok, see you soon.
 
@@ -13,47 +14,57 @@ title: Start
 
 <<set $speaker to "Player Character’s Anxiety">> She just bailed on you.
 
-<<set $speaker to "Player Character's Thoughts">>: We don’t know that.  We’ve had an okey-dokey time.
+<<set $speaker to "Player Character's Thoughts">> We don’t know that.  We’ve had an okey-dokey time.
 
 <<set $speaker to "Player Character’s Anxiety">> Let’s not use okey-dokey… ever.
 
-<<set $speaker to "Player Character's Thoughts">>: Yeah, that’s probably a good call.
+<<set $speaker to "Player Character's Thoughts">> Yeah, that’s probably a good call.
 
 <<set $speaker to "Player Character’s Anxiety">> I am surprised she waited this long to ditch you. 
 
+<<setscene innerDateCut>>
 <<setscene Restaurant>>
 
-<<set $speaker to "Rea">> Hey there.  Name’s Rea.  I’ll be your server.  Can I get you something to drink?
+<<set $speaker to "Rea">> Hey there.  Name’s Rea.
+I’ll be your server.
+Can I get you something to drink?
 
-<<set $speaker to "Player Character">> Sure, can you get me a bottle of your favorite red and two waters.  My date will be back in a second.
+<<set $speaker to "Player Character">> Sure, can you get me a bottle of your best red and two waters?
+My date will be back in a second.
 
 <<set $speaker to "Rea">> Sure cap, ya want an appetizer?
 
 <<set $speaker to "Player Character">> Sounds good, any recommendations?
 
-<<set $speaker to "Rea">> I love the flaming shrimp.  Couldn’t have them before, because my ex was super allergic.
+<<set $speaker to "Rea">> I love the flaming shrimp.
+Couldn’t have them before, because my ex was super allergic.
 
-<<set $speaker to "Player Character">> Good thing your ex isn’t here, because I love shrimp. I’ll get an order of those.
+<<set $speaker to "Player Character">> Good thing your ex isn’t here, because I love shrimp. 
+I’ll get an order of those.
 
-<<set $speaker to "Rea">> Great be back in a second.
+<<set $speaker to "Rea">> Great, be back in a second.
 
-<<set $speaker to "Player Character">> Sounds good.
+<<set $speaker to "Player Character">> See you soon.
 
 <<setscene innerDateCut>>
 
-<<set $speaker to "Player Character’s Anxiety">> This is going too well.
+<<set $speaker to "Player Character’s Anxiety">> Why do you keep saying "See you soon"
 
-<<set $speaker to "Player Character's Thoughts">>: Yeah, because this is actually a good date.  Just with a few awkward moments
+<<set $speaker to "Player Character's Thoughts">> I don't know, there is something..
 
-<<set $speaker to "Player Character’s Anxiety">> Yeah, let’s go with that.
+<<set $speaker to "Player Character’s Anxiety">> Very wrong with you.
 
+<<setscene innerDateCut>>
 <<setscene Restaurant>>
 
 <<set $speaker to "Gina">> I need to give you heads up about something.
 
 <<set $speaker to "Player Character">> Everything ok in the bathroom?
 
-<<set $speaker to "Gina">> Yeah, but that’s not it.  I was scrolling through my apps and noticed something. Rea!
+<<set $speaker to "Gina">> Yeah, but that’s not it.  
+I was scrolling through my apps and noticed something...
+(Rea appears) 
+Rea!
 
 <<set $speaker to "Rea">> Oh hey, wait are you on a date with…
 
@@ -63,29 +74,37 @@ title: Start
 
 <<set $speaker to "Rea">> I’m gonna go cancel that order of flaming shrimp.
 
-<<set $speaker to "Player Character">> Oh, I was looking forward to...ooohhh wait.  You two were..
+<<set $speaker to "Player Character">> Oh, I was looking forward to
+...ooohhh wait.  
+You two were..
 
-<<set $speaker to "Gina">> Yep.
-
-<<set $speaker to "Rea">> I’m heading back to the kitchen.
+<<set $speaker to "Gina">> YUP...
+(Pause)
+<<set $speaker to "Rea">> ...I’m heading back to the kitchen.
 
 <<set $speaker to "Player Character">> Should we go?
 
-<<set $speaker to "Gina">> No, she must have gotten a new job.  It’s ok.  I’ll ask if we can get a new server.  She’ll understand.
+<<set $speaker to "Gina">> No, she must have gotten a new job.  
+It’s ok.  I’ll ask if we can get a new server.  
+She’ll understand.
 
-<<set $speaker to "Player Character">> Let’s try and leave quickly and go somewhere else.  (Said as Rea slides back in)
+<<set $speaker to "Player Character">> Let’s try and leave quickly and go somewhere else.  
+(Said as Rea slides back in)
 
-<<set $speaker to "Rea">> And I’m back.  With the wine, and no shrimp. So...Ready to order?
+<<set $speaker to "Rea">> And I’m back.  
+With the wine, and no shrimp. 
+So...Ready to order?
 
 <<setscene innerDateCut>>
 
 <<set $speaker to "Player Character’s Anxiety">> Time to go.
 
-<<set $speaker to "Player Character's Thoughts">>: Gina said that we should stay.  This’ll work out.
+<<set $speaker to "Player Character's Thoughts">> Gina said that we should stay.  This’ll work out.
 
-<<set $speaker to "Player Character’s Anxiety">> Yeah, I don’t see why not.  I’m sure you’re going to have a great date with an ex literally watching you the whole time.
+<<set $speaker to "Player Character’s Anxiety">> Yeah, I don’t see why not.  
+I’m sure you’re going to have a great date with an ex literally watching you the whole time.
 
-<<set $speaker to "Player Character's Thoughts">>: Yeah..
+<<set $speaker to "Player Character's Thoughts">> Yeah..
 
 [[Trust Gina|TrustGina]]
 [[Say you’re going to leave|Leave]]
@@ -93,14 +112,17 @@ title: Start
 
 title: TrustGina
 ---
+<<setscene innerDateCut>>
 <<setscene Restaurant>>
-<<set $speaker to "Player Character">> I am ready to order. Gina do you want to start?
+<<set $speaker to "Player Character">> I am ready to order. 
+Gina do you want to start?
 
 <<set $speaker to "Gina">> Hold on! I still need another minute.
 
-<<set $speaker to "Rea">> I see that you’re still as indecisive as ever. 
+<<set $speaker to "Rea">> I see you’re still as indecisive as ever. 
 
-<<set $speaker to "Gina">> Excuse me? I fail to see how deciding what I want to eat and deciding if we should run off and get married are the same. 
+<<set $speaker to "Gina">> Excuse me? 
+I fail to see how deciding what I want to eat and deciding if we should run off and get married are the same. 
 
 <<set $speaker to "Player Character">> You two were going to get married!?
 
@@ -111,15 +133,14 @@ title: TrustGina
 <<setscene innerDateCut>>
 <<set $speaker to "Player Character’s Anxiety">> What have you gotten yourself into? 
 
-<<set $speaker to "Player Character's Thoughts">>: A totally normal date… where my date’s ex feels burned about a denied marriage proposal.
+<<set $speaker to "Player Character's Thoughts">> A totally normal date…
 
 <<set $speaker to "Player Character’s Anxiety">> Yeah. Very normal.  A first date is a GREAT place to be discussing marriage and exes.
 
-<<set $speaker to "Player Character's Thoughts">>: We can make this work.. I think.
+<<set $speaker to "Player Character's Thoughts">> We can make this work.. 
+I think.
 
 <<set $speaker to "Player Character’s Anxiety">> Go ahead, weigh in on whether your date made a mistake in denying their exes marriage proposal.
-
-<<setscene Restaurant>>
 
 [[Gina was justified|Justified]]
 [[Rea's Got a Point|ReaRight]]
@@ -129,6 +150,7 @@ title: TrustGina
 
 title: ReaRight
 ---
+<<setscene innerDateCut>>
 <<setscene Restaurant>>
 <<set $speaker to "Player Character">> She has a point. A year is a long time to spend with someone in a relationship. 
 
@@ -156,8 +178,8 @@ title: ReaRight
 
 title: MistakeRestaurant
 ---
+<<setscene innerDateCut>>
 <<setscene Restaurant>>
-(Looks around for the exit while Rea and Gina start to argue). (The argument should continue and continue while the camera slowly zooms in on the main players face.)
 
 <<set $speaker to "Gina">> A year isn’t enough time to decide if should spend your life with someone! Rom coms and reality tv has warped your perception of relationships.
 
@@ -184,20 +206,18 @@ title: MistakeRestaurant
 <<set $speaker to "Rea">> No!!!! She can’t know I was using her account. 
 
 <<set $speaker to "Gina">> This is unbelievable. I’m done! (Gina walks out while still zoomed in on the characters face)
-
 (Camera zooms back out)
 
 <<set $speaker to "Player Character">> I’ll have the shrimp tacos, please. 
-<<if visited("ListenToTheStory) is true>>
+<<if visited("ListenToTheStory") is true>>
     [[Finish The Night|EndingJordy]]
 <<else>>
     [[Finish The Night|EndingAlone]]
 <<endif>>
-<<setScene nextScene>>
-===
-
+===
 title: Justified
 ---
+<<setscene innerDateCut>>
 <<setscene Restaurant>>
 <<set $speaker to "Player Character">> Gina, I think you are completely justified in believing that a year is not enough time. My parents separated when I was a kid and I don’t want to live through that again. 
 
@@ -223,6 +243,7 @@ title: Justified
 
 title: WeShouldGo
 ---
+<<setscene innerDateCut>>
 <<setscene Restaurant>>
 <<set $speaker to "Player Character">> Gina, I think we should just get dinner somewhere else. 
 
@@ -244,29 +265,46 @@ title: WeShouldGo
 
 (Rea leaves)
 
-<<set $speaker to "Gina">> Look, I know this is a little uncomfortable.  But I need you to trust that I can take care of myself and I’m being honest when I say I’m ok with a situation.
+<<set $speaker to "Gina">> Look, I know this is a little uncomfortable...
+But I need you to trust that I can take care of myself and I’m being honest when I say I’m ok.
 
 <<setscene innerDateCut>>
 
-Player’s Anxiety: Wow, She’s guilting you for feeling concerned about her.
+<<set $speaker to "Player Character’s Anxiety">>  Wow, She’s guilting you for feeling concerned about her.
 
-Player’s Thoughts: I wasn’t being very thoughtful, but this is uncomfortable for me too.
+<<set $speaker to "Player Character’s Thoughts">>  I wasn’t being very thoughtful, but this is uncomfortable for me too.
 
-Player’s Anxiety: She’s too wrapped up in her feeling to even notice others.
+<<set $speaker to "Player Character’s Anxiety">>  She’s too wrapped up in her feelings to even notice others.
 
-Player’s Thoughts: I don’t know, maybe? 
+<<set $speaker to "Player Character’s Thoughts">>  I don’t know, maybe? 
 
 <<setscene innerDateCut>>
 
-<<set $speaker to "Player Character">> I'm sorry.  I guess I’m a little too wrapped up in my own nervousness that I wasn’t really thinking about what you’re going through.
+<<set $speaker to "Player Character">> I'm sorry.  
+I guess I’m a little too wrapped up in my own nervousness that I wasn’t really thinking about what you’re going through.
 
 <<set $speaker to "Gina">> Oh, well thank you for apologizing.
 
-<<set $speaker to "Player Character">> Not done yet. I get that you want to stay in this uncomfortable situation, but maybe I don’t.  And you’re ignoring that.  And that doesn't seem fair either.
-
-<<set $speaker to "Gina">> hmmm
-
+<<set $speaker to "Player Character">> Not done yet. 
+I get that you want to stay in this uncomfortable situation, but maybe I don’t.  
+And you’re ignoring that.  
+And that doesn't seem fair either.
+(Pause)
+<<set $speaker to "Gina">> Hmmm...
+(Pause)
 <<set $speaker to "Player Character">> yeah...
 [[Finish the Night|EndingSecondDate]]
 <<setScene nextScene>>
+===
+title: EndingJordy
+---
+<<setScene endingJordy>>
+===
+title: EndingAlone
+---
+<<setScene endingAlone>>
+===
+title: EndingSecondDate
+---
+<<setScene endingSecondDate>>
 ===

@@ -83,18 +83,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueContainer: {fileID: 0}
   continuePrompt: {fileID: 0}
-  textSpeed: 0.025
   textSpeedDefault: 0.025
-  textSpeedSlow: 0.05
+  textSpeedSlow: 0.1
   textSpeedFast: 0
+  textPauseTimeDefault: 1.5
   optionButtons:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   gameControlsContainer: {fileID: 0}
+  textSpeed: 0.025
+  textPauseTime: 0
   dialoguePanelController: {fileID: 0}
   cameraTransition: {fileID: 0}
+  sceneHandler: {fileID: 0}
 --- !u!114 &152393893
 MonoBehaviour:
   m_ObjectHideFlags: 0

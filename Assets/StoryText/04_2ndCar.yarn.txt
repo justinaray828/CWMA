@@ -31,8 +31,8 @@ Gotta turn this back into a date instead of story time with the Jordy.
 <<set $speaker to "Player Character's Anxiety">> All the pressure is on you.
 
 <<set $speaker to "Player Character's Thoughts">> Ok I can do this…
-
-[[Listen to the Story (Option not available if you made a joke about Jordy)|ListenToTheStory]]
+//Listen to story option is not available if you made a joke about Jordy
+[[Listen to the Story|ListenToTheStory]]
 [[Ask your date about their day|AskHerAboutHerDay_B]]
 [[Discuss the movie|DiscussTheMovie]]
 ===
@@ -40,6 +40,7 @@ Gotta turn this back into a date instead of story time with the Jordy.
 title: ListenToTheStory
 ---
 <<setscene Dryve>>
+<<listenToJordy>>
 <<set $speaker to "Player Character">> Let’s hear the story.
 
 <<set $speaker to "Gina">> Really?
@@ -230,8 +231,7 @@ title: DefendBoth
 
 <<set $speaker to "Gina">> Have a nice life.
 
-[[Finish The Night|EndingAlone]]
-<<setScene nextScene>>
+<<setscene 08_Ending_Alone>>
 ===
 
 title: IDontKnow
@@ -249,6 +249,6 @@ title: IDontKnow
 
 <<set $speaker to "Player Character">> Hopefully we both enjoy dinner.
 
-$Inspiration is true
+//Point of inspiration here, but for what?
 <<setScene nextScene>>
 ===

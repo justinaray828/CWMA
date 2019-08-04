@@ -171,8 +171,7 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
     {
         // "Perform" the command
         Debug.Log("Command: " + command.text);
-        string InnerDateScene = "setscene innerDate";
-
+        Debug.Log("listenToJordy Variable: " + Choices.listenedToJordy);
         switch (command.text)
         {
             case "setscene innerDateCut":
@@ -185,14 +184,22 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
             case "setScene nextScene":
                 sceneHandler.LoadNextScene();
                 break;
-            case "setScene endingSecondDate":
+            case "setscene 06_Ending_SecondDate":
                 sceneHandler.LoadScene("06_Ending_SecondDate");
                 break;
-            case "setScene endingJordy":
-                sceneHandler.LoadScene("07_Ending_Jordy");
+            case "setscene 07_Ending_Jordy":
+                if (Choices.listenedToJordy) {
+                    sceneHandler.LoadScene("07_Ending_Jordy");
+                }else{
+                    sceneHandler.LoadScene("08_Ending_Alone");
+                }
+                
                 break;
-            case "setScene endingAlone":
+            case "setscene 08_Ending_Alone":
                 sceneHandler.LoadScene("08_Ending_Alone");
+                break;
+            case "listenToJordy":
+                Choices.listenedToJordy = true;
                 break;
             default:
                 cameraTransition.ZoomOut();
@@ -331,7 +338,7 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
             /* we could do this without a switch statement by either using a hashtable 
              * or by using other functions that would be called via reflection. 
              * but this is easiest for now.
-             */            
+             */
             switch (s)
             {
                 case "slow":

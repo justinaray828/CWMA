@@ -107,7 +107,7 @@ I’m sure you’re going to have a great date with an ex literally watching you
 <<set $speaker to "Player Character's Thoughts">> Yeah..
 
 [[Trust Gina|TrustGina]]
-[[Say you’re going to leave|Leave]]
+[[We Should Go|WeShouldGo]]
 ===
 
 title: TrustGina
@@ -209,11 +209,8 @@ title: MistakeRestaurant
 (Camera zooms back out)
 
 <<set $speaker to "Player Character">> I’ll have the shrimp tacos, please. 
-<<if visited("ListenToTheStory") is true>>
-    [[Finish The Night|EndingJordy]]
-<<else>>
-    [[Finish The Night|EndingAlone]]
-<<endif>>
+//If you didn't listen to Jordy, you end up alone
+<<setscene 07_Ending_Jordy>>
 ===
 title: Justified
 ---
@@ -237,8 +234,7 @@ title: Justified
 
 <<set $speaker to "Gina">> Right! 
 
-[[Finish the Night|EndingSecondDate]]
-<<setScene nextScene>>
+<<setscene 06_Ending_SecondDate>>
 ===
 
 title: WeShouldGo
@@ -263,7 +259,7 @@ title: WeShouldGo
 
 <<set $speaker to "Rea">> Don’t worry, I was just about to head to a less dramatic table.
 
-(Rea leaves)
+//TODO: Remove Rea from Scene leaves
 
 <<set $speaker to "Gina">> Look, I know this is a little uncomfortable...
 But I need you to trust that I can take care of myself and I’m being honest when I say I’m ok.
@@ -289,22 +285,9 @@ I guess I’m a little too wrapped up in my own nervousness that I wasn’t real
 I get that you want to stay in this uncomfortable situation, but maybe I don’t.  
 And you’re ignoring that.  
 And that doesn't seem fair either.
-(Pause)
+//TODO: Add a Pause
 <<set $speaker to "Gina">> Hmmm...
 (Pause)
 <<set $speaker to "Player Character">> yeah...
-[[Finish the Night|EndingSecondDate]]
-<<setScene nextScene>>
-===
-title: EndingJordy
----
-<<setScene endingJordy>>
-===
-title: EndingAlone
----
-<<setScene endingAlone>>
-===
-title: EndingSecondDate
----
-<<setScene endingSecondDate>>
+<<setscene 06_Ending_SecondDate>>
 ===

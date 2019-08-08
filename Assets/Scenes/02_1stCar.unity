@@ -488,6 +488,20 @@ PrefabInstance:
       propertyPath: dialoguePanelController
       value: 
       objectReference: {fileID: 1699214600}
+    - target: {fileID: 2117065698, guid: 5479a4882c427ff4f8f43768d58d7ed6, type: 3}
+      propertyPath: characterName
+      value: Players Anxiety
+      objectReference: {fileID: 0}
+    - target: {fileID: 106347764638230936, guid: 5479a4882c427ff4f8f43768d58d7ed6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3407863415078409164, guid: 5479a4882c427ff4f8f43768d58d7ed6,
+        type: 3}
+      propertyPath: m_Name
+      value: PlayersAnxiety
+      objectReference: {fileID: 0}
     - target: {fileID: 1166132181, guid: 5479a4882c427ff4f8f43768d58d7ed6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.2
@@ -503,6 +517,11 @@ PrefabInstance:
     - target: {fileID: 1166132181, guid: 5479a4882c427ff4f8f43768d58d7ed6, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3626414661414704907, guid: 5479a4882c427ff4f8f43768d58d7ed6,
+        type: 3}
+      propertyPath: m_Name
+      value: PlayersBrain
       objectReference: {fileID: 0}
     - target: {fileID: 472881662, guid: 5479a4882c427ff4f8f43768d58d7ed6, type: 3}
       propertyPath: m_LocalPosition.x

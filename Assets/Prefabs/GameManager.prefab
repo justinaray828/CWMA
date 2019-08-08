@@ -26,8 +26,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 472881661}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 112.01, y: 3.51, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalPosition: {x: 2.2, y: 8.91, z: 0}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7735975670008286485}
   m_RootOrder: 0
@@ -69,7 +69,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 7bf8f5bcee023ba48a6c9a596772f808, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5f3a8f25f4121394bb9779f231c70f38, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -90,7 +90,7 @@ Animator:
   m_GameObject: {fileID: 472881661}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 876b0df69aa457249885c5940bb48c7f, type: 2}
+  m_Controller: {fileID: 9100000, guid: a75379b0551f15744af3a5098a3cf0d2, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -125,8 +125,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1166132180}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 80.01, y: 3.51, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalPosition: {x: -2.2, y: 8.91, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 733498451143559910}
   m_RootOrder: 0
@@ -168,7 +168,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 7bf8f5bcee023ba48a6c9a596772f808, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5f3a8f25f4121394bb9779f231c70f38, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -278,7 +278,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentExpression: Happy
   facialExpressionGameObject: {fileID: 1166132180}
-  dialoguePanelController: {fileID: 0}
+  dialoguePanelController: {fileID: 7643504923149815353}
+  characterName: Players Anxiety
 --- !u!114 &1222548689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,7 +294,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentExpression: Happy
   facialExpressionGameObject: {fileID: 472881661}
-  dialoguePanelController: {fileID: 0}
+  dialoguePanelController: {fileID: 7643504923149815353}
+  characterName: Players Brain
 --- !u!1 &4766002247114661776
 GameObject:
   m_ObjectHideFlags: 0
@@ -484,15 +486,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3181550750543965435, guid: 3ebda203fdb25b849a6658325c1906b5,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 150264271382222511, guid: 3ebda203fdb25b849a6658325c1906b5,
         type: 3}
       propertyPath: m_Name
-      value: Players Anxiety
+      value: PlayersAnxiety
       objectReference: {fileID: 0}
     - target: {fileID: 150264271382222511, guid: 3ebda203fdb25b849a6658325c1906b5,
         type: 3}
@@ -502,7 +499,7 @@ PrefabInstance:
     - target: {fileID: 2237565384368820840, guid: 3ebda203fdb25b849a6658325c1906b5,
         type: 3}
       propertyPath: m_Name
-      value: Players Brain
+      value: PlayersBrain
       objectReference: {fileID: 0}
     - target: {fileID: 2237565384368820840, guid: 3ebda203fdb25b849a6658325c1906b5,
         type: 3}

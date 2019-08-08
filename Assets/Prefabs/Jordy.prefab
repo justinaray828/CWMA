@@ -95,6 +95,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentExpression: Happy
   facialExpressionGameObject: {fileID: 5530593371055741393}
+  dialoguePanelController: {fileID: 0}
+  characterName: Jordy
 --- !u!1 &5530593371055741393
 GameObject:
   m_ObjectHideFlags: 0

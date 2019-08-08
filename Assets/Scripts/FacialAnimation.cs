@@ -14,6 +14,8 @@ public class FacialAnimation : MonoBehaviour
     public string currentExpression;
     public GameObject facialExpressionGameObject;
     public DialoguePanelController dialoguePanelController;
+    [Header("Name to be displayed for talking character")]
+    public string characterName;
 
     private Animator animator;
     private string talking = "Talking";
@@ -51,6 +53,6 @@ public class FacialAnimation : MonoBehaviour
 
     private void SetSpeakerOnPanel()
     {
-        dialoguePanelController.nameText.text = gameObject.name + ":";
+        dialoguePanelController.nameText.text = characterName;
     }
 }

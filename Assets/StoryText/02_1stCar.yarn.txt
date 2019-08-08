@@ -54,27 +54,27 @@ Another great first date thanks to the gig economy.
 title: PlayItCool
 ---
 <<setscene Dryve>>
-<<set $speaker to "Player Character">> No problem, the first few minutes of the movie are previews anyway.  Let it Ride.
+<<ChangeExpression Player Talking>> No problem, the first few minutes of the movie are previews anyway.  Let it Ride.
 
-<<set $speaker to "Gina">> Aww, I like watching previews
+<<ChangeExpression Gina Talking>> Aww, I like watching previews
 
-<<set $speaker to "Jordy">> I heard they were showing a trailer for the big superhero flick before your movie.  
-Honestly, that trailer is probably better than what you’re seeing.  
-Rotten Potatoes says this movie is certified trash.
+<<ChangeExpression Jordy Talking>> I heard they were showing a trailer for the big superhero flick before your movie.  
+<<ChangeExpression Jordy Talking>> Honestly, that trailer is probably better than what you’re seeing.  
+<<ChangeExpression Jordy Talking>> Rotten Potatoes says this movie is certified trash.
 
-<<set $speaker to "Player Character">> Critics think every movie is bad.
+<<ChangeExpression Player Talking>> Critics think every movie is bad.
 
-<<set $speaker to "Jordy">> Nah dude. It was in the 30s for Critics AND User Reviews.
+<<ChangeExpression Jordy Talking>> Nah dude. It was in the 30s for Critics AND User Reviews.
 
-<<set $speaker to "Gina">> Great (Need a good eye roll animation), we’re about to sit through a 2 hour bomb.
+<<ChangeExpression Gina Talking>> Great (Need a good eye roll animation), we’re about to sit through a 2 hour bomb.
 
-<<set $speaker to "Jordy">> 2 hours and 45 minutes.
+<<ChangeExpression Jordy Talking>> 2 hours and 45 minutes.
 
-<<set $speaker to "Gina">> Why did you pick this movie again?
+<<ChangeExpression Gina Talking>> Why did you pick this movie again?
 
-<<set $speaker to "Player Character">> Maybe it will be so bad it’s good?  
+<<ChangeExpression Player Talking>> Maybe it will be so bad it’s good?  
 
-<<set $speaker to "Jordy">> And We’re Here! 
+<<ChangeExpression Jordy Talking>> And We’re Here! 
 I hope that you are in the 30 percent of people with incorrect err… ‘unique’ opinions! 
 Remember to tip!
 5 Star Ride Times, 5 Star Ratings!
@@ -84,45 +84,45 @@ Remember to tip!
 title: MakeAJoke
 ---
 <<setscene Dryve>>
-<<set $speaker to "Player Character">> Hey, I've got a joke!
+<<ChangeExpression Player Talking>> Hey, I've got a joke!
 
-<<set $speaker to "Gina">> Great!  We still have 6 minutes left to kill. 
+<<ChangeExpression Gina Talking>> Great!  We still have 6 minutes left to kill. 
 
-<<set $speaker to "Jordy">> Probably closer to 5 (new window) Just ran that red light. (both characters get Wtf looks)
+<<ChangeExpression Jordy Talking>> Probably closer to 5 (new window) Just ran that red light. (both characters get Wtf looks)
 
-<<set $speaker to "Player Character">> Anyway… (typed out slowly) I tried to be a Dryver driver once. 
+<<ChangeExpression Player Talking>> Anyway… (typed out slowly) I tried to be a Dryver driver once. 
 Trouble is, my passengers didn’t appreciate when I went the extra mile. 
 
 <<set $speaker to "Gina">> ...
 
-<<set $speaker to "Player Character">> ...
+<<ChangeExpression Player Talking>> ...
 
-<<set $speaker to "Jordy">> Hey man, I don’t like when you make fun of my job. 
-I love my job.
+<<ChangeExpression Jordy Talking>> Hey man, I don’t like when you make fun of my job. 
+<<ChangeExpression Jordy Talking>> I love my job.
 		
-<<set $speaker to "Gina">> I think he was just making a bad joke... 
+<<ChangeExpression Gina Talking>> I think he was just making a bad joke... 
 
-<<set $speaker to "Jordy">> So the gig economy is a joke?
+<<ChangeExpression Jordy Talking>> So the gig economy is a joke?
 
-<<set $speaker to "Player Character">> No.. yes…. How do I answer that?
+<<ChangeExpression Player Talking>> No.. yes…. How do I answer that?
 
-<<set $speaker to "Gina">> From a labor perspective it exploits workers while concentrating capital towards the top.
+<<ChangeExpression Gina Talking>> From a labor perspective it exploits workers while concentrating capital towards the top.
 
-<<set $speaker to "Player Character">> I’m sorry, I didn’t mean anything by it
+<<ChangeExpression Player Talking>> I’m sorry, I didn’t mean anything by it
 
-<<set $speaker to "Jordy">> That’s obvious.  
-I mean you’re not wrong, but when you work 9 to 5, just $2 above minimum wage, you’ve got to be creative to make a legal living.  
+<<ChangeExpression Jordy Talking>> That’s obvious.  
+<<ChangeExpression Jordy Talking>> I mean you’re not wrong, but when you work 9 to 5, just $2 above minimum wage, you’ve got to be creative to make a legal living.  
 
-<<set $speaker to "Gina">> That’s respectable.
+<<ChangeExpression Gina Talking>> That’s respectable.
 
-<<set $speaker to "Jordy">> Plus, I’m my own boss. 
-Nobody tells me what to do.
+<<ChangeExpression Jordy Talking>> Plus, I’m my own boss. 
+<<ChangeExpression Jordy Talking>> Nobody tells me what to do.
 
-<<set $speaker to "Player Character">> Turn left here
+<<ChangeExpression Player Talking>> Turn left here
 
 (Awkward back and forth stare down between Jordy and Player)
 
-<<set $speaker to "Jordy">> Get out...
+<<ChangeExpression Jordy Talking>> Get out...
 <<setScene nextScene>>
 ===
 
@@ -131,13 +131,14 @@ title: Escape
 <<setscene Dryve>>
 <<set $speaker to "Player Character">> *Tries to unlock door*
 
-<<set $speaker to "Gina">> Ummm, are you trying to open the door while we’re in a moving car?
+<<ChangeExpression Gina Talking>> Ummm, are you trying to open the door while we’re in a moving car?
 
-<<set $speaker to "Player Character">> No… (New window) Yes
+<<ChangeExpression Player Talking>> No… (New window) Yes
 
-<<set $speaker to "Jordy">> Dude.  Not cool.
+<<ChangeExpression Jordy Talking>> Dude.  
+<<ChangeExpression Jordy Talking>> Not cool.
 
-<<set $speaker to "Gina">> Ok… 
+<<ChangeExpression Gina Talking>> Ok… 
 
 <<setscene innerDate>>
 
@@ -157,50 +158,50 @@ title: Escape
 
 title: PlayItCool_B
 ---
-<<set $speaker to "Player Character">> It’s alright, Cool people don’t arrive early.
+<<ChangeExpression Player Talking>> It’s alright, Cool people don’t arrive early.
 
-<<set $speaker to "Gina">> I’m less concerned about being cool than missing the beginning of the damn movie.
+<<ChangeExpression Gina Talking>> I’m less concerned about being cool than missing the beginning of the damn movie.
 
-<<set $speaker to "Player Character">> I heard the first 20 minutes of the movie is a dream… Spoiler Warning
+<<ChangeExpression Player Talking>> I heard the first 20 minutes of the movie is a dream… Spoiler Warning
 
-<<set $speaker to "Gina">> If you say ‘Spoiler Warning’ after the spoiler, it isn’t really a warning. It’s a Spoiler Announcement
+<<ChangeExpression Gina Talking>> If you say ‘Spoiler Warning’ after the spoiler, it isn’t really a warning. It’s a Spoiler Announcement
 
-<<set $speaker to "Player Character">> Oops, sorry
+<<ChangeExpression Player Talking>> Oops, sorry
 
-<<set $speaker to "Jordy">> That’s a good point, I’m going to start using that when I spoil things accidentally.  Spoiler Announcement!  At the end of the movie the main character…
+<<ChangeExpression Jordy Talking>> That’s a good point, I’m going to start using that when I spoil things accidentally.  Spoiler Announcement!  At the end of the movie the main character…
 
-<<set $speaker to "Gina">> Could you not!!!!
+<<ChangeExpression Gina Talking>> Could you not!!!!
 
-<<set $speaker to "Jordy">> … Arrives at their destination on time!  We’re here!
+<<ChangeExpression Jordy Talking>> … Arrives at their destination on time!  We’re here!
 <<setScene nextScene>>  
 ===
 
 title: AskHerAboutHerDay
 ---
 <<setscene Dryve>>
-<<set $speaker to "Player Character">> How was your day?
+<<ChangeExpression Player Talking>> How was your day?
 
-<<set $speaker to "Gina">> Okay, could have been better.
+<<ChangeExpression Gina Talking>> Okay, could have been better.
 
-<<set $speaker to "Player Character">> Oh ok…
+<<ChangeExpression Player Talking>> Oh ok…
 
 <<set $speaker to "Gina">> …
 
 <<set $speaker to "Player Character">> ... 
 
-<<set $speaker to "Jordy">> Did something crappy happen?
+<<ChangeExpression Jordy Talking>> Did something crappy happen?
 
-<<set $speaker to "Gina">> Yeah Sorta, over the past few weeks my pens keep going missing.
+<<ChangeExpression Gina Talking>> Yeah Sorta, over the past few weeks my pens keep going missing.
 
-<<set $speaker to "Player Character">> Like a pen thief?
+<<ChangeExpression Player Talking>> Like a pen thief?
 
-<<set $speaker to "Gina">> Yup, full scale office supply larceny.  It wouldn’t be a big deal if I hadn’t went and purchased my own pens.
+<<ChangeExpression Gina Talking>> Yup, full scale office supply larceny.  It wouldn’t be a big deal if I hadn’t went and purchased my own pens.
 
-<<set $speaker to "Player Character">> That sucks, do you know who did it?
+<<ChangeExpression Player Talking>> That sucks, do you know who did it?
 
-<<set $speaker to "Gina">> Yeah maybe, but how do you ask your coworker that?
+<<ChangeExpression Gina Talking>> Yeah maybe, but how do you ask your coworker that?
 
-<<set $speaker to "Player Character">> Right, that’s a struggle.
+<<ChangeExpression Player Talking>> Right, that’s a struggle.
 
 <<setscene innerDate>>
 
@@ -218,15 +219,15 @@ title: AskHerAboutHerDay
 title: ThatSoundsRough
 ---
 <<setscene Dryve>>
-<<set $speaker to "Player Character">> That sounds rough, but I believe in your ability to handle it.
+<<ChangeExpression Player Talking>> That sounds rough, but I believe in your ability to handle it.
 
-<<set $speaker to "Gina">> Thanks… I think I just needed someone to listen to me rant a bit
+<<ChangeExpression Gina Talking>> Thanks… I think I just needed someone to listen to me rant a bit
 
-<<set $speaker to "Player Character">> Oh, Well I’m glad to help
+<<ChangeExpression Player Talking>> Oh, Well I’m glad to help
 
-<<set $speaker to "Gina">> I’ll figure out a way to handle it Monday morning
+<<ChangeExpression Gina Talking>> I’ll figure out a way to handle it Monday morning
 
-<<set $speaker to "Jordy">> And we’re here!!!  Hope y’all enjoy the movie!
+<<ChangeExpression Jordy Talking>> And we’re here!!!  Hope y’all enjoy the movie!
 
 $inspiraton is true
 <<setScene nextScene>>
@@ -235,30 +236,30 @@ $inspiraton is true
 title: Sneak
 ---
 <<setscene Dryve>>
-<<set $speaker to "Player Character">> You should sneak in at night and search everyone’s desks
+<<ChangeExpression Player Talking>> You should sneak in at night and search everyone’s desks
 
-<<set $speaker to "Gina">> Yeah that sounds like…
+<<ChangeExpression Gina Talking>> Yeah that sounds like…
 
-<<set $speaker to "Jordy">> A terrible idea
+<<ChangeExpression Jordy Talking>> A terrible idea
 
-<<set $speaker to "Gina">> A great idea
+<<ChangeExpression Gina Talking>> A great idea
 
-<<set $speaker to "Player Character">> Oh, Well I’m glad to help..
+<<ChangeExpression Player Talking>> Oh, Well I’m glad to help..
 
-<<set $speaker to "Gina">> I’ll be the crazy person sneaking into my office to look through desks for my pens.
+<<ChangeExpression Gina Talking>> I’ll be the crazy person sneaking into my office to look through desks for my pens.
 
-<<set $speaker to "Player Character">> Yeah, I see your point...
+<<ChangeExpression Player Talking>> Yeah, I see your point...
 
-<<set $speaker to "Gina">> If the janitors or any of my late working coworkers are there, I’ll just explain how I was wronged and deserve pen justice
+<<ChangeExpression Gina Talking>> If the janitors or any of my late working coworkers are there, I’ll just explain how I was wronged and deserve pen justice
 
-<<set $speaker to "Player Character">> Yeah, I was mostly joking but you seem pretty set on this...
+<<ChangeExpression Player Talking>> Yeah, I was mostly joking but you seem pretty set on this...
 
-<<set $speaker to "Gina">> Oh, You were joking about Breaking and Entering at my place of employment to get my $10 pack of gel pens?
+<<ChangeExpression Gina Talking>> Oh, You were joking about Breaking and Entering at my place of employment to get my $10 pack of gel pens?
 
-<<set $speaker to "Jordy">> You’d be justified with Gel pens.
+<<ChangeExpression Jordy Talking>> You’d be justified with Gel pens.
 
-<<set $speaker to "Player Character">> How far are we from...
+<<ChangeExpression Player Talking>> How far are we from...
 
-<<set $speaker to "Jordy">> And we’re here!!!  Hope y’all enjoy the movie!
+<<ChangeExpression Jordy Talking>> And we’re here!!!  Hope y’all enjoy the movie!
 <<setScene nextScene>>
 ===

@@ -1,8 +1,12 @@
 title: Start
 ---
 <<setscene Dryve>>
-<<set $speaker to "Jordy">> And that’s how I discovered where the cold sore came from.  
+
+<<ChangeExpression Jordy Talking>>
+And that’s how I discovered where the cold sore came from.  
+<<ChangeExpression Jordy Talking>>
 I have no idea how that came up?  
+<<ChangeExpression Jordy Talking>>
 Sorry, I talk a lot when I’m driving.
 
 <<set $speaker to "Gina">> …
@@ -11,10 +15,14 @@ Sorry, I talk a lot when I’m driving.
 
 <<set $speaker to "Jordy">> ...
 
-<<set $speaker to "Gina">> Sooo… 5 more minutes till the theater?
+<<ChangeExpression Gina Talking>>
+Sooo… 5 more minutes till the theater?
 
-<<set $speaker to "Jordy">> Nope, 7 minutes.
+<<ChangeExpression Jordy Talking>>
+Nope, 7 minutes.
+<<ChangeExpression Jordy Talking>>
 Missed another turn... or two.  
+<<ChangeExpression Jordy Talking>>
 Sorry.
 
 <<setscene innerDate>>

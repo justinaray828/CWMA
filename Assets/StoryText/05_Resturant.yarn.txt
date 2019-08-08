@@ -6,10 +6,9 @@ title: Start
 <<set $speaker to "Gina">> Great! I’m looking forward to it. I’m heading to the bathroom.  Be right back.
 
 <<set $speaker to "Player Character">> Oh ok, see you soon.
-
+<<ginaLeaves Gina>>
 <<set $speaker to "Gina">> Back in a bit
 
-<<ginaLeaves Gina>>
 <<setscene innerDateCut>>
 
 <<set $speaker to "Player Character’s Anxiety">> She just bailed on you.

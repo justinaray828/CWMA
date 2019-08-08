@@ -8,6 +8,8 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
 {
     public GameObject dialogueContainer;
     public GameObject continuePrompt;
+    [Tooltip("This will be attached to Characters GameObject in scene")]
+    public TalkingStop talkingStop;
     public float textSpeed;
 
     [Tooltip("How quickly to show the text, in seconds per character")]
@@ -25,6 +27,7 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
     public SceneHandler sceneHandler;
 
     private Yarn.OptionChooser SetSelectedOption;
+    
 
     private bool inBrainRoom = false;
     private bool inBrainRoomCut = false;
@@ -99,6 +102,9 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
             // Display the line immediately if textSpeed == 0
             dialoguePanelController.dialogueText.text = lineString;
         }
+
+        ///Stops all talking in scene after text is done
+        talkingStop.StopAllTalking();
 
         // Show the 'press any key' prompt when done, if we have one
         if (continuePrompt != null)

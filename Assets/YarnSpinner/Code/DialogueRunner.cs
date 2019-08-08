@@ -220,6 +220,7 @@ namespace Yarn.Unity
 
                 if (step is Yarn.Dialogue.LineResult) {
 
+
                     // Wait for line to finish displaying
                     var lineResult = step as Yarn.Dialogue.LineResult;
                     yield return StartCoroutine (this.dialogueUI.RunLine (lineResult.line));

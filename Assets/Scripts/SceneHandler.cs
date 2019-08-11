@@ -45,9 +45,10 @@ public class SceneHandler : MonoBehaviour
 
     private bool SceneNameCheck(string sceneName)
     {
-        if (SceneUtility.GetBuildIndexByScenePath(sceneName) >= 0)
+        string scenePath = "Assets/Scenes/" + sceneName + ".unity";
+        if (SceneUtility.GetBuildIndexByScenePath(scenePath) >= 0) {
             return true;
-
+        }
         Debug.LogError("Scene does not exist: " + sceneName);
         return false;
     }

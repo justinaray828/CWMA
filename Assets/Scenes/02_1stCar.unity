@@ -485,6 +485,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3269315598130190303, guid: 5479a4882c427ff4f8f43768d58d7ed6,
+        type: 3}
+      propertyPath: brainSceneCube
+      value: 
+      objectReference: {fileID: 641551047}
+    - target: {fileID: 3269315598130190303, guid: 5479a4882c427ff4f8f43768d58d7ed6,
+        type: 3}
+      propertyPath: brainOpenAnimator
+      value: 
+      objectReference: {fileID: 656366951}
+    - target: {fileID: 3269315598440971575, guid: 5479a4882c427ff4f8f43768d58d7ed6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -4
+      objectReference: {fileID: 0}
     - target: {fileID: 794510912338732659, guid: 5479a4882c427ff4f8f43768d58d7ed6,
         type: 3}
       propertyPath: m_AnchorMin.y

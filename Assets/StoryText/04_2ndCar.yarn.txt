@@ -11,9 +11,9 @@ title: Start
 
 <<set $speaker to "Jordy">> Crazy the Dryve app put y’all in my car again.
 
-<<set $speaker to "Player Character">> Yeah…
+<<set $speaker to "Player Character">> Yeah… (Slow)
 
-<<set $speaker to "Gina">> Crazy
+<<set $speaker to "Gina">> Crazy (Slow)
 
 <<set $speaker to "Jordy">> Must be the universe saying “This is a great driver!!!”  Btw remember to rate, I noticed I didn’t get any feedback on the last one.
 
@@ -23,15 +23,16 @@ title: Start
 
 <<setscene innerDate>>
 
-<<set $speaker to "Player Character's Anxiety">>: This is just great
+<<set $speaker to "Player Character's Anxiety">> This is just great
 
-<<set $speaker to "Player Character's Thoughts">>: I have to change the subject.  Gotta turn this back into a date instead of story time with the Dryver.
+<<set $speaker to "Player Character's Thoughts">> I have to change the subject.
+Gotta turn this back into a date instead of story time with the Jordy.
 
-<<set $speaker to "Player Character's Anxiety">>: All the pressure is on you.
+<<set $speaker to "Player Character's Anxiety">> All the pressure is on you.
 
-<<set $speaker to "Player Character's Thoughts">>: Ok I can do this…
-
-[[Listen to the Story (Option not available if you made a joke about Jordy)|ListenToTheStory]]
+<<set $speaker to "Player Character's Thoughts">> Ok I can do this…
+//Listen to story option is not available if you made a joke about Jordy
+[[Listen to the Story|ListenToTheStory]]
 [[Ask your date about their day|AskHerAboutHerDay_B]]
 [[Discuss the movie|DiscussTheMovie]]
 ===
@@ -39,6 +40,7 @@ title: Start
 title: ListenToTheStory
 ---
 <<setscene Dryve>>
+<<listenToJordy>>
 <<set $speaker to "Player Character">> Let’s hear the story.
 
 <<set $speaker to "Gina">> Really?
@@ -73,6 +75,7 @@ title: ListenToTheStory
 
 title: AskHerAboutHerDay_B
 ---
+(If the player has asked this before, present this scene)
 <<setscene Dryve>>
 <<set $speaker to "Player Character">> Hey, can you tell me about your day
 
@@ -80,19 +83,19 @@ title: AskHerAboutHerDay_B
 
 <<set $speaker to "Player Character">> Yeah
 
-<<set $speaker to "Gina">> Um you already asked that already
+<<set $speaker to "Gina">> Um you asked that already
 
 <<setscene innerDate>>
 
-<<set $speaker to "Player Character's Anxiety">>: Wow, you seriously asked that again.
+<<set $speaker to "Player Character's Anxiety">> Wow, you seriously asked that again.
 
-<<set $speaker to "Player Character's Thoughts">>: I forgot… And now I feel like an idiot..
+<<set $speaker to "Player Character's Thoughts">> I forgot… And now I feel like an idiot..
 
-<<set $speaker to "Player Character's Anxiety">>: I’m sure you can save this.
+<<set $speaker to "Player Character's Anxiety">> I’m sure you can save this.
 
-<<set $speaker to "Player Character's Thoughts">>: Really?
+<<set $speaker to "Player Character's Thoughts">> Really?
 
-<<set $speaker to "Player Character's Anxiety">>: Haha, No. You are still an idiot. 
+<<set $speaker to "Player Character's Anxiety">> No. You are still an idiot. 
 
 [[Listen to the Story (Option not available if you made a joke about Jordy)|ListenToTheStory]]
 [[Discuss the movie|DiscussTheMovie]]
@@ -111,15 +114,16 @@ title: DiscussTheMovie
 
 <<setscene innerDate>>
 
-<<set $speaker to "Player Character's Anxiety">>: Here’s your chance to relate.
+<<set $speaker to "Player Character's Anxiety">> Here’s your chance to relate.
 
-<<set $speaker to "Player Character's Thoughts">>: Great, but how should I respond?
+<<set $speaker to "Player Character's Thoughts">> Great, but how should I respond?
 
-<<set $speaker to "Player Character's Anxiety">>: You have two choices. Do you want to be like a parrot and repeat what she said? Or do you want to form your own opinion and give an honest, well thought out answer?
+<<set $speaker to "Player Character's Anxiety">> You have two choices. Do you want to be like a parrot and repeat what she said? 
+Or do you want to form your own opinion and give an honest, well thought out answer?
 
-<<set $speaker to "Player Character's Thoughts">>: I feel like there should be more choices.
+<<set $speaker to "Player Character's Thoughts">> I feel like there should be more choices.
 
-<<set $speaker to "Player Character's Anxiety">>: Nope.  Only two possibilities.  In existence.  Two choices.  Pick One.
+<<set $speaker to "Player Character's Anxiety">> Nope.  Only two possibilities.  In existence.  Two choices.  Pick One.
 
 [[I liked it, I think the critics were wrong.|CriticsWereWrong]]
 [[The critics were right, I don’t know how that terrible movie got made.|CriticsWereRight]]
@@ -137,9 +141,10 @@ title: CriticsWereWrong
 
 <<set $speaker to "Gina">> The movie was far from perfect, but I still enjoyed it.
 
-<<set $speaker to "Player Character">> But the critics were still wrong.
+<<set $speaker to "Player Character">> I think the critics were still wrong.
 
-<<set $speaker to "Gina">> Everyone is entitled to their opinion whether you agree or not. Not everything has to be made for everyone.
+<<set $speaker to "Gina">> Everyone is entitled to their opinion, whether you agree or not. 
+Not everything has to be made for everyone.
 
 <<set $speaker to "Player Character">> …
 
@@ -174,9 +179,9 @@ title: CriticsWereRight
 
 <<setscene innerDate>>
 
-<<set $speaker to "Player Character's Anxiety">>: Great now you’ve screwed yourself
+<<set $speaker to "Player Character's Anxiety">> Great now you’ve screwed yourself
 
-<<set $speaker to "Player Character's Thoughts">>: No, I can find a way out of this.
+<<set $speaker to "Player Character's Thoughts">> No, I can find a way out of this.
 
 [[It was wrong to say that.|WrongToSayThat]]
 [[Defend both statements.|DefendBoth]]
@@ -226,8 +231,7 @@ title: DefendBoth
 
 <<set $speaker to "Gina">> Have a nice life.
 
-[[Finish The Night|EndingAlone]]
-<<setScene nextScene>>
+<<setscene 08_Ending_Alone>>
 ===
 
 title: IDontKnow
@@ -245,6 +249,6 @@ title: IDontKnow
 
 <<set $speaker to "Player Character">> Hopefully we both enjoy dinner.
 
-$Inspiration is true
+//Point of inspiration here, but for what?
 <<setScene nextScene>>
 ===

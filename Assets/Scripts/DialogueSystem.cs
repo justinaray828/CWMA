@@ -11,7 +11,6 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
     [Tooltip("This will be attached to Characters GameObject in scene")]
     public TalkingStop talkingStop;
     public float textSpeed;
-
     [Tooltip("How quickly to show the text, in seconds per character")]
     public float textSpeedDefault;
     public float textSpeedSlow;
@@ -27,11 +26,11 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
     public SceneHandler sceneHandler;
 
     private Yarn.OptionChooser SetSelectedOption;
-    
 
     private bool inBrainRoom = false;
     private bool inBrainRoomCut = false;
     private bool inputPressed = false;
+    
 
     private void Awake()
     {
@@ -48,7 +47,7 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
 
     public override IEnumerator RunLine(Yarn.Line line)
     {
-        while (inBrainRoom && !cameraTransition.isCameraZoomedIn())
+        while (cameraTransition.startZoom)
         {
             dialoguePanelController.EnableDialogue(false);
             yield return null;//Wait until the camera is all the way zoomed in to continue

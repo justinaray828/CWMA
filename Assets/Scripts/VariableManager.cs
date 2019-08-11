@@ -120,7 +120,7 @@ public class VariableManager : VariableStorageBehaviour
             if (item.Key == "$speaker" && item.Value.AsString != currentSpeaker)
             {
                 currentSpeaker = item.Value.AsString;
-                dialoguePanelController.nameText.text = item.Value.AsString + ":";
+                dialoguePanelController.nameText.text = item.Value.AsString;
             }
         }
     }

@@ -19,12 +19,14 @@ public class FacialAnimation : MonoBehaviour
 
     private Animator animator;
     private string talking = "Talking";
+    private CameraTransition cameraTransition;
 
     // Start is called before the first frame update
     void Start()
     {
         animator = facialExpressionGameObject.GetComponent<Animator>();
         animator.SetBool(currentExpression, true);
+        cameraTransition = FindObjectOfType<CameraTransition>();
     }
 
     /// <summary>
@@ -43,6 +45,12 @@ public class FacialAnimation : MonoBehaviour
             SetSpeakerOnPanel();
     }
 
+    [YarnCommand("StartTalking")]
+    public void StartTalking()
+    {
+        StartCoroutine("TalkingDelay");
+    }
+
     public void StopTalking()
     {
         if(currentExpression == talking)
@@ -54,5 +62,15 @@ public class FacialAnimation : MonoBehaviour
     private void SetSpeakerOnPanel()
     {
         dialoguePanelController.nameText.text = characterName;
+    }
+
+    IEnumerator TalkingDelay()
+    {
+        while (cameraTransition.startZoom)
+        {
+            yield return null;
+        }
+
+        ChangeExpression(talking);
     }
 }

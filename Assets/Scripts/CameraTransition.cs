@@ -30,7 +30,7 @@ public class CameraTransition : MonoBehaviour
     //private bool enableBrainScene;
     private bool zoomIn = true;
 
-    private bool startZoom = false;
+    public bool startZoom = false;
     private bool cameraIsZoomedIn = false;
     private bool turnCameraOn = false; //Used for ToggleBrainRoomCut()
 

@@ -7,17 +7,12 @@ using UnityEngine.UI;
 public class DialoguePanelController : MonoBehaviour
 {
     public RectTransform dialoguePanelRectTransform;
-
     public float highestPanelLocation;
-
     public Text dialogueText;
     public Text nameText;
-
     public Animator animator;
-
     public GameObject nameTextPanel;
-
-    
+    public bool dialogueEnabled;
 
     private float smoothTime = 0.3f;
     private float yVelocity = 0.3f;
@@ -44,6 +39,7 @@ public class DialoguePanelController : MonoBehaviour
         dialogueText.gameObject.SetActive(boolean);
         nameText.gameObject.SetActive(boolean);
         nameTextPanel.SetActive(boolean);
+        dialogueEnabled = boolean;
     }
 
     private void ToggleDialogueText(bool textState)

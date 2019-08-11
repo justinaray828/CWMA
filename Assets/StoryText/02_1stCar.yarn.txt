@@ -2,11 +2,11 @@ title: Start
 ---
 <<setscene Dryve>>
 
-<<ChangeExpression Jordy Talking>>
+<<StartTalking Jordy>>
 And that’s how I discovered where the cold sore came from.  
-<<ChangeExpression Jordy Talking>>
+<<StartTalking Jordy>>
 I have no idea how that came up?  
-<<ChangeExpression Jordy Talking>>
+<<StartTalking Jordy>>
 Sorry, I talk a lot when I’m driving.
 
 <<set $speaker to "Gina">> …
@@ -15,35 +15,35 @@ Sorry, I talk a lot when I’m driving.
 
 <<set $speaker to "Jordy">> ...
 
-<<ChangeExpression Gina Talking>>
+<<StartTalking Gina>>
 Sooo… 5 more minutes till the theater?
 
-<<ChangeExpression Jordy Talking>>
+<<StartTalking Jordy>>
 Nope, 7 minutes.
-<<ChangeExpression Jordy Talking>>
+<<StartTalking Jordy>>
 Missed another turn... or two.  
-<<ChangeExpression Jordy Talking>>
+<<StartTalking Jordy>>
 Sorry.
 
 <<setscene innerDate>>
 
-<<set $speaker to "Player Character's Thoughts">> Well, this is an awkward ride. 
-But first dates are supposed to be sorta awkward.
-Right?
+<<StartTalking PlayersBrain>> Well, this is an awkward ride. 
+<<ChangeExpression PlayersBrain Talking>> But first dates are supposed to be sorta awkward.
+<<ChangeExpression PlayersBrain Talking>> Right?
 
-<<set $speaker to "Player Character's Anxiety">> Just play it cool, 
-maybe they won’t notice how much of a mess you are.  
-Think about it, you haven’t had the chance to embarrass yourself
-yet.
+<<StartTalking PlayersAnxiety>> Just play it cool, 
+<<StartTalking PlayersAnxiety>> maybe they won’t notice how much of a mess you are.  
+<<StartTalking PlayersAnxiety>> Think about it, you haven’t had the chance to embarrass yourself
+<<StartTalking PlayersAnxiety>> yet.
 
-<<set $speaker to "Player Character's Thoughts">> Oh, what a confidence boost!
+<<ChangeExpression PlayersBrain Talking>> Oh, what a confidence boost!
 
-<<set $speaker to "Player Character's Anxiety">> Look on the bright side, 
-you’ve made a wonderful new friend.  
-Jordy, the oversharing, turn missing, Ride share guy...  
-Another great first date thanks to the gig economy. 
+<<StartTalking PlayersAnxiety>> Look on the bright side, 
+<<StartTalking PlayersAnxiety>> you’ve made a wonderful new friend.  
+<<StartTalking PlayersAnxiety>> Jordy, the oversharing, turn missing, Ride share guy...  
+<<StartTalking PlayersAnxiety>> Another great first date thanks to the gig economy. 
 
-<<set $speaker to "Player Character's Thoughts">> This is salvageable, I think... what do I do?
+<<ChangeExpression PlayersBrain Talking>> This is salvageable, I think... what do I do?
 
 [[Play it cool|PlayItCool]]
 [[Make a joke| MakeAJoke]]
@@ -54,27 +54,27 @@ Another great first date thanks to the gig economy.
 title: PlayItCool
 ---
 <<setscene Dryve>>
-<<ChangeExpression Player Talking>> No problem, the first few minutes of the movie are previews anyway.  Let it Ride.
+<<StartTalking Player>> No problem, the first few minutes of the movie are previews anyway.  Let it Ride.
 
-<<ChangeExpression Gina Talking>> Aww, I like watching previews
+<<StartTalking Gina>> Aww, I like watching previews
 
-<<ChangeExpression Jordy Talking>> I heard they were showing a trailer for the big superhero flick before your movie.  
-<<ChangeExpression Jordy Talking>> Honestly, that trailer is probably better than what you’re seeing.  
-<<ChangeExpression Jordy Talking>> Rotten Potatoes says this movie is certified trash.
+<<StartTalking Jordy>> I heard they were showing a trailer for the big superhero flick before your movie.  
+<<StartTalking Jordy>> Honestly, that trailer is probably better than what you’re seeing.  
+<<StartTalking Jordy>> Rotten Potatoes says this movie is certified trash.
 
-<<ChangeExpression Player Talking>> Critics think every movie is bad.
+<<StartTalking Player>> Critics think every movie is bad.
 
-<<ChangeExpression Jordy Talking>> Nah dude. It was in the 30s for Critics AND User Reviews.
+<<StartTalking Jordy>> Nah dude. It was in the 30s for Critics AND User Reviews.
 
-<<ChangeExpression Gina Talking>> Great (Need a good eye roll animation), we’re about to sit through a 2 hour bomb.
+<<StartTalking Gina>> Great (Need a good eye roll animation), we’re about to sit through a 2 hour bomb.
 
-<<ChangeExpression Jordy Talking>> 2 hours and 45 minutes.
+<<StartTalking Jordy>> 2 hours and 45 minutes.
 
-<<ChangeExpression Gina Talking>> Why did you pick this movie again?
+<<StartTalking Gina>> Why did you pick this movie again?
 
-<<ChangeExpression Player Talking>> Maybe it will be so bad it’s good?  
+<<StartTalking Player>> Maybe it will be so bad it’s good?  
 
-<<ChangeExpression Jordy Talking>> And We’re Here! 
+<<StartTalking Jordy>> And We’re Here! 
 I hope that you are in the 30 percent of people with incorrect err… ‘unique’ opinions! 
 Remember to tip!
 5 Star Ride Times, 5 Star Ratings!
@@ -84,45 +84,45 @@ Remember to tip!
 title: MakeAJoke
 ---
 <<setscene Dryve>>
-<<ChangeExpression Player Talking>> Hey, I've got a joke!
+<<StartTalking Player>> Hey, I've got a joke!
 
-<<ChangeExpression Gina Talking>> Great!  We still have 6 minutes left to kill. 
+<<StartTalking Gina>> Great!  We still have 6 minutes left to kill. 
 
-<<ChangeExpression Jordy Talking>> Probably closer to 5 (new window) Just ran that red light. (both characters get Wtf looks)
+<<StartTalking Jordy>> Probably closer to 5 (new window) Just ran that red light. (both characters get Wtf looks)
 
-<<ChangeExpression Player Talking>> Anyway… (typed out slowly) I tried to be a Dryver driver once. 
+<<StartTalking Player>> Anyway… (typed out slowly) I tried to be a Dryver driver once. 
 Trouble is, my passengers didn’t appreciate when I went the extra mile. 
 
 <<set $speaker to "Gina">> ...
 
-<<ChangeExpression Player Talking>> ...
+<<StartTalking Player>> ...
 
-<<ChangeExpression Jordy Talking>> Hey man, I don’t like when you make fun of my job. 
-<<ChangeExpression Jordy Talking>> I love my job.
+<<StartTalking Jordy>> Hey man, I don’t like when you make fun of my job. 
+<<StartTalking Jordy>> I love my job.
 		
-<<ChangeExpression Gina Talking>> I think he was just making a bad joke... 
+<<StartTalking Gina>> I think he was just making a bad joke... 
 
-<<ChangeExpression Jordy Talking>> So the gig economy is a joke?
+<<StartTalking Jordy>> So the gig economy is a joke?
 
-<<ChangeExpression Player Talking>> No.. yes…. How do I answer that?
+<<StartTalking Player>> No.. yes…. How do I answer that?
 
-<<ChangeExpression Gina Talking>> From a labor perspective it exploits workers while concentrating capital towards the top.
+<<StartTalking Gina>> From a labor perspective it exploits workers while concentrating capital towards the top.
 
-<<ChangeExpression Player Talking>> I’m sorry, I didn’t mean anything by it
+<<StartTalking Player>> I’m sorry, I didn’t mean anything by it
 
-<<ChangeExpression Jordy Talking>> That’s obvious.  
-<<ChangeExpression Jordy Talking>> I mean you’re not wrong, but when you work 9 to 5, just $2 above minimum wage, you’ve got to be creative to make a legal living.  
+<<StartTalking Jordy>> That’s obvious.  
+<<StartTalking Jordy>> I mean you’re not wrong, but when you work 9 to 5, just $2 above minimum wage, you’ve got to be creative to make a legal living.  
 
-<<ChangeExpression Gina Talking>> That’s respectable.
+<<StartTalking Gina>> That’s respectable.
 
-<<ChangeExpression Jordy Talking>> Plus, I’m my own boss. 
-<<ChangeExpression Jordy Talking>> Nobody tells me what to do.
+<<StartTalking Jordy>> Plus, I’m my own boss. 
+<<StartTalking Jordy>> Nobody tells me what to do.
 
-<<ChangeExpression Player Talking>> Turn left here
+<<StartTalking Player>> Turn left here
 
 (Awkward back and forth stare down between Jordy and Player)
 
-<<ChangeExpression Jordy Talking>> Get out...
+<<StartTalking Jordy>> Get out...
 <<setScene nextScene>>
 ===
 
@@ -131,24 +131,24 @@ title: Escape
 <<setscene Dryve>>
 <<set $speaker to "Player Character">> *Tries to unlock door*
 
-<<ChangeExpression Gina Talking>> Ummm, are you trying to open the door while we’re in a moving car?
+<<StartTalking Gina>> Ummm, are you trying to open the door while we’re in a moving car?
 
-<<ChangeExpression Player Talking>> No… (New window) Yes
+<<StartTalking Player>> No… (New window) Yes
 
-<<ChangeExpression Jordy Talking>> Dude.  
-<<ChangeExpression Jordy Talking>> Not cool.
+<<StartTalking Jordy>> Dude.  
+<<StartTalking Jordy>> Not cool.
 
-<<ChangeExpression Gina Talking>> Ok… 
+<<StartTalking Gina>> Ok… 
 
 <<setscene innerDate>>
 
-<<set $speaker to "Player Character's Thoughts">> Oh my god, why was that an option?
+<<ChangeExpression PlayersBrain Talking>> Oh my god, why was that an option?
 
-<<set $speaker to "Player Character's Anxiety">> I wasn’t serious, Why did you pick that option? 
+<<StartTalking PlayersAnxiety>> I wasn’t serious, Why did you pick that option? 
 
-<<set $speaker to "Player Character's Thoughts">> I’m an idiot.
+<<ChangeExpression PlayersBrain Talking>> I’m an idiot.
 
-<<set $speaker to "Player Character's Anxiety">> Yeah, you are! 
+<<StartTalking PlayersAnxiety>> Yeah, you are! 
 
 [[Play it cool|PlayItCool_B]]
 [[Make a joke|MakeAJoke]]
@@ -158,58 +158,58 @@ title: Escape
 
 title: PlayItCool_B
 ---
-<<ChangeExpression Player Talking>> It’s alright, Cool people don’t arrive early.
+<<StartTalking Player>> It’s alright, Cool people don’t arrive early.
 
-<<ChangeExpression Gina Talking>> I’m less concerned about being cool than missing the beginning of the damn movie.
+<<StartTalking Gina>> I’m less concerned about being cool than missing the beginning of the damn movie.
 
-<<ChangeExpression Player Talking>> I heard the first 20 minutes of the movie is a dream… Spoiler Warning
+<<StartTalking Player>> I heard the first 20 minutes of the movie is a dream… Spoiler Warning
 
-<<ChangeExpression Gina Talking>> If you say ‘Spoiler Warning’ after the spoiler, it isn’t really a warning. It’s a Spoiler Announcement
+<<StartTalking Gina>> If you say ‘Spoiler Warning’ after the spoiler, it isn’t really a warning. It’s a Spoiler Announcement
 
-<<ChangeExpression Player Talking>> Oops, sorry
+<<StartTalking Player>> Oops, sorry
 
-<<ChangeExpression Jordy Talking>> That’s a good point, I’m going to start using that when I spoil things accidentally.  Spoiler Announcement!  At the end of the movie the main character…
+<<StartTalking Jordy>> That’s a good point, I’m going to start using that when I spoil things accidentally.  Spoiler Announcement!  At the end of the movie the main character…
 
-<<ChangeExpression Gina Talking>> Could you not!!!!
+<<StartTalking Gina>> Could you not!!!!
 
-<<ChangeExpression Jordy Talking>> … Arrives at their destination on time!  We’re here!
+<<StartTalking Jordy>> … Arrives at their destination on time!  We’re here!
 <<setScene nextScene>>  
 ===
 
 title: AskHerAboutHerDay
 ---
 <<setscene Dryve>>
-<<ChangeExpression Player Talking>> How was your day?
+<<StartTalking Player>> How was your day?
 
-<<ChangeExpression Gina Talking>> Okay, could have been better.
+<<StartTalking Gina>> Okay, could have been better.
 
-<<ChangeExpression Player Talking>> Oh ok…
+<<StartTalking Player>> Oh ok…
 
 <<set $speaker to "Gina">> …
 
 <<set $speaker to "Player Character">> ... 
 
-<<ChangeExpression Jordy Talking>> Did something crappy happen?
+<<StartTalking Jordy>> Did something crappy happen?
 
-<<ChangeExpression Gina Talking>> Yeah Sorta, over the past few weeks my pens keep going missing.
+<<StartTalking Gina>> Yeah Sorta, over the past few weeks my pens keep going missing.
 
-<<ChangeExpression Player Talking>> Like a pen thief?
+<<StartTalking Player>> Like a pen thief?
 
-<<ChangeExpression Gina Talking>> Yup, full scale office supply larceny.  It wouldn’t be a big deal if I hadn’t went and purchased my own pens.
+<<StartTalking Gina>> Yup, full scale office supply larceny.  It wouldn’t be a big deal if I hadn’t went and purchased my own pens.
 
-<<ChangeExpression Player Talking>> That sucks, do you know who did it?
+<<StartTalking Player>> That sucks, do you know who did it?
 
-<<ChangeExpression Gina Talking>> Yeah maybe, but how do you ask your coworker that?
+<<StartTalking Gina>> Yeah maybe, but how do you ask your coworker that?
 
-<<ChangeExpression Player Talking>> Right, that’s a struggle.
+<<StartTalking Player>> Right, that’s a struggle.
 
 <<setscene innerDate>>
 
-<<set $speaker to "Player Character's Thoughts">> Should I give some advice.
+<<ChangeExpression PlayersBrain Talking>> Should I give some advice.
 
-<<set $speaker to "Player Character's Anxiety">> Yeah, you’ve got experience with office supply theft.
+<<StartTalking PlayersAnxiety>> Yeah, you’ve got experience with office supply theft.
 
-<<set $speaker to "Player Character's Thoughts">> I feel like I should say something to show that I care?
+<<ChangeExpression PlayersBrain Talking>> I feel like I should say something to show that I care?
 
 [[That sounds rough, but I believe in your ability to handle it well.|ThatSoundsRough]]
 [[Sneak in at night and search everyone’s desks|Sneak]]
@@ -219,15 +219,15 @@ title: AskHerAboutHerDay
 title: ThatSoundsRough
 ---
 <<setscene Dryve>>
-<<ChangeExpression Player Talking>> That sounds rough, but I believe in your ability to handle it.
+<<StartTalking Player>> That sounds rough, but I believe in your ability to handle it.
 
-<<ChangeExpression Gina Talking>> Thanks… I think I just needed someone to listen to me rant a bit
+<<StartTalking Gina>> Thanks… I think I just needed someone to listen to me rant a bit
 
-<<ChangeExpression Player Talking>> Oh, Well I’m glad to help
+<<StartTalking Player>> Oh, Well I’m glad to help
 
-<<ChangeExpression Gina Talking>> I’ll figure out a way to handle it Monday morning
+<<StartTalking Gina>> I’ll figure out a way to handle it Monday morning
 
-<<ChangeExpression Jordy Talking>> And we’re here!!!  Hope y’all enjoy the movie!
+<<StartTalking Jordy>> And we’re here!!!  Hope y’all enjoy the movie!
 
 $inspiraton is true
 <<setScene nextScene>>
@@ -236,30 +236,30 @@ $inspiraton is true
 title: Sneak
 ---
 <<setscene Dryve>>
-<<ChangeExpression Player Talking>> You should sneak in at night and search everyone’s desks
+<<StartTalking Player>> You should sneak in at night and search everyone’s desks
 
-<<ChangeExpression Gina Talking>> Yeah that sounds like…
+<<StartTalking Gina>> Yeah that sounds like…
 
-<<ChangeExpression Jordy Talking>> A terrible idea
+<<StartTalking Jordy>> A terrible idea
 
-<<ChangeExpression Gina Talking>> A great idea
+<<StartTalking Gina>> A great idea
 
-<<ChangeExpression Player Talking>> Oh, Well I’m glad to help..
+<<StartTalking Player>> Oh, Well I’m glad to help..
 
-<<ChangeExpression Gina Talking>> I’ll be the crazy person sneaking into my office to look through desks for my pens.
+<<StartTalking Gina>> I’ll be the crazy person sneaking into my office to look through desks for my pens.
 
-<<ChangeExpression Player Talking>> Yeah, I see your point...
+<<StartTalking Player>> Yeah, I see your point...
 
-<<ChangeExpression Gina Talking>> If the janitors or any of my late working coworkers are there, I’ll just explain how I was wronged and deserve pen justice
+<<StartTalking Gina>> If the janitors or any of my late working coworkers are there, I’ll just explain how I was wronged and deserve pen justice
 
-<<ChangeExpression Player Talking>> Yeah, I was mostly joking but you seem pretty set on this...
+<<StartTalking Player>> Yeah, I was mostly joking but you seem pretty set on this...
 
-<<ChangeExpression Gina Talking>> Oh, You were joking about Breaking and Entering at my place of employment to get my $10 pack of gel pens?
+<<StartTalking Gina>> Oh, You were joking about Breaking and Entering at my place of employment to get my $10 pack of gel pens?
 
-<<ChangeExpression Jordy Talking>> You’d be justified with Gel pens.
+<<StartTalking Jordy>> You’d be justified with Gel pens.
 
-<<ChangeExpression Player Talking>> How far are we from...
+<<StartTalking Player>> How far are we from...
 
-<<ChangeExpression Jordy Talking>> And we’re here!!!  Hope y’all enjoy the movie!
+<<StartTalking Jordy>> And we’re here!!!  Hope y’all enjoy the movie!
 <<setScene nextScene>>
 ===

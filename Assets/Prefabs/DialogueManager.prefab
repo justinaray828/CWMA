@@ -60,7 +60,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sourceText:
-  - {fileID: 4900000, guid: 18a2d051f62af1d4cb71102b6c8835f4, type: 3}
+  - {fileID: 4900000, guid: 46d00c240daca4525a5ce5387e5a8f04, type: 3}
   stringGroups: []
   shouldOverrideLanguage: 0
   overrideLanguage: 10
@@ -83,17 +83,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueContainer: {fileID: 0}
   continuePrompt: {fileID: 0}
-  talkingStop: {fileID: 0}
-  textSpeed: 0.025
   textSpeedDefault: 0.025
-  textSpeedSlow: 0.05
+  textSpeedSlow: 0.1
   textSpeedFast: 0
+  textPauseTimeDefault: 1.5
   optionButtons:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   gameControlsContainer: {fileID: 0}
+  textSpeed: 0.025
+  textPauseTime: 0
   dialoguePanelController: {fileID: 0}
   cameraTransition: {fileID: 0}
   sceneHandler: {fileID: 0}

@@ -8,15 +8,23 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
 {
     public GameObject dialogueContainer;
     public GameObject continuePrompt;
+
     [Tooltip("This will be attached to Characters GameObject in scene")]
     public TalkingStop talkingStop;
     public float textSpeed;
+
     [Tooltip("How quickly to show the text, in seconds per character")]
     public float textSpeedDefault;
     public float textSpeedSlow;
     public float textSpeedFast;
+    public float textPauseTimeDefault;
     public List<Button> optionButtons;
     public RectTransform gameControlsContainer;
+
+    [HideInInspector]
+    public float textSpeed;
+    [HideInInspector]
+    public float textPauseTime;
 
     [Tooltip("This will be attached to UICanvas")]
     public DialoguePanelController dialoguePanelController;
@@ -30,11 +38,12 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
     private bool inBrainRoom = false;
     private bool inBrainRoomCut = false;
     private bool inputPressed = false;
-    
+    private bool textPaused;
+
 
     private void Awake()
     {
-        textSpeed = textSpeedDefault;
+        ResetFields();
     }
 
     private void Update()
@@ -43,6 +52,13 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
         {
             inputPressed = true;
         }
+    }
+
+    private void ResetFields()
+    {
+        textSpeed = textSpeedDefault;
+        textPaused = false;
+        textPauseTime = textPauseTimeDefault;
     }
 
     public override IEnumerator RunLine(Yarn.Line line)
@@ -90,6 +106,30 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
                     if(command.Key == counter) { ExecuteMarkUp(command.Value); }
                 }
 
+                //if pause markup has been executed, textPaused will be set to true
+                if (textPaused)
+                {
+                    //loop for amount of time equal to the pause time set
+                    for (float timer = textPauseTime; timer >= 0; timer -= Time.deltaTime)
+                    {
+                        //check for input as we go
+                        if (inputPressed)
+                        {
+                            break;
+                        }
+                        yield return null;
+                    }
+
+                    textPaused = false;
+                    if (inputPressed)
+                    {
+                        dialoguePanelController.dialogueText.text = lineString;
+                        inputPressed = false;
+                        counter = 0;
+                        break;
+                    }
+                }
+
                 counter++;
                 stringBuilder.Append(c);
                 dialoguePanelController.dialogueText.text = stringBuilder.ToString();
@@ -114,6 +154,9 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
         {
             yield return null;
         }
+
+        //reset Markup variables
+        ResetFields();
 
         inputPressed = false;
         if (continuePrompt != null)
@@ -176,8 +219,7 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
     {
         // "Perform" the command
         Debug.Log("Command: " + command.text);
-        string InnerDateScene = "setscene innerDate";
-
+        Debug.Log("listenToJordy Variable: " + Choices.listenedToJordy);
         switch (command.text)
         {
             case "setscene innerDateCut":
@@ -192,25 +234,30 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
             case "setScene nextScene":
                 sceneHandler.LoadNextScene();
                 break;
-
-            case "setScene endingSecondDate":
+            case "setscene 06_Ending_SecondDate":
                 sceneHandler.LoadScene("06_Ending_SecondDate");
                 break;
-
-            case "setScene endingJordy":
-                sceneHandler.LoadScene("07_Ending_Jordy");
+            case "setscene 07_Ending_Jordy":
+                if (Choices.listenedToJordy) {
+                    sceneHandler.LoadScene("07_Ending_Jordy");
+                }else{
+                    sceneHandler.LoadScene("08_Ending_Alone");
+                }
                 break;
-
-            case "setScene endingAlone":
+                
+            case "setscene 08_Ending_Alone":
                 sceneHandler.LoadScene("08_Ending_Alone");
                 break;
-
+                
+            case "listenToJordy":
+                Choices.listenedToJordy = true;
+                break;
+                
             default:
                 cameraTransition.ZoomOut();
                 inBrainRoom = false;
                 break;
         }
-
         yield break;
     }
 
@@ -260,6 +307,12 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
         textSpeed = textSpeedSlow;
     }
 
+    /// <summary>
+    /// Parses out in-line markup commands.
+    /// </summary>
+    /// <returns>The line string with markup removed, as well as a ref to the list of commands</returns>
+    /// <param name="line">Line.</param>
+    /// <param name="commands">ref to Commands. Key value pairs of index, command string</param>
     private string ParseLine(string line, ref List<KeyValuePair<int, string>> commands)
     {
         bool lineMarkUp = false;
@@ -309,6 +362,14 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
         return line;
     }
 
+    /// <summary>
+    /// Executes in-line markup
+    /// 3 possible markups:
+    /// -set any field name on Dialogue System to a float. Ex: [textSpeed=0.5]
+    /// -execute single word command. Ex: [slow]
+    /// -reset commands Ex: [/slow]
+    /// </summary>
+    /// <param name="s">Command string</param>
     private void ExecuteMarkUp(string s)
     {
         var words = s.Split('=');
@@ -342,12 +403,15 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
             /* we could do this without a switch statement by either using a hashtable 
              * or by using other functions that would be called via reflection. 
              * but this is easiest for now.
-             */            
+             */
             switch (s)
             {
                 case "slow":
                     if (stopCommand) { textSpeed = textSpeedDefault; }
                     else { textSpeed = textSpeedSlow; }
+                    break;
+                case "pause":
+                    textPaused = true;
                     break;
                 default:
                     Debug.LogWarning("markup not recognized: " + s);

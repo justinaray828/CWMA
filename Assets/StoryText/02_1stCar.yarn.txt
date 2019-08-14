@@ -8,6 +8,7 @@ And that’s how I discovered where the cold sore came from.
 I have no idea how that came up?  
 <<StartTalking Jordy>>
 Sorry, I talk a lot when I’m driving.
+//Test Still Testing
 
 <<set $speaker to "Gina">> …
 
@@ -93,6 +94,7 @@ title: MakeAJoke
 <<StartTalking Player>> Anyway… (typed out slowly) I tried to be a Dryver driver once. 
 Trouble is, my passengers didn’t appreciate when I went the extra mile. 
 
+
 <<set $speaker to "Gina">> ...
 
 <<StartTalking Player>> ...
@@ -104,7 +106,10 @@ Trouble is, my passengers didn’t appreciate when I went the extra mile.
 
 <<StartTalking Jordy>> So the gig economy is a joke?
 
-<<StartTalking Player>> No.. yes…. How do I answer that?
+<<StartTalking Player>> No.. 
+<<StartTalking Player>> yes…. 
+<<StartTalking Player>> How do I answer that?
+
 
 <<StartTalking Gina>> From a labor perspective it exploits workers while concentrating capital towards the top.
 
@@ -118,11 +123,13 @@ Trouble is, my passengers didn’t appreciate when I went the extra mile.
 <<StartTalking Jordy>> Plus, I’m my own boss. 
 <<StartTalking Jordy>> Nobody tells me what to do.
 
+
 <<StartTalking Player>> Turn left here
 
 (Awkward back and forth stare down between Jordy and Player)
 
 <<StartTalking Jordy>> Get out...
+
 <<setScene nextScene>>
 ===
 
@@ -133,7 +140,8 @@ title: Escape
 
 <<StartTalking Gina>> Ummm, are you trying to open the door while we’re in a moving car?
 
-<<StartTalking Player>> No… (New window) Yes
+<<StartTalking Player>> No…
+<<StartTalking Player>> Yes
 
 <<StartTalking Jordy>> Dude.  
 <<StartTalking Jordy>> Not cool.

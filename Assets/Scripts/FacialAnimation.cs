@@ -13,13 +13,13 @@ public class FacialAnimation : MonoBehaviour
 {
     public string currentExpression;
     public GameObject facialExpressionGameObject;
-    public DialoguePanelController dialoguePanelController;
     [Header("Name to be displayed for talking character")]
     public string characterName;
 
     private Animator animator;
     private string talking = "Talking";
     private CameraTransition cameraTransition;
+    private DialoguePanelController dialoguePanelController;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +27,7 @@ public class FacialAnimation : MonoBehaviour
         animator = facialExpressionGameObject.GetComponent<Animator>();
         animator.SetBool(currentExpression, true);
         cameraTransition = FindObjectOfType<CameraTransition>();
+        dialoguePanelController = FindObjectOfType<DialoguePanelController>();
     }
 
     /// <summary>

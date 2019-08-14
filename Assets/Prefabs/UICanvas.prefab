@@ -35,10 +35,10 @@ RectTransform:
   m_Father: {fileID: 7067931129246236848}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 482.51706, y: -134.82501}
-  m_SizeDelta: {x: 420, y: 249.65002}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &80447415
 CanvasRenderer:
@@ -267,10 +267,10 @@ RectTransform:
   m_Father: {fileID: 7992315390554822556}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 482.51706, y: -97.075005}
-  m_SizeDelta: {x: 420, y: 194.15001}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &550677437
 CanvasRenderer:
@@ -578,7 +578,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.034, y: 0.042000003}
   m_AnchorMax: {x: 0.98100007, y: 0.94000006}
-  m_AnchoredPosition: {x: 3.5999756, y: 10.399994}
+  m_AnchoredPosition: {x: 1.1000977, y: 12.274994}
   m_SizeDelta: {x: -2.8, y: -30.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &7238917122708231870
@@ -641,10 +641,10 @@ RectTransform:
   m_Father: {fileID: 7067931129246236848}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 717.5171, y: -134.82501}
-  m_SizeDelta: {x: 420, y: 249.65002}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1099178486
 CanvasRenderer:
@@ -873,10 +873,10 @@ RectTransform:
   m_Father: {fileID: 7992315390554822556}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 564.67957, y: -97.075005}
-  m_SizeDelta: {x: 356.45306, y: 194.15001}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1217865010
 CanvasRenderer:
@@ -1003,7 +1003,7 @@ GameObject:
   - component: {fileID: 3409242655648592927}
   - component: {fileID: 149239977094963354}
   m_Layer: 5
-  m_Name: NamePanel
+  m_Name: NameTextPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1168,7 +1168,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -4, y: -89.99997}
+  m_AnchoredPosition: {x: -4, y: -115}
   m_SizeDelta: {x: -2, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4921888665917807606
@@ -1221,10 +1221,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialoguePanelRectTransform: {fileID: 4921888665917807604}
-  nameText: {fileID: 4921888665969823901}
-  dialogueText: {fileID: 4921888667537490533}
-  animator: {fileID: 665432273312927832}
   highestPanelLocation: 60
+  dialogueText: {fileID: 4921888667537490533}
+  nameText: {fileID: 4921888665969823901}
+  animator: {fileID: 665432273312927832}
+  nameTextPanel: {fileID: 330261210813478642}
+  dialogueEnabled: 0
 --- !u!95 &665432273312927832
 Animator:
   serializedVersion: 3
@@ -1278,7 +1280,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 452.29996, y: 502.00006}
+  m_AnchoredPosition: {x: 452.29996, y: 500}
   m_SizeDelta: {x: 826.7, y: 73.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4921888665969823902
@@ -1322,7 +1324,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Players Anxienty:'
+  m_Text: 'Jordy:'
 --- !u!1 &4921888667537490539
 GameObject:
   m_ObjectHideFlags: 0
@@ -1357,7 +1359,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 38.930054, y: -267.8}
+  m_AnchoredPosition: {x: 7.5998535, y: -292}
   m_SizeDelta: {x: -125.25998, y: 133.20001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4921888667537490534
@@ -1401,7 +1403,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: " And that\u2019s how I discovered where the cold sore came from.  "
 --- !u!1 &4921888667557411776
 GameObject:
   m_ObjectHideFlags: 0

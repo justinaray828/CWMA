@@ -6,8 +6,9 @@ using UnityEngine.Audio;
 public class AudioManager : MonoBehaviour
 {
     public AudioSource fxSource;
-    public AudioSource musicSource;
     public AudioMixer mixer;
+
+    public float fadeTime;
 
     public Sound[] MusicSounds;
     public static AudioManager instance;
@@ -23,6 +24,25 @@ public class AudioManager : MonoBehaviour
             return;
         }
         DontDestroyOnLoad(gameObject);
+
+        //intialize audiosource for opening music
+        Sound s = Array.Find(MusicSounds, sound => sound.name == "Scene1");
+        s.source = gameObject.AddComponent<AudioSource>();
+        s.source.clip = s.clip;
+
+        s.source.volume = s.volume;
+        s.source.pitch = s.pitch;
+        s.source.loop = s.loop;
+        s.source.playOnAwake = s.playonawake;
+
+        s.source.outputAudioMixerGroup = s.output;
+
+        s.originalVolume = s.volume;
+
+        //sources were not truly playing on awake. Perhaps they were being created after awake had been called?
+        //regardless, this manually takes 
+        if (s.playonawake)
+            s.source.Play();
     }
 
     // Start is called before the first frame update
@@ -33,6 +53,7 @@ public class AudioManager : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+
     }
 
     public void SetMasterVolume(float vol)
@@ -71,8 +92,8 @@ public class AudioManager : MonoBehaviour
         nextS.source.loop = nextS.loop;
         nextS.source.playOnAwake = nextS.playonawake;
 
-        StartCoroutine(FadeIn(nextS.source, 2f));
-        StartCoroutine(FadeOut(currentS.source, 2f));
+        StartCoroutine(FadeIn(nextS.source, fadeTime));
+        StartCoroutine(FadeOut(currentS.source, fadeTime));
 
         return;
     }

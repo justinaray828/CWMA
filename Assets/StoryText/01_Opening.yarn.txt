@@ -68,4 +68,11 @@ I just assumed, umm..
 
 <<set $speaker to "Player Character's Anxiety">> Should have listened to the ride share guru
 
-<<set $speaker to "Player Character's Thoughts">> I have to change the subject.
+<<set $speaker to "Player Character's Thoughts">> Here we go again.
+
+<<set $speaker to "Player Character's Thoughts">> What's that saying about assuming things?
+It makes and an..
+
+<<set $speaker to "Player Character's Thoughts">> I just need to focus on fixing this.
+
+<<set $speaker to "Player Character's Thoughts">> Sure, solve what months of therapy has failed to 

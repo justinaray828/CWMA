@@ -1,0 +1,265 @@
+title: Start
+---
+<<setscene Dryve>>
+<<set $speaker to "Jordy">> And that’s how I discovered where the cold sore came from.  
+I have no idea how that came up?  
+Sorry, I talk a lot when I’m driving.
+//Test Still Testing
+
+<<set $speaker to "Gina">> …
+
+<<set $speaker to "Player Character">> …
+
+<<set $speaker to "Jordy">> ...
+
+<<set $speaker to "Gina">> Sooo… 5 more minutes till the theater?
+
+<<set $speaker to "Jordy">> Nope, 7 minutes.
+Missed another turn... or two.  
+Sorry.
+
+<<setscene innerDate>>
+
+<<set $speaker to "Player Character's Thoughts">> Well, this is an awkward ride. 
+But first dates are supposed to be sorta awkward.
+Right?
+
+<<set $speaker to "Player Character's Anxiety">> Just play it cool, 
+maybe they won’t notice how much of a mess you are.  
+Think about it, you haven’t had the chance to embarrass yourself
+yet.
+
+<<set $speaker to "Player Character's Thoughts">> Oh, what a confidence boost!
+
+<<set $speaker to "Player Character's Anxiety">> Look on the bright side, 
+you’ve made a wonderful new friend.  
+Jordy, the oversharing, turn missing, Ride share guy...  
+Another great first date thanks to the gig economy. 
+
+<<set $speaker to "Player Character's Thoughts">> This is salvageable, I think... what do I do?
+
+[[Play it cool|PlayItCool]]
+[[Make a joke| MakeAJoke]]
+[[Ask her about her day|AskHerAboutHerDay]]
+[[ESCAPE|Escape]]
+===
+
+title: PlayItCool
+---
+<<setscene Dryve>>
+<<set $speaker to "Player Character">> No problem, the first few minutes of the movie are previews anyway.  Let it Ride.
+
+<<set $speaker to "Gina">> Aww, I like watching previews
+
+<<set $speaker to "Jordy">> I heard they were showing a trailer for the big superhero flick before your movie.  
+Honestly, that trailer is probably better than what you’re seeing.  
+Rotten Potatoes says this movie is certified trash.
+
+<<set $speaker to "Player Character">> Critics think every movie is bad.
+
+<<set $speaker to "Jordy">> Nah dude. It was in the 30s for Critics AND User Reviews.
+
+<<set $speaker to "Gina">> Great (Need a good eye roll animation), we’re about to sit through a 2 hour bomb.
+
+<<set $speaker to "Jordy">> 2 hours and 45 minutes.
+
+<<set $speaker to "Gina">> Why did you pick this movie again?
+
+<<set $speaker to "Player Character">> Maybe it will be so bad it’s good?  
+
+<<set $speaker to "Jordy">> And We’re Here! 
+I hope that you are in the 30 percent of people with incorrect err… ‘unique’ opinions! 
+Remember to tip!
+5 Star Ride Times, 5 Star Ratings!
+<<setScene nextScene>>
+===
+
+title: MakeAJoke
+---
+<<setscene Dryve>>
+<<set $speaker to "Player Character">> Hey, I've got a joke!
+
+<<set $speaker to "Gina">> Great!  We still have 6 minutes left to kill. 
+
+<<set $speaker to "Jordy">> Probably closer to 5.
+<<set $speaker to "Jordy">> Just ran that red light. 
+(both characters get Wtf looks)
+
+<<set $speaker to "Player Character">> Anyway… (typed out slowly) I tried to be a Dryver driver once. 
+<<set $speaker to "Player Character">> Trouble is, my passengers didn’t appreciate when I went the extra mile. 
+
+<<set $speaker to "Gina">> ...
+
+<<set $speaker to "Player Character">> ...
+
+<<set $speaker to "Jordy">> Hey man, I don’t like when you make fun of my job. 
+I love my job.
+		
+<<set $speaker to "Gina">> I think he was just making a bad joke... 
+
+<<set $speaker to "Jordy">> So the gig economy is a joke?
+
+<<set $speaker to "Player Character">> No.. 
+yes...
+How do I answer that?
+
+<<set $speaker to "Gina">> From a labor perspective it exploits workers while concentrating capital towards the top.
+
+<<set $speaker to "Player Character">> I’m sorry, I didn’t mean anything by it
+
+<<set $speaker to "Jordy">> That’s obvious.  
+I mean you’re not wrong, but when you work 9 to 5, just $2 above minimum wage, you’ve got to be creative to make a legal living.  
+
+<<set $speaker to "Gina">> That’s respectable.
+
+<<set $speaker to "Jordy">> Plus, I’m my own boss. 
+Nobody tells me what to do.
+
+<<set $speaker to "Player Character">> Turn left here
+...
+
+(Awkward back and forth stare down between Jordy and Player)
+
+<<set $speaker to "Jordy">> 
+...
+Get out...
+<<setScene nextScene>>
+===
+
+title: Escape
+---
+<<setscene Dryve>>
+<<set $speaker to "Player Character">> *Tries to unlock door*
+
+<<set $speaker to "Gina">> Ummm, are you trying to open the door while we’re in a moving car?
+
+<<set $speaker to "Player Character">> No…
+<<set $speaker to "Player Character">> ...Yes
+
+<<set $speaker to "Jordy">> Dude.  Not cool.
+
+<<set $speaker to "Gina">> Ok… 
+
+<<setscene innerDate>>
+
+<<set $speaker to "Player Character's Thoughts">> Oh my god, why was that an option?
+
+<<set $speaker to "Player Character's Anxiety">> I wasn’t serious, Why did you pick that option? 
+
+<<set $speaker to "Player Character's Thoughts">> I’m an idiot.
+
+<<set $speaker to "Player Character's Anxiety">> Yeah, you are! 
+
+[[Play it cool|PlayItCool_B]]
+[[Make a joke|MakeAJoke]]
+[[Ask her about her day|AskHerAboutHerDay]]
+
+===
+
+title: PlayItCool_B
+---
+<<set $speaker to "Player Character">> It’s alright, Cool people don’t arrive early.
+
+<<set $speaker to "Gina">> I’m less concerned about being cool than missing the beginning of the damn movie.
+
+<<set $speaker to "Player Character">> I heard the first 20 minutes of the movie is a dream… Spoiler Warning
+
+<<set $speaker to "Gina">> If you say ‘Spoiler Warning’ after the spoiler, it isn’t really a warning. It’s a Spoiler Announcement
+
+<<set $speaker to "Player Character">> Oops, sorry
+
+<<set $speaker to "Jordy">> That’s a good point, I’m going to start using that when I spoil things accidentally.  Spoiler Announcement!  At the end of the movie the main character…
+
+<<set $speaker to "Gina">> Could you not!!!!
+
+<<set $speaker to "Jordy">> … Arrives at their destination on time!  We’re here!
+<<setScene nextScene>>  
+===
+
+title: AskHerAboutHerDay
+---
+<<setscene Dryve>>
+<<set $speaker to "Player Character">> How was your day?
+
+<<set $speaker to "Gina">> Okay, could have been better.
+
+<<set $speaker to "Player Character">> Oh ok…
+
+<<set $speaker to "Gina">> …
+
+<<set $speaker to "Player Character">> ... 
+
+<<set $speaker to "Jordy">> Did something crappy happen?
+
+<<set $speaker to "Gina">> Yeah Sorta, over the past few weeks my pens keep going missing.
+
+<<set $speaker to "Player Character">> Like a pen thief?
+
+<<set $speaker to "Gina">> Yup, full scale office supply larceny.  It wouldn’t be a big deal if I hadn’t went and purchased my own pens.
+
+<<set $speaker to "Player Character">> That sucks, do you know who did it?
+
+<<set $speaker to "Gina">> Yeah maybe, but how do you ask your coworker that?
+
+<<set $speaker to "Player Character">> Right, that’s a struggle.
+
+<<setscene innerDate>>
+
+<<set $speaker to "Player Character's Thoughts">> Should I give some advice.
+
+<<set $speaker to "Player Character's Anxiety">> Yeah, you’ve got experience with office supply theft.
+
+<<set $speaker to "Player Character's Thoughts">> I feel like I should say something to show that I care?
+
+[[That sounds rough, but I believe in your ability to handle it well.|ThatSoundsRough]]
+[[Sneak in at night and search everyone’s desks|Sneak]]
+
+===
+
+title: ThatSoundsRough
+---
+<<setscene Dryve>>
+<<set $speaker to "Player Character">> That sounds rough, but I believe in your ability to handle it.
+
+<<set $speaker to "Gina">> Thanks… I think I just needed someone to listen to me rant a bit
+
+<<set $speaker to "Player Character">> Oh, Well I’m glad to help
+
+<<set $speaker to "Gina">> I’ll figure out a way to handle it Monday morning
+
+<<set $speaker to "Jordy">> And we’re here!!!  Hope y’all enjoy the movie!
+
+$inspiraton is true
+<<setScene nextScene>>
+===
+
+title: Sneak
+---
+<<setscene Dryve>>
+<<set $speaker to "Player Character">> You should sneak in at night and search everyone’s desks
+
+<<set $speaker to "Gina">> Yeah that sounds like…
+
+<<set $speaker to "Jordy">> A terrible idea
+
+<<set $speaker to "Gina">> A great idea
+
+<<set $speaker to "Player Character">> Oh, Well I’m glad to help..
+
+<<set $speaker to "Gina">> I’ll be the crazy person sneaking into my office to look through desks for my pens.
+
+<<set $speaker to "Player Character">> Yeah, I see your point...
+
+<<set $speaker to "Gina">> If the janitors or any of my late working coworkers are there, I’ll just explain how I was wronged and deserve pen justice
+
+<<set $speaker to "Player Character">> Yeah, I was mostly joking but you seem pretty set on this...
+
+<<set $speaker to "Gina">> Oh, You were joking about Breaking and Entering at my place of employment to get my $10 pack of gel pens?
+
+<<set $speaker to "Jordy">> You’d be justified with Gel pens.
+
+<<set $speaker to "Player Character">> How far are we from...
+
+<<set $speaker to "Jordy">> And we’re here!!!  Hope y’all enjoy the movie!
+<<setScene nextScene>>
+===

@@ -34,6 +34,7 @@ public class OptionsController : MonoBehaviour
         musicVolumeSlider.maxValue = 1f;
 
         OptionData data = SaveSystem.LoadOptionData();
+
         if (data != null)
         {
             masterVolumeSlider.value = data.masterVolume;
@@ -50,8 +51,8 @@ public class OptionsController : MonoBehaviour
         else
         {
             masterVolumeSlider.value = 0f;
-            fxVolumeSlider.value = 1;
-            musicVolumeSlider.value = 1;
+            fxVolumeSlider.value = 1f;
+            musicVolumeSlider.value = 1f;
         }
 
         masterVolumeSlider.onValueChanged.AddListener(delegate { UpdateValues(); });

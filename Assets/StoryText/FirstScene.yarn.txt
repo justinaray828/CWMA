@@ -11,31 +11,31 @@ Sorry, I talk a lot when I’m driving.
 
 <<set $speaker to "Jordy">> ...
 
-<<set $speaker to "Gina">> Sooo…  5 more minutes till the theater?
+<<set $speaker to "Gina">> Sooo… 5 more minutes till the theater?
 
 <<set $speaker to "Jordy">> Nope, 7 minutes.
-I missed two turns earlier.  
+Missed another turn... or two.  
 Sorry.
 
-<<setscene innerDate>>
+<<setscene innerDateCut>>
 
-<<set $speaker to "Player Character's Thoughts">> Well this is awkward, 
-hopefully not too awkward… 
-Okay, probably too awkward.
+<<set $speaker to "Player Character's Thoughts">> Well, this is an awkward ride. 
+But first dates are supposed to be sorta awkward.
+Right?
 
 <<set $speaker to "Player Character's Anxiety">> Just play it cool, 
 maybe they won’t notice how much of a mess you are.  
 Think about it, you haven’t had the chance to embarrass yourself
 yet.
 
-<<set $speaker to "Player Character's Thoughts">> Is that supposed to make me feel better?
+<<set $speaker to "Player Character's Thoughts">> Oh, what a confidence boost!
 
 <<set $speaker to "Player Character's Anxiety">> Look on the bright side, 
 you’ve made a wonderful new friend.  
-This Dryve driver, Jordy, who is good at oversharing and not so good at driving..  
-Which is exactly why you came out on this date, to talk to the ride-share guy. 
+Jordy, the oversharing, turn missing, Ride share guy...  
+Another great first date thanks to the gig economy. 
 
-<<set $speaker to "Player Character's Thoughts">> No, this is salvageable, what do I do?
+<<set $speaker to "Player Character's Thoughts">> This is salvageable, I think... what do I do?
 
 [[Play it cool|PlayItCool]]
 [[Make a joke| MakeAJoke]]
@@ -46,11 +46,13 @@ Which is exactly why you came out on this date, to talk to the ride-share guy.
 title: PlayItCool
 ---
 <<setscene Dryve>>
-<<set $speaker to "Player Character">> No problem, the first few minutes are previews anyway.  Let it Ride.
+<<set $speaker to "Player Character">> No problem, the first few minutes of the movie are previews anyway.  Let it Ride.
 
 <<set $speaker to "Gina">> Aww, I like watching previews
 
-<<set $speaker to "Jordy">> I heard they were showing a trailer for the big superhero flick before your movie.  Honestly, that trailer is probably better than what you’re seeing.  Rotten Potatoes says this movie is certified trash.
+<<set $speaker to "Jordy">> I heard they were showing a trailer for the big superhero flick before your movie.  
+Honestly, that trailer is probably better than what you’re seeing.  
+Rotten Potatoes says this movie is certified trash.
 
 <<set $speaker to "Player Character">> Critics think every movie is bad.
 
@@ -64,25 +66,30 @@ title: PlayItCool
 
 <<set $speaker to "Player Character">> Maybe it will be so bad it’s good?  
 
-<<set $speaker to "Jordy">> And We’re Here! I hope that you are in the 30 percent of people with incorrect err… ‘unique’ opinions!  Remember to tip!
+<<set $speaker to "Jordy">> And We’re Here! 
+I hope that you are in the 30 percent of people with incorrect err… ‘unique’ opinions! 
+Remember to tip!
+5 Star Ride Times, 5 Star Ratings!
 ===
 
 title: MakeAJoke
 ---
 <<setscene Dryve>>
-<<set $speaker to "Player Character">> Hey, I’ve got a joke!
+<<set $speaker to "Player Character">> Hey, I've got a joke!
 
 <<set $speaker to "Gina">> Great!  We still have 6 minutes left to kill. 
 
 <<set $speaker to "Jordy">> Probably closer to 5 (new window) Just ran that red light. (both characters get Wtf looks)
 
-<<set $speaker to "Player Character">> Anyway… (typed out slowly) I tried to be a Dryver driver once. Trouble is, my passengers didn’t appreciate when I went the extra mile. 
+<<set $speaker to "Player Character">> Anyway… (typed out slowly) I tried to be a Dryver driver once. 
+Trouble is, my passengers didn’t appreciate when I went the extra mile. 
 
 <<set $speaker to "Gina">> ...
 
 <<set $speaker to "Player Character">> ...
 
-<<set $speaker to "Jordy">> Hey man, I don’t like when you make fun of my job. I love my job.
+<<set $speaker to "Jordy">> Hey man, I don’t like when you make fun of my job. 
+I love my job.
 		
 <<set $speaker to "Gina">> I think he was just making a bad joke... 
 
@@ -94,11 +101,13 @@ title: MakeAJoke
 
 <<set $speaker to "Player Character">> I’m sorry, I didn’t mean anything by it
 
-<<set $speaker to "Jordy">> That’s obvious.  I mean you’re not wrong, but when you work 9 to 5, just $2 above minimum wage, you’ve got to be creative to make a legal living.  
+<<set $speaker to "Jordy">> That’s obvious.  
+I mean you’re not wrong, but when you work 9 to 5, just $2 above minimum wage, you’ve got to be creative to make a legal living.  
 
 <<set $speaker to "Gina">> That’s respectable.
 
-<<set $speaker to "Jordy">> Plus, I’m my own boss. Nobody tells me what to do.
+<<set $speaker to "Jordy">> Plus, I’m my own boss. 
+Nobody tells me what to do.
 
 <<set $speaker to "Player Character">> Turn left here
 
@@ -111,7 +120,7 @@ title: Escape
 ---
 <<set $speaker to "Player Character">> *Tries to unlock door*
 
-<<set $speaker to "Gina">> Ummm are you trying to open the door while we’re in a moving car?
+<<set $speaker to "Gina">> Ummm, are you trying to open the door while we’re in a moving car?
 
 <<set $speaker to "Player Character">> No… (New window) Yes
 
@@ -119,7 +128,7 @@ title: Escape
 
 <<set $speaker to "Gina">> Ok… 
 
-<<setscene innerDate>>
+<<setscene innerDateCut>>
 
 <<set $speaker to "Player Character's Thoughts">> Oh my god, why was that an option?
 
@@ -180,7 +189,7 @@ title: AskHerAboutHerDay
 
 <<set $speaker to "Player Character">> Right, that’s a struggle.
 
-<<setscene innerDate>>
+<<setscene innerDateCut>>
 
 <<set $speaker to "Player Character's Thoughts">> Should I give some advice.
 

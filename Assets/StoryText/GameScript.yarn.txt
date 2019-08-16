@@ -13,7 +13,7 @@ Gina: Sooo…  5 more minutes till the theater?
 
 Jordy: Nope, 7 minutes. I missed two turns earlier.  Sorry.
 
-<<setscene innerDate>>
+<<setscene innerDateCut>>
 
 Player Character’s Thoughts: Well this is awkward, hopefully not too awkward… Okay, probably too awkward.
 
@@ -53,6 +53,7 @@ Gina: Why did you pick this movie again?
 Player Character’s Dialog: Maybe it will be so bad it’s good?  
 
 Jordy: And We’re Here! I hope that you are in the 30 percent of people with incorrect err… ‘unique’ opinions!  Remember to tip!
+<<setscene Theater>>
 ===
 
 title: MakeAJoke
@@ -93,6 +94,7 @@ Player Character’s Dialog: Turn left here
 (Awkward back and forth stare down between Jordy and Player)
 
 Jordy: Get out...
+<<setscene Theater>>
 ===
 
 title: Escape
@@ -108,7 +110,7 @@ Jordy: Dude.  Not cool.
 
 Gina: Ok… 
 
-<<setscene innerDate>>
+<<setscene innerDateCut>>
 
 Player Character’s Thoughts: Oh my god, why was that an option?
 
@@ -140,7 +142,8 @@ Jordy: That’s a good point, I’m going to start using that when I spoil thing
 
 Gina: Could you not!!!!
 
-Jordy: … Arrives at their destination on time!  We’re here!  
+Jordy: … Arrives at their destination on time!  We’re here! 
+<<setscene Theater>>
 ===
 
 title: AskHerAboutHerDay
@@ -170,7 +173,7 @@ Gina: Yeah maybe, but how do you ask your coworker that?
 
 Player Character’s Dialog: Right, that’s a struggle.
 
-<<setscene innerDate>>
+<<setscene innerDateCut>>
 
 Player Character’s Thoughts: Should I give some advice.
 
@@ -196,6 +199,7 @@ Gina: I’ll figure out a way to handle it Monday morning
 Jordy: And we’re here!!!  Hope y’all enjoy the movie!
 
 $Inspiration is true
+<<setscene Theater>>
 ===
 
 title: Sneak
@@ -226,11 +230,11 @@ Jordy: You’d be justified with Gel pens.
 Player Character’s Dialog: How far are we from...
 
 Jordy: And we’re here!!!  Hope y’all enjoy the movie!
+<<setscene Theater>>
 ===
 
 title: Theater
 ---
-<<setscene Theater>>
 Player Character’s Dialog: Finally, we made it!
 
 Gina: I feel like we could have walked here faster.
@@ -249,7 +253,7 @@ Player Character’s Dialog: I bought tickets online.
 
 Emily: Ok.. I still need to know the name of the movie to find the tickets.
 
-<<setscene innerDate>>
+<<setscene innerDateCut>>
 
 Player Character’s Thoughts: Oh god… I forgot the name of the movie.
 
@@ -304,7 +308,7 @@ Player Character’s Dialog: Huh…
 
 Emily: Give me the your card so I can pull up your ticket order for the movie you totally forgot the title to.
 
-<<setscene innerDate>>
+<<setscene innerDateCut>>
 
 Player Character’s Anxiety: Busted!
 
@@ -338,7 +342,7 @@ Player Character’s Dialog: Why are you like this?
  
 Gina: We are definitely missing the beginning of this movie.
 
-<<setscene innerDate>>
+<<setscene innerDateCut>>
 
 Player Character’s Anxiety: Okay, Genius. Let’s try this again
 
@@ -391,7 +395,7 @@ Emily: If I can handle getting to the bus stop 45 minutes early for the one bus 
 
 Gina: Can we just try the cards?
 
-<<setscene innerDate>>
+<<setscene innerDateCut>>
 
 Player Character’s Anxiety: Ok, Genius, Let’s try this again
 
@@ -423,7 +427,7 @@ Gina: We were running late
 
 Jordy: Hey, I’ve got this awesome story…
 
-<<setscene innerDate>>
+<<setscene innerDateCut>>
 
 Player Character’s Anxiety: This is just great
 
@@ -483,7 +487,7 @@ Player Character’s Dialog: Yeah
 
 Gina: Um you already asked that already
 
-<<setscene innerDate>>
+<<setscene innerDateCut>>
 
 Player Character’s Anxiety: Wow, you seriously asked that again.
 
@@ -510,7 +514,7 @@ Player Character’s Dialog: Really?
 
 Gina: What did you think?
 
-<<setscene innerDate>>
+<<setscene innerDateCut>>
 
 Player Character’s Anxiety: Here’s your chance to relate.
 
@@ -572,7 +576,7 @@ Player Character’s Dialog: It’s cool that you liked it though
 
 Gina: Is it cool that I liked it?  You said, and I quote “I don’t know how that terrible movie was made.”
 
-<<setscene innerDate>>
+<<setscene innerDateCut>>
 
 Player Character’s Anxiety: Great now you’ve screwed yourself
 
@@ -657,7 +661,7 @@ Player Character’s Dialog: Oh ok, see you soon.
 
 Gina: Back in a bit
 
-<<setscene innerDate>>
+<<setscene innerDateCut>>
 
 Player Character’s Anxiety: She just bailed on you.
 
@@ -687,7 +691,7 @@ Rea: Great be back in a second.
 
 Player Character’s Dialog: Sounds good.
 
-<<setscene innerDate>>
+<<setscene innerDateCut>>
 
 Player Character’s Anxiety: This is going too well.
 
@@ -725,7 +729,7 @@ Player Character’s Dialog: Let’s try and leave quickly and go somewhere else
 
 Rea: And I’m back.  With the wine, and no shrimp. So...Ready to order?
 
-<<setscene innerDate>>
+<<setscene innerDateCut>>
 
 Player Character’s Anxiety: Time to go.
 
@@ -756,7 +760,7 @@ Gina: No! We only dated for a year and I am not ready for marriage.
 
 Rea: A year is more than enough time to know if you want to spend the rest of your life with someone. 
 
-<<setscene innerDate>>
+<<setscene innerDateCut>>
 Player Character’s Anxiety: What have you gotten yourself into? 
 
 Player Character’s Thoughts: A totally normal date… where my date’s ex feels burned about a denied marriage proposal.
@@ -893,7 +897,7 @@ Rea: Don’t worry, I was just about to head to a less dramatic table.
 
 Gina: Look, I know this is a little uncomfortable.  But I need you to trust that I can take care of myself and I’m being honest when I say I’m ok with a situation.
 
-<<setscene innerDate>>
+<<setscene innerDateCut>>
 
 Player’s Anxiety: Wow, She’s guilting you for feeling concerned about her.
 
@@ -903,7 +907,7 @@ Player’s Anxiety: She’s too wrapped up in her feeling to even notice others.
 
 Player’s Thoughts: I don’t know, maybe? 
 
-<<setscene innerDate>>
+<<setscene innerDateCut>>
 
 Player Character’s Dialog: I'm sorry.  I guess I’m a little too wrapped up in my own nervousness that I wasn’t really thinking about what you’re going through.
 

@@ -8,9 +8,7 @@ public class OptionsController : MonoBehaviour
     public Slider musicVolumeSlider;
     private AudioManager audioManager;
 
-    [Range(-80f, 0f)]
     public float masterVolumeValue;
-
     public float fxVolumeValue;
     public float musicVolumeValue;
 
@@ -28,9 +26,11 @@ public class OptionsController : MonoBehaviour
 
     private void InitilizeValues()
     {
-        masterVolumeSlider.minValue = -80f;
-        masterVolumeSlider.maxValue = 0f;
-        musicVolumeSlider.minValue = 0f;
+        masterVolumeSlider.minValue = .001f;
+        masterVolumeSlider.maxValue = 1f;
+        fxVolumeSlider.minValue = .001f;
+        fxVolumeSlider.maxValue = 1f;
+        musicVolumeSlider.minValue = .001f;
         musicVolumeSlider.maxValue = 1f;
 
         OptionData data = SaveSystem.LoadOptionData();
@@ -38,6 +38,8 @@ public class OptionsController : MonoBehaviour
         if (data != null)
         {
             masterVolumeSlider.value = data.masterVolume;
+            //must also set the stored value, otherwise nothings is saved to the datefile if the 
+            //sliders are not touched.
             masterVolumeValue = data.masterVolume;
 
             fxVolumeSlider.value = data.fxVolume;
@@ -66,9 +68,9 @@ public class OptionsController : MonoBehaviour
             fxVolumeValue = fxVolumeSlider.value;
             musicVolumeValue = musicVolumeSlider.value;
 
-            audioManager.SetMasterVolume(masterVolumeValue);
-            audioManager.SetFxVolume(fxVolumeValue);
-            audioManager.SetMusicVolume(musicVolumeValue);
+            audioManager.SetMasterVolume(Mathf.Log(masterVolumeValue) * 20);
+            audioManager.SetFxVolume(Mathf.Log(fxVolumeValue) * 20);
+            audioManager.SetMusicVolume(Mathf.Log(musicVolumeValue) * 20);
         }
     }
 

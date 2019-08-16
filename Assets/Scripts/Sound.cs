@@ -21,4 +21,6 @@ public class Sound
 
     [HideInInspector]
     public float originalVolume;
+    [HideInInspector]
+    public AudioSource source;
 }

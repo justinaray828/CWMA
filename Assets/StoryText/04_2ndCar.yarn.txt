@@ -47,7 +47,7 @@ title: ListenToTheStory
 
 <<set $speaker to "Player Character">> He seems excited about it
 
-<<set $speaker to "Jordy">> Great, so after I dropped you off I realized something.  I think you two were on a date!
+<<set $speaker to "Jordy">> Great, so after I dropped you off I realized something.  I forgot that you two were on a date!
 
 <<set $speaker to "Gina">> You realized that after you…
 

@@ -1,0 +1,71 @@
+title: Start
+---
+//Opens with Jordy Alone in the car
+<<setscene Dryve>>
+<<set $speaker to "Jordy">> It's so weird how that last guy forgot to tip
+I'm sure he remember after all the shortcuts I took
+Sure we arrived 20 minutes later
+But seeing the city is why people take ride shares, Right?
+I setup the back seat with air freshers and lotion.
+
+<<playerCharacterReturns PlayerCharacter>>
+
+Who doesn't love soft skin?
+Who doesn't love Lotion?!?!
+
+//TODO: Player Character reacts in shock
+
+<<set $speaker to "Player Character">> Hi, um Jordy right?
+
+<<set $speaker to "Jordy">> Yep, buckle up.
+I make sure my passangers are both comfortable AND safe
+
+<<set $speaker to "Player Character">> Oh, um thanks
+
+<<set $speaker to "Jordy">> So it's a Friday night, you've got two stops? I'm guessing it's date night
+
+<<set $speaker to "Player Character">> Uh yeah, that's the plan
+
+<<set $speaker to "Jordy">> Wants some tips? Guaranteed to get you to the next one.
+
+<<set $speaker to "Player Character">> Well, I guess
+
+<<set $speaker to "Jordy">> Be yourself, unless yourself is an a-hole
+
+<<set $speaker to "Player Character">> ... Thanks.
+
+<<set $speaker to "Jordy">> But seriously, listen more than you talk.
+Don't give advice unless it's requested.
+And silence is better than saying something shitty.
+
+<<set $speaker to "Player Character">> I'll keep that in mind.
+
+<<set $speaker to "Jordy">> Stop Two!!! We're here.
+
+<<ginaReturns Gina>>
+
+<<set $speaker to "Player Character">> Hey there, nice to meet you in person.
+
+<<set $speaker to "Gina">> Hey there, I'm looking forward to tonight
+
+<<set $speaker to "Player Character">> Great, I hope I don't disappoint
+
+<<set $speaker to "Jordy">> We were just talking about date night tips
+
+<<set $speaker to "Gina">> Oh?
+
+<<set $speaker to "Player Character">> I'm sure you don't need them though, you're probably more experienced than me
+
+<<set $speaker to "Gina">> Uhh
+
+<<set $speaker to "Player Character">> That's not what I meant, 
+not that being experienced is bad, 
+I just assumed, umm..
+
+<<set $speaker to "Jordy">> Rule three my guy
+
+<<setscene innerDate>>
+
+<<set $speaker to "Player Character's Anxiety">> Should have listened to the ride share guru
+
+<<set $speaker to "Player Character's Thoughts">> I have to change the subject.

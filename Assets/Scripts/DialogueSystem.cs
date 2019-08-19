@@ -11,7 +11,6 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
 
     [Tooltip("This will be attached to Characters GameObject in scene")]
     public TalkingStop talkingStop;
-    public float textSpeed;
 
     [Tooltip("How quickly to show the text, in seconds per character")]
     public float textSpeedDefault;

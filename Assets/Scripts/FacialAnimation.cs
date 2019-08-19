@@ -12,7 +12,6 @@ public enum Expression { Happy, Sad, Uncomfortable, Relief, Shocked };
 public class FacialAnimation : MonoBehaviour
 {
     public string currentExpression;
-    public GameObject facialExpressionGameObject;
     [Header("Name to be displayed for talking character")]
     public string characterName;
 
@@ -24,7 +23,7 @@ public class FacialAnimation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        animator = facialExpressionGameObject.GetComponent<Animator>();
+        animator = GetComponent<Animator>();
         animator.SetBool(currentExpression, true);
         cameraTransition = FindObjectOfType<CameraTransition>();
         dialoguePanelController = FindObjectOfType<DialoguePanelController>();

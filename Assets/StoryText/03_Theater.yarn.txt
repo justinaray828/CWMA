@@ -102,6 +102,25 @@ title: BrooklynHearts
 [[Other Other Credit Card|CreditCard3]]
 ===
 
+title: CreditCard1
+---
+
+[[CreditCard]]
+
+===
+title: CreditCard2
+---
+
+[[CreditCard]]
+
+===
+title: CreditCard3
+---
+
+[[CreditCard]]
+
+===
+
 title: CreditCard
 ---
 <<setscene innerDateCut>>
@@ -135,17 +154,36 @@ title: CreditCard
 <<endif>>
 
 <<if visited("CreditCard2") is true>>
-    [[Credit Card|OtherCreditCard]
+    [[Credit Card|OtherCreditCard]]
     [[Other Other Credit Card|OtherCreditCard]]
     [[Just buy a new ticket|BuyANewTicket]]
 <<endif>>
 
 <<if visited("CreditCard3") is true>>
-    [[Credit Card|OtherCreditCard]
+    [[Credit Card|OtherCreditCard]]
     [[Other Credit Card|OtherCreditCard]]
     [[Just buy a new ticket|BuyANewTicket]]
 <<endif>>
 
+
+===
+
+title: OtherCreditCard1
+---
+
+[[OtherCreditCard]]
+
+===
+title: OtherCreditCard2
+---
+
+[[OtherCreditCard]]
+
+===
+title: OtherCreditCard3
+---
+
+[[OtherCreditCard]]
 
 ===
 
@@ -202,7 +240,18 @@ And I’ve already checked the occupancy count... twice.
 
 <<set $speaker to "Player Character's Anxiety">> Ok, Genius, Let’s try this again
 
-[[Credit Card|OtherCreditCard]]
-[[Other Credit Card|OtherCreditCard]]
-[[Other Other Credit Card|OtherCreditCard]]
+<<if visited("CreditCard1") is true>>
+    [[Other Credit Card|OtherCreditCard]]
+    [[Other Other Credit Card|OtherCreditCard]]
+<<endif>>
+
+<<if visited("CreditCard2") is true>>
+    [[Credit Card|OtherCreditCard]]
+    [[Other Other Credit Card|OtherCreditCard]]
+<<endif>>
+
+<<if visited("CreditCard3") is true>>
+    [[Credit Card|OtherCreditCard]]
+    [[Other Credit Card|OtherCreditCard]]
+<<endif>>
 ===

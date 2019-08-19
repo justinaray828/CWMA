@@ -98,10 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transitionTime: 2
   brainScene: {fileID: 0}
+  brainCameraCut: {fileID: 0}
   brainSceneCube: {fileID: 0}
-  enableBrainScene: 0
-  zoomIn: 1
+  brainOpenAnimator: {fileID: 0}
   startZoom: 0
-  brainSceneTransitionFadeStart: 0
-  smoothTime: 0.3
-  yVelocity: 0.3

@@ -7,7 +7,7 @@ title: Start
 I’m heading to the bathroom.  Be right back.
 
 <<set $speaker to "Player Character">> Oh ok, see you soon.
-
+<<ginaLeaves Gina>>
 <<set $speaker to "Gina">> Back in a bit
 
 <<setscene innerDateCut>>
@@ -24,6 +24,7 @@ I’m heading to the bathroom.  Be right back.
 
 <<setscene innerDateCut>>
 <<setscene Restaurant>>
+<<reaReturns Rea>>
 
 <<set $speaker to "Rea">> Hey there.  Name’s Rea.
 I’ll be your server.

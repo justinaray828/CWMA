@@ -5,7 +5,7 @@
 /// the main character. Use TransitionTime to set how long in seconds the transistion will take place.
 ///
 /// To Call the transistion call ZoomIn() or ZoomOut()
-/// 
+///
 /// ToggleBrainRoomCut() will cut between brainroom and scene
 /// </summary>
 [RequireComponent(typeof(Camera))]
@@ -17,21 +17,25 @@ public class CameraTransition : MonoBehaviour
     [Header("Needed Brain Scene GameObjects")]
     [Tooltip("Found under GameManager")]
     public GameObject brainScene;
+
     [Tooltip("Found under BrainScene")]
     public GameObject brainCameraCut;
+
     [Tooltip("Found under Main Character")]
     public GameObject brainSceneCube;
+
     [Tooltip("Found under Main Character")]
     public Animator brainOpenAnimator;
 
     //private bool enableBrainScene;
     private bool zoomIn = true;
-    private bool startZoom = false;
+
+    public bool startZoom = false;
     private bool cameraIsZoomedIn = false;
     private bool turnCameraOn = false; //Used for ToggleBrainRoomCut()
 
     private Camera mainCamera;
-    
+
     private float cameraStartSize = 10.8f;
     private float cameraZoomInSize = 2.66f;
     private float zoomTolerance = .01f; //Needed to account for how far Lerp is off
@@ -43,7 +47,6 @@ public class CameraTransition : MonoBehaviour
 
     private Vector3 cameraStartPosition;
     private Vector3 cameraZoomPosition;
-
 
     private void Start()
     {
@@ -57,9 +60,13 @@ public class CameraTransition : MonoBehaviour
     private void SetCameraPositions()
     {
         cameraStartPosition = new Vector3(cameraStatPositionX, cameraStatPositionY, cameraStatPositionZ);
-        cameraZoomPosition = new Vector3(brainSceneCube.transform.position.x,
-                                         brainSceneCube.transform.position.y,
-                                         cameraStartPosition.z);
+
+        if (brainSceneCube)
+        {
+            cameraZoomPosition = new Vector3(brainSceneCube.transform.position.x,
+                                             brainSceneCube.transform.position.y,
+                                             cameraStartPosition.z);
+        }
     }
 
     /// <summary>
@@ -141,8 +148,6 @@ public class CameraTransition : MonoBehaviour
                 startZoom = false;
             }
         }
-
-        
     }
 
     /// <summary>
@@ -151,10 +156,10 @@ public class CameraTransition : MonoBehaviour
     /// </summary>
     private void EnableBrainScene(bool boolean)
     {
-        //bool cameraStatus = (cameraIsZoomedIn) ? true : false;
-        //brainScene.SetActive(boolean);
-        //brainSceneCube.SetActive(boolean);
-        brainOpenAnimator.SetBool("Open", boolean);
+        if (brainOpenAnimator)
+        {
+            brainOpenAnimator.SetBool("Open", boolean);
+        }
     }
 
     /// <summary>
@@ -165,7 +170,10 @@ public class CameraTransition : MonoBehaviour
         turnCameraOn = !turnCameraOn;
         brainScene.SetActive(turnCameraOn);
         brainCameraCut.SetActive(turnCameraOn);
-        brainSceneCube.SetActive(!turnCameraOn);
+        if (brainSceneCube)
+        {
+            brainSceneCube.SetActive(!turnCameraOn);
+        }
     }
 
     public bool isCameraZoomedIn()

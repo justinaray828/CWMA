@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Yarn.Unity;
 
 //Enum values need to be the same as the Facial Expression Animator Parameters
 public enum Expression { Happy, Sad, Uncomfortable, Relief, Shocked };
@@ -10,21 +11,66 @@ public enum Expression { Happy, Sad, Uncomfortable, Relief, Shocked };
 /// </summary>
 public class FacialAnimation : MonoBehaviour
 {
-    [SerializeField] private Expression currentExpression;
-    [SerializeField] private GameObject facialExpressionGameObject;
+    public string currentExpression;
+    [Header("Name to be displayed for talking character")]
+    public string characterName;
+
     private Animator animator;
+    private string talking = "Talking";
+    private CameraTransition cameraTransition;
+    private DialoguePanelController dialoguePanelController;
 
     // Start is called before the first frame update
     void Start()
     {
-        animator = facialExpressionGameObject.GetComponent<Animator>();
-        animator.SetBool(currentExpression.ToString(), true);
+        animator = GetComponent<Animator>();
+        animator.SetBool(currentExpression, true);
+        cameraTransition = FindObjectOfType<CameraTransition>();
+        dialoguePanelController = FindObjectOfType<DialoguePanelController>();
     }
 
-    public void ChangeExpression(Expression expression)
+    /// <summary>
+    /// In yarn use the command like below. All expressions are in the enum at the top of this code.
+    /// 'ChangeExpression CharacterName Expression'
+    /// </summary>
+    /// <param name="expression"></param>
+    [YarnCommand("ChangeExpression")]
+    public void ChangeExpression(string expression)
     {
-        animator.SetBool(currentExpression.ToString(), false);
+        animator.SetBool(expression, false);
         currentExpression = expression;
-        animator.SetBool(currentExpression.ToString(), true);
+        animator.SetBool(expression, true);
+
+        if (expression == talking)
+            SetSpeakerOnPanel();
+    }
+
+    [YarnCommand("StartTalking")]
+    public void StartTalking()
+    {
+        StartCoroutine("TalkingDelay");
+    }
+
+    public void StopTalking()
+    {
+        if(currentExpression == talking)
+        {
+            animator.SetBool(talking, false);
+        }
+    }
+
+    private void SetSpeakerOnPanel()
+    {
+        dialoguePanelController.nameText.text = characterName;
+    }
+
+    IEnumerator TalkingDelay()
+    {
+        while (cameraTransition.startZoom)
+        {
+            yield return null;
+        }
+
+        ChangeExpression(talking);
     }
 }

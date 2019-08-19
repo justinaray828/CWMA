@@ -1,65 +1,64 @@
 title: Start
 ---
 <<setscene Theater>>
-<<set $speaker to "Player Character">> Finally, we made it!
+<<StartTalking Player>> Finally, we made it!
 
-<<set $speaker to "Gina">> I feel like we could have walked here faster.
+<<StartTalking Gina>> I feel like we could have walked here faster.
 
-<<set $speaker to "Player Character">> That driver found a way to speed through every light and miss nearly every turn.
+<<StartTalking Player>> That driver found a way to speed through every light and miss nearly every turn.
 
-<<set $speaker to "Gina">> I feel like it takes skills to be that terrible.
+<<StartTalking Gina>> I feel like it takes skills to be that terrible.
 
-<<set $speaker to "Player Character">> So Five Stars?
+<<StartTalking Player>> So Five Stars?
 
-<<set $speaker to "Gina">> Haha, definitely.
+<<StartTalking Gina>> Haha, definitely.
 
-<<set $speaker to "Emily">> What movie are you seeing?
+<<StartTalking Emily>> What movie are you seeing?
 
-<<set $speaker to "Player Character">> Uhh.. I bought tickets online.
+<<StartTalking Player>> I bought tickets online.
 
-<<set $speaker to "Emily">> Ok.. I still need to know the name of the movie to find the tickets.
+<<StartTalking Emily>> Ok.. I still need to know the name of the movie to find the tickets.
 
 <<setscene innerDateCut>>
 
-<<set $speaker to "Player Character's Thoughts">> Oh god… I forgot the name of the movie.
+<<StartTalking PlayersBrain>> Oh god… I forgot the name of the movie.
 
-<<set $speaker to "Player Character's Anxiety">> You what?!
+<<StartTalking PlayersAnxiety>> You what?
 
-<<set $speaker to "Player Character's Thoughts">> I think it’s either Love in New York or Brooklyn Hearts, or something like that.  How many date movies could there be?
+<<StartTalking PlayersBrain>> I think it’s either Love in New York or Brooklyn Hearts, or something like that.  How many date movies could there be?
 
-<<set $speaker to "Player Character's Anxiety">> Well that’s a 50% chance of looking like an idiot.
+<<StartTalking PlayersAnxiety>> Well that’s a 50% chance of looking like an idiot.
 
-[[I think Love in New York|LoveInNewYork]]
+[[Umm Love in New York|LoveInNewYork]]
 [[I believe Brooklyn Hearts|BrooklynHearts]]
 ===
 title: LoveInNewYork
 ---
 <<setscene innerDateCut>>
 <<setscene Theater>>
-<<set $speaker to "Player Character">> I think it was...
+<<StartTalking Player>> I think it was...
 
-<<set $speaker to "Gina">> Brooklyn Sleeps Alone Tonight!!!
+<<StartTalking Gina>> Brooklyn Sleeps Alone Tonight!!!
 
-<<set $speaker to "Emily">> Great… glad someone knew.
+<<StartTalking Emily>> Great… glad someone knew.
 
-<<set $speaker to "Gina">> Saw you were struggling a bit, these names are a little generic.
+<<StartTalking Gina>> Saw you were struggling a bit, these names are a little generic.
 
-<<set $speaker to "Player Character">> Thanks for the save there.
+<<StartTalking Player>> Thanks for the save there.
 
-<<set $speaker to "Emily">> CARD
+<<StartTalking Emily>> CARD
 
-<<set $speaker to "Player Character">> Huh… 
+<<StartTalking Player>> Huh… 
 
-<<set $speaker to "Emily">> Give me your card so I can verify the purchase for the movie you totally forgot the title to.
+<<StartTalking Emily>> Give me the your card so I can pull up your ticket order for the movie you totally forgot the title to.
 
 <<setscene innerDateCut>>
 
-<<set $speaker to "Player Character's Thoughts">> I have a bad memory! 
-But I won't let this woundingly sarcastic teen ruin my date.
+<<StartTalking PlayersBrain>> I have a bad memory! I won't let this woundingly sarcastic teen ruin my date.
 
-<<set $speaker to "Player Character's Anxiety">> No, but being awkward and going through the 3 different cards in your wallet to find the one that you bought the ticket on will. 
+<<StartTalking PlayersAnxiety>> No, but being awkward and going through the 3 different cards in your wallet to find the one that you bought the ticket on will. 
 
-<<set $speaker to "Player Character's Thoughts">> Wow, who’s side are you on?
+<<StartTalking PlayersBrain>> Wow, who’s side are you on?
 
 [[Credit Card|CreditCard1]]
 [[Other Credit Card|CreditCard2]]
@@ -69,33 +68,33 @@ title: BrooklynHearts
 ---
 <<setscene innerDateCut>>
 <<setscene Theater>>
-<<set $speaker to "Player Character">> I think it was Movie Name.
+<<StartTalking Player>> I think it was Movie Name.
 
-<<set $speaker to "Gina">> That is definitely not the movie.
+<<StartTalking Gina>> That is definitely not the movie.
 
-<<set $speaker to "Emily">> Great… you bought a ticket for movie you can’t even remember the title for.  Real art connoisseurs.
+<<StartTalking Emily>> Great… you bought a ticket for movie you can’t even remember the title for.  Real art connoisseurs.
 
-<<set $speaker to "Gina">> I am pretty sure it is Brooklyn sleeps alone tonight. 
+<<StartTalking Gina>> I am pretty sure it is Brooklyn sleeps alone tonight. 
 
-<<set $speaker to "Player Character">> Right, Thanks for the save there.
+<<StartTalking Player>> Right, Thanks for the save there.
 
-<<set $speaker to "Gina">> Let’s just get inside.
+<<StartTalking Gina>> Let’s just get inside.
 
-<<set $speaker to "Emily">> CARD
+<<StartTalking Emily>> CARD
 
-<<set $speaker to "Player Character">> Huh… 
+<<StartTalking Player>> Huh… 
 
-<<set $speaker to "Emily">> Give me the your card so I can pull up your ticket order for the movie you totally forgot the title to.
+<<StartTalking Emily>> Give me the your card so I can pull up your ticket order for the movie you totally forgot the title to.
 
 <<setscene innerDateCut>>
 
-<<set $speaker to "Player Character's Anxiety">> Busted!
+<<StartTalking PlayersAnxiety>> Busted!
 
-<<set $speaker to "Player Character's Thoughts">> I have a bad memory! I won't let this woundingly sarcastic teen ruin my date.
+<<StartTalking PlayersBrain>> I have a bad memory! I won't let this woundingly sarcastic teen ruin my date.
 
-<<set $speaker to "Player Character's Anxiety">> No, but being awkward and going through the 3 different cards in your wallet to find the one that you bought the ticket on will. 
+<<StartTalking PlayersAnxiety>> No, but being awkward and going through the 3 different cards in your wallet to find the one that you bought the ticket on will. 
 
-<<set $speaker to "Player Character's Thoughts">> Wow, who’s side are you on?
+<<StartTalking PlayersBrain>> Wow, who’s side are you on?
 
 [[Credit Card|CreditCard1]]
 [[Other Credit Card|CreditCard2]]
@@ -125,27 +124,27 @@ title: CreditCard
 ---
 <<setscene innerDateCut>>
 <<setscene Theater>>
-<<set $speaker to "Player Character">> I think it was this one.
+<<StartTalking Player>> I think it was this one.
 
-<<set $speaker to "Emily">> You think!  How many credit cards do you have?
+<<StartTalking Emily>> You think!  How many credit cards do you have?
 
-<<set $speaker to "Gina">> Oh my god, Just run the card.
+<<StartTalking Gina>> Oh my god, Just run the card.
 
-<<set $speaker to "Emily">> Fine… Bingo
+<<StartTalking Emily>> Fine… Bingo
 
-<<set $speaker to "Player Character">> Great, I sorta just guessed.
+<<StartTalking Player>> Great, I sorta just guessed.
 
-<<set $speaker to "Emily">> Not! Try Again.
+<<StartTalking Emily>> Not! Try Again.
 
-<<set $speaker to "Player Character">> Why are you like this?
+<<StartTalking Player>> Why are you like this?
  
-<<set $speaker to "Gina">> We are definitely missing the beginning of this movie.
+<<StartTalking Gina>> We are definitely missing the beginning of this movie.
 
 <<setscene innerDateCut>>
 
-<<set $speaker to "Player Character's Anxiety">> Okay, Genius. Let’s try this again
+<<StartTalking PlayersAnxiety>> Okay, Genius. Let’s try this again
 
-<<set $speaker to "Player Character's Thoughts">> Also, why are teenagers so scary and why do I feel I need their approval?  I’m an adult!
+<<StartTalking PlayersBrain>> Also, why are teenagers so scary and why do I feel I need their approval?  I’m an adult!
 
 <<if visited("CreditCard1") is true>>
     [[Other Credit Card|OtherCreditCard]]
@@ -191,28 +190,27 @@ title: OtherCreditCard
 ---
 <<setscene innerDateCut>>
 <<setscene Theater>>
-<<set $speaker to "Player Character">> Let’s try this one.
+<<StartTalking Player>> Let’s try this one.
 
-<<set $speaker to "Emily">> Are you sure this time?
+<<StartTalking Emily>> Are you sure this time?
 
-<<set $speaker to "Player Character">> Yep… 
-I think.
+<<StartTalking Player>> Yep… I think.
 
-<<set $speaker to "Emily">> Because if you aren’t you can pick...
+<<StartTalking Emily>> Because if you aren’t you can pick...
 
-<<set $speaker to "Gina">> Oh my god, is this a circle of hell.  RUN THE CARD!!!
+<<StartTalking Gina>> Oh my god, is this a circle of hell.  RUN THE CARD!!!
 
-<<set $speaker to "Emily">> Jeez, I’m running it.  And it’s printing.  Enjoy the show.
+<<StartTalking Emily>> Jeez, I’m running it.  And it’s printing.  Enjoy the show.
 
-<<set $speaker to "Player Character">> YES, and you’re not joking this time.
+<<StartTalking Player>> YES, and you’re not joking this time.
 
-<<set $speaker to "Emily">> I don’t joke.
+<<StartTalking Emily>> I don’t joke.
 
-<<set $speaker to "Player Character">> But..
+<<StartTalking Player>> But.. just a minute ago.
 
-<<set $speaker to "Gina">> Let’s go inside, finally.
+<<StartTalking Gina>> Let’s go inside, finally.
 
-<<set $speaker to "Emily">> Yeah. Finally.
+<<StartTalking Emily>> Yeah. Finally.
 <<setScene nextScene>>
 ===
 
@@ -220,25 +218,21 @@ title: BuyANewTicket
 ---
 <<setscene innerDateCut>>
 <<setscene Theater>>
-<<set $speaker to "Player Character">> I don’t know what card it was, I’m just going to buy a new ticket.
+<<StartTalking Player>> I don’t know what card it was, I’m just going to buy a new ticket.
 
-<<set $speaker to "Emily">> The theater is sold out, it’s a Friday Night and y’all are late to this showing.
+<<StartTalking Emily>> The theater is sold out, it’s a Friday Night and y’all are late to this showing.
 
-<<set $speaker to "Player Character">> Seriously?  
-The previews are just starting. 
-We aren’t THAT late.
+<<StartTalking Player>> Seriously?  The previews are just starting, we aren’t that late.
 
-<<set $speaker to "Gina">> Can you check again?  We aren’t that late.
+<<StartTalking Gina>> Can you check again?  We aren’t that late.
 
-<<set $speaker to "Emily">> If I can handle getting to the bus stop 45 minutes early for the one bus with a ramp, 
-Y’all can think to call your Dryve a whole 5 MINUTES earlier.  
-And I’ve already checked the occupancy count... twice.
+<<StartTalking Emily>> If I can handle getting to the bus stop 45 minutes early for the one bus with a ramp, y’all can think to call your Dryve a whole 5 minutes earlier.  And I’ve already checked the occupancy count... twice.
 
-<<set $speaker to "Gina">> Can we just try the cards?
+<<StartTalking Gina>> Can we just try the cards?
 
 <<setscene innerDateCut>>
 
-<<set $speaker to "Player Character's Anxiety">> Ok, Genius, Let’s try this again
+<<StartTalking PlayersAnxiety>> Ok, Genius, Let’s try this again
 
 <<if visited("CreditCard1") is true>>
     [[Other Credit Card|OtherCreditCard]]

@@ -9,6 +9,9 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
     public GameObject dialogueContainer;
     public GameObject continuePrompt;
 
+    [Tooltip("This will be attached to Characters GameObject in scene")]
+    public TalkingStop talkingStop;
+
     [Tooltip("How quickly to show the text, in seconds per character")]
     public float textSpeedDefault;
     public float textSpeedSlow;
@@ -36,6 +39,7 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
     private bool inputPressed = false;
     private bool textPaused;
 
+
     private void Awake()
     {
         ResetFields();
@@ -58,7 +62,7 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
 
     public override IEnumerator RunLine(Yarn.Line line)
     {
-        while (inBrainRoom && !cameraTransition.isCameraZoomedIn())
+        while (cameraTransition.startZoom)
         {
             dialoguePanelController.EnableDialogue(false);
             yield return null;//Wait until the camera is all the way zoomed in to continue
@@ -136,6 +140,9 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
             // Display the line immediately if textSpeed == 0
             dialoguePanelController.dialogueText.text = lineString;
         }
+
+        ///Stops all talking in scene after text is done
+        talkingStop.StopAllTalking();
 
         // Show the 'press any key' prompt when done, if we have one
         if (continuePrompt != null)
@@ -217,10 +224,12 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
             case "setscene innerDateCut":
                 cameraTransition.ToggleBrainRoomCut();
                 break;
+
             case "setscene innerDate":
                 cameraTransition.ZoomIn();
                 inBrainRoom = true;
                 break;
+
             case "setScene nextScene":
                 sceneHandler.LoadNextScene();
                 break;
@@ -233,20 +242,21 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
                 }else{
                     sceneHandler.LoadScene("08_Ending_Alone");
                 }
-                
                 break;
+                
             case "setscene 08_Ending_Alone":
                 sceneHandler.LoadScene("08_Ending_Alone");
                 break;
+                
             case "listenToJordy":
                 Choices.listenedToJordy = true;
                 break;
+                
             default:
                 cameraTransition.ZoomOut();
                 inBrainRoom = false;
                 break;
         }
-
         yield break;
     }
 

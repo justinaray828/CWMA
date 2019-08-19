@@ -1,13 +1,16 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System;
+using UnityEngine;
 using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
     public AudioSource fxSource;
-    public AudioSource musicSource;
     public AudioMixer mixer;
 
-    public Sound[] sounds;
+    public float fadeTime;
+
+    public Sound[] MusicSounds;
     public static AudioManager instance;
 
     private void Awake()
@@ -21,6 +24,25 @@ public class AudioManager : MonoBehaviour
             return;
         }
         DontDestroyOnLoad(gameObject);
+
+        //intialize audiosource for opening music
+        Sound s = Array.Find(MusicSounds, sound => sound.name == "Scene1");
+        s.source = gameObject.AddComponent<AudioSource>();
+        s.source.clip = s.clip;
+
+        s.source.volume = s.volume;
+        s.source.pitch = s.pitch;
+        s.source.loop = s.loop;
+        s.source.playOnAwake = s.playonawake;
+
+        s.source.outputAudioMixerGroup = s.output;
+
+        s.originalVolume = s.volume;
+
+        //sources were not truly playing on awake. Perhaps they were being created after awake had been called?
+        //regardless, this manually takes 
+        if (s.playonawake)
+            s.source.Play();
     }
 
     // Start is called before the first frame update
@@ -31,6 +53,7 @@ public class AudioManager : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+
     }
 
     public void SetMasterVolume(float vol)
@@ -40,15 +63,64 @@ public class AudioManager : MonoBehaviour
 
     public void SetMusicVolume(float vol)
     {
-        musicSource.volume = vol;
+        mixer.SetFloat("MusicVolume", vol);
     }
 
     public void SetFxVolume(float vol)
     {
-        fxSource.volume = vol;
+        mixer.SetFloat("SFXVolume", vol);
+    }
+
+    public void SceneTransition(int nextSceneNumber)
+    {
+        string nextSoundName = "Scene" + nextSceneNumber;
+        string currentSoundName = "Scene" + (nextSceneNumber - 1);
+
+        Sound nextS = Array.Find(MusicSounds, sound => sound.name == nextSoundName);
+        if (nextS == null)
+        {
+            Debug.LogWarning("Sound: " + nextSoundName + " was not found!");
+            return;
+        }
+        Sound currentS = Array.Find(MusicSounds, sound => sound.name == currentSoundName);
+
+        nextS.source = gameObject.AddComponent<AudioSource>();
+        nextS.source.clip = nextS.clip;
+        nextS.source.volume = nextS.volume;
+        nextS.source.outputAudioMixerGroup = nextS.output;
+        nextS.source.pitch = nextS.pitch;
+        nextS.source.loop = nextS.loop;
+        nextS.source.playOnAwake = nextS.playonawake;
+
+        StartCoroutine(FadeIn(nextS.source, fadeTime));
+        StartCoroutine(FadeOut(currentS.source, fadeTime));
+
+        return;
     }
 
     private void Play(Sound s)
     {
+    }
+
+    public static IEnumerator FadeOut(AudioSource audioSource, float FadeTime)
+    {
+        float startVolume = audioSource.volume;
+        while (audioSource.volume > 0)
+        {
+            audioSource.volume -= startVolume * Time.deltaTime / FadeTime;
+            yield return null;
+        }
+        audioSource.Stop();
+    }
+
+    public static IEnumerator FadeIn(AudioSource audioSource, float FadeTime)
+    {
+        audioSource.Play();
+        audioSource.volume = 0f;
+        while (audioSource.volume < 1)
+        {
+            audioSource.volume += Time.deltaTime / FadeTime;
+            yield return null;
+        }
     }
 }

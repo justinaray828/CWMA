@@ -80,7 +80,7 @@ Rea!
 You two were..
 
 <<set $speaker to "Gina">> YUP...
-(Pause)
+[textPauseTime=4.0][pause]
 <<set $speaker to "Rea">> ...I’m heading back to the kitchen.
 
 <<set $speaker to "Player Character">> Should we go?
@@ -286,9 +286,9 @@ I guess I’m a little too wrapped up in my own nervousness that I wasn’t real
 I get that you want to stay in this uncomfortable situation, but maybe I don’t.  
 And you’re ignoring that.  
 And that doesn't seem fair either.
-//TODO: Add a Pause
+
 <<set $speaker to "Gina">> Hmmm...
-(Pause)
+[textPauseTime=4.0][pause]
 <<set $speaker to "Player Character">> yeah...
 <<setscene 06_Ending_SecondDate>>
 ===

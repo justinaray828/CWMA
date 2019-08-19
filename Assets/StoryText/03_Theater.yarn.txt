@@ -60,9 +60,9 @@ title: LoveInNewYork
 
 <<StartTalking PlayersBrain>> Wow, who’s side are you on?
 
-[[Credit Card|CreditCard]]
-[[Other Credit Card|CreditCard]]
-[[Other Other Credit Card|CreditCard]]
+[[Credit Card|CreditCard1]]
+[[Other Credit Card|CreditCard2]]
+[[Other Other Credit Card|CreditCard3]]
 ===
 title: BrooklynHearts
 ---
@@ -96,9 +96,28 @@ title: BrooklynHearts
 
 <<StartTalking PlayersBrain>> Wow, who’s side are you on?
 
-[[Credit Card|CreditCard]]
-[[Other Credit Card|CreditCard]]
-[[Other Other Credit Card|CreditCard]]
+[[Credit Card|CreditCard1]]
+[[Other Credit Card|CreditCard2]]
+[[Other Other Credit Card|CreditCard3]]
+===
+
+title: CreditCard1
+---
+
+[[CreditCard]]
+
+===
+title: CreditCard2
+---
+
+[[CreditCard]]
+
+===
+title: CreditCard3
+---
+
+[[CreditCard]]
+
 ===
 
 title: CreditCard
@@ -127,10 +146,44 @@ title: CreditCard
 
 <<StartTalking PlayersBrain>> Also, why are teenagers so scary and why do I feel I need their approval?  I’m an adult!
 
-[[Credit Card|OtherCreditCard]]
-[[Other Credit Card|OtherCreditCard]]
-[[Other Other Credit Card|OtherCreditCard]]
-[[Just buy a new ticket|BuyANewTicket]]
+<<if visited("CreditCard1") is true>>
+    [[Other Credit Card|OtherCreditCard]]
+    [[Other Other Credit Card|OtherCreditCard]]
+    [[Just buy a new ticket|BuyANewTicket]]
+<<endif>>
+
+<<if visited("CreditCard2") is true>>
+    [[Credit Card|OtherCreditCard]]
+    [[Other Other Credit Card|OtherCreditCard]]
+    [[Just buy a new ticket|BuyANewTicket]]
+<<endif>>
+
+<<if visited("CreditCard3") is true>>
+    [[Credit Card|OtherCreditCard]]
+    [[Other Credit Card|OtherCreditCard]]
+    [[Just buy a new ticket|BuyANewTicket]]
+<<endif>>
+
+
+===
+
+title: OtherCreditCard1
+---
+
+[[OtherCreditCard]]
+
+===
+title: OtherCreditCard2
+---
+
+[[OtherCreditCard]]
+
+===
+title: OtherCreditCard3
+---
+
+[[OtherCreditCard]]
+
 ===
 
 title: OtherCreditCard
@@ -181,7 +234,18 @@ title: BuyANewTicket
 
 <<StartTalking PlayersAnxiety>> Ok, Genius, Let’s try this again
 
-[[Credit Card|OtherCreditCard]]
-[[Other Credit Card|OtherCreditCard]]
-[[Other Other Credit Card|OtherCreditCard]]
+<<if visited("CreditCard1") is true>>
+    [[Other Credit Card|OtherCreditCard]]
+    [[Other Other Credit Card|OtherCreditCard]]
+<<endif>>
+
+<<if visited("CreditCard2") is true>>
+    [[Credit Card|OtherCreditCard]]
+    [[Other Other Credit Card|OtherCreditCard]]
+<<endif>>
+
+<<if visited("CreditCard3") is true>>
+    [[Credit Card|OtherCreditCard]]
+    [[Other Credit Card|OtherCreditCard]]
+<<endif>>
 ===

@@ -13,11 +13,11 @@ title: Start
 
 <<StartTalking Gina>> Haha, definitely.
 
-<<set $speaker to "Emily">> What movie are you seeing?
+<<StartTalking Emily>> What movie are you seeing?
 
 <<StartTalking Player>> I bought tickets online.
 
-<<set $speaker to "Emily">> Ok.. I still need to know the name of the movie to find the tickets.
+<<StartTalking Emily>> Ok.. I still need to know the name of the movie to find the tickets.
 
 <<setscene innerDateCut>>
 
@@ -40,17 +40,17 @@ title: LoveInNewYork
 
 <<StartTalking Gina>> Brooklyn Sleeps Alone Tonight!!!
 
-<<set $speaker to "Emily">> Great… glad someone knew.
+<<StartTalking Emily>> Great… glad someone knew.
 
 <<StartTalking Gina>> Saw you were struggling a bit, these names are a little generic.
 
 <<StartTalking Player>> Thanks for the save there.
 
-<<set $speaker to "Emily">> CARD
+<<StartTalking Emily>> CARD
 
 <<StartTalking Player>> Huh… 
 
-<<set $speaker to "Emily">> Give me the your card so I can pull up your ticket order for the movie you totally forgot the title to.
+<<StartTalking Emily>> Give me the your card so I can pull up your ticket order for the movie you totally forgot the title to.
 
 <<setscene innerDateCut>>
 
@@ -72,7 +72,7 @@ title: BrooklynHearts
 
 <<StartTalking Gina>> That is definitely not the movie.
 
-<<set $speaker to "Emily">> Great… you bought a ticket for movie you can’t even remember the title for.  Real art connoisseurs.
+<<StartTalking Emily>> Great… you bought a ticket for movie you can’t even remember the title for.  Real art connoisseurs.
 
 <<StartTalking Gina>> I am pretty sure it is Brooklyn sleeps alone tonight. 
 
@@ -80,11 +80,11 @@ title: BrooklynHearts
 
 <<StartTalking Gina>> Let’s just get inside.
 
-<<set $speaker to "Emily">> CARD
+<<StartTalking Emily>> CARD
 
 <<StartTalking Player>> Huh… 
 
-<<set $speaker to "Emily">> Give me the your card so I can pull up your ticket order for the movie you totally forgot the title to.
+<<StartTalking Emily>> Give me the your card so I can pull up your ticket order for the movie you totally forgot the title to.
 
 <<setscene innerDateCut>>
 
@@ -126,15 +126,15 @@ title: CreditCard
 <<setscene Theater>>
 <<StartTalking Player>> I think it was this one.
 
-<<set $speaker to "Emily">> You think!  How many credit cards do you have?
+<<StartTalking Emily>> You think!  How many credit cards do you have?
 
 <<StartTalking Gina>> Oh my god, Just run the card.
 
-<<set $speaker to "Emily">> Fine… Bingo
+<<StartTalking Emily>> Fine… Bingo
 
 <<StartTalking Player>> Great, I sorta just guessed.
 
-<<set $speaker to "Emily">> Not! Try Again.
+<<StartTalking Emily>> Not! Try Again.
 
 <<StartTalking Player>> Why are you like this?
  
@@ -192,25 +192,25 @@ title: OtherCreditCard
 <<setscene Theater>>
 <<StartTalking Player>> Let’s try this one.
 
-<<set $speaker to "Emily">> Are you sure this time?
+<<StartTalking Emily>> Are you sure this time?
 
 <<StartTalking Player>> Yep… I think.
 
-<<set $speaker to "Emily">> Because if you aren’t you can pick...
+<<StartTalking Emily>> Because if you aren’t you can pick...
 
 <<StartTalking Gina>> Oh my god, is this a circle of hell.  RUN THE CARD!!!
 
-<<set $speaker to "Emily">> Jeez, I’m running it.  And it’s printing.  Enjoy the show.
+<<StartTalking Emily>> Jeez, I’m running it.  And it’s printing.  Enjoy the show.
 
 <<StartTalking Player>> YES, and you’re not joking this time.
 
-<<set $speaker to "Emily">> I don’t joke.
+<<StartTalking Emily>> I don’t joke.
 
 <<StartTalking Player>> But.. just a minute ago.
 
 <<StartTalking Gina>> Let’s go inside, finally.
 
-<<set $speaker to "Emily">> Yeah. Finally.
+<<StartTalking Emily>> Yeah. Finally.
 <<setScene nextScene>>
 ===
 
@@ -220,13 +220,13 @@ title: BuyANewTicket
 <<setscene Theater>>
 <<StartTalking Player>> I don’t know what card it was, I’m just going to buy a new ticket.
 
-<<set $speaker to "Emily">> The theater is sold out, it’s a Friday Night and y’all are late to this showing.
+<<StartTalking Emily>> The theater is sold out, it’s a Friday Night and y’all are late to this showing.
 
 <<StartTalking Player>> Seriously?  The previews are just starting, we aren’t that late.
 
 <<StartTalking Gina>> Can you check again?  We aren’t that late.
 
-<<set $speaker to "Emily">> If I can handle getting to the bus stop 45 minutes early for the one bus with a ramp, y’all can think to call your Dryve a whole 5 minutes earlier.  And I’ve already checked the occupancy count... twice.
+<<StartTalking Emily>> If I can handle getting to the bus stop 45 minutes early for the one bus with a ramp, y’all can think to call your Dryve a whole 5 minutes earlier.  And I’ve already checked the occupancy count... twice.
 
 <<StartTalking Gina>> Can we just try the cards?
 

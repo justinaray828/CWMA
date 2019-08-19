@@ -628,7 +628,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentExpression: 
-  characterName: 
+  characterName: Emily
 --- !u!4 &1674389764 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4899502158329937298, guid: feca0f149b5a21347ad797a352079305,
@@ -646,6 +646,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Emily
+      objectReference: {fileID: 0}
+    - target: {fileID: 4899502158329937300, guid: feca0f149b5a21347ad797a352079305,
+        type: 3}
+      propertyPath: m_TagString
+      value: Character
       objectReference: {fileID: 0}
     - target: {fileID: 4899502158329937298, guid: feca0f149b5a21347ad797a352079305,
         type: 3}

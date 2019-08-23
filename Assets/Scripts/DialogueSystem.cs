@@ -47,9 +47,10 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
 
     private void Update()
     {
-        if (Input.anyKeyDown)
+        if (Input.anyKeyDown && !PauseMenu.GameIsPaused)
         {
-            inputPressed = true;
+            //if escape is pressed, we don't want this to advance dialogue
+            if (!Input.GetKeyDown(KeyCode.Escape)) { inputPressed = true; }
         }
     }
 

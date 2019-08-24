@@ -3,66 +3,84 @@ title: Start
 //Opens with Jordy Alone in the car
 <<setscene Dryve>>
 <<set $speaker to "Jordy">> It's so weird how that last guy forgot to tip.
-I'm sure he remember after all the shortcuts I took.
-Sure we arrived 20 minutes later.
-But seeing the city is why people take ride shares, Right?
-I setup the back seat with air freshers and lotion.
+I was sure he'd remember after all the shortcuts I took.
+Sure we arrived 20 minutes later,
+But seeing the city is why people take ride shares, 
+Right?
+I even setup the back seat with air freshers and lotion.
 
 <<playerCharacterReturns PlayerCharacter>>
 
 Who doesn't love soft skin?
-Who doesn't love Lotion?!?!
+Who doesn't love lotion?!?!
 
 //TODO: Player Character reacts in shock
 
-<<StartTalking Player>> Hi, um Jordy right?
+<<set $speaker to "Player Character">> Jordy, right?
 
 <<set $speaker to "Jordy">> Yep, buckle up.
-I make sure my passangers are both comfortable AND safe.
+The almighty App says you've got two stop?
 
-<<StartTalking Player>> Oh, um thanks.
+<<set $speaker to "Player Character">> Yep, an apartment a few blocks away and the theater.
 
-<<set $speaker to "Jordy">> So it's a Friday night, you've got two stops? I'm guessing it's date night.
+<<set $speaker to "Jordy">> Friday Night,
+Apartment and then a movie... 
+I'm guessing you've got a date?
 
-<<StartTalking Player>> Uh yeah, that's the plan.
+<<set $speaker to "Player Character">> You guessed right.
 
-<<set $speaker to "Jordy">> Wants some tips? Guaranteed to get you to the next one.
+<<set $speaker to "Jordy">> Wants some tips? Guaranteed to get you to the second date.
 
-<<StartTalking Player>> Well, I guess.
+<<set $speaker to "Player Character">> Oh, that's ok--
 
-<<set $speaker to "Jordy">> Be yourself, 
+<<set $speaker to "Jordy">> Be yourself,
 Well, unless you're a terrible person.
 Then you've got other things to work on.
 
-<<StartTalking Player>> ... Helpful.
+<<set $speaker to "Player Character">> ... Helpful.
+
+<<set $speaker to "Jordy">> But you seem cool,
+I'm a pretty good judge of character.
+
+<<set $speaker to "Player Character">> Oh, Thanks man. I appreciate--
 
 <<set $speaker to "Jordy">> But seriously, listen more than you talk.
 Don't give advice unless it's requested.
 And silence is better than saying something shitty.
 
-<<StartTalking Player>> I'll keep that in mind.
+<<set $speaker to "Player Character">> I'll keep that in mind.
 
 <<set $speaker to "Jordy">> Stop Two!!! We're here.
 
 <<ginaReturns Gina>>
 
-<<StartTalking Player>> Hey there, nice to meet you in person.
+<<set $speaker to "Player Character">> Hey there, nice to meet you in person.
 
-<<StartTalking Gina>> Hey there, I'm looking forward to tonight.
+<<set $speaker to "Gina">> Nice to meet you too. 
+I'm looking forward to tonight.
 
-<<StartTalking Player>> Great, I hope I don't disappoint.
+<<set $speaker to "Player Character">> Great, I hope I don't disappoint.
+
+<<set $speaker to "Gina">> Well, I enjoyed chatting online.
+And I'm looking forward to more of that. 
+And seeing this movie.
+
+<<set $speaker to "Player Character">> Same here.
 
 <<set $speaker to "Jordy">> We were just talking about date night tips.
 
-<<StartTalking Gina>> Oh?
+<<set $speaker to "Gina">> Oh?
 
-<<StartTalking Player>> I'm sure you don't need them though, you're probably more experienced than me.
+<<set $speaker to "Player Character">> I'm sure you don't need to hear them, you're probably more experienced than me.
 
-<<StartTalking Gina>> Uhh...
+<<set $speaker to "Gina">> Uhh what...
 
-<<StartTalking Player>> That's not what I meant, 
+<<set $speaker to "Jordy">> Yikes.
+
+<<set $speaker to "Player Character">> That's not what I meant, 
 not that being experienced is bad, 
-I just assumed, umm..
+I just assumed, 
+umm..
 
 <<set $speaker to "Jordy">> Rule three my guy.
 
@@ -70,36 +88,37 @@ I just assumed, umm..
 
 <<set $speaker to "Player Character's Anxiety">> Should have listened to the ride share guru.
 
-<<StartTalking PlayersBrain>> Here we go again.
+<<set $speaker to "Player Character's Thoughts">> Welcome back anxiety.
 
-<<StartTalking PlayersBrain>> What's that saying about assuming things?
-It makes an a...
+<<set $speaker to "Player Character's Anxiety">> I'm just saying.
+What's that saying about assuming things?
+It makes an a--
 
-<<StartTalking PlayersBrain>> I just need to focus on fixing this.
+<<set $speaker to "Player Character's Thoughts">> I just need to focus on fixing this.
 
-<<StartTalking PlayersBrain>> Sure, solve what months of therapy has failed to
+<<set $speaker to "Player Character's Anxiety">> Sure, solve what months of therapy has failed to
 [[Sorry, I'm a little nervous|Sorry]]
 [[Change the Subject|ChangeTheSubject]]
 ===
 title: Sorry
 ---
-<<StartTalking Player>> Sorry... I'm a little nervous
+<<set $speaker to "Player Character">> Sorry... I'm a little nervous.
 
-<<StartTalking Gina>> Yeah, ok..
+<<set $speaker to "Gina">> Yeah, ok..
 
-<<StartTalking Player>> ...
+<<set $speaker to "Player Character">> ...
 
 <<set $speaker to "Gina">> ...
-I guess first dates are always a little awkward
+I guess first dates are always a little awkward.
 
-<<StartTalking Player>> Yep, and I might have had too many
+<<set $speaker to "Player Character">> Yep, and I might have had too many...
 
-<<set $speaker to "Gina">> I guess that's better than a lot second dates that go no where
+<<set $speaker to "Gina">> I guess that's better than a lot second dates that go nowhere.
 [[Are we there yet|AreWeThereYet]]
 ===
 title: ChangeTheSubject
 ---
-<<StartTalking Player>> So.. um, how about this weather we are having
+<<set $speaker to "Player Character">> So.. um, how about this weather we are having?
 
 <<set $speaker to "Gina">> Yeah.. the weather is.. nice.
 ...
@@ -107,7 +126,7 @@ Honest question, are you a bit nervous?
 
 <<set $speaker to "Jordy">> Yes
 
-<<StartTalking Player>> I think she was asking me...
+<<set $speaker to "Player Character">> I think she was asking me...
 
 <<set $speaker to "Jordy">> I know, it's just driving makes me nervous.
 
@@ -117,12 +136,12 @@ Honest question, are you a bit nervous?
 
 <<set $speaker to "Gina">> Like going on a date when it scares the crap out of you?
 
-<<StartTalking Player>> Well I'm glad I'm not the only one.
+<<set $speaker to "Player Character">> Well I'm glad I'm not the only one.
 [[Are we there yet|AreWeThereYet]]
 ===
 title: AreWeThereYet
 ---
-<<StartTalking Player>> Sooo… 5 more minutes till the theater?
+<<set $speaker to "Player Character">> Sooo… 5 more minutes till the theater?
 
 <<StartTalking Jordy>>
 Nope, 7 minutes.
@@ -139,11 +158,10 @@ Sorry.
 <<ChangeExpression PlayersBrain Talking>> But first dates are supposed to be sorta awkward.
 <<ChangeExpression PlayersBrain Talking>> Right?
 
-<<StartTalking PlayersAnxiety>> Just play it cool, 
-<<StartTalking PlayersAnxiety>> maybe they won’t notice how much of a mess you are.  
-<<StartTalking PlayersAnxiety>> Think about it, you haven’t had the chance to embarrass yourself
+<<StartTalking PlayersAnxiety>> Just play it cool. 
+<<StartTalking PlayersAnxiety>> Maybe they won’t notice how much of a mess you are.  
+<<StartTalking PlayersAnxiety>> You haven’t had the chance to embarrass yourself
 <<StartTalking PlayersAnxiety>> yet.
-
 <<ChangeExpression PlayersBrain Talking>> Oh, what a confidence boost!
 
 <<StartTalking PlayersAnxiety>> Look on the bright side, 
@@ -164,17 +182,23 @@ title: PlayItCool
 <<setscene Dryve>>
 <<StartTalking Player>> No problem, the first few minutes of the movie are previews anyway.  Let it Ride.
 
-<<StartTalking Gina>> Aww, I like watching previews
+<<StartTalking Gina>> Aww, I like watching previews.
 
-<<StartTalking Jordy>> I heard they were showing a trailer for the big superhero flick before your movie.  
-<<StartTalking Jordy>> Honestly, that trailer is probably better than what you’re seeing.  
+<<StartTalking Jordy>> Which movie are you seeing?
+
+<<StartTalking Player>> That new rom-com.
+
+<<StartTalking Gina>> The one with the actress from Friends.
+
+<<StartTalking Jordy>> Oh, I saw the trailer.
 <<StartTalking Jordy>> Rotten Potatoes says this movie is certified trash.
 
 <<StartTalking Player>> Critics think every movie is bad.
 
 <<StartTalking Jordy>> Nah dude. It was in the 30s for Critics AND User Reviews.
 
-<<StartTalking Gina>> Great (Need a good eye roll animation), we’re about to sit through a 2 hour bomb.
+//Gina rolls her eyes
+<<StartTalking Gina>> Great, we’re about to sit through a 2 hour bomb.
 
 <<StartTalking Jordy>> 2 hours and 45 minutes.
 
@@ -196,11 +220,13 @@ title: MakeAJoke
 
 <<StartTalking Gina>> Great!  We still have 6 minutes left to kill. 
 
-<<StartTalking Jordy>> Probably closer to 5 (new window) Just ran that red light. (both characters get Wtf looks)
+<<StartTalking Jordy>> Probably closer to 5.
+Just ran that red light. 
 
-<<StartTalking Player>> Anyway… (typed out slowly) I tried to be a Dryver driver once. 
+//both characters get Wtf looks
+
+<<StartTalking Player>> Anyway… I tried to be a Dryver driver once. 
 Trouble is, my passengers didn’t appreciate when I went the extra mile. 
-
 
 <<set $speaker to "Gina">> ...
 
@@ -217,23 +243,19 @@ Trouble is, my passengers didn’t appreciate when I went the extra mile.
 <<StartTalking Player>> yes…. 
 <<StartTalking Player>> How do I answer that?
 
-
 <<StartTalking Gina>> From a labor perspective it exploits workers while concentrating capital towards the top.
 
-<<StartTalking Player>> I’m sorry, I didn’t mean anything by it
-
-<<StartTalking Jordy>> That’s obvious.  
 <<StartTalking Jordy>> I mean you’re not wrong, but when you work 9 to 5, just $2 above minimum wage, you’ve got to be creative to make a legal living.  
 
 <<StartTalking Gina>> That’s respectable.
 
 <<StartTalking Jordy>> Plus, I’m my own boss. 
+
 <<StartTalking Jordy>> Nobody tells me what to do.
 
+<<StartTalking Player>> Turn left here!
 
-<<StartTalking Player>> Turn left here
-
-(Awkward back and forth stare down between Jordy and Player)
+//Awkward back and forth stare down between Jordy and Player
 
 <<StartTalking Jordy>> Get out...
 
@@ -243,7 +265,7 @@ Trouble is, my passengers didn’t appreciate when I went the extra mile.
 title: Escape
 ---
 <<setscene Dryve>>
-<<StartTalking Player>> *Tries to unlock door*
+<<set $speaker to "Player Character">> *Tries to unlock door*
 
 <<StartTalking Gina>> Ummm, are you trying to open the door while we’re in a moving car?
 
@@ -277,11 +299,11 @@ title: PlayItCool_B
 
 <<StartTalking Gina>> I’m less concerned about being cool than missing the beginning of the damn movie.
 
-<<StartTalking Player>> I heard the first 20 minutes of the movie is a dream… Spoiler Warning
+<<StartTalking Player>> I heard the first 20 minutes of the movie is a dream… Spoiler Warning.
 
-<<StartTalking Gina>> If you say ‘Spoiler Warning’ after the spoiler, it isn’t really a warning. It’s a Spoiler Announcement
+<<StartTalking Gina>> If you say ‘Spoiler Warning’ after the spoiler, it isn’t really a warning. It’s a Spoiler Announcement.
 
-<<StartTalking Player>> Oops, sorry
+<<StartTalking Player>> Oops, sorry.
 
 <<StartTalking Jordy>> That’s a good point, I’m going to start using that when I spoil things accidentally.  Spoiler Announcement!  At the end of the movie the main character…
 
@@ -302,7 +324,7 @@ title: AskHerAboutHerDay
 
 <<set $speaker to "Gina">> …
 
-<<StartTalking Player>> ... 
+<<set $speaker to "Player Character">> ... 
 
 <<StartTalking Jordy>> Did something crappy happen?
 
@@ -310,11 +332,14 @@ title: AskHerAboutHerDay
 
 <<StartTalking Player>> Like a pen thief?
 
-<<StartTalking Gina>> Yup, full scale office supply larceny.  It wouldn’t be a big deal if I hadn’t went and purchased my own pens.
+<<StartTalking Gina>> Yup, full scale office supply larceny.  
+It wouldn’t be a big deal if I hadn’t went and purchased my own pens.
 
 <<StartTalking Player>> That sucks, do you know who did it?
 
-<<StartTalking Gina>> Yeah maybe, but how do you ask your coworker that?
+<<StartTalking Gina>> Yeah,
+I think. 
+But how do you ask your coworker that?
 
 <<StartTalking Player>> Right, that’s a struggle.
 
@@ -324,7 +349,7 @@ title: AskHerAboutHerDay
 
 <<StartTalking PlayersAnxiety>> Yeah, you’ve got experience with office supply theft.
 
-<<ChangeExpression PlayersBrain Talking>> I feel like I should say something to show that I care?
+<<ChangeExpression PlayersBrain Talking>> I feel like I should say something, to show I care?
 
 [[That sounds rough, but I believe in your ability to handle it well.|ThatSoundsRough]]
 [[Sneak in at night and search everyone’s desks|Sneak]]
@@ -336,11 +361,11 @@ title: ThatSoundsRough
 <<setscene Dryve>>
 <<StartTalking Player>> That sounds rough, but I believe in your ability to handle it.
 
-<<StartTalking Gina>> Thanks… I think I just needed someone to listen to me rant a bit
+<<StartTalking Gina>> Thanks… I think I just needed someone to listen to me rant a bit.
 
-<<StartTalking Player>> Oh, Well I’m glad to help
+<<StartTalking Player>> Oh, Well I’m glad to help.
 
-<<StartTalking Gina>> I’ll figure out a way to handle it Monday morning
+<<StartTalking Gina>> I’ll figure out a way to handle it Monday morning.
 
 <<StartTalking Jordy>> And we’re here!!!  Hope y’all enjoy the movie!
 
@@ -351,29 +376,27 @@ $inspiraton is true
 title: Sneak
 ---
 <<setscene Dryve>>
-<<StartTalking Player>> You should sneak in at night and search everyone’s desks
+<<StartTalking Player>> You should sneak in at night and search everyone’s desks.
 
 <<StartTalking Gina>> Yeah that sounds like…
 
-<<StartTalking Jordy>> A terrible idea
+<<StartTalking Jordy>> A terrible idea.
 
-<<StartTalking Gina>> A great idea
+<<StartTalking Gina>> A great idea.
 
-<<StartTalking Player>> Oh, Well I’m glad to help..
+<<StartTalking Player>> Well, I’m glad to help--
 
-<<StartTalking Gina>> I’ll be the crazy person sneaking into my office to look through desks for my pens.
+<<StartTalking Gina>> If the janitors or any of my late shift coworkers are there, I’ll just explain how I was wronged and deserve pen justice.
 
-<<StartTalking Player>> Yeah, I see your point...
+<<StartTalking Player>> Yeah, I was mostly joking but you seem pretty set on this--
 
-<<StartTalking Gina>> If the janitors or any of my late working coworkers are there, I’ll just explain how I was wronged and deserve pen justice
-
-<<StartTalking Player>> Yeah, I was mostly joking but you seem pretty set on this...
-
-<<StartTalking Gina>> Oh, You were joking about Breaking and Entering at my place of employment to get my $10 pack of gel pens?
+<<StartTalking Gina>> Who wouldn't break into their place of employement to solve the mystery of the gel pen thief?
 
 <<StartTalking Jordy>> You’d be justified with Gel pens.
 
-<<StartTalking Player>> How far are we from...
+<<StartTalking Gina>> Thanks.  Thinking about saving my pens made me feel a lot better.
+
+<<StartTalking Player>> No problem.
 
 <<StartTalking Jordy>> And we’re here!!!  Hope y’all enjoy the movie!
 <<setScene nextScene>>

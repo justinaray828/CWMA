@@ -1,37 +1,37 @@
 title: Start
 ---
 <<setscene Restaurant>>
-<<set $speaker to "Player Character’s Anxiety">> Great job.  You nailed it!
+<<StartTalking PlayersAnxiety>> Great job.  You nailed it!
 
-<<set $speaker to "Player Character’s Thoughts">> Shut up.
+<<StartTalking PlayersBrain>> Shut up.
 
-<<set $speaker to "Player Character’s Anxiety">> You found a way to fail out of this date too.  How many has it been?
+<<StartTalking PlayersAnxiety>> You found a way to fail out of this date too.  How many has it been?
 
-<<set $speaker to "Player Character’s Thoughts">> Too many, I’m well aware.
+<<StartTalking PlayersBrain>> Too many, I’m well aware.
 
-<<set $speaker to "Player Character’s Anxiety">> I toast to many more.  At least you’ve got me.  Always there to remind you how much of a stud you are.
+<<StartTalking PlayersAnxiety>> I toast to many more.  At least you’ve got me.  Always there to remind you how much of a stud you are.
 
-<<set $speaker to "Player Character’s Thoughts">> I think that’s the problem.
+<<StartTalking PlayersBrain>> I think that’s the problem.
 
-<<set $speaker to "Player Character’s Anxiety">> What?
+<<StartTalking PlayersAnxiety>> What?
 
-<<set $speaker to "Player Character’s Thoughts">> I was more focused on how nervous I was than how nervous they were.  They were probably dealing with the same thing. I was too caught up in my own anxiety to focus on having a good date.
+<<StartTalking PlayersBrain>> I was more focused on how nervous I was than how nervous they were.  They were probably dealing with the same thing. I was too caught up in my own anxiety to focus on having a good date.
 
-<<set $speaker to "Player Character’s Anxiety">> Yeah, but not as much as a failure as you…
+<<StartTalking PlayersAnxiety>> Yeah, but not as much as a failure as you…
 
-<<set $speaker to "Player Character’s Thoughts">> Maybe, Maybe Not.  I don’t know that, and you don’t either.  
+<<StartTalking PlayersBrain>> Maybe, Maybe Not.  I don’t know that, and you don’t either.  
 
-<<set $speaker to "Player Character’s Anxiety">> But you know you failed.
+<<StartTalking PlayersAnxiety>> But you know you failed.
 
-<<set $speaker to "Player Character’s Thoughts">> But what’s succeeding?  I think going on a bad date might mean I just avoided a bad relationship.
+<<StartTalking PlayersBrain>> But what’s succeeding?  I think going on a bad date might mean I just avoided a bad relationship.
 
-<<set $speaker to "Player Character’s Anxiety">> Relationship??? When was the last time you went on a second date?
+<<StartTalking PlayersAnxiety>> Relationship??? When was the last time you went on a second date?
 
-<<set $speaker to "Player Character’s Thoughts">> I need confidence.  And I won’t have any confidence if I stay in this toxic relationship with you.
+<<StartTalking PlayersBrain>> I need confidence.  And I won’t have any confidence if I stay in this toxic relationship with you.
 
-<<set $speaker to "Player Character’s Anxiety">> Here’s the truth.  You wouldn’t date yourself.  You’ve spent this entire night arguing with and ridiculing yourself.  No one would find that appealing.  Until you make peace with that, you’re going to be single.
+<<StartTalking PlayersAnxiety>> Here’s the truth.  You wouldn’t date yourself.  You’ve spent this entire night arguing with and ridiculing yourself.  No one would find that appealing.  Until you make peace with that, you’re going to be single.
 
-<<set $speaker to "Player Character’s Thoughts">> Maybe, maybe not.
+<<StartTalking PlayersBrain>> Maybe, maybe not.
 
-<<set $speaker to "Player Character’s Anxiety">> Whether you think it’s true, or you think it’s a lie - you’re right. 
+<<StartTalking PlayersAnxiety>> Whether you think it’s true, or you think it’s a lie - you’re right. 
 ===

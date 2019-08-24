@@ -1,23 +1,23 @@
 title: Start
 ---
 <<setscene Dryve>>
-<<set $speaker to "Player Character">> I really enjoyed that, in spite of all the awkwardness!
+<<StartTalking Player>> I really enjoyed that, in spite of all the awkwardness!
 
 <<set $speaker to "Gina">> Actually, me too!
 
-<<set $speaker to "Player Character">> Maybe first dates are supposed to be like that.
+<<StartTalking Player>> Maybe first dates are supposed to be like that.
 
 <<set $speaker to "Gina">> Like what?
 
-<<set $speaker to "Player Character">> Full of awkward moments.  We’re both dealing with the anxiety and the promise of something new.
+<<StartTalking Player>> Full of awkward moments.  We’re both dealing with the anxiety and the promise of something new.
 
 <<set $speaker to "Gina">> Yeah, it’s a little terrifying but I’m glad we did it.
 
-<<set $speaker to "Player Character">> Yeah, me too!
+<<StartTalking Player>> Yeah, me too!
 
 <<set $speaker to "Gina">> Maybe we could have a second first date in a week?
 
-<<set $speaker to "Player Character">> That might be a good idea, and there's less pressure.
+<<StartTalking Player>> That might be a good idea, and there's less pressure.
 
 <<set $speaker to "Gina">> Yeah, It couldn't get much worse.
 ===

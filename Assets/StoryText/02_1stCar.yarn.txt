@@ -15,52 +15,52 @@ Who doesn't love Lotion?!?!
 
 //TODO: Player Character reacts in shock
 
-<<set $speaker to "Player Character">> Hi, um Jordy right?
+<<StartTalking Player>> Hi, um Jordy right?
 
 <<set $speaker to "Jordy">> Yep, buckle up.
 I make sure my passangers are both comfortable AND safe.
 
-<<set $speaker to "Player Character">> Oh, um thanks.
+<<StartTalking Player>> Oh, um thanks.
 
 <<set $speaker to "Jordy">> So it's a Friday night, you've got two stops? I'm guessing it's date night.
 
-<<set $speaker to "Player Character">> Uh yeah, that's the plan.
+<<StartTalking Player>> Uh yeah, that's the plan.
 
 <<set $speaker to "Jordy">> Wants some tips? Guaranteed to get you to the next one.
 
-<<set $speaker to "Player Character">> Well, I guess.
+<<StartTalking Player>> Well, I guess.
 
 <<set $speaker to "Jordy">> Be yourself, 
 Well, unless you're a terrible person.
 Then you've got other things to work on.
 
-<<set $speaker to "Player Character">> ... Helpful.
+<<StartTalking Player>> ... Helpful.
 
 <<set $speaker to "Jordy">> But seriously, listen more than you talk.
 Don't give advice unless it's requested.
 And silence is better than saying something shitty.
 
-<<set $speaker to "Player Character">> I'll keep that in mind.
+<<StartTalking Player>> I'll keep that in mind.
 
 <<set $speaker to "Jordy">> Stop Two!!! We're here.
 
 <<ginaReturns Gina>>
 
-<<set $speaker to "Player Character">> Hey there, nice to meet you in person.
+<<StartTalking Player>> Hey there, nice to meet you in person.
 
-<<set $speaker to "Gina">> Hey there, I'm looking forward to tonight.
+<<StartTalking Gina>> Hey there, I'm looking forward to tonight.
 
-<<set $speaker to "Player Character">> Great, I hope I don't disappoint.
+<<StartTalking Player>> Great, I hope I don't disappoint.
 
 <<set $speaker to "Jordy">> We were just talking about date night tips.
 
-<<set $speaker to "Gina">> Oh?
+<<StartTalking Gina>> Oh?
 
-<<set $speaker to "Player Character">> I'm sure you don't need them though, you're probably more experienced than me.
+<<StartTalking Player>> I'm sure you don't need them though, you're probably more experienced than me.
 
-<<set $speaker to "Gina">> Uhh...
+<<StartTalking Gina>> Uhh...
 
-<<set $speaker to "Player Character">> That's not what I meant, 
+<<StartTalking Player>> That's not what I meant, 
 not that being experienced is bad, 
 I just assumed, umm..
 
@@ -70,36 +70,36 @@ I just assumed, umm..
 
 <<set $speaker to "Player Character's Anxiety">> Should have listened to the ride share guru.
 
-<<set $speaker to "Player Character's Thoughts">> Here we go again.
+<<StartTalking PlayersBrain>> Here we go again.
 
-<<set $speaker to "Player Character's Thoughts">> What's that saying about assuming things?
+<<StartTalking PlayersBrain>> What's that saying about assuming things?
 It makes an a...
 
-<<set $speaker to "Player Character's Thoughts">> I just need to focus on fixing this.
+<<StartTalking PlayersBrain>> I just need to focus on fixing this.
 
-<<set $speaker to "Player Character's Thoughts">> Sure, solve what months of therapy has failed to
+<<StartTalking PlayersBrain>> Sure, solve what months of therapy has failed to
 [[Sorry, I'm a little nervous|Sorry]]
 [[Change the Subject|ChangeTheSubject]]
 ===
 title: Sorry
 ---
-<<set $speaker to "Player Character">> Sorry... I'm a little nervous
+<<StartTalking Player>> Sorry... I'm a little nervous
 
-<<set $speaker to "Gina">> Yeah, ok..
+<<StartTalking Gina>> Yeah, ok..
 
-<<set $speaker to "Player Character">> ...
+<<StartTalking Player>> ...
 
 <<set $speaker to "Gina">> ...
 I guess first dates are always a little awkward
 
-<<set $speaker to "Player Character">> Yep, and I might have had too many
+<<StartTalking Player>> Yep, and I might have had too many
 
 <<set $speaker to "Gina">> I guess that's better than a lot second dates that go no where
 [[Are we there yet|AreWeThereYet]]
 ===
 title: ChangeTheSubject
 ---
-<<set $speaker to "Player Character">> So.. um, how about this weather we are having
+<<StartTalking Player>> So.. um, how about this weather we are having
 
 <<set $speaker to "Gina">> Yeah.. the weather is.. nice.
 ...
@@ -107,7 +107,7 @@ Honest question, are you a bit nervous?
 
 <<set $speaker to "Jordy">> Yes
 
-<<set $speaker to "Player Character">> I think she was asking me...
+<<StartTalking Player>> I think she was asking me...
 
 <<set $speaker to "Jordy">> I know, it's just driving makes me nervous.
 
@@ -117,12 +117,12 @@ Honest question, are you a bit nervous?
 
 <<set $speaker to "Gina">> Like going on a date when it scares the crap out of you?
 
-<<set $speaker to "Player Character">> Well I'm glad I'm not the only one.
+<<StartTalking Player>> Well I'm glad I'm not the only one.
 [[Are we there yet|AreWeThereYet]]
 ===
 title: AreWeThereYet
 ---
-<<set $speaker to "Player Character">> Sooo… 5 more minutes till the theater?
+<<StartTalking Player>> Sooo… 5 more minutes till the theater?
 
 <<StartTalking Jordy>>
 Nope, 7 minutes.
@@ -243,7 +243,7 @@ Trouble is, my passengers didn’t appreciate when I went the extra mile.
 title: Escape
 ---
 <<setscene Dryve>>
-<<set $speaker to "Player Character">> *Tries to unlock door*
+<<StartTalking Player>> *Tries to unlock door*
 
 <<StartTalking Gina>> Ummm, are you trying to open the door while we’re in a moving car?
 
@@ -302,7 +302,7 @@ title: AskHerAboutHerDay
 
 <<set $speaker to "Gina">> …
 
-<<set $speaker to "Player Character">> ... 
+<<StartTalking Player>> ... 
 
 <<StartTalking Jordy>> Did something crappy happen?
 

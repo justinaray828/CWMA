@@ -10,7 +10,7 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
     public GameObject continuePrompt;
 
     [Tooltip("This will be attached to Characters GameObject in scene")]
-    public TalkingStop talkingStop;
+    private TalkingStop talkingStop;
 
     [Tooltip("How quickly to show the text, in seconds per character")]
     public float textSpeedDefault;
@@ -43,6 +43,7 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
     private void Awake()
     {
         ResetFields();
+        talkingStop = FindObjectOfType<TalkingStop>();
     }
 
     private void Update()

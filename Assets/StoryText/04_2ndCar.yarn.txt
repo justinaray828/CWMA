@@ -1,7 +1,8 @@
 title: Start
 ---
 <<setscene Dryve>>
-<<StartTalking Player>> …
+
+<<set $speaker to "Gina">> …
 
 <<set $speaker to "Gina">> …
 

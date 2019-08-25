@@ -3,7 +3,7 @@ title: Start
 <<setscene Theater>>
 <<StartTalking Player>> Finally, we made it!
 
-<<StartTalking Gina>> We could have walked here faster.
+<<StartTalking Gi na>> We could have walked here faster.
 
 <<StartTalking Player>> He found a way to speed through every light and miss every turn.
 
@@ -235,6 +235,9 @@ And you’re not joking this time?
 <<StartTalking Gina>> Let’s go inside, finally.
 
 <<StartTalking Emily>> Yeah. Finally.
+
+<<Start Movie>>
+[textPauseTime=4.0][pause]
 <<setScene nextScene>>
 ===
 

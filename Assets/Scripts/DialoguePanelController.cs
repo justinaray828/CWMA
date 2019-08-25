@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using Yarn.Unity;
 
 /// <summary>
 /// Handles all dialogue functions

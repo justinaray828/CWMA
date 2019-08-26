@@ -72,7 +72,7 @@ title: Start
 
 <<StartTalking Rea>> Oh hey, wait are you on a date with…
 
-<<set $speaker to "Gina">> ....
+<<StartTalking Gina>> ....
 
 <<StartTalking Player>> Yep, me.  
 <<StartTalking Player>> Do you two know each other?

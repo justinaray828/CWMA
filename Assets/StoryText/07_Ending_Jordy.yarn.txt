@@ -1,11 +1,11 @@
 title: Start
 ---
 <<setscene Dryve>>
-<<set $speaker to "Jordy">> So I take it that didn’t work out
+<<StartTalking Jordy>> So I take it that didn’t work out
 
 <<StartTalking Player>> Of course not.  We weren’t compatible.  Or I wasn’t ready.  Or I wasn’t worth it.  I don’t know.
 
-<<set $speaker to "Jordy">> Well which one is it?
+<<StartTalking Jordy>> Well which one is it?
 
 [[We Weren’t Compatible|EndingJordy_Continued]]
 [[I Wasn’t Ready|EndingJordy_Continued]]
@@ -13,15 +13,15 @@ title: Start
 ===
 title: EndingJordy_Continued
 ---
-<<set $speaker to "Jordy">> I’ll tell you, that’s all crap you’re telling yourself.  You were nice to the rideshare guy while simultaneously trying to have a date yourself.
+<<StartTalking Jordy>> I’ll tell you, that’s all crap you’re telling yourself.  You were nice to the rideshare guy while simultaneously trying to have a date yourself.
 
 <<StartTalking Player>> Yeah, but didn’t get a second date…
 
-<<set $speaker to "Jordy">> But you will.  You will get a second date with someone.. eventually.
+<<StartTalking Jordy>> But you will.  You will get a second date with someone.. eventually.
 
 <<StartTalking Player>> Thanks, I needed to hear that.
 
-<<set $speaker to "Jordy">> I can tell you’re a nice guy, you just had a bad night.
+<<StartTalking Jordy>> I can tell you’re a nice guy, you just had a bad night.
 
 <<StartTalking Player>> I think I could use some time to spend on myself before I try this again.
 ===

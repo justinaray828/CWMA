@@ -27,7 +27,7 @@ title: Start
 <<StartTalking PlayersAnxiety>> This is just great
 
 <<StartTalking PlayersBrain>> I have to change the subject.
-Gotta turn this back into a date instead of story time with the Jordy.
+<<StartTalking PlayersBrain>> Gotta turn this back into a date instead of story time with the Jordy.
 
 <<StartTalking PlayersAnxiety>> All the pressure is on you.
 
@@ -120,7 +120,7 @@ title: DiscussTheMovie
 <<StartTalking PlayersBrain>> Great, but how should I respond?
 
 <<StartTalking PlayersAnxiety>> You have two choices. Do you want to be like a parrot and repeat what she said? 
-Or do you want to form your own opinion and give an honest, well thought out answer?
+<<StartTalking PlayersAnxiety>> Or do you want to form your own opinion and give an honest, well thought out answer?
 
 <<StartTalking PlayersBrain>> I feel like there should be more choices.
 
@@ -145,7 +145,7 @@ title: CriticsWereWrong
 <<StartTalking Player>> I think the critics were still wrong.
 
 <<StartTalking Gina>> Everyone is entitled to their opinion, whether you agree or not. 
-Not everything has to be made for everyone.
+<<StartTalking Gina>> Not everything has to be made for everyone.
 
 <<StartTalking Player>> …
 

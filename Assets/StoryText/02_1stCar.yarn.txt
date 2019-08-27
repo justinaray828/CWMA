@@ -3,29 +3,29 @@ title: Start
 //Opens with Jordy Alone in the car
 <<setscene Dryve>>
 <<StartTalking Jordy>> It's so weird how that last guy forgot to tip.
-I was sure he'd remember after all the shortcuts I took.
-Sure we arrived 20 minutes later,
-But seeing the city is why people take ride shares, 
-Right?
-I even setup the back seat with air freshers and lotion.
+<<StartTalking Jordy>> I was sure he'd remember after all the shortcuts I took.
+<<StartTalking Jordy>> Sure we arrived 20 minutes later,
+<<StartTalking Jordy>> But seeing the city is why people take ride shares, 
+<<StartTalking Jordy>> Right?
+<<StartTalking Jordy>> I even setup the back seat with air freshers and lotion.
 
 <<playerCharacterReturns PlayerCharacter>>
 
-Who doesn't love soft skin?
-Who doesn't love lotion?!?!
+<<StartTalking Jordy>> Who doesn't love soft skin?
+<<StartTalking Jordy>> Who doesn't love lotion?!?!
 
 //TODO: Player Character reacts in shock
 
 <<StartTalking Player>> Jordy, right?
 
 <<StartTalking Jordy>> Yep, buckle up.
-The almighty App says you've got two stop?
+<<StartTalking Jordy>> The almighty App says you've got two stop?
 
 <<StartTalking Player>> Yep, an apartment a few blocks away and the theater.
 
 <<StartTalking Jordy>> Friday Night,
-Apartment and then a movie... 
-I'm guessing you've got a date?
+<<StartTalking Jordy>> Apartment and then a movie... 
+<<StartTalking Jordy>> I'm guessing you've got a date?
 
 <<StartTalking Player>> You guessed right.
 
@@ -34,19 +34,19 @@ I'm guessing you've got a date?
 <<StartTalking Player>> Oh, that's ok--
 
 <<StartTalking Jordy>> Be yourself,
-Well, unless you're a terrible person.
-Then you've got other things to work on.
+<<StartTalking Jordy>> Well, unless you're a terrible person.
+<<StartTalking Jordy>> Then you've got other things to work on.
 
 <<StartTalking Player>> ... Helpful.
 
 <<StartTalking Jordy>> But you seem cool,
-I'm a pretty good judge of character.
+<<StartTalking Jordy>> I'm a pretty good judge of character.
 
 <<StartTalking Player>> Oh, Thanks man. I appreciate--
 
 <<StartTalking Jordy>> But seriously, listen more than you talk.
-Don't give advice unless it's requested.
-And silence is better than saying something shitty.
+<<StartTalking Jordy>> Don't give advice unless it's requested.
+<<StartTalking Jordy>> And silence is better than saying something shitty.
 
 <<StartTalking Player>> I'll keep that in mind.
 
@@ -57,13 +57,13 @@ And silence is better than saying something shitty.
 <<StartTalking Player>> Hey there, nice to meet you in person.
 
 <<StartTalking Gina>> Nice to meet you too. 
-I'm looking forward to tonight.
+<<StartTalking Gina>> I'm looking forward to tonight.
 
 <<StartTalking Player>> Great, I hope I don't disappoint.
 
 <<StartTalking Gina>> Well, I enjoyed chatting online.
-And I'm looking forward to more of that. 
-And seeing this movie.
+<<StartTalking Gina>> And I'm looking forward to more of that. 
+<<StartTalking Gina>> And seeing this movie.
 
 <<StartTalking Player>> Same here.
 
@@ -78,9 +78,9 @@ And seeing this movie.
 <<StartTalking Jordy>> Yikes.
 
 <<StartTalking Player>> That's not what I meant, 
-not that being experienced is bad, 
-I just assumed, 
-umm..
+<<StartTalking Player>> not that being experienced is bad, 
+<<StartTalking Player>> I just assumed, 
+<<StartTalking Player>> umm..
 
 <<StartTalking Jordy>> Rule three my guy.
 
@@ -91,8 +91,8 @@ umm..
 <<ChangeExpression PlayersBrain Talking>> Welcome back anxiety.
 
 <<StartTalking PlayersAnxiety>> I'm just saying.
-What's that saying about assuming things?
-It makes an a--
+<<StartTalking PlayersAnxiety>> What's that saying about assuming things?
+<<StartTalking PlayersAnxiety>> It makes an a--
 
 <<ChangeExpression PlayersBrain Talking>> I just need to focus on fixing this.
 
@@ -109,7 +109,7 @@ title: Sorry
 <<StartTalking Player>> ...
 
 <<StartTalking Gina>> ...
-I guess first dates are always a little awkward.
+<<StartTalking Gina>> I guess first dates are always a little awkward.
 
 <<StartTalking Player>> Yep, and I might have had too many...
 
@@ -121,8 +121,8 @@ title: ChangeTheSubject
 <<StartTalking Player>> So.. um, how about this weather we are having?
 
 <<StartTalking Gina>> Yeah.. the weather is.. nice.
-...
-Honest question, are you a bit nervous?
+<<StartTalking Gina>> ...
+<<StartTalking Gina>> Honestly, are you a bit nervous?
 
 <<StartTalking Jordy>> Yes
 
@@ -144,13 +144,13 @@ title: AreWeThereYet
 <<StartTalking Player>> Sooo… 5 more minutes till the theater?
 
 <<StartTalking Jordy>>
-Nope, 7 minutes.
+<<StartTalking Jordy>> Nope, 7 minutes.
 
 <<StartTalking Jordy>>
-Missed another turn... or two.  
+<<StartTalking Jordy>> Missed another turn... or two.  
 
 <<StartTalking Jordy>>
-Sorry.
+<<StartTalking Jordy>> Sorry.
 
 <<setscene innerDate>>
 
@@ -207,9 +207,9 @@ title: PlayItCool
 <<StartTalking Player>> Maybe it will be so bad it’s good?  
 
 <<StartTalking Jordy>> And We’re Here! 
-I hope that you are in the 30 percent of people with incorrect err… ‘unique’ opinions! 
-Remember to tip!
-5 Star Ride Times, 5 Star Ratings!
+<<StartTalking Jordy>> I hope that you are in the 30 percent of people with incorrect err… ‘unique’ opinions! 
+<<StartTalking Jordy>> Remember to tip!
+<<StartTalking Jordy>> 5 Star Ride Times, 5 Star Ratings!
 <<setScene nextScene>>
 ===
 
@@ -221,12 +221,12 @@ title: MakeAJoke
 <<StartTalking Gina>> Great!  We still have 6 minutes left to kill. 
 
 <<StartTalking Jordy>> Probably closer to 5.
-Just ran that red light. 
+<<StartTalking Jordy>> Just ran that red light. 
 
 //both characters get Wtf looks
 
 <<StartTalking Player>> Anyway… I tried to be a Dryver driver once. 
-Trouble is, my passengers didn’t appreciate when I went the extra mile. 
+<<StartTalking Player>> Trouble is, my passengers didn’t appreciate when I went the extra mile. 
 
 <<StartTalking Gina>> ...
 
@@ -333,13 +333,13 @@ title: AskHerAboutHerDay
 <<StartTalking Player>> Like a pen thief?
 
 <<StartTalking Gina>> Yup, full scale office supply larceny.  
-It wouldn’t be a big deal if I hadn’t went and purchased my own pens.
+<<StartTalking Gina>> It wouldn’t be a big deal if I hadn’t went and purchased my own pens.
 
 <<StartTalking Player>> That sucks, do you know who did it?
 
 <<StartTalking Gina>> Yeah,
-I think. 
-But how do you ask your coworker that?
+<<StartTalking Gina>> I think. 
+<<StartTalking Gina>> But how do you ask your coworker that?
 
 <<StartTalking Player>> Right, that’s a struggle.
 

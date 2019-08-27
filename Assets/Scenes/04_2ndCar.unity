@@ -394,6 +394,11 @@ PrefabInstance:
       propertyPath: dialoguePanelController
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 51652434149034926, guid: cdd5ae7170ecda441bc9331863e6376d,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cdd5ae7170ecda441bc9331863e6376d, type: 3}
 --- !u!4 &1025535604 stripped

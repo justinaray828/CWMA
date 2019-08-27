@@ -2,34 +2,34 @@ title: Start
 ---
 <<setscene Dryve>>
 
-<<set $speaker to "Gina">> …
+<<StartTalking Gina>> …
 
-<<set $speaker to "Gina">> …
+<<StartTalking Gina>> …
 
-<<set $speaker to "Jordy">> …
+<<StartTalking Jordy>> …
 
-<<set $speaker to "Gina">> Well here we are again
+<<StartTalking Gina>> Well here we are again
 
-<<set $speaker to "Jordy">> Crazy the Dryve app put y’all in my car again.
+<<StartTalking Jordy>> Crazy the Dryve app put y’all in my car again.
 
 <<StartTalking Player>> Yeah… (Slow)
 
-<<set $speaker to "Gina">> Crazy (Slow)
+<<StartTalking Gina>> Crazy (Slow)
 
-<<set $speaker to "Jordy">> Must be the universe saying “This is a great driver!!!”  Btw remember to rate, I noticed I didn’t get any feedback on the last one.
+<<StartTalking Jordy>> Must be the universe saying “This is a great driver!!!”  Btw remember to rate, I noticed I didn’t get any feedback on the last one.
 
-<<set $speaker to "Gina">> We were running late
+<<StartTalking Gina>> We were running late
 
-<<set $speaker to "Jordy">> Hey, I’ve got this awesome story…
+<<StartTalking Jordy>> Hey, I’ve got this awesome story…
 
 <<setscene innerDate>>
 
-<<set $speaker to "Player Character's Anxiety">> This is just great
+<<StartTalking PlayersAnxiety>> This is just great
 
 <<StartTalking PlayersBrain>> I have to change the subject.
-Gotta turn this back into a date instead of story time with the Jordy.
+<<StartTalking PlayersBrain>> Gotta turn this back into a date instead of story time with the Jordy.
 
-<<set $speaker to "Player Character's Anxiety">> All the pressure is on you.
+<<StartTalking PlayersAnxiety>> All the pressure is on you.
 
 <<StartTalking PlayersBrain>> Ok I can do this…
 //Listen to story option is not available if you made a joke about Jordy
@@ -44,33 +44,33 @@ title: ListenToTheStory
 <<listenToJordy>>
 <<StartTalking Player>> Let’s hear the story.
 
-<<set $speaker to "Gina">> Really?
+<<StartTalking Gina>> Really?
 
 <<StartTalking Player>> He seems excited about it
 
-<<set $speaker to "Jordy">> Great, so after I dropped you off I realized something.  I forgot that you two were on a date!
+<<StartTalking Jordy>> Great, so after I dropped you off I realized something.  I forgot that you two were on a date!
 
-<<set $speaker to "Gina">> You realized that after you…
+<<StartTalking Gina>> You realized that after you…
 
-<<set $speaker to "Jordy">> Guess I was so distracted earlier… Oops I just missed another turn.
+<<StartTalking Jordy>> Guess I was so distracted earlier… Oops I just missed another turn.
 
-<<set $speaker to "Gina">> Oh my god.
+<<StartTalking Gina>> Oh my god.
 
-<<set $speaker to "Jordy">> Anyway, I decided I need to do something nice since I talked so much during your date.  So I ran to the store, grabbed some chocolates and a tall boy.  Then I turned down all the other ride request until you two got out of the movie. That way I could apologize for earlier.
+<<StartTalking Jordy>> Anyway, I decided I need to do something nice since I talked so much during your date.  So I ran to the store, grabbed some chocolates and a tall boy.  Then I turned down all the other ride request until you two got out of the movie. That way I could apologize for earlier.
 
 <<StartTalking Player>> Wow, that’s actually really nice.
 
-<<set $speaker to "Gina">> Yeah, thank you.
+<<StartTalking Gina>> Yeah, thank you.
 
 <<StartTalking Player>> Definitely getting 5 stars!
 
-<<set $speaker to "Jordy">> No problem, now I’ll shut up and leave you to the rest of your date.  Because we’re here!!
+<<StartTalking Jordy>> No problem, now I’ll shut up and leave you to the rest of your date.  Because we’re here!!
 
 <<StartTalking Player>> Thanks man!
 
-<<set $speaker to "Gina">> Above and beyond the call of duty.
+<<StartTalking Gina>> Above and beyond the call of duty.
 
-<<set $speaker to "Jordy">> No problem.  G’ Night!
+<<StartTalking Jordy>> No problem.  G’ Night!
 <<setScene nextScene>>
 ===
 
@@ -80,23 +80,23 @@ title: AskHerAboutHerDay_B
 <<setscene Dryve>>
 <<StartTalking Player>> Hey, can you tell me about your day
 
-<<set $speaker to "Gina">> Me?
+<<StartTalking Gina>> Me?
 
 <<StartTalking Player>> Yeah
 
-<<set $speaker to "Gina">> Um you asked that already
+<<StartTalking Gina>> Um you asked that already
 
 <<setscene innerDate>>
 
-<<set $speaker to "Player Character's Anxiety">> Wow, you seriously asked that again.
+<<StartTalking PlayersAnxiety>> Wow, you seriously asked that again.
 
 <<StartTalking PlayersBrain>> I forgot… And now I feel like an idiot..
 
-<<set $speaker to "Player Character's Anxiety">> I’m sure you can save this.
+<<StartTalking PlayersAnxiety>> I’m sure you can save this.
 
 <<StartTalking PlayersBrain>> Really?
 
-<<set $speaker to "Player Character's Anxiety">> No. You are still an idiot. 
+<<StartTalking PlayersAnxiety>> No. You are still an idiot. 
 
 [[Listen to the Story (Option not available if you made a joke about Jordy)|ListenToTheStory]]
 [[Discuss the movie|DiscussTheMovie]]
@@ -107,24 +107,24 @@ title: DiscussTheMovie
 <<setscene Dryve>>
 <<StartTalking Player>> What did you think of the movie.
 
-<<set $speaker to "Gina">> It was ok.
+<<StartTalking Gina>> It was ok.
 
 <<StartTalking Player>> Really? 
 
-<<set $speaker to "Gina">> What did you think?
+<<StartTalking Gina>> What did you think?
 
 <<setscene innerDate>>
 
-<<set $speaker to "Player Character's Anxiety">> Here’s your chance to relate.
+<<StartTalking PlayersAnxiety>> Here’s your chance to relate.
 
 <<StartTalking PlayersBrain>> Great, but how should I respond?
 
-<<set $speaker to "Player Character's Anxiety">> You have two choices. Do you want to be like a parrot and repeat what she said? 
-Or do you want to form your own opinion and give an honest, well thought out answer?
+<<StartTalking PlayersAnxiety>> You have two choices. Do you want to be like a parrot and repeat what she said? 
+<<StartTalking PlayersAnxiety>> Or do you want to form your own opinion and give an honest, well thought out answer?
 
 <<StartTalking PlayersBrain>> I feel like there should be more choices.
 
-<<set $speaker to "Player Character's Anxiety">> Nope.  Only two possibilities.  In existence.  Two choices.  Pick One.
+<<StartTalking PlayersAnxiety>> Nope.  Only two possibilities.  In existence.  Two choices.  Pick One.
 
 [[I liked it, I think the critics were wrong.|CriticsWereWrong]]
 [[The critics were right, I don’t know how that terrible movie got made.|CriticsWereRight]]
@@ -136,22 +136,22 @@ title: CriticsWereWrong
 <<setscene Dryve>>
 <<StartTalking Player>> I liked it. I don’t know why the critics rated it so low. 
 
-<<set $speaker to "Gina">> I can see why the movie got rated in the 30s.
+<<StartTalking Gina>> I can see why the movie got rated in the 30s.
 
 <<StartTalking Player>> But I thought you liked it.
 
-<<set $speaker to "Gina">> The movie was far from perfect, but I still enjoyed it.
+<<StartTalking Gina>> The movie was far from perfect, but I still enjoyed it.
 
 <<StartTalking Player>> I think the critics were still wrong.
 
-<<set $speaker to "Gina">> Everyone is entitled to their opinion, whether you agree or not. 
-Not everything has to be made for everyone.
+<<StartTalking Gina>> Everyone is entitled to their opinion, whether you agree or not. 
+<<StartTalking Gina>> Not everything has to be made for everyone.
 
 <<StartTalking Player>> …
 
-<<set $speaker to "Gina">> …
+<<StartTalking Gina>> …
 
-<<set $speaker to "Jordy">> Wise words. (delay) Also, We’re here!
+<<StartTalking Jordy>> Wise words. (delay) Also, We’re here!
 <<setScene nextScene>>
 ===
 
@@ -160,27 +160,27 @@ title: CriticsWereRight
 <<setscene Dryve>>
 <<StartTalking Player>> The critics were right, I don’t know how that terrible movie got made.
 
-<<set $speaker to "Gina">> Oh, ok.  What didn’t you like about it?
+<<StartTalking Gina>> Oh, ok.  What didn’t you like about it?
 
 <<StartTalking Player>> Umm.. The pacing was off.
 
-<<set $speaker to "Gina">> Ok, in what act did you think it fell apart?
+<<StartTalking Gina>> Ok, in what act did you think it fell apart?
 
 <<StartTalking Player>> I mean it was all off paced.
 
-<<set $speaker to "Gina">> Cool.
+<<StartTalking Gina>> Cool.
 
 <<StartTalking Player>> …
 
-<<set $speaker to "Gina">> …
+<<StartTalking Gina>> …
 
 <<StartTalking Player>> It’s cool that you liked it though
 
-<<set $speaker to "Gina">> Is it cool that I liked it?  You said, and I quote “I don’t know how that terrible movie was made.”
+<<StartTalking Gina>> Is it cool that I liked it?  You said, and I quote “I don’t know how that terrible movie was made.”
 
 <<setscene innerDate>>
 
-<<set $speaker to "Player Character's Anxiety">> Great now you’ve screwed yourself
+<<StartTalking PlayersAnxiety>> Great now you’ve screwed yourself
 
 <<StartTalking PlayersBrain>> No, I can find a way out of this.
 
@@ -193,9 +193,9 @@ title: WrongToSayThat
 <<setscene Dryve>>
 <<StartTalking Player>> I’m sorry, I shouldn’t have said that.  It’s ok for different people to like different things.  Just because me and bunch of other people hated something that doesn’t mean you have to too.
 
-<<set $speaker to "Gina">> Thanks for apologizing.
+<<StartTalking Gina>> Thanks for apologizing.
 
-<<set $speaker to "Jordy">> And we’re here!  Hope you two have a good night.
+<<StartTalking Jordy>> And we’re here!  Hope you two have a good night.
 
 <<StartTalking Player>> Hopefully we both enjoy dinner.
 
@@ -208,29 +208,29 @@ title: DefendBoth
 <<setscene Dryve>>
 <<StartTalking Player>> The movie can both be trash AND I can have no idea how that movie could have been made.
 
-<<set $speaker to "Gina">> Which was trash?  Are you saying that I like trash?
+<<StartTalking Gina>> Which was trash?  Are you saying that I like trash?
 
 <<StartTalking Player>> No, I’m saying you like things that everyone thinks is trash.
 
-<<set $speaker to "Jordy">> Um… wow
+<<StartTalking Jordy>> Um… wow
 
 <<StartTalking Player>> And that’s ok.
 
-<<set $speaker to "Gina">> … Look, I’m ok with us not liking the same things and having different opinions.  But I feel like you’re more focused on your opinions being right and legitimate, and everyone else’s being wrong and ‘trash.’
+<<StartTalking Gina>> … Look, I’m ok with us not liking the same things and having different opinions.  But I feel like you’re more focused on your opinions being right and legitimate, and everyone else’s being wrong and ‘trash.’
 
 <<StartTalking Player>> That’s not what I meant.
 
-<<set $speaker to "Jordy">> Dude, You referenced Trash like 3 times in 4 sentences.
+<<StartTalking Jordy>> Dude, You referenced Trash like 3 times in 4 sentences.
 
 <<StartTalking Player>> Not helping.
 
-<<set $speaker to "Gina">> I’m sure you’re a nice guy… no actually I’m not sure of that.  Dryver can you drop me off here, I’ll get another ride.
+<<StartTalking Gina>> I’m sure you’re a nice guy… no actually I’m not sure of that.  Dryver can you drop me off here, I’ll get another ride.
 
-<<set $speaker to "Jordy">> Sure.
+<<StartTalking Jordy>> Sure.
 
 <<StartTalking Player>> No, wait…
 
-<<set $speaker to "Gina">> Have a nice life.
+<<StartTalking Gina>> Have a nice life.
 
 <<setscene 08_Ending_Alone>>
 ===
@@ -240,13 +240,13 @@ title: IDontKnow
 <<setscene Dryve>>
 <<StartTalking Player>> I don’t really know.  There were things I liked and things I didn’t.
 
-<<set $speaker to "Gina">> I respect that.  It feels like everyone needs to have an opinion on everything immediately.
+<<StartTalking Gina>> I respect that.  It feels like everyone needs to have an opinion on everything immediately.
 
 <<StartTalking Player>> Words like mediocre or ‘just ok’ have such a negative connotation, but I feel like both sorta fit for what we just watched.
 
-<<set $speaker to "Gina">> Some things in life are just mediocre, and that is ok.
+<<StartTalking Gina>> Some things in life are just mediocre, and that is ok.
 
-<<set $speaker to "Jordy">> And we’re here!  Hope you two have a good night.
+<<StartTalking Jordy>> And we’re here!  Hope you two have a good night.
 
 <<StartTalking Player>> Hopefully we both enjoy dinner.
 

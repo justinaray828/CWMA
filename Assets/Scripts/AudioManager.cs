@@ -11,6 +11,7 @@ public class AudioManager : MonoBehaviour
     public float fadeTime;
 
     public Sound[] MusicSounds;
+    public Sound[] SFXSounds;
     public static AudioManager instance;
 
     private void Awake()
@@ -96,6 +97,17 @@ public class AudioManager : MonoBehaviour
         StartCoroutine(FadeOut(currentS.source, fadeTime));
 
         return;
+    }
+
+    public void PlayFX(string s)
+    {
+        Sound currentS = Array.Find(SFXSounds, sound => sound.name == s);
+        if(currentS == null)
+        {
+            Debug.LogWarning("Sound name not found: " + s);
+            return;
+        }
+        fxSource.PlayOneShot(currentS.clip, currentS.volume);
     }
 
     private void Play(Sound s)

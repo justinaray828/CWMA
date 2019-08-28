@@ -32,6 +32,8 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
 
     public SceneHandler sceneHandler;
 
+    public AudioManager audioM;
+
     private Yarn.OptionChooser SetSelectedOption;
 
     private bool inBrainRoom = false;
@@ -44,6 +46,7 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
     {
         ResetFields();
         talkingStop = FindObjectOfType<TalkingStop>();
+        audioM = FindObjectOfType<AudioManager>();
     }
 
     private void Update()
@@ -89,6 +92,8 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
             // Display the line one character at a time
             var stringBuilder = new StringBuilder();
             int counter = 0;
+
+            audioM.PlayBlip();
 
             foreach (char c in lineString)
             {
@@ -136,6 +141,7 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
                 dialoguePanelController.dialogueText.text = stringBuilder.ToString();
                 yield return new WaitForSeconds(textSpeed);
             }
+            audioM.StopBlip();
         }
         else
         {
@@ -196,6 +202,8 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
         {
             yield return null;
         }
+
+        audioM.PlayPop();
 
         // Hide all the buttons
         foreach (var button in optionButtons)

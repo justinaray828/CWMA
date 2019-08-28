@@ -129,6 +129,16 @@ MonoBehaviour:
     playonawake: 0
     originalVolume: 0
     source: {fileID: 0}
+  - name: blip
+    clip: {fileID: 8300000, guid: 405fe4dc09a2848d491c57a0780ec9bd, type: 3}
+    output: {fileID: 6065668692900454425, guid: 8470804748a124767a11093462dd9bf8,
+      type: 2}
+    volume: 0.85
+    pitch: 1.4
+    loop: 1
+    playonawake: 0
+    originalVolume: 0
+    source: {fileID: 0}
 --- !u!82 &3824741328796003454
 AudioSource:
   m_ObjectHideFlags: 0

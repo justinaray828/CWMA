@@ -9,7 +9,7 @@ title: Start
 <<StartTalking Jordy>> Right?
 <<StartTalking Jordy>> I even setup the back seat with air freshers and lotion.
 
-<<playerCharacterReturns PlayerCharacter>>
+<<PlayerEnters Characters>>
 
 <<StartTalking Jordy>> Who doesn't love soft skin?
 <<StartTalking Jordy>> Who doesn't love lotion?!?!
@@ -52,7 +52,7 @@ title: Start
 
 <<StartTalking Jordy>> Stop Two!!! We're here.
 
-<<ginaReturns Gina>>
+<<GinaEnters Characters>>
 
 <<StartTalking Player>> Hey there, nice to meet you in person.
 

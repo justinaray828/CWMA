@@ -98,6 +98,9 @@ MonoBehaviour:
   dialoguePanelController: {fileID: 0}
   cameraTransition: {fileID: 0}
   sceneHandler: {fileID: 0}
+  audioM: {fileID: 0}
+  audioMPrefab: {fileID: 8807517227412985782, guid: 574b66f8089a09b4b819a86e64f4fd99,
+    type: 3}
 --- !u!114 &152393893
 MonoBehaviour:
   m_ObjectHideFlags: 0

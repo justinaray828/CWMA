@@ -11,6 +11,7 @@ public class AudioManager : MonoBehaviour
     public float fadeTime;
 
     public Sound[] MusicSounds;
+    public Sound[] SFXSounds;
     public static AudioManager instance;
 
     private void Awake()
@@ -98,9 +99,52 @@ public class AudioManager : MonoBehaviour
         return;
     }
 
-    private void Play(Sound s)
+    public void PlayPop()
     {
+        int index = UnityEngine.Random.Range(1, 3);
+        PlayFX("pop" +index.ToString());
     }
+
+    public void PlayBlip()
+    {
+        Sound s = Array.Find(SFXSounds, sound => sound.name == "blip");
+        if(s.source == null)
+        {
+            s.source = gameObject.AddComponent<AudioSource>();
+            s.source.clip = s.clip;
+            s.source.volume = s.volume;
+            s.source.outputAudioMixerGroup = s.output;
+            s.source.pitch = s.pitch; //may alter per character?
+            s.source.loop = s.loop;
+            s.source.playOnAwake = s.playonawake;
+        }
+        s.source.Play();
+    }
+
+    public void StopBlip()
+    {
+        Sound s = Array.Find(SFXSounds, sound => sound.name == "blip");
+        if (s.source == null)
+        {
+            Debug.Log("cannot stop blip, blip source has not been initialzied");
+        }
+        s.source.Stop();
+    }
+
+    private void PlayFX(string s)
+    {
+        Sound currentS = Array.Find(SFXSounds, sound => sound.name == s);
+        if(currentS == null)
+        {
+            Debug.LogWarning("Sound name not found: " + s);
+            return;
+        }
+        fxSource.PlayOneShot(currentS.clip, currentS.volume);
+    }
+
+    /*private void Play(Sound s)
+    {
+    }*/
 
     public static IEnumerator FadeOut(AudioSource audioSource, float FadeTime)
     {

@@ -33,6 +33,7 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
     public SceneHandler sceneHandler;
 
     public AudioManager audioM;
+    public AudioManager audioMPrefab;
 
     private Yarn.OptionChooser SetSelectedOption;
 
@@ -47,6 +48,7 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
         ResetFields();
         talkingStop = FindObjectOfType<TalkingStop>();
         audioM = FindObjectOfType<AudioManager>();
+        if (audioM == null) { audioM = Instantiate(audioMPrefab); }
     }
 
     private void Update()

@@ -9,6 +9,7 @@ title: Start
 <<StartTalking Jordy>> Right?
 <<StartTalking Jordy>> I even setup the back seat with air freshers and lotion.
 
+<<CarStop Car>>
 <<PlayerEnters Characters>>
 
 <<StartTalking Jordy>> Who doesn't love soft skin?
@@ -26,6 +27,8 @@ title: Start
 <<StartTalking Jordy>> Friday Night,
 <<StartTalking Jordy>> Apartment and then a movie... 
 <<StartTalking Jordy>> I'm guessing you've got a date?
+
+<<CarGo Car>>
 
 <<StartTalking Player>> You guessed right.
 
@@ -50,6 +53,8 @@ title: Start
 
 <<StartTalking Player>> I'll keep that in mind.
 
+<<CarStop Car>>
+
 <<StartTalking Jordy>> Stop Two!!! We're here.
 
 <<GinaEnters Characters>>
@@ -58,6 +63,8 @@ title: Start
 
 <<StartTalking Gina>> Nice to meet you too. 
 <<StartTalking Gina>> I'm looking forward to tonight.
+
+<<CarGo Car>>
 
 <<StartTalking Player>> Great, I hope I don't disappoint.
 

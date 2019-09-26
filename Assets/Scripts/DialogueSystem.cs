@@ -48,7 +48,10 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
         ResetFields();
         talkingStop = FindObjectOfType<TalkingStop>();
         audioM = FindObjectOfType<AudioManager>();
-        if (audioM == null) { audioM = Instantiate(audioMPrefab); }
+        if (audioM == null) { 
+            audioM = Instantiate(audioMPrefab);
+            audioM.name = "AudioManager";
+        }
     }
 
     private void Update()
@@ -229,8 +232,8 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
     public override IEnumerator RunCommand(Yarn.Command command)
     {
         // "Perform" the command
-        Debug.Log("Command: " + command.text);
-        Debug.Log("listenToJordy Variable: " + Choices.listenedToJordy);
+        //Debug.Log("Command: " + command.text);
+        //Debug.Log("listenToJordy Variable: " + Choices.listenedToJordy);
         switch (command.text)
         {
             case "setscene innerDateCut":

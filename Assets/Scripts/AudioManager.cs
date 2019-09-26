@@ -2,6 +2,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.Audio;
+using Yarn.Unity;
 
 public class AudioManager : MonoBehaviour
 {
@@ -131,7 +132,8 @@ public class AudioManager : MonoBehaviour
         s.source.Stop();
     }
 
-    private void PlayFX(string s)
+    [YarnCommand("PlayFX")]
+    public void PlayFX(string s)
     {
         Sound currentS = Array.Find(SFXSounds, sound => sound.name == s);
         if(currentS == null)

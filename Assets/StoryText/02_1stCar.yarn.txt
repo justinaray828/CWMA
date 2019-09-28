@@ -9,10 +9,14 @@ title: Start
 <<StartTalking Jordy>> Right?
 <<StartTalking Jordy>> I even setup the back seat with air freshers and lotion.
 
+<<PlayFX AudioManager car_slowdown>>
 <<CarStop Car>>
-<<PlayerEnters Characters>>
 
 <<StartTalking Jordy>> Who doesn't love soft skin?
+
+<<PlayFX AudioManager car_door>>
+<<PlayerEnters Characters>>
+
 <<StartTalking Jordy>> Who doesn't love lotion?!?!
 
 //TODO: Player Character reacts in shock
@@ -28,6 +32,7 @@ title: Start
 <<StartTalking Jordy>> Apartment and then a movie... 
 <<StartTalking Jordy>> I'm guessing you've got a date?
 
+<<PlayFX AudioManager car_go>>
 <<CarGo Car>>
 
 <<StartTalking Player>> You guessed right.
@@ -53,10 +58,12 @@ title: Start
 
 <<StartTalking Player>> I'll keep that in mind.
 
+<<PlayFX AudioManager car_slowdown>>
 <<CarStop Car>>
 
 <<StartTalking Jordy>> Stop Two!!! We're here.
 
+<<PlayFX AudioManager car_door>>
 <<GinaEnters Characters>>
 
 <<StartTalking Player>> Hey there, nice to meet you in person.
@@ -64,6 +71,7 @@ title: Start
 <<StartTalking Gina>> Nice to meet you too. 
 <<StartTalking Gina>> I'm looking forward to tonight.
 
+<<PlayFX AudioManager car_go>>
 <<CarGo Car>>
 
 <<StartTalking Player>> Great, I hope I don't disappoint.

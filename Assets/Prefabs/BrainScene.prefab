@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3083741203701284990}
   - component: {fileID: 4969645786484370898}
-  - component: {fileID: 5000398738676588234}
   m_Layer: 0
   m_Name: BrainCameraCut
   m_TagString: Untagged
@@ -75,14 +74,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &5000398738676588234
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3181550750543965435}
-  m_Enabled: 1
 --- !u!1 &6618392760262390358
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,7 +218,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8954817146839665346}
   - component: {fileID: 8954817146839665344}
-  - component: {fileID: 8954817146839665345}
   m_Layer: 0
   m_Name: BrainCameraCube
   m_TagString: Untagged
@@ -292,14 +282,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &8954817146839665345
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8954817146839665347}
-  m_Enabled: 1
 --- !u!1001 &3706871985857487135
 PrefabInstance:
   m_ObjectHideFlags: 0

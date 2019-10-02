@@ -46,13 +46,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fxSource: {fileID: 3824741328796003454}
   mixer: {fileID: 24100000, guid: 8470804748a124767a11093462dd9bf8, type: 2}
-  fadeTime: 2
+  fadeTimeDefault: 0
   MusicSounds:
   - name: Scene1
     clip: {fileID: 8300000, guid: 9f21e3fc197ef404f8f09327630a5aa7, type: 3}
     output: {fileID: -8622729306382389199, guid: 8470804748a124767a11093462dd9bf8,
       type: 2}
-    volume: 1
+    volume: 0
     pitch: 1
     loop: 1
     playonawake: 1

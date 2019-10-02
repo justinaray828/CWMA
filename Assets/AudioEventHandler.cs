@@ -5,6 +5,7 @@ using UnityEngine;
 public class AudioEventHandler : MonoBehaviour
 {
     public AudioManager amPrefab;
+    public AudioListener al;
 
     private AudioManager am;
 
@@ -20,24 +21,41 @@ public class AudioEventHandler : MonoBehaviour
 
     void OnEnable()
     {
-        EventManager.StartListening("test", Test);
         EventManager.StartListening("Car_go", Car_go);
+        EventManager.StartListening("Car_stop", Car_stop);
+        EventManager.StartListening("Pause", Pause);
+        EventManager.StartListening("Unpause", Unpause);
     }
 
     void OnDisable()
     {
-        EventManager.StopListening("test", Test);
-    }
-
-    public void Test()
-    {
-        Debug.Log("test trigger worked!");
+        EventManager.StopListening("Car_go", Car_go);
+        EventManager.StopListening("Car_stop", Car_stop);
+        EventManager.StopListening("Pause", Pause);
+        EventManager.StopListening("Unpause", Unpause);
     }
 
     private void Car_go()
     {
         am.PlayFX("car_go");
         am.FadeInSFX("car_loop");
+    }
+
+    private void Car_stop()
+    {
+        am.PlayFX("car_slowdown");
+        am.FadeOutSFX("car_loop");
+    }
+
+    private void Pause()
+    {
+        AudioListener.pause = true;
+        //am.PlayFX("");
+    }
+
+    private void Unpause()
+    {
+        AudioListener.pause = false;
     }
 
 }

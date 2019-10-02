@@ -26,6 +26,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
+        EventManager.TriggerEvent("Unpause");
         PauseMenuPanel.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
@@ -33,6 +34,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Pause()
     {
+        EventManager.TriggerEvent("Pause");
         PauseMenuPanel.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;

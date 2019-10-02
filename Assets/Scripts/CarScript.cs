@@ -8,12 +8,28 @@ public class CarScript : MonoBehaviour
 {
     private VideoPlayer vp;
     public float slowVidTime;
-    public AnimationCurve ac;
 
     // Start is called before the first frame update
     void Start()
     {
         vp = GetComponentInChildren<VideoPlayer>();
+    }
+
+    void OnEnable()
+    {
+        EventManager.StartListening("Car_go", CarGo);
+        EventManager.StartListening("Car_stop", CarStop);
+        EventManager.StartListening("Pause", PauseVideo);
+        EventManager.StartListening("Unpause", PlayVideo);
+    }
+
+    void OnDisable()
+    {
+        EventManager.StopListening("Car_go", CarGo);
+        EventManager.StopListening("Car_stop", CarStop);
+        EventManager.StopListening("Pause", PauseVideo);
+        EventManager.StopListening("Unpause", PlayVideo);
+
     }
 
     [YarnCommand("CarStop")]
@@ -47,5 +63,14 @@ public class CarScript : MonoBehaviour
             Debug.Log(vp.playbackSpeed);
             yield return new WaitForSeconds(1f); ;
         }
+    }
+
+    private void PauseVideo()
+    {
+        vp.Pause();
+    }
+    private void PlayVideo()
+    {
+        vp.Play();
     }
 }

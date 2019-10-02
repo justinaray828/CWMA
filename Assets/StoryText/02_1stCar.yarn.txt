@@ -9,6 +9,7 @@ title: Start
 <<StartTalking Jordy>> Right?
 <<StartTalking Jordy>> I even setup the back seat with air freshers and lotion.
 
+<<TriggerEvent EventManager test>>
 <<PlayFX AudioManager car_slowdown>>
 <<CarStop Car>>
 
@@ -32,6 +33,7 @@ title: Start
 <<StartTalking Jordy>> Apartment and then a movie... 
 <<StartTalking Jordy>> I'm guessing you've got a date?
 
+<<TriggerEvent EventManager Car_go>>
 <<PlayFX AudioManager car_go>>
 <<CarGo Car>>
 

@@ -47,17 +47,6 @@ public class AudioManager : MonoBehaviour
             s.source.Play();
     }
 
-    // Start is called before the first frame update
-    private void Start()
-    {
-    }
-
-    // Update is called once per frame
-    private void Update()
-    {
-
-    }
-
     public void SetMasterVolume(float vol)
     {
         mixer.SetFloat("MasterVolume", vol);
@@ -138,15 +127,56 @@ public class AudioManager : MonoBehaviour
         Sound currentS = Array.Find(SFXSounds, sound => sound.name == s);
         if(currentS == null)
         {
-            Debug.LogWarning("Sound name not found: " + s);
+            Debug.LogWarning("Sound name not found in FX array: " + s);
             return;
         }
         fxSource.PlayOneShot(currentS.clip, currentS.volume);
     }
 
-    /*private void Play(Sound s)
+    public void FadeInSFX(string name)
     {
-    }*/
+        Sound s = Array.Find(SFXSounds, sound => sound.name == name);
+        if (s == null)
+        {
+            Debug.LogWarning("Sound name not found in FX array: " + s);
+            return;
+        }
+        if (s.source == null)
+        {
+            MakeSource(s);
+        }
+        StartCoroutine(FadeIn(s.source, fadeTime));
+    }
+
+    public void FadeOutSFX(string name)
+    {
+        Sound s = Array.Find(SFXSounds, sound => sound.name == name);
+        if (s == null)
+        {
+            Debug.LogWarning("Sound name not found in FX array: " + s);
+            return;
+        }
+        if (s.source == null)
+        {
+            return;
+        }
+        StartCoroutine(FadeOut(s.source, fadeTime));
+    }
+
+    private void MakeSource(Sound s)
+    {
+        if (s.source == null)
+        {
+            s.source = gameObject.AddComponent<AudioSource>();
+            s.source.clip = s.clip;
+            s.source.volume = s.volume;
+            s.source.outputAudioMixerGroup = s.output;
+            s.source.pitch = s.pitch;
+            s.source.loop = s.loop;
+            s.source.playOnAwake = s.playonawake;
+        }
+        return;
+    }
 
     public static IEnumerator FadeOut(AudioSource audioSource, float FadeTime)
     {
@@ -169,4 +199,5 @@ public class AudioManager : MonoBehaviour
             yield return null;
         }
     }
+
 }

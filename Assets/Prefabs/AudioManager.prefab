@@ -169,6 +169,16 @@ MonoBehaviour:
     playonawake: 0
     originalVolume: 0
     source: {fileID: 0}
+  - name: car_loop
+    clip: {fileID: 8300000, guid: c22645a0465b24827a0cc9529df35950, type: 3}
+    output: {fileID: 6065668692900454425, guid: 8470804748a124767a11093462dd9bf8,
+      type: 2}
+    volume: 1
+    pitch: 1
+    loop: 1
+    playonawake: 0
+    originalVolume: 0
+    source: {fileID: 0}
 --- !u!82 &3824741328796003454
 AudioSource:
   m_ObjectHideFlags: 0

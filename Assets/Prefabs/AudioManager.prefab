@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fxSource: {fileID: 3824741328796003454}
   mixer: {fileID: 24100000, guid: 8470804748a124767a11093462dd9bf8, type: 2}
-  fadeTimeDefault: 0
+  fadeTimeDefault: 1
   MusicSounds:
   - name: Scene1
     clip: {fileID: 8300000, guid: 9f21e3fc197ef404f8f09327630a5aa7, type: 3}
@@ -56,6 +56,7 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     playonawake: 1
+    ignoreListenerPause: 0
     originalVolume: 0
     source: {fileID: 0}
   - name: Scene2
@@ -66,6 +67,7 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     playonawake: 0
+    ignoreListenerPause: 0
     originalVolume: 0
     source: {fileID: 0}
   - name: Scene3
@@ -76,6 +78,7 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     playonawake: 0
+    ignoreListenerPause: 0
     originalVolume: 0
     source: {fileID: 0}
   - name: Scene4
@@ -86,6 +89,7 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     playonawake: 0
+    ignoreListenerPause: 0
     originalVolume: 0
     source: {fileID: 0}
   - name: Scene5
@@ -96,6 +100,18 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     playonawake: 0
+    ignoreListenerPause: 0
+    originalVolume: 0
+    source: {fileID: 0}
+  - name: PauseMusic
+    clip: {fileID: 8300000, guid: 9f21e3fc197ef404f8f09327630a5aa7, type: 3}
+    output: {fileID: -8622729306382389199, guid: 8470804748a124767a11093462dd9bf8,
+      type: 2}
+    volume: 0.23
+    pitch: 1
+    loop: 1
+    playonawake: 0
+    ignoreListenerPause: 1
     originalVolume: 0
     source: {fileID: 0}
   SFXSounds:
@@ -107,6 +123,7 @@ MonoBehaviour:
     pitch: 0
     loop: 0
     playonawake: 0
+    ignoreListenerPause: 0
     originalVolume: 0
     source: {fileID: 0}
   - name: pop2
@@ -117,6 +134,7 @@ MonoBehaviour:
     pitch: 0
     loop: 0
     playonawake: 0
+    ignoreListenerPause: 0
     originalVolume: 0
     source: {fileID: 0}
   - name: pop3
@@ -127,6 +145,7 @@ MonoBehaviour:
     pitch: 0
     loop: 0
     playonawake: 0
+    ignoreListenerPause: 0
     originalVolume: 0
     source: {fileID: 0}
   - name: blip
@@ -137,6 +156,7 @@ MonoBehaviour:
     pitch: 1.4
     loop: 1
     playonawake: 0
+    ignoreListenerPause: 0
     originalVolume: 0
     source: {fileID: 0}
   - name: car_go
@@ -147,6 +167,7 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     playonawake: 0
+    ignoreListenerPause: 0
     originalVolume: 0
     source: {fileID: 0}
   - name: car_slowdown
@@ -157,6 +178,7 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     playonawake: 0
+    ignoreListenerPause: 0
     originalVolume: 0
     source: {fileID: 0}
   - name: car_door
@@ -167,6 +189,7 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     playonawake: 0
+    ignoreListenerPause: 0
     originalVolume: 0
     source: {fileID: 0}
   - name: car_loop
@@ -177,6 +200,18 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     playonawake: 0
+    ignoreListenerPause: 0
+    originalVolume: 0
+    source: {fileID: 0}
+  - name: pause
+    clip: {fileID: 8300000, guid: 912b2e4e7bf3e4bb9a9ee227ca380b8e, type: 3}
+    output: {fileID: 6065668692900454425, guid: 8470804748a124767a11093462dd9bf8,
+      type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playonawake: 0
+    ignoreListenerPause: 1
     originalVolume: 0
     source: {fileID: 0}
 --- !u!82 &3824741328796003454

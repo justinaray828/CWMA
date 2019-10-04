@@ -50,12 +50,15 @@ public class AudioEventHandler : MonoBehaviour
     private void Pause()
     {
         AudioListener.pause = true;
-        //am.PlayFX("");
+        am.Play("pause");
+        am.PlayMusic("PauseMusic");
     }
 
     private void Unpause()
     {
         AudioListener.pause = false;
+        am.Stop("PauseMusic");
+        
     }
 
 }

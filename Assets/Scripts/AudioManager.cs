@@ -15,6 +15,8 @@ public class AudioManager : MonoBehaviour
     public Sound[] SFXSounds;
     public static AudioManager instance;
 
+    enum SoundType { FX, Music, Both };
+
     private void Awake()
     {
         //Ensure that only one instance of this class is created (we don't want a new AudioManager everytime a scene loads)
@@ -136,6 +138,20 @@ public class AudioManager : MonoBehaviour
         currentS.source.Play();
     }
 
+    public void PlayMusic(string s)
+    {
+        Sound currentS = GetSound(s, SoundType.Music);
+        if (currentS.source == null) { MakeSource(currentS); }
+        currentS.source.Play();
+    }
+
+    public void Stop(string name)
+    {
+        Sound sound = GetSound(name);
+        if(sound.source == null) { return; }
+        sound.source.Stop();
+    }
+
     public void FadeInSFX(string name)
     {
         Sound s = GetSound(name);
@@ -168,16 +184,25 @@ public class AudioManager : MonoBehaviour
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
             s.source.playOnAwake = s.playonawake;
+            s.source.ignoreListenerPause = s.ignoreListenerPause;
         }
         return;
     }
 
-    private Sound GetSound(string str)
+    private Sound GetSound(string str, SoundType type = SoundType.Both)
     {
-        Sound sound = Array.Find(SFXSounds, s => s.name == str);
+        Sound sound = null;
+        if (type == SoundType.FX || type == SoundType.Both)
+        {
+            sound = Array.Find(SFXSounds, s => s.name == str);
+        }
+        if (sound == null && (type == SoundType.Music || type == SoundType.Both))
+        {
+            sound = Array.Find(MusicSounds, s => s.name == str);
+        }
         if (sound == null)
         {
-            Debug.LogWarning("Sound name not found in FX array: " + str);
+            Debug.LogWarning("Sound name not found in "+type.ToString()+" array: " + str);
             return null;
         }
         return sound;

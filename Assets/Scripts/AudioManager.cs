@@ -8,6 +8,8 @@ public class AudioManager : MonoBehaviour
 {
     public AudioSource fxSource;
     public AudioMixer mixer;
+    public AudioMixerSnapshot def;
+    public AudioMixerSnapshot inBrainRoom;
 
     public float fadeTimeDefault;
 
@@ -53,15 +55,41 @@ public class AudioManager : MonoBehaviour
     {
         mixer.SetFloat("MasterVolume", vol);
     }
-
     public void SetMusicVolume(float vol)
     {
         mixer.SetFloat("MusicVolume", vol);
     }
-
     public void SetFxVolume(float vol)
     {
         mixer.SetFloat("SFXVolume", vol);
+    }
+
+    public void SetBrainroomSnapshot(bool state, float transitionTime = 1f)
+    {
+        if(state == false)
+        {
+            def.TransitionTo(transitionTime);
+        }
+        else
+        {
+            inBrainRoom.TransitionTo(transitionTime);
+        }
+    }
+
+    public void SetSourceOutput(string soundName, string groupName)
+    {
+        AudioMixerGroup[] aga = mixer.FindMatchingGroups(groupName);
+        if (aga != null) {
+            AudioMixerGroup ag = Array.Find(aga, group => group.name == groupName);
+            if(ag != null)
+            {
+                GetSound(soundName).source.outputAudioMixerGroup = ag;
+                return;
+            }
+        }
+        Debug.Log("could not find AudioMixerGroup name: " + groupName);
+
+        return;
     }
 
     public void SceneTransition(int nextSceneNumber)

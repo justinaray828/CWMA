@@ -8,6 +8,7 @@ public class CarScript : MonoBehaviour
 {
     private VideoPlayer vp;
     public float slowVidTime;
+    private Coroutine currentCR;
 
     // Start is called before the first frame update
     void Start()
@@ -35,12 +36,14 @@ public class CarScript : MonoBehaviour
     [YarnCommand("CarStop")]
     public void CarStop()
     {
-        StartCoroutine(SlowVid());
+        if (currentCR != null) { StopCoroutine(currentCR); }
+        currentCR = StartCoroutine(SlowVid());
     }
 
     [YarnCommand("CarGo")]
     public void CarGo()
     {
+        if (currentCR != null) { StopCoroutine(currentCR); }
         StartCoroutine(SpeedUpVid());
     }
 
@@ -49,20 +52,23 @@ public class CarScript : MonoBehaviour
         while (vp.playbackSpeed > 0.50)
         {
             vp.playbackSpeed -= 0.2f * (slowVidTime);
-            Debug.Log(vp.playbackSpeed);
+            //Debug.Log(vp.playbackSpeed);
             yield return new WaitForSeconds(1f); ;
         }
         vp.Pause();
+        currentCR = null;
     }
+
     private IEnumerator SpeedUpVid()
     {
         vp.Play();
         while (vp.playbackSpeed < 1f)
         {
             vp.playbackSpeed += 0.2f * (slowVidTime);
-            Debug.Log(vp.playbackSpeed);
+            //Debug.Log(vp.playbackSpeed);
             yield return new WaitForSeconds(1f); ;
         }
+        currentCR = null;
     }
 
     private void PauseVideo()

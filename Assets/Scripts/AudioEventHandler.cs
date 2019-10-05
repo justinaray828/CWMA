@@ -5,7 +5,6 @@ using UnityEngine;
 public class AudioEventHandler : MonoBehaviour
 {
     public AudioManager amPrefab;
-    public AudioListener al;
 
     private AudioManager am;
 
@@ -19,12 +18,21 @@ public class AudioEventHandler : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown("space")){
+            EventManager.TriggerEvent("EnterBrainRoom");
+        }
+    }
+
     void OnEnable()
     {
         EventManager.StartListening("Car_go", Car_go);
         EventManager.StartListening("Car_stop", Car_stop);
         EventManager.StartListening("Pause", Pause);
         EventManager.StartListening("Unpause", Unpause);
+        EventManager.StartListening("EnterBrainRoom", EnterBrainRoom);
+        EventManager.StartListening("ExitBrainRoom", ExitBrainRoom);
     }
 
     void OnDisable()
@@ -33,6 +41,8 @@ public class AudioEventHandler : MonoBehaviour
         EventManager.StopListening("Car_stop", Car_stop);
         EventManager.StopListening("Pause", Pause);
         EventManager.StopListening("Unpause", Unpause);
+        EventManager.StopListening("EnterBrainRoom", EnterBrainRoom);
+        EventManager.StopListening("ExitBrainRoom", ExitBrainRoom);
     }
 
     private void Car_go()
@@ -45,6 +55,17 @@ public class AudioEventHandler : MonoBehaviour
     {
         am.PlayFX("car_slowdown");
         am.FadeOutSFX("car_loop");
+    }
+
+    private void EnterBrainRoom()
+    {
+        am.SetBrainroomSnapshot(true, 2f);
+        am.SetSourceOutput("blip", "Headroom");
+    }
+    private void ExitBrainRoom()
+    {
+        am.SetBrainroomSnapshot(false, 2f);
+        am.SetSourceOutput("blip", "SFX");
     }
 
     private void Pause()

@@ -46,6 +46,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fxSource: {fileID: 3824741328796003454}
   mixer: {fileID: 24100000, guid: 8470804748a124767a11093462dd9bf8, type: 2}
+  def: {fileID: 24500006, guid: 8470804748a124767a11093462dd9bf8, type: 2}
+  inBrainRoom: {fileID: -1772135359473502944, guid: 8470804748a124767a11093462dd9bf8,
+    type: 2}
   fadeTimeDefault: 1
   MusicSounds:
   - name: Scene1
@@ -212,6 +215,16 @@ MonoBehaviour:
     loop: 0
     playonawake: 0
     ignoreListenerPause: 1
+    originalVolume: 0
+    source: {fileID: 0}
+  - name: paper_tear
+    clip: {fileID: 8300000, guid: 551d6155efa294f1cada30344bf2f91a, type: 3}
+    output: {fileID: 966205321842030654, guid: 8470804748a124767a11093462dd9bf8, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playonawake: 0
+    ignoreListenerPause: 0
     originalVolume: 0
     source: {fileID: 0}
 --- !u!82 &3824741328796003454

@@ -114,6 +114,7 @@ title: Start
 ===
 title: Sorry
 ---
+<<setscene Dryve>>
 <<StartTalking Player>> Sorry... I'm a little nervous.
 
 <<StartTalking Gina>> Yeah, ok..
@@ -130,6 +131,7 @@ title: Sorry
 ===
 title: ChangeTheSubject
 ---
+<<setscene Dryve>>
 <<StartTalking Player>> So.. um, how about this weather we are having?
 
 <<StartTalking Gina>> Yeah.. the weather is.. nice.

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4232377968963039384}
   - component: {fileID: 3574894937765350125}
   - component: {fileID: 276841900613489967}
+  - component: {fileID: 229749103522481951}
   m_Layer: 0
   m_Name: BackgroundCylinder
   m_TagString: Untagged
@@ -108,6 +109,19 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &229749103522481951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8777921830698106061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1455eda9e6baa4955b3894cdb3724c67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
 --- !u!1001 &63196190183379480
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2825,11 +2839,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5790045726487897976}
     m_Modifications:
-    - target: {fileID: 4776080957142046847, guid: f9636d7dc17b49e4d977ddf6f724f21c,
-        type: 3}
-      propertyPath: m_Name
-      value: ExtraBuilding_C_snaps004
-      objectReference: {fileID: 0}
     - target: {fileID: 258359642605565774, guid: f9636d7dc17b49e4d977ddf6f724f21c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2899,6 +2908,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.011416049
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776080957142046847, guid: f9636d7dc17b49e4d977ddf6f724f21c,
+        type: 3}
+      propertyPath: m_Name
+      value: ExtraBuilding_C_snaps004
       objectReference: {fileID: 0}
     - target: {fileID: 7198324163291635667, guid: f9636d7dc17b49e4d977ddf6f724f21c,
         type: 3}
@@ -5415,11 +5429,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5790045726487897976}
     m_Modifications:
-    - target: {fileID: 4776080957142046847, guid: f9636d7dc17b49e4d977ddf6f724f21c,
-        type: 3}
-      propertyPath: m_Name
-      value: ExtraBuilding_C_snaps004 (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 258359642605565774, guid: f9636d7dc17b49e4d977ddf6f724f21c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5489,6 +5498,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.011415996
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776080957142046847, guid: f9636d7dc17b49e4d977ddf6f724f21c,
+        type: 3}
+      propertyPath: m_Name
+      value: ExtraBuilding_C_snaps004 (2)
       objectReference: {fileID: 0}
     - target: {fileID: 7198324163291635667, guid: f9636d7dc17b49e4d977ddf6f724f21c,
         type: 3}
@@ -6255,11 +6269,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5790045726487897976}
     m_Modifications:
-    - target: {fileID: 4776080957142046847, guid: f9636d7dc17b49e4d977ddf6f724f21c,
-        type: 3}
-      propertyPath: m_Name
-      value: ExtraBuilding_C_snaps004 (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 258359642605565774, guid: f9636d7dc17b49e4d977ddf6f724f21c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6329,6 +6338,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.011415994
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776080957142046847, guid: f9636d7dc17b49e4d977ddf6f724f21c,
+        type: 3}
+      propertyPath: m_Name
+      value: ExtraBuilding_C_snaps004 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 7198324163291635667, guid: f9636d7dc17b49e4d977ddf6f724f21c,
         type: 3}
@@ -10215,11 +10229,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5790045726487897976}
     m_Modifications:
-    - target: {fileID: 4776080957142046847, guid: f9636d7dc17b49e4d977ddf6f724f21c,
-        type: 3}
-      propertyPath: m_Name
-      value: ExtraBuilding_C_snaps004 (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 258359642605565774, guid: f9636d7dc17b49e4d977ddf6f724f21c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10289,6 +10298,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.011415993
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776080957142046847, guid: f9636d7dc17b49e4d977ddf6f724f21c,
+        type: 3}
+      propertyPath: m_Name
+      value: ExtraBuilding_C_snaps004 (3)
       objectReference: {fileID: 0}
     - target: {fileID: 7198324163291635667, guid: f9636d7dc17b49e4d977ddf6f724f21c,
         type: 3}

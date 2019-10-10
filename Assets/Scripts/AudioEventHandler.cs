@@ -20,9 +20,6 @@ public class AudioEventHandler : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown("space")){
-            EventManager.TriggerEvent("EnterBrainRoom");
-        }
     }
 
     void OnEnable()

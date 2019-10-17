@@ -125,7 +125,7 @@ public class AudioManager : MonoBehaviour
         PlayFX("pop" +index.ToString());
     }
 
-    public void PlayBlip()
+    public void PlayBlip(float pitch)
     {
         Sound s = Array.Find(SFXSounds, sound => sound.name == "blip");
         if(s.source == null)
@@ -138,6 +138,7 @@ public class AudioManager : MonoBehaviour
             s.source.loop = s.loop;
             s.source.playOnAwake = s.playonawake;
         }
+        s.source.pitch = pitch;
         s.source.Play();
     }
 

@@ -12,8 +12,8 @@ public enum Expression { Happy, Sad, Uncomfortable, Relief, Shocked };
 public class FacialAnimation : MonoBehaviour
 {
     public string currentExpression;
-    [Header("Name to be displayed for talking character")]
-    public string characterName;
+
+    public CharacterData characterData;
 
     private Animator animator;
     private string talking = "Talking";
@@ -61,7 +61,7 @@ public class FacialAnimation : MonoBehaviour
 
     private void SetSpeakerOnPanel()
     {
-        dialoguePanelController.nameText.text = characterName;
+        dialoguePanelController.SetCurrentCharacter(characterData);
     }
 
     IEnumerator TalkingDelay()

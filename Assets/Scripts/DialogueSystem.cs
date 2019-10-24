@@ -266,7 +266,7 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
             case "listenToJordy":
                 Choices.listenedToJordy = true;
                 break;
-                
+            
             default:
                 cameraTransition.ZoomOut();
                 inBrainRoom = false;

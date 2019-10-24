@@ -188,7 +188,7 @@ public class AudioManager : MonoBehaviour
         {
             MakeSource(s);
         }
-        StartCoroutine(FadeIn(s.source, fadeTimeDefault));
+        StartCoroutine(FadeIn(s.source, fadeTimeDefault, s.volume));
     }
 
     public void FadeOutSFX(string name)
@@ -248,11 +248,11 @@ public class AudioManager : MonoBehaviour
         audioSource.Stop();
     }
 
-    public static IEnumerator FadeIn(AudioSource audioSource, float FadeTime)
+    public static IEnumerator FadeIn(AudioSource audioSource, float FadeTime, float maxVol = 1f)
     {
         audioSource.Play();
         audioSource.volume = 0f;
-        while (audioSource.volume < 1)
+        while (audioSource.volume < maxVol)
         {
             audioSource.volume += Time.deltaTime / FadeTime;
             yield return null;

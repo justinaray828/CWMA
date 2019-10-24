@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioEventHandler : MonoBehaviour
 {
@@ -18,28 +19,47 @@ public class AudioEventHandler : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-    }
-
     void OnEnable()
     {
-        EventManager.StartListening("Car_go", Car_go);
-        EventManager.StartListening("Car_stop", Car_stop);
         EventManager.StartListening("Pause", Pause);
         EventManager.StartListening("Unpause", Unpause);
-        EventManager.StartListening("EnterBrainRoom", EnterBrainRoom);
-        EventManager.StartListening("ExitBrainRoom", ExitBrainRoom);
+
+        if (SceneManager.GetActiveScene().name == "02_1stCar")
+        {
+            Setup_1stCar();
+        }
+        Debug.Log(SceneManager.GetActiveScene().name);
+
+        if (SceneManager.GetActiveScene().name == "03_Theater")
+        {
+            Setup_Theater();
+        }
     }
 
     void OnDisable()
     {
-        EventManager.StopListening("Car_go", Car_go);
-        EventManager.StopListening("Car_stop", Car_stop);
         EventManager.StopListening("Pause", Pause);
         EventManager.StopListening("Unpause", Unpause);
-        EventManager.StopListening("EnterBrainRoom", EnterBrainRoom);
-        EventManager.StopListening("ExitBrainRoom", ExitBrainRoom);
+        if (SceneManager.GetActiveScene().name == "02_1stCar")
+        {
+            EventManager.StopListening("Car_go", Car_go);
+            EventManager.StopListening("Car_stop", Car_stop);
+            EventManager.StopListening("EnterBrainRoom", EnterBrainRoom);
+            EventManager.StopListening("ExitBrainRoom", ExitBrainRoom);
+        }
+    }
+
+    private void Setup_1stCar()
+    {
+        EventManager.StartListening("Car_go", Car_go);
+        EventManager.StartListening("Car_stop", Car_stop);
+        EventManager.StartListening("EnterBrainRoom", EnterBrainRoom);
+        EventManager.StartListening("ExitBrainRoom", ExitBrainRoom);
+    }
+
+    private void Setup_Theater()
+    {
+        am.FadeInSFX("theater_lobby_loop");
     }
 
     private void Car_go()
@@ -78,5 +98,6 @@ public class AudioEventHandler : MonoBehaviour
         am.Stop("PauseMusic");
         
     }
+
 
 }

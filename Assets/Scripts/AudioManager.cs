@@ -116,6 +116,14 @@ public class AudioManager : MonoBehaviour
         StartCoroutine(FadeIn(nextS.source, fadeTimeDefault));
         StartCoroutine(FadeOut(currentS.source, fadeTimeDefault));
 
+        foreach(Sound s in SFXSounds)
+        {
+            if (s.source != null) {
+                if (s.source.isPlaying)
+                    StartCoroutine(FadeOut(s.source, fadeTimeDefault));
+            }
+        }
+
         return;
     }
 
@@ -155,7 +163,7 @@ public class AudioManager : MonoBehaviour
     [YarnCommand("PlayFX")]
     public void PlayFX(string s)
     {
-        Sound currentS = GetSound(s);
+        Sound currentS = GetSound(s, SoundType.FX);
         if(currentS != null) { fxSource.PlayOneShot(currentS.clip, currentS.volume); }
     }
 

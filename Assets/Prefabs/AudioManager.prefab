@@ -217,9 +217,10 @@ MonoBehaviour:
     ignoreListenerPause: 1
     originalVolume: 0
     source: {fileID: 0}
-  - name: paper_tear
+  - name: brain_open
     clip: {fileID: 8300000, guid: 551d6155efa294f1cada30344bf2f91a, type: 3}
-    output: {fileID: 966205321842030654, guid: 8470804748a124767a11093462dd9bf8, type: 2}
+    output: {fileID: 6065668692900454425, guid: 8470804748a124767a11093462dd9bf8,
+      type: 2}
     volume: 1
     pitch: 1
     loop: 0
@@ -233,6 +234,16 @@ MonoBehaviour:
     volume: 0.19
     pitch: 1
     loop: 1
+    playonawake: 0
+    ignoreListenerPause: 0
+    originalVolume: 0
+    source: {fileID: 0}
+  - name: brain_close
+    clip: {fileID: 8300000, guid: 4609005167dcb46b3aca0e14cf8ccf5b, type: 3}
+    output: {fileID: 966205321842030654, guid: 8470804748a124767a11093462dd9bf8, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
     playonawake: 0
     ignoreListenerPause: 0
     originalVolume: 0

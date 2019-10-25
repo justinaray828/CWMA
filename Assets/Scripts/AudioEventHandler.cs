@@ -46,6 +46,8 @@ public class AudioEventHandler : MonoBehaviour
             EventManager.StopListening("Car_stop", Car_stop);
             EventManager.StopListening("EnterBrainRoom", EnterBrainRoom);
             EventManager.StopListening("ExitBrainRoom", ExitBrainRoom);
+            EventManager.StopListening("brainOpen", BrainOpen);
+            EventManager.StopListening("brainClose", BrainClose);
         }
     }
 
@@ -55,6 +57,8 @@ public class AudioEventHandler : MonoBehaviour
         EventManager.StartListening("Car_stop", Car_stop);
         EventManager.StartListening("EnterBrainRoom", EnterBrainRoom);
         EventManager.StartListening("ExitBrainRoom", ExitBrainRoom);
+        EventManager.StartListening("brainOpen", BrainOpen);
+        EventManager.StartListening("brainClose", BrainClose);
     }
 
     private void Setup_Theater()
@@ -72,6 +76,15 @@ public class AudioEventHandler : MonoBehaviour
     {
         am.PlayFX("car_slowdown");
         am.FadeOutSFX("car_loop");
+    }
+
+    private void BrainOpen()
+    {
+        am.Play("brain_open");
+    }
+    private void BrainClose()
+    {
+        am.Play("brain_close");
     }
 
     private void EnterBrainRoom()

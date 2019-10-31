@@ -14,11 +14,13 @@ public class SceneHandler : MonoBehaviour
 
     public void ResetScene()
     {
+        EventManager.TriggerEvent("SceneChange");
         SceneManager.LoadScene(currentSceneIndex);
     }
 
     public void ReturnToMainMenu()
     {
+        EventManager.TriggerEvent("SceneChange");
         SceneManager.LoadScene(MainMenuSceneIndex);
     }
 
@@ -35,11 +37,13 @@ public class SceneHandler : MonoBehaviour
 
     public void LoadScene(int sceneIndex)
     {
+        EventManager.TriggerEvent("SceneChange");
         SceneManager.LoadScene(sceneIndex);
     }
 
     public void LoadNextScene()
     {
+        EventManager.TriggerEvent("SceneChange");
         SceneManager.LoadScene(currentSceneIndex + 1);
     }
 

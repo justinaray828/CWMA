@@ -23,6 +23,7 @@ public class AudioEventHandler : MonoBehaviour
     {
         EventManager.StartListening("Pause", Pause);
         EventManager.StartListening("Unpause", Unpause);
+        EventManager.StartListening("SceneChange", SceneChange);
 
         if (SceneManager.GetActiveScene().name == "02_1stCar")
         {
@@ -59,6 +60,11 @@ public class AudioEventHandler : MonoBehaviour
         EventManager.StartListening("ExitBrainRoom", ExitBrainRoom);
         EventManager.StartListening("brainOpen", BrainOpen);
         EventManager.StartListening("brainClose", BrainClose);
+    }
+
+    private void SceneChange()
+    {
+        am.SceneEnd();
     }
 
     private void Setup_Theater()

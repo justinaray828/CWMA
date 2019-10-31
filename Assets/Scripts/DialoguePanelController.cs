@@ -20,6 +20,20 @@ public class DialoguePanelController : MonoBehaviour
     private float lowestPanelLocation = -115f;
     private float panelLocation;
 
+    private string currentCharName;
+    private float currentCharPitch;
+    private CharacterData currentChacter;
+
+    public void SetCurrentCharacter(CharacterData character)
+    {
+        currentChacter = character;
+        nameText.text = character.name;
+    }
+    public CharacterData GetCurrentCharacter()
+    {
+        return currentChacter;
+    }
+
     /// <summary>
     /// Set to true to pop up panel and false to bring it down.
     /// </summary>

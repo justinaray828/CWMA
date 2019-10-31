@@ -8,12 +8,16 @@ public class AudioManager : MonoBehaviour
 {
     public AudioSource fxSource;
     public AudioMixer mixer;
+    public AudioMixerSnapshot def;
+    public AudioMixerSnapshot inBrainRoom;
 
     public float fadeTimeDefault;
 
     public Sound[] MusicSounds;
     public Sound[] SFXSounds;
     public static AudioManager instance;
+
+    enum SoundType { FX, Music, Both };
 
     private void Awake()
     {
@@ -51,15 +55,41 @@ public class AudioManager : MonoBehaviour
     {
         mixer.SetFloat("MasterVolume", vol);
     }
-
     public void SetMusicVolume(float vol)
     {
         mixer.SetFloat("MusicVolume", vol);
     }
-
     public void SetFxVolume(float vol)
     {
         mixer.SetFloat("SFXVolume", vol);
+    }
+
+    public void SetBrainroomSnapshot(bool state, float transitionTime = 1f)
+    {
+        if(state == false)
+        {
+            def.TransitionTo(transitionTime);
+        }
+        else
+        {
+            inBrainRoom.TransitionTo(transitionTime);
+        }
+    }
+
+    public void SetSourceOutput(string soundName, string groupName)
+    {
+        AudioMixerGroup[] aga = mixer.FindMatchingGroups(groupName);
+        if (aga != null) {
+            AudioMixerGroup ag = Array.Find(aga, group => group.name == groupName);
+            if(ag != null)
+            {
+                GetSound(soundName).source.outputAudioMixerGroup = ag;
+                return;
+            }
+        }
+        Debug.Log("could not find AudioMixerGroup name: " + groupName);
+
+        return;
     }
 
     public void SceneTransition(int nextSceneNumber)
@@ -89,13 +119,30 @@ public class AudioManager : MonoBehaviour
         return;
     }
 
+    public void SceneEnd()
+    {
+        Debug.Log("in sceneTransition");
+        foreach (Sound s in SFXSounds)
+        {
+            if (s.source != null)
+            {
+                if (s.source.isPlaying)
+                {
+                    Debug.Log("stopping: " + s.name);
+                    StartCoroutine(FadeOut(s.source, fadeTimeDefault));
+                }
+            }
+        }
+        return;
+    }
+
     public void PlayPop()
     {
         int index = UnityEngine.Random.Range(1, 3);
         PlayFX("pop" +index.ToString());
     }
 
-    public void PlayBlip()
+    public void PlayBlip(float pitch)
     {
         Sound s = Array.Find(SFXSounds, sound => sound.name == "blip");
         if(s.source == null)
@@ -108,6 +155,7 @@ public class AudioManager : MonoBehaviour
             s.source.loop = s.loop;
             s.source.playOnAwake = s.playonawake;
         }
+        s.source.pitch = pitch;
         s.source.Play();
     }
 
@@ -124,7 +172,7 @@ public class AudioManager : MonoBehaviour
     [YarnCommand("PlayFX")]
     public void PlayFX(string s)
     {
-        Sound currentS = GetSound(s);
+        Sound currentS = GetSound(s, SoundType.FX);
         if(currentS != null) { fxSource.PlayOneShot(currentS.clip, currentS.volume); }
     }
 
@@ -136,6 +184,20 @@ public class AudioManager : MonoBehaviour
         currentS.source.Play();
     }
 
+    public void PlayMusic(string s)
+    {
+        Sound currentS = GetSound(s, SoundType.Music);
+        if (currentS.source == null) { MakeSource(currentS); }
+        currentS.source.Play();
+    }
+
+    public void Stop(string name)
+    {
+        Sound sound = GetSound(name);
+        if(sound.source == null) { return; }
+        sound.source.Stop();
+    }
+
     public void FadeInSFX(string name)
     {
         Sound s = GetSound(name);
@@ -143,7 +205,7 @@ public class AudioManager : MonoBehaviour
         {
             MakeSource(s);
         }
-        StartCoroutine(FadeIn(s.source, fadeTimeDefault));
+        StartCoroutine(FadeIn(s.source, fadeTimeDefault, s.volume));
     }
 
     public void FadeOutSFX(string name)
@@ -168,16 +230,25 @@ public class AudioManager : MonoBehaviour
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
             s.source.playOnAwake = s.playonawake;
+            s.source.ignoreListenerPause = s.ignoreListenerPause;
         }
         return;
     }
 
-    private Sound GetSound(string str)
+    private Sound GetSound(string str, SoundType type = SoundType.Both)
     {
-        Sound sound = Array.Find(SFXSounds, s => s.name == str);
+        Sound sound = null;
+        if (type == SoundType.FX || type == SoundType.Both)
+        {
+            sound = Array.Find(SFXSounds, s => s.name == str);
+        }
+        if (sound == null && (type == SoundType.Music || type == SoundType.Both))
+        {
+            sound = Array.Find(MusicSounds, s => s.name == str);
+        }
         if (sound == null)
         {
-            Debug.LogWarning("Sound name not found in FX array: " + str);
+            Debug.LogWarning("Sound name not found in "+type.ToString()+" array: " + str);
             return null;
         }
         return sound;
@@ -194,11 +265,11 @@ public class AudioManager : MonoBehaviour
         audioSource.Stop();
     }
 
-    public static IEnumerator FadeIn(AudioSource audioSource, float FadeTime)
+    public static IEnumerator FadeIn(AudioSource audioSource, float FadeTime, float maxVol = 1f)
     {
         audioSource.Play();
         audioSource.volume = 0f;
-        while (audioSource.volume < 1)
+        while (audioSource.volume < maxVol)
         {
             audioSource.volume += Time.deltaTime / FadeTime;
             yield return null;

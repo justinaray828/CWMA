@@ -175,7 +175,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentExpression: Happy
-  characterName: Gina
+  characterData:
+    name: Gina
+    talkingPitch: 1.43
 --- !u!95 &1663674469
 Animator:
   serializedVersion: 3

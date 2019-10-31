@@ -175,7 +175,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentExpression: Happy
-  characterName: Rea
+  characterData:
+    name: Rea
+    talkingPitch: 1.4
 --- !u!95 &7041949430447871943
 Animator:
   serializedVersion: 3

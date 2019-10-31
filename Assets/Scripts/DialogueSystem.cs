@@ -98,7 +98,7 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
             var stringBuilder = new StringBuilder();
             int counter = 0;
 
-            audioM.PlayBlip();
+            audioM.PlayBlip(dialoguePanelController.GetCurrentCharacter().talkingPitch);
 
             foreach (char c in lineString)
             {
@@ -266,7 +266,7 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
             case "listenToJordy":
                 Choices.listenedToJordy = true;
                 break;
-                
+            
             default:
                 cameraTransition.ZoomOut();
                 inBrainRoom = false;

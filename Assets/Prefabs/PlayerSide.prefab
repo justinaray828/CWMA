@@ -96,7 +96,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentExpression: Happy
-  characterName: Player
+  characterData:
+    name: Player
+    talkingPitch: 1.4
 --- !u!95 &3592140960579462457
 Animator:
   serializedVersion: 3

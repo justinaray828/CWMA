@@ -18,6 +18,7 @@ public class Sound
 
     public bool loop;
     public bool playonawake;
+    public bool ignoreListenerPause;
 
     [HideInInspector]
     public float originalVolume;

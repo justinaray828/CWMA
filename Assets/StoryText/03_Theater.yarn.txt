@@ -1,25 +1,26 @@
 title: Start
 ---
 <<setscene Theater>>
-<<StartTalking Player>> Finally, we made it!
+<<StartTalking Player>> Finally.
+<<StartTalking Player>> We made it!
 
-<<StartTalking Gi na>> We could have walked here faster.
+<<StartTalking Gina>> We could have walked here faster.
 
 <<StartTalking Player>> He found a way to speed through every light and miss every turn.
 
 <<StartTalking Gina>> It takes skills to be that terrible.
 
 <<StartTalking Player>> So...
-Five Stars?
+<<StartTalking Player>> Five Stars?
 
-<<StartTalking Gina>> Haha, definitely.
+<<StartTalking Gina>> But of course!
 
 <<StartTalking Emily>> What movie are you seeing?
 
 <<StartTalking Player>> I bought tickets online.
 
 <<StartTalking Emily>> Cool story... 
-I still need to know the name of the movie to find the tickets.
+<<StartTalking Emily>> I still need the movie's name to find your tickets in our system.
 
 <<setscene innerDateCut>>
 
@@ -27,9 +28,11 @@ I still need to know the name of the movie to find the tickets.
 
 <<StartTalking PlayersAnxiety>> You what?
 
-<<StartTalking PlayersBrain>> I think it’s either 'Love in New York' or 'Brooklyn Hearts', or something like that.  How many date movies could there be?
+<<StartTalking PlayersBrain>> I think it’s either 'Love in New York' or 'Brooklyn Hearts', something like that.  
+<<StartTalking PlayersBrain>> How many date movies could there be?
 
-<<StartTalking PlayersAnxiety>> Well that’s a 50% chance of looking like an idiot.
+<<StartTalking PlayersAnxiety>> Well, that’s a 50% chance of looking like an idiot.
+<<StartTalking PlayersAnxiety>> Assuming either is even right.
 
 [[Umm 'Love in New York'|LoveInNewYork]]
 [[I believe 'Brooklyn Hearts'|BrooklynHearts]]
@@ -40,31 +43,31 @@ title: LoveInNewYork
 <<setscene Theater>>
 <<StartTalking Player>> I think it was...
 
-<<StartTalking Gina>> Brooklyn Sleeps Alone Tonight!!!
+<<StartTalking Gina>> 'Brooklyn Sleeps Alone Tonight.'
 
 <<StartTalking Emily>> Great… glad someone knew.
 
-<<StartTalking Gina>> Saw you were struggling. 
+<<StartTalking Gina>> Saw you struggling. 
 <<StartTalking Gina>> These names are generic.
 
 <<StartTalking Player>> Thanks for the save.
 
 <<StartTalking Emily>> CARD!
 
-<<StartTalking Player>> Huh… 
+<<StartTalking Player>> Huh…
 
-<<StartTalking Emily>> Give. Me. Your. Card. 
-<<StartTalking Emily>> So I can pull up your ticket for the movie you already forgot the title to.
+<<StartTalking Emily>> Give. Me. Your. Card. So. I. Can. Print. Your. Ticket.
+<<StartTalking Emily>> There are other people dying slowly behind.
 
 <<setscene innerDateCut>>
+ 
+<<StartTalking PlayersBrain>> I won't let this woundingly shady teen ruin my date.
 
-<<StartTalking PlayersBrain>> I have a bad memory! 
-<<StartTalking PlayersBrain>> I won't let this woundingly sarcastic teen ruin my date.
+<<StartTalking PlayersAnxiety>> I'm sure you remember which card you bought it with.
 
-<<StartTalking PlayersAnxiety>> No, 
-<<StartTalking PlayersAnxiety>> But awkwardly going through your wallet because you don't know what card you used, will. 
+<<StartTalking PlayersBrain>> Uhh.. sure.
 
-<<StartTalking PlayersBrain>> Wow, who’s side are you on?
+<<StartTalking PlayersAnxiety>> So much confidence!
 
 [[Credit Card|CreditCard1]]
 [[Other Credit Card|CreditCard2]]
@@ -80,33 +83,33 @@ title: BrooklynHearts
 <<StartTalking Gina>> That is definitely not the movie.
 
 <<StartTalking Emily>> Great… 
-<<StartTalking Emily>> You bought a ticket for a movie you can’t even remember the title for.  
+<<StartTalking Emily>> You bought a ticket for a movie you can’t even remember it's name.  
 <<StartTalking Emily>> Real art connoisseur.
 
-<<StartTalking Gina>> I am pretty sure it is 'Brooklyn Sleeps Alone' tonight. 
+<<StartTalking Gina>> I am pretty sure it is 'Brooklyn Sleeps Alone Tonight.' 
 
-<<StartTalking Player>> Right, Thanks for the save.
+<<StartTalking Player>> Oh, that's right.
 
 <<StartTalking Gina>> Let’s just get inside.
 
-<<StartTalking Emily>> CARD
+<<StartTalking Emily>> CARD!
 
 <<StartTalking Player>> Huh… 
 
 <<StartTalking Emily>> Give. Me. Your. Card. 
-<<StartTalking Emily>> So I can pull up your ticket for the movie you already forgot the title to.
+<<StartTalking Emily>> The line forming behind you hasn't stopped growing.
 
 <<setscene innerDateCut>>
 
 <<StartTalking PlayersAnxiety>> Busted!
 
-<<StartTalking PlayersBrain>> I have a bad memory! 
+<<StartTalking PlayersBrain>> I have a bad memory!
 <<StartTalking PlayersBrain>> I won't let this woundingly sarcastic teen ruin my date.
 
-<<StartTalking PlayersAnxiety>> No, 
-<<StartTalking PlayersAnxiety>> But awkwardly going through your wallet because you don't know what card you used, will. 
+<<StartTalking PlayersAnxiety>> No,
+<<StartTalking PlayersAnxiety>> But awkwardly going through your wallet because you don't know what card you used, will.
 
-<<StartTalking PlayersBrain>> Wow, who’s side are you on?
+<<StartTalking PlayersBrain>> Who’s side are you on?
 
 [[Credit Card|CreditCard1]]
 [[Other Credit Card|CreditCard2]]
@@ -155,7 +158,7 @@ title: CreditCard
 
 <<setscene innerDateCut>>
 
-<<StartTalking PlayersAnxiety>> Okay, Genius. Let’s try this again
+<<StartTalking PlayersAnxiety>> Okay, Genius. Let’s try this again.
 
 <<StartTalking PlayersBrain>> Also, why are teenagers so scary and why do I feel I need their approval?
 <<StartTalking PlayersBrain>> I’m an adult!
@@ -218,7 +221,7 @@ title: OtherCreditCard
 
 <<StartTalking Emily>> Because if you aren’t you can pick...
 
-<<StartTalking Gina>> Oh my god, what circle of hell are we stuck in.
+<<StartTalking Gina>> What circle of hell are we stuck in.
 <<StartTalking Gina>> RUN THE CARD!!!
 
 <<StartTalking Emily>> Jeez, I’m running it.
@@ -245,26 +248,33 @@ title: BuyANewTicket
 ---
 <<setscene innerDateCut>>
 <<setscene Theater>>
-<<StartTalking Player>> I don’t know what card it was, I’m just going to buy a new ticket.
+<<StartTalking Player>> So, I don’t remember what card it was...
 
-<<StartTalking Emily>> The theater is sold out.
+<<StartTalking Emily>> You have THAT many cards.
+
+<<StartTalking Player>> So I’m just going to buy a new ticket.
+
+<<StartTalking Gina>> Really?
+
+<<StartTalking Emily>> Well, The theater is sold out.
+
+<<StartTalking Gina>> You've got to be joking.
+
 <<StartTalking Emily>> It’s a Friday Night.
-<<StartTalking Emily>> Y’all are late to this showing.
+<<StartTalking Emily>> And Y’all are late.
 
 <<StartTalking Player>> Seriously?
 <<StartTalking Player>> The previews are just starting, we aren’t that late.
-
-<<StartTalking Gina>> Can you check again?
 
 <<StartTalking Emily>> If I can handle getting to the bus stop 45 minutes early for the one bus with a ramp, 
 <<StartTalking Emily>> y’all can think to call your Dryve a whole 5 minutes earlier.  
 <<StartTalking Emily>> And I’ve already checked the occupancy count... Twice.
 
-<<StartTalking Gina>> Can we just try the cards?
+<<StartTalking Gina>> Can you just try your other cards?
 
 <<setscene innerDateCut>>
 
-<<StartTalking PlayersAnxiety>> Ok, Genius, Let’s try this again
+<<StartTalking PlayersAnxiety>> Ok, Genius. Let’s try this again.
 
 <<if visited("CreditCard1") is true>>
     [[Other Credit Card|OtherCreditCard]]

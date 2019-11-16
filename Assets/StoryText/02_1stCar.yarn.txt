@@ -3,8 +3,8 @@ title: Start
 //Opens with Jordy Alone in the car
 <<setscene Dryve>>
 <<Play AudioManager car_loop>>
-<<StartTalking Jordy>> It's so weird how that last guy forgot to tip.
-<<StartTalking Jordy>> I was sure he'd remember after all the shortcuts I took.
+<<StartTalking Jordy>> So weird how that last guy forgot to tip.
+<<StartTalking Jordy>> I was sure he'd remember after all the shortcuts.
 <<StartTalking Jordy>> Sure we arrived 20 minutes later,
 <<StartTalking Jordy>> But seeing the city is why people take ride shares, 
 <<StartTalking Jordy>> Right?
@@ -23,28 +23,27 @@ title: Start
 
 <<StartTalking Player>> Jordy, right?
 
-<<StartTalking Jordy>> Yep, buckle up.
+<<StartTalking Jordy>> Hey there!
 <<StartTalking Jordy>> The almighty App says you've got two stop?
 
 <<StartTalking Player>> Yep, an apartment a few blocks away and the theater.
 
-<<StartTalking Jordy>> Friday Night,
-<<StartTalking Jordy>> Apartment and then a movie... 
+<<StartTalking Jordy>> And a Friday Night!
 <<StartTalking Jordy>> I'm guessing you've got a date?
 
 <<TriggerEvent EventManager Car_go>>
 
-<<StartTalking Player>> You guessed right.
+<<StartTalking Player>> Correct again.
 
 <<StartTalking Jordy>> Wants some tips? Guaranteed to get you to the second date.
 
-<<StartTalking Player>> Oh, that's ok--
+<<StartTalking Player>> that's ok--
 
 <<StartTalking Jordy>> Be yourself,
 <<StartTalking Jordy>> Well, unless you're a terrible person.
 <<StartTalking Jordy>> Then you've got other things to work on.
 
-<<StartTalking Player>> ... Helpful.
+<<StartTalking Player>> ... thanks.
 
 <<StartTalking Jordy>> But you seem cool,
 <<StartTalking Jordy>> I'm a pretty good judge of character.
@@ -53,7 +52,8 @@ title: Start
 
 <<StartTalking Jordy>> But seriously, listen more than you talk.
 <<StartTalking Jordy>> Don't give advice unless it's requested.
-<<StartTalking Jordy>> And silence is better than saying something shitty.
+<<StartTalking Jordy>> And silence is better than saying something dumb.
+<<StartTalking Jordy>> Anyway, it works me.
 
 <<StartTalking Player>> I'll keep that in mind.
 
@@ -64,9 +64,9 @@ title: Start
 <<PlayFX AudioManager car_door>>
 <<GinaEnters Characters>>
 
-<<StartTalking Player>> Hey there, nice to meet you in person.
+<<StartTalking Player>> Hi! Nice to meet in person.
 
-<<StartTalking Gina>> Nice to meet you too. 
+<<StartTalking Gina>> Same here. 
 <<StartTalking Gina>> I'm looking forward to tonight.
 
 <<TriggerEvent EventManager Car_go>>
@@ -87,11 +87,11 @@ title: Start
 
 <<StartTalking Gina>> Uhh what...
 
-<<StartTalking Jordy>> Yikes.
+<<StartTalking Jordy>> yikes.
 
-<<StartTalking Player>> That's not what I meant, 
-<<StartTalking Player>> not that being experienced is bad, 
-<<StartTalking Player>> I just assumed, 
+<<StartTalking Player>> That's not what I meant.. 
+<<StartTalking Player>> ..not that being experienced is bad, 
+<<StartTalking Player>> I just assumed... 
 <<StartTalking Player>> umm..
 
 <<StartTalking Jordy>> Rule three my guy.
@@ -103,7 +103,7 @@ title: Start
 
 <<ChangeExpression PlayersBrain Talking>> Welcome back anxiety.
 
-<<StartTalking PlayersAnxiety>> I'm just saying.
+<<StartTalking PlayersAnxiety>> Just saying.
 <<StartTalking PlayersAnxiety>> What's that saying about assuming things?
 <<StartTalking PlayersAnxiety>> It makes an a--
 
@@ -123,11 +123,11 @@ title: Sorry
 <<StartTalking Player>> ...
 
 <<StartTalking Gina>> ...
-<<StartTalking Gina>> I guess first dates are always a little awkward.
+<<StartTalking Gina>> First dates are always a little awkward.
 
-<<StartTalking Player>> Yep, and I might have had too many...
+<<StartTalking Player>> Yeah, and I might have had too many...
 
-<<StartTalking Gina>> I guess that's better than a lot second dates that go nowhere.
+<<StartTalking Gina>> Well, I guess that's better than a lot of second dates that go nowhere.
 [[Are we there yet|AreWeThereYet]]
 ===
 title: ChangeTheSubject
@@ -135,19 +135,18 @@ title: ChangeTheSubject
 <<setscene Dryve>>
 <<StartTalking Player>> So.. um, how about this weather we are having?
 
-<<StartTalking Gina>> Yeah.. the weather is.. nice.
-<<StartTalking Gina>> ...
-<<StartTalking Gina>> Honestly, are you a bit nervous?
+<<StartTalking Gina>> Yeah, We're.. having weather..
+<<StartTalking Gina>> ... Are you a bit nervous?
 
-<<StartTalking Jordy>> Yes
+<<StartTalking Jordy>> Yes!
 
 <<StartTalking Player>> I think she was asking me...
 
-<<StartTalking Jordy>> I know, it's just driving makes me nervous.
+<<StartTalking Jordy>> Yeah, but driving makes me nervous.
 
 <<StartTalking Gina>> But your job is driving?
 
-<<StartTalking Jordy>> Yeah, but life is about facing fears and growing.
+<<StartTalking Jordy>> Yeah, but life is about facing fears, growing, and narrowly avoiding being sideswiped.
 
 <<StartTalking Gina>> Like going on a date when it scares the crap out of you?
 
@@ -158,13 +157,10 @@ title: AreWeThereYet
 ---
 <<StartTalking Player>> Sooo… 5 more minutes till the theater?
 
-<<StartTalking Jordy>>
 <<StartTalking Jordy>> Nope, 7 minutes.
 
-<<StartTalking Jordy>>
 <<StartTalking Jordy>> Missed another turn... or two.  
 
-<<StartTalking Jordy>>
 <<StartTalking Jordy>> Sorry.
 
 <<setscene innerDate>>
@@ -173,10 +169,8 @@ title: AreWeThereYet
 <<ChangeExpression PlayersBrain Talking>> But first dates are supposed to be sorta awkward.
 <<ChangeExpression PlayersBrain Talking>> Right?
 
-<<StartTalking PlayersAnxiety>> Just play it cool. 
+<<StartTalking PlayersAnxiety>> Just play it cool.
 <<StartTalking PlayersAnxiety>> Maybe they won’t notice how much of a mess you are.  
-<<StartTalking PlayersAnxiety>> You haven’t had the chance to embarrass yourself
-<<StartTalking PlayersAnxiety>> yet.
 <<ChangeExpression PlayersBrain Talking>> Oh, what a confidence boost!
 
 <<StartTalking PlayersAnxiety>> Look on the bright side, 
@@ -197,7 +191,7 @@ title: PlayItCool
 <<setscene Dryve>>
 <<StartTalking Player>> No problem, the first few minutes of the movie are previews anyway.  Let it Ride.
 
-<<StartTalking Gina>> Aww, I like watching previews.
+<<StartTalking Gina>> I like watching previews.
 
 <<StartTalking Jordy>> Which movie are you seeing?
 
@@ -252,19 +246,24 @@ title: MakeAJoke
 		
 <<StartTalking Gina>> I think he was just making a bad joke... 
 
-<<StartTalking Jordy>> So the gig economy is a joke?
+<<StartTalking Jordy>> I get to pick my own hours, sure I don't get reimburshed for repairs or health insurance, but I'm my own man.
+<<StartTalking Jordy>> You think that's a joke?
 
 <<StartTalking Player>> No.. 
 <<StartTalking Player>> yes…. 
 <<StartTalking Player>> How do I answer that?
 
-<<StartTalking Gina>> From a labor perspective it exploits workers while concentrating capital towards the top.
+<<StartTalking Gina>> From a labor perspective it exploits workers, regresses traditional taxi benefits, 
+<<StartTalking Gina>> all while concentrating capital towards tech bros and their investors.
+<<StartTalking Gina>> But this town has no taxi services.. in part because the gig economy killed them.
 
-<<StartTalking Jordy>> I mean you’re not wrong, but when you work 9 to 5, just $2 above minimum wage, you’ve got to be creative to make a legal living.  
+<<StartTalking Jordy>> You're not wrong, 
+<<StartTalking Jordy>> But I used to work 9 to 5, just $2 above minimum wage.  
+<<StartTalking Jordy>> This isn't great, but it's better.  
 
-<<StartTalking Gina>> That’s respectable.
+<<StartTalking Gina>> Fair.
 
-<<StartTalking Jordy>> Plus, I’m my own boss. 
+<<StartTalking Jordy>> And, I’m my own boss. 
 
 <<StartTalking Jordy>> Nobody tells me what to do.
 
@@ -312,7 +311,7 @@ title: PlayItCool_B
 ---
 <<StartTalking Player>> It’s alright, Cool people don’t arrive early.
 
-<<StartTalking Gina>> I’m less concerned about being cool than missing the beginning of the damn movie.
+<<StartTalking Gina>> I’m less concerned about being cool than missing the beginning of the movie.
 
 <<StartTalking Player>> I heard the first 20 minutes of the movie is a dream… Spoiler Warning.
 
@@ -320,7 +319,8 @@ title: PlayItCool_B
 
 <<StartTalking Player>> Oops, sorry.
 
-<<StartTalking Jordy>> That’s a good point, I’m going to start using that when I spoil things accidentally.  Spoiler Announcement!  At the end of the movie the main character…
+<<StartTalking Jordy>> That’s a good point, I’m going to start using that when I spoil things accidentally.
+<<StartTalking Jordy>> Spoiler Announcement!  At the end of the movie the main character…
 
 <<StartTalking Gina>> Could you not!!!!
 
@@ -343,12 +343,12 @@ title: AskHerAboutHerDay
 
 <<StartTalking Jordy>> Did something crappy happen?
 
-<<StartTalking Gina>> Yeah Sorta, over the past few weeks my pens keep going missing.
+<<StartTalking Gina>> Yeah sorta, over the past few weeks my pens keep going missing.
 
 <<StartTalking Player>> Like a pen thief?
 
 <<StartTalking Gina>> Yup, full scale office supply larceny.  
-<<StartTalking Gina>> It wouldn’t be a big deal if I hadn’t went and purchased my own pens.
+<<StartTalking Gina>> It wouldn’t be a big deal if I hadn’t went and bought my own pens.
 
 <<StartTalking Player>> That sucks, do you know who did it?
 
@@ -356,13 +356,13 @@ title: AskHerAboutHerDay
 <<StartTalking Gina>> I think. 
 <<StartTalking Gina>> But how do you ask your coworker that?
 
-<<StartTalking Player>> Right, that’s a struggle.
+<<StartTalking Player>> Right, that’s would be awkward.
 
 <<setscene innerDate>>
 
 <<ChangeExpression PlayersBrain Talking>> Should I give some advice.
 
-<<StartTalking PlayersAnxiety>> Yeah, you’ve got experience with office supply theft.
+<<StartTalking PlayersAnxiety>> Yeah, you’ve got experience with confronting thieves.
 
 <<ChangeExpression PlayersBrain Talking>> I feel like I should say something, to show I care?
 
@@ -407,7 +407,7 @@ title: Sneak
 
 <<StartTalking Gina>> Who wouldn't break into their place of employement to solve the mystery of the gel pen thief?
 
-<<StartTalking Jordy>> You’d be justified with Gel pens.
+<<StartTalking Jordy>> You’d be justified with gel pens.
 
 <<StartTalking Gina>> Thanks.  Thinking about saving my pens made me feel a lot better.
 

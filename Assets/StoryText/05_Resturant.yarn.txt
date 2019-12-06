@@ -1,59 +1,75 @@
 title: Start
 ---
 <<setscene Restaurant>>
-<<StartTalking Player>> Here we are, this place got great reviews.
+<<StartTalking Player>> This place has great reviews.
 
-<<StartTalking Gina>> Great! I’m looking forward to it. 
-<<StartTalking Gina>> I’m heading to the bathroom.  Be right back.
+<<StartTalking Gina>> Great! Excuse me for a second.
+<<StartTalking Gina>> I need to visit the restroom.
 
-<<StartTalking Player>> Oh ok, see you soon.
+<<StartTalking Player>> Oh, ok.
 <<GinaLeaves Characters>>
-<<StartTalking Gina>> Back in a bit
+<<StartTalking Gina>> Back in a jif.
 
 <<setscene innerDateCut>>
 
 <<StartTalking PlayersAnxiety>> She just bailed on you.
 
-<<StartTalking PlayersBrain>> We don’t know that.  We’ve had an okey-dokey time.
+<<StartTalking PlayersBrain>> I don’t know that... It's been an okey-dokey time.
 
-<<StartTalking PlayersAnxiety>> Let’s not use okey-dokey… ever.
+<<StartTalking PlayersAnxiety>> Okey-dokey…
 
-<<StartTalking PlayersBrain>> Yeah, that’s probably a good call.
+<<StartTalking PlayersBrain>> Are words people say...
 
-<<StartTalking PlayersAnxiety>> I am surprised she waited this long to ditch you. 
+<<StartTalking PlayersAnxiety>> Let's not be one of those people.
+
+<<StartTalking PlayersBrain>> I'm so nervous.
+
+<<StartTalking PlayersAnxiety>> Well, this is a great place to nervously eat away your anxiety.
+
+<<StartTalking PlayersBrain>> Oh, here comes the server.
 
 <<setscene innerDateCut>>
 <<setscene Restaurant>>
 <<ReaReturns Characters>>
 
 <<StartTalking Rea>> Hey there.  Name’s Rea.
-<<StartTalking Rea>> I’ll be your server.
-<<StartTalking Rea>> Can I get you something to drink?
+<<StartTalking Rea>> I'm here to bring you food, refill drinks and make witty banter.
 
-<<StartTalking Player>> Sure, can you get me a bottle of your best red and two waters?
-<<StartTalking Player>> My date will be back in a second.
+<<StartTalking Player>> Nice to meet you.
 
-<<StartTalking Rea>> Sure cap, ya want an appetizer?
+<<StartTalking Rea>> Water, soft drinks or something bubly?
 
-<<StartTalking Player>> Sounds good, any recommendations?
+<<StartTalking Player>> Two waters and a bottle red wine to split with my date would be great.
+
+<<StartTalking Rea>> Sure cap.
+<<StartTalking Rea>> Want me to put an order in for an appitizer before I go?
+
+<<StartTalking Player>> That sounds great, any recommendations?
 
 <<StartTalking Rea>> I love the flaming shrimp.
 <<StartTalking Rea>> Couldn’t have them before, because my ex was super allergic.
 
-<<StartTalking Player>> Good thing your ex isn’t here, because I love shrimp. 
+<<StartTalking Player>> Sucks for your ex, shrimp are delicious. 
 <<StartTalking Player>> I’ll get an order of those.
 
-<<StartTalking Rea>> Great, be back in a second.
+<<StartTalking Rea>> Sounds good, back in a jif.
 
 <<ReaLeaves Characters>>
 
 <<setscene innerDateCut>>
 
-<<StartTalking PlayersAnxiety>> Why do you keep saying "See you soon"
+<<StartTalking PlayersBrain>> OK, things seem to be on track again.
 
-<<StartTalking PlayersBrain>> I don't know, there is something..
+<<StartTalking PlayersAnxiety>> I'm not so sure about that.
 
-<<StartTalking PlayersAnxiety>> Very wrong with you.
+<<StartTalking PlayersBrain>> Why..
+
+<<StartTalking PlayersAnxiety>> 'I don't know,' he said ominously.
+
+<<StartTalking PlayersBrain>> Sometimes things just start going well again.  
+<<StartTalking PlayersBrain>> That doesn't mean...
+
+<<StartTalking PlayersAnxiety>> They'll fall apart immediately after.
 
 <<GinaReturns Characters>>
 <<setscene innerDateCut>>
@@ -64,7 +80,7 @@ title: Start
 <<StartTalking Player>> Everything ok in the bathroom?
 
 <<StartTalking Gina>> Yeah, but that’s not it.  
-<<StartTalking Gina>> I was scrolling through my apps and noticed something
+<<StartTalking Gina>> I was scrolling through my feeds and noticed something...
 
 <<ReaReturns Characters>>
 
@@ -79,11 +95,12 @@ title: Start
 
 <<StartTalking Rea>> I’m gonna go cancel that order of flaming shrimp.
 
-<<StartTalking Player>> Oh, I was looking forward to.
+<<StartTalking Player>> Oh, I was looking forward to...
 <<StartTalking Player>> ooohhh
 <<StartTalking Player>> You two were
 
-<<StartTalking Gina>> YUP
+<<StartTalking Gina>> Together, but that was a few months ago.
+<<StartTalking Gina>> We both past that... right?
 [textPauseTime=4.0][pause]
 <<StartTalking Rea>> I’m heading back to the kitchen.
 
@@ -91,26 +108,30 @@ title: Start
 
 <<StartTalking Player>> Should we go?
 
-<<StartTalking Gina>> No, she must have gotten a new job.  
-<<StartTalking Gina>> It’s ok.  I’ll ask if we can get a new server.  
-<<StartTalking Gina>> She’ll understand.
+<<StartTalking Gina>> Nah, it's ok.  
+<<StartTalking Gina>> She must have gottent a new job recently.  
+<<StartTalking Gina>> I’ll ask if we can get a new server.  She’ll understand.
 
-<<StartTalking Player>> Let’s try and leave quickly and go somewhere else.  
+<<StartTalking Player>> Or.. we could leave quickly and go somewhere else.  
 
 <<ReaReturns Characters>>
 
 <<StartTalking Rea>> And I’m back.  
 <<StartTalking Rea>> With the wine, and no shrimp. 
-<<StartTalking Rea>> So
+<<StartTalking Rea>> So.
 <<StartTalking Rea>> Ready to order?
 
 <<setscene innerDateCut>>
 
 <<StartTalking PlayersAnxiety>> Time to go.
+
 <<StartTalking PlayersBrain>> Gina said that we should stay.  This’ll work out.
+
 <<StartTalking PlayersAnxiety>> Yeah, I don’t see why not.  
-<<StartTalking PlayersAnxiety>> I’m sure you’re going to have a great date with an ex literally watching you the whole time.
-<<StartTalking PlayersBrain>> Yeah.
+<<StartTalking PlayersAnxiety>> I’m sure you’re going to have a great dinner...
+<<StartTalking PlayersAnxiety>> with your date's ex watching you the entire time.
+
+<<StartTalking PlayersBrain>> What do I do?
 
 [[Trust Gina|TrustGina]]
 [[We Should Go|WeShouldGo]]
@@ -121,15 +142,27 @@ title: TrustGina
 <<setscene innerDateCut>>
 <<setscene Restaurant>>
 
-<<StartTalking Player>> I am ready to order. 
-<<StartTalking Player>> Gina do you want to start?
+<<StartTalking Player>> I'm ready to order if you are, Gina. 
 
 <<StartTalking Gina>> Hold on! I still need another minute.
 
-<<StartTalking Rea>> I see you’re still as indecisive as ever. 
+<<StartTalking Rea>> so decisive. 
 
 <<StartTalking Gina>> Excuse me? 
-<<StartTalking Gina>> I fail to see how deciding what I want to eat and deciding if we should run off and get married are the same. 
+
+<<StartTalking Rea>> Oh, Take your time.
+<<StartTalking Rea>> I know you'll make up your mind before we close.
+
+<<StartTalking Gina>> Here's a tip Rea, this isn't how you earn a tip.
+
+<<StartTalking Rea>> Gratuity is added by default hun.
+<<StartTalking Rea>> And your guy here already poured the wine.
+
+<<StartTalking Player>> So it looks like you're both over very over this.
+
+<<StartTalking Gina>> One of us.
+
+<<StartTalking Rea>> Sorry that I haven't gotten over you breaking off an engagement.
 
 <<StartTalking Player>> You two were going to get married!?
 
@@ -137,18 +170,22 @@ title: TrustGina
 
 <<StartTalking Rea>> A year is more than enough time to know if you want to spend the rest of your life with someone. 
 
+<<StartTalking Gina>> For some people, 
+
 <<setscene innerDateCut>>
 
-<<StartTalking PlayersAnxiety>> What have you gotten yourself into? 
+<<StartTalking PlayersAnxiety>> What a normal date? 
 
-<<StartTalking PlayersBrain>> A totally normal date
+<<StartTalking PlayersBrain>> It was going so well...
 
-<<StartTalking PlayersAnxiety>> Yeah. Very normal.  A first date is a GREAT place to be discussing marriage and exes.
+<<StartTalking PlayersAnxiety>> This is why restaurants serve wine.
 
-<<StartTalking PlayersBrain>> We can make this work
-<<StartTalking PlayersBrain>> I think.
+<<StartTalking PlayersBrain>> We can make this work.
+<<StartTalking PlayersBrain>> I just need to say the right thing.
 
-<<StartTalking PlayersAnxiety>> Go ahead, weigh in on whether your date made a mistake in denying their exes marriage proposal.
+<<StartTalking PlayersAnxiety>> Go ahead, weigh in on whether your date made a mistake in denying their ex's marriage proposal.
+
+<<StartTalking PlayersBrain>> I'm not sure if there is a right answer here.
 
 [[Gina was justified|Justified]]
 [[Rea's Got a Point|ReaRight]]
@@ -163,7 +200,7 @@ title: ReaRight
 
 <<StartTalking Player>> She has a point. A year is a long time to spend with someone in a relationship. 
 
-<<StartTalking Rea>> See!  He feels the same way. I will let you two have a minute. 
+<<StartTalking Rea>> See!  He feels the same way. I'll let you two have a minute. 
 
 <<ReaLeaves Characters>>
 
@@ -173,15 +210,16 @@ title: ReaRight
 
 <<StartTalking Gina>> So you don’t actually believe that a year is too long to decide? 
 
-<<StartTalking Player>> How am I supposed to know the answer? I have to date a girl for more than a year first. 
+<<StartTalking Player>> How am I supposed to know the answer?
+<<StartTalking Player>> Honestly, this is embarressing...
+<<StartTalking Player>>  I've never been in a relationship that long.
 
-//Gina Laughs
-
-<<StartTalking Gina>> You have a point. Lucky for you it won’t take me that long to figure out what to order.
+<<StartTalking Gina>> Don't be embarressed.  You have a point. 
+<<StartTalking Gina>> Lucky for you it won’t take me that long to figure out what to order.
 
 <<StartTalking Player>> If you take a year to decide what to eat then wouldn’t this date last a year, therefore, we would have been dating for a year.
 
-<<StartTalking Gina>> You’re annoying. But in a good way. So unlucky for you I know what I want.
+<<StartTalking Gina>> You’re annoying. But in a good way.
 
 <<setScene nextScene>> 
 ===
@@ -194,20 +232,20 @@ title: MistakeRestaurant
 <<StartTalking Gina>> A year isn’t enough time to decide if should spend your life with someone! 
 <<StartTalking Gina>> Rom coms and reality tv has warped your perception of relationships.
 
-<<StartTalking Rea>> My uncle Carl proposed to his wife after two weeks when he was eighteen 
-<<StartTalking Rea>> and has been happily married ever since!
+<<StartTalking Rea>> My uncle Carl proposed to his wife after two weeks when he was eighteen.
+<<StartTalking Rea>> They've been happily married ever since!
 
 <<StartTalking Gina>> This is insane. I’m on a date. I don’t need this from you right now. 
 
-<<StartTalking Rea>> Gina, you are telling me that you need more time to figure out if you want to be with someone forever. 
-<<StartTalking Rea>>But you’re instantly dating again after we broke up. 
+<<StartTalking Rea>> You told me that you need more time to figure out if you want to be with someone forever. 
+<<StartTalking Rea>> But you’re instantly dating again after we broke up. 
 
-<<StartTalking Gina>> We broke up SIX MONTHS AGO! It is just a date. I’m not getting married.
+<<StartTalking Gina>> We broke up SIX MONTHS AGO! It's just a date. I’m not getting married.
 
 <<StartTalking Rea>> It sounds like you don’t ever want to get married.
 
 <<StartTalking Gina>> That’s not your concern. My life is none of your business.  
-<<StartTalking Gina>>This is why I blocked you online.
+<<StartTalking Gina>> This is why I blocked you online.
 
 <<StartTalking Rea>> You never blocked Janice.
 
@@ -215,7 +253,7 @@ title: MistakeRestaurant
 
 <<StartTalking Rea>> No, she just logged into Facestory on my laptop last year and I’ve been using her account. 
 
-<<StartTalking Gina>> You do what!? I’m texting Janice to change her password. 
+<<StartTalking Gina>> You what!? I’m texting Janice to change her password. 
 
 <<StartTalking Rea>> No!!!! She can’t know I was using her account. 
 
@@ -239,9 +277,7 @@ title: Justified
 <<StartTalking Gina>> Right!  Rea, could you give us a minute to decide what we want to eat.  
 <<StartTalking Gina>> I’m sure there are some other tables you’ve left waiting.
 
-//These two choices then lead into the same conversation
-
-<<StartTalking Rea>> Wow. You all are made for each other.
+<<StartTalking Rea>> Y'all are made for each other.
 
 <<ReaLeaves Characters>>
 
@@ -249,19 +285,21 @@ title: Justified
 <<StartTalking Gina>> Also, I’m sorry about your parents.  
 <<StartTalking Gina>> That’s rough.
 
-<<StartTalking Player>> No problem and you don’t have to be sorry. 
-<<StartTalking Player>> I’m way past over it.  
+<<StartTalking Player>> No problem and you don’t have to be sorry.
+<<StartTalking Player>> I’m over it... Mostly.
 <<StartTalking Player>> Are you a two Christmas kid too?
 
 <<StartTalking Gina>> Nope.  
 <<StartTalking Gina>> They are happily terrible together.  
 <<StartTalking Gina>> They were made to torment each other.  
-<<StartTalking Gina>> I feel bad for thinking this, but I almost wish they would get divorced 
-<<StartTalking Gina>> so I’d be less worried about getting a call from one to help bury the other.
+<<StartTalking Gina>> I feel bad for thinking this, but I almost wish they would get divorced.
+<<StartTalking Gina>> So I’d be less worried about getting a phone call from one to help bury the other's body.
 
 <<StartTalking Player>> Yikes and Yikes.
 
 <<StartTalking Gina>> Right! 
+
+<<StartTalking Player>> But I get it.
 
 <<setscene 06_Ending_SecondDate>>
 ===
@@ -289,7 +327,7 @@ title: WeShouldGo
 
 <<StartTalking Rea>> Don’t worry, I was just about to head to a less dramatic table.
 
-//TODO: Remove Rea from Scene leaves
+<<ReaLeaves Characters>>
 
 <<StartTalking Gina>> Look, I know this is a little uncomfortable...
 <<StartTalking Gina>> But I need you to trust that I can take care of myself and I’m being honest when I say I’m ok.
@@ -298,11 +336,13 @@ title: WeShouldGo
 
 <<StartTalking PlayersAnxiety>>  Wow, She’s guilting you for feeling concerned about her.
 
-<<StartTalking PlayersBrain>>  I wasn’t being very thoughtful, but this is uncomfortable for me too.
+<<StartTalking PlayersBrain>> I wasn’t very thoughtful of her feelings... 
+<<StartTalking PlayersBrain>> But this is uncomfortable for me too.
 
 <<StartTalking PlayersAnxiety>>  She’s too wrapped up in her feelings to even notice others.
 
-<<StartTalking PlayersBrain>>  I don’t know, maybe? 
+<<StartTalking PlayersBrain>> That's not fair.
+<<StartTalking PlayersBrain>> I don’t know, maybe? 
 
 <<setscene innerDateCut>>
 

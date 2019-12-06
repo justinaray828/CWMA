@@ -13,7 +13,8 @@ title: Start
 ===
 title: EndingJordy_Continued
 ---
-<<StartTalking Jordy>> I’ll tell you, that’s all crap you’re telling yourself.  You were nice to the rideshare guy while simultaneously trying to have a date yourself.
+<<StartTalking Jordy>> I’ll tell you, that’s all crap you’re telling yourself.  
+<<StartTalking Jordy>> You were nice to the rideshare guy while simultaneously trying to have a date yourself.
 
 <<StartTalking Player>> Yeah, but didn’t get a second date…
 
@@ -21,7 +22,20 @@ title: EndingJordy_Continued
 
 <<StartTalking Player>> Thanks, I needed to hear that.
 
-<<StartTalking Jordy>> I can tell you’re a nice guy, you just had a bad night.
+<<StartTalking Jordy>> I can tell you’re a nice guy just having a bad night.
 
 <<StartTalking Player>> I think I could use some time to spend on myself before I try this again.
+
+<<StartTalking Jordy>> That's probably a good strategy, but no one is perfect...
+<<StartTalking Jordy>> except maybe The Rock.
+<<StartTalking Jordy>> If you wait till you are, you're going to be single forever...
+<<StartTalking Jordy>> excluding The Rock.
+
+<<StartTalking Player>> Thanks, *laughs* I needed that, Not sure if I can become The Rock.
+
+<<StartTalking Jordy>> And that's ok! Everyone settles for who they are right now. 
+<<StartTalking Jordy>> Life's an work in progress, like driving without missing all my turns.
+
+<<StartTalking Player>> That makes sense.  
+<<StartTalking Player>> But I probably need more time to work on myself before I try this whole thing again.
 ===

@@ -231,6 +231,7 @@ title: PlayItCool
 title: MakeAJoke
 ---
 <<setscene Dryve>>
+<<makeAJoke>>
 <<StartTalking Player>> Hey, I've got a joke!
 
 <<StartTalking Gina>> Great!  We still have 6 minutes left to kill. 
@@ -310,6 +311,7 @@ title: Escape
 
 title: PlayItCool_B
 ---
+<<playItCool>>
 <<StartTalking Player>> It’s alright, Cool people don’t arrive early.
 
 <<StartTalking Gina>> I’m less concerned about being cool than missing the beginning of the damn movie.
@@ -331,6 +333,7 @@ title: PlayItCool_B
 title: AskHerAboutHerDay
 ---
 <<setscene Dryve>>
+<<askedAboutHerDay>>
 <<StartTalking Player>> How was your day?
 
 <<StartTalking Gina>> Okay, could have been better.

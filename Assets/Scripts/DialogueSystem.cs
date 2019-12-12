@@ -27,6 +27,7 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
 
     [Tooltip("This will be attached to UICanvas")]
     public DialoguePanelController dialoguePanelController;
+    public VariableManager varStore = new VariableManager();
 
     public CameraTransition cameraTransition;
 
@@ -231,6 +232,7 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
     /// Run an internal command.
     public override IEnumerator RunCommand(Yarn.Command command)
     {
+        var valueToSet = new Yarn.Value();
         // "Perform" the command
         //Debug.Log("Command: " + command.text);
         //Debug.Log("listenToJordy Variable: " + Choices.listenedToJordy);
@@ -267,6 +269,18 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
                 Choices.listenedToJordy = true;
                 break;
             
+            case "askedAboutHerDay":
+                Choices.askedAboutDay = true;
+                break;
+            
+            case "playItCool" :
+                Choices.askedAboutDay = false;
+                break;
+
+            case "makeAJoke" :
+                Choices.askedAboutDay = false;
+                break;
+
             default:
                 cameraTransition.ZoomOut();
                 inBrainRoom = false;

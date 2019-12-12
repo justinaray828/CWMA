@@ -1,6 +1,7 @@
 public static class Choices
 {
     private static bool _listenedToJordy;
+    private static bool _askedAboutDay;
 
     public static bool listenedToJordy 
     {
@@ -11,6 +12,17 @@ public static class Choices
         set 
         {
             _listenedToJordy = value;
+        }
+    }
+
+    public static bool askedAboutDay
+    {
+        get {
+            return _askedAboutDay;
+        }
+        set
+        {
+            _askedAboutDay = value;
         }
     }
 }

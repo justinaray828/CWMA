@@ -7,31 +7,77 @@ title: Start
 
 <<StartTalking PlayersAnxiety>> You found a way to fail out of this date too.  How many has it been?
 
-<<StartTalking PlayersBrain>> Too many, I’m well aware.
+<<StartTalking PlayersBrain>> Too many.
 
-<<StartTalking PlayersAnxiety>> I toast to many more.  At least you’ve got me.  Always there to remind you how much of a stud you are.
+<<StartTalking PlayersAnxiety>> A toast to many more.  At least you’ve got me.  
+<<StartTalking PlayersAnxiety>> Always there to remind you how much of a stud you are.
 
 <<StartTalking PlayersBrain>> I think that’s the problem.
 
 <<StartTalking PlayersAnxiety>> What?
 
-<<StartTalking PlayersBrain>> I was more focused on how nervous I was than how nervous they were.  They were probably dealing with the same thing. I was too caught up in my own anxiety to focus on having a good date.
+<<StartTalking PlayersBrain>> I was so focused on my nervousness, I ignored my date's feelings.  
+<<StartTalking PlayersBrain>> They were probably dealing with the same thing. 
+<<StartTalking PlayersBrain>> I was too caught up in my own anxiety to enjoy the night.
 
-<<StartTalking PlayersAnxiety>> Yeah, but not as much as a failure as you…
+<<StartTalking PlayersAnxiety>> Or, they could have been well adjusted and normal.
 
-<<StartTalking PlayersBrain>> Maybe, Maybe Not.  I don’t know that, and you don’t either.  
+<<StartTalking PlayersBrain>> Maybe, Maybe Not. 
 
 <<StartTalking PlayersAnxiety>> But you know you failed.
 
-<<StartTalking PlayersBrain>> But what’s succeeding?  I think going on a bad date might mean I just avoided a bad relationship.
+<<StartTalking PlayersBrain>> And what’s succeeding? 
+<<StartTalking PlayersBrain>> Going on a bad date might mean I just avoided a bad relationship.
 
 <<StartTalking PlayersAnxiety>> Relationship??? When was the last time you went on a second date?
 
 <<StartTalking PlayersBrain>> I need confidence.  And I won’t have any confidence if I stay in this toxic relationship with you.
 
-<<StartTalking PlayersAnxiety>> Here’s the truth.  You wouldn’t date yourself.  You’ve spent this entire night arguing with and ridiculing yourself.  No one would find that appealing.  Until you make peace with that, you’re going to be single.
+<<StartTalking PlayersAnxiety>> Everyone's got anxiety...
+
+<<StartTalking PlayersBrain>> But not this much.
+
+<<StartTalking PlayersAnxiety>> Here’s the truth.  You wouldn’t date yourself.  
+<<StartTalking PlayersAnxiety>> You’ve spent this entire night arguing with and ridiculing yourself.  
+<<StartTalking PlayersAnxiety>> No one would find that appealing.  
+<<StartTalking PlayersAnxiety>> Until you make peace with that, you’re going to be single.
 
 <<StartTalking PlayersBrain>> Maybe, maybe not.
 
-<<StartTalking PlayersAnxiety>> Whether you think it’s true, or you think it’s a lie - you’re right. 
+<<StartTalking PlayersAnxiety>> Hedging again!
+<<StartTalking PlayersAnxiety>> You're not going to handle any of this better if you can't commit.
+
+<<StartTalking PlayersBrain>> Maybe, I'm not sure I'm ready for that..
+
+<<StartTalking PlayersAnxiety>> MAYBE, you shouldn't be dating til you figure that out.
+<<StartTalking PlayersAnxiety>> MAYBE, you wouldn't have failed so hard if you knew what you wanted.
+
+<<StartTalking PlayersBrain>> I hear you. 
+
+<<StartTalking PlayersAnxiety>> Then it's time to start
+ 
+<<StartTalking PlayersBrain>> Listening?  I've been doing that.
+<<StartTalking PlayersBrain>> It's time to start coping.
+<<StartTalking PlayersBrain>> So this weekend is dedicated to binging some tv, playing video games and relaxing.
+
+<<StartTalking PlayersAnxiety>> Sounds productive..
+
+<<StartTalking PlayersBrain>> I'm not productive now, with all this pressure, fear and self-doubt.
+<<StartTalking PlayersBrain>> I'm not on a deadline, this bad date isn't the end of the world.
+<<StartTalking PlayersBrain>> And I won't have a nervous breakdown because of this.
+
+<<StartTalking PlayersAnxiety>> Self-care, sounds like something off a magazine in the grocery checkout line.
+
+<<StartTalking PlayersBrain>> Cute, but it's hard to be anxious when I'm not stressed.
+<<StartTalking PlayersBrain>> And there will still be people to date once I'm not a mess.
+
+<<StartTalking PlayersAnxiety>> ...
+<<StartTalking PlayersAnxiety>> ...
+
+<<StartTalking PlayersBrain>> Quiet.
+
+<<StartTalking PlayersAnxiety>> ...
+<<StartTalking PlayersAnxiety>> You'll screw this up eventually.
+
+<<StartTalking PlayersBrain>> Probably, but eventually isn't something I have to worry about right now.
 ===

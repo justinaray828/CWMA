@@ -1,9 +1,9 @@
 title: Start
 ---
 <<setscene Dryve>>
-<<StartTalking Player>> I really enjoyed that, in spite of all the awkwardness!
+<<StartTalking Player>> Well.. that was a bit awkward, but I enjoyed getting to know you
 
-<<StartTalking Gina>> Actually, me too!
+<<StartTalking Gina>> Same here, We survived our first date.
 
 <<StartTalking Player>> Maybe first dates are supposed to be like that.
 

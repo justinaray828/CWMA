@@ -156,6 +156,7 @@ public class AudioManager : MonoBehaviour
             s.source.playOnAwake = s.playonawake;
         }
         s.source.pitch = pitch;
+        s.source.time = UnityEngine.Random.Range(0, s.source.clip.length);
         s.source.Play();
     }
 

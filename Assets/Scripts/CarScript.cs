@@ -73,10 +73,10 @@ public class CarScript : MonoBehaviour
 
     private void PauseVideo()
     {
-        vp.Pause();
+        //vp.Pause();
     }
     private void PlayVideo()
     {
-        vp.Play();
+        //vp.Play();
     }
 }

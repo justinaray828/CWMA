@@ -18,6 +18,7 @@ public class AudioEventHandler : MonoBehaviour
             am = Instantiate(amPrefab);
             am.name = "AudioManager";
         }
+
     }
 
     void OnEnable()
@@ -26,32 +27,48 @@ public class AudioEventHandler : MonoBehaviour
         EventManager.StartListening("Unpause", Unpause);
         EventManager.StartListening("SceneChange", SceneChange);
 
-        if (SceneManager.GetActiveScene().name == "02_1stCar")
+        string sceneName = SceneManager.GetActiveScene().name;
+
+        //If no scene music is playing, start the scene music
+        Debug.Log(am.currSceneName);
+        if (am.currSceneName == null)
+        {
+            Debug.Log("starting new scene music");
+            am.PlayMusic(sceneName);
+            am.currSceneName = sceneName;
+        }
+        else
+        {
+            Debug.Log("transitioning music");
+            am.SceneTransition(sceneName);
+        }
+
+        if (sceneName == "02_1stCar")
         {
             Setup_1stCar();
         }
         //Debug.Log(SceneManager.GetActiveScene().name);
-        if (SceneManager.GetActiveScene().name == "03_Theater")
+        if (sceneName == "03_Theater")
         {
             Setup_Theater();
         }
-        if (SceneManager.GetActiveScene().name == "04_2ndCar")
+        if (sceneName == "04_2ndCar")
         {
             Setup_2ndCar();
         }
-        if (SceneManager.GetActiveScene().name == "05_Resturant")
+        if (sceneName == "05_Resturant")
         {
             Setup_Resturant();
         }
-        if (SceneManager.GetActiveScene().name == "06_Ending_SecondDate")
+        if (sceneName == "06_Ending_SecondDate")
         {
             Setup_SecondDate();
         }
-        if (SceneManager.GetActiveScene().name == "07_Ending_Jordy")
+        if (sceneName == "07_Ending_Jordy")
         {
             Setup_Jordy();
         }
-        if (SceneManager.GetActiveScene().name == "08_Ending_Alone")
+        if (sceneName == "08_Ending_Alone")
         {
             Setup_Alone();
         }

@@ -51,7 +51,7 @@ MonoBehaviour:
     type: 2}
   fadeTimeDefault: 1
   MusicSounds:
-  - name: Scene1
+  - name: 01a_StartUp
     clip: {fileID: 8300000, guid: d5c3cb1b346374a68acdac4b42520b68, type: 3}
     output: {fileID: -8622729306382389199, guid: 8470804748a124767a11093462dd9bf8,
       type: 2}
@@ -62,7 +62,7 @@ MonoBehaviour:
     ignoreListenerPause: 0
     originalVolume: 0
     source: {fileID: 0}
-  - name: Scene2
+  - name: 02_1stCar
     clip: {fileID: 8300000, guid: 3e12951184f7e4627beb9dfa70095445, type: 3}
     output: {fileID: -8622729306382389199, guid: 8470804748a124767a11093462dd9bf8,
       type: 2}
@@ -259,6 +259,7 @@ MonoBehaviour:
     ignoreListenerPause: 0
     originalVolume: 0
     source: {fileID: 0}
+  currSceneMusName: 
 --- !u!82 &3824741328796003454
 AudioSource:
   m_ObjectHideFlags: 0

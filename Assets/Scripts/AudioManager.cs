@@ -17,6 +17,8 @@ public class AudioManager : MonoBehaviour
     public Sound[] SFXSounds;
     public static AudioManager instance;
 
+    public string currSceneName;
+
     enum SoundType { FX, Music, Both };
 
     private void Awake()
@@ -31,6 +33,9 @@ public class AudioManager : MonoBehaviour
         }
         DontDestroyOnLoad(gameObject);
 
+        currSceneName = null;
+
+        /*
         //intialize audiosource for opening music
         Sound s = Array.Find(MusicSounds, sound => sound.name == "Scene1");
         s.source = gameObject.AddComponent<AudioSource>();
@@ -44,11 +49,12 @@ public class AudioManager : MonoBehaviour
         s.source.outputAudioMixerGroup = s.output;
 
         s.originalVolume = s.volume;
+        */
 
         //sources were not truly playing on awake. Perhaps they were being created after awake had been called?
         //regardless, this manually takes 
-        if (s.playonawake)
-            s.source.Play();
+        //if (s.playonawake)
+        //s.source.Play();
     }
 
     public void SetMasterVolume(float vol)
@@ -92,29 +98,17 @@ public class AudioManager : MonoBehaviour
         return;
     }
 
-    public void SceneTransition(int nextSceneNumber)
+    public void SceneTransition(string nextSceneName)
     {
-        string nextSoundName = "Scene" + nextSceneNumber;
-        string currentSoundName = "Scene" + (nextSceneNumber - 1);
+        Sound nextS = GetSound(nextSceneName, SoundType.Music);
+        Sound currentS = GetSound(currSceneName, SoundType.Music);
 
-        Sound nextS = Array.Find(MusicSounds, sound => sound.name == nextSoundName);
-        if (nextS == null)
-        {
-            Debug.LogWarning("Sound: " + nextSoundName + " was not found!");
-            return;
-        }
-        Sound currentS = Array.Find(MusicSounds, sound => sound.name == currentSoundName);
-
-        nextS.source = gameObject.AddComponent<AudioSource>();
-        nextS.source.clip = nextS.clip;
-        nextS.source.volume = nextS.volume;
-        nextS.source.outputAudioMixerGroup = nextS.output;
-        nextS.source.pitch = nextS.pitch;
-        nextS.source.loop = nextS.loop;
-        nextS.source.playOnAwake = nextS.playonawake;
+        MakeSource(nextS);
 
         StartCoroutine(FadeIn(nextS.source, fadeTimeDefault));
         StartCoroutine(FadeOut(currentS.source, fadeTimeDefault));
+
+        currSceneName = nextSceneName;
 
         return;
     }

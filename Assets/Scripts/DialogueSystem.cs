@@ -241,6 +241,7 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
                 break;
 
             case "setscene innerDate":
+                EventManager.TriggerEvent("EnterBrainRoom");
                 cameraTransition.ZoomIn();
                 inBrainRoom = true;
                 break;
@@ -268,6 +269,7 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
                 break;
             
             default:
+                if (inBrainRoom) { EventManager.TriggerEvent("ExitBrainRoom"); }
                 cameraTransition.ZoomOut();
                 inBrainRoom = false;
                 break;

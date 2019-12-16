@@ -18,7 +18,6 @@ public class AudioEventHandler : MonoBehaviour
             am = Instantiate(amPrefab);
             am.name = "AudioManager";
         }
-
     }
 
     void OnEnable()
@@ -30,16 +29,13 @@ public class AudioEventHandler : MonoBehaviour
         string sceneName = SceneManager.GetActiveScene().name;
 
         //If no scene music is playing, start the scene music
-        Debug.Log(am.currSceneName);
         if (am.currSceneName == null)
         {
-            Debug.Log("starting new scene music");
             am.PlayMusic(sceneName);
             am.currSceneName = sceneName;
         }
         else
         {
-            Debug.Log("transitioning music");
             am.SceneTransition(sceneName);
         }
 
@@ -149,11 +145,11 @@ public class AudioEventHandler : MonoBehaviour
 
     private void BrainOpen()
     {
-        am.Play("brain_open");
+        am.PlayFX("brain_open");
     }
     private void BrainClose()
     {
-        am.Play("brain_close");
+        am.PlayFX("brain_close");
     }
 
     private void EnterBrainRoom()

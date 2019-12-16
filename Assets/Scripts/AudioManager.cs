@@ -33,28 +33,9 @@ public class AudioManager : MonoBehaviour
         }
         DontDestroyOnLoad(gameObject);
 
+        //since this object is just waking up, lets instantiate the variable.
+        //Event Manager will set scene name.
         currSceneName = null;
-
-        /*
-        //intialize audiosource for opening music
-        Sound s = Array.Find(MusicSounds, sound => sound.name == "Scene1");
-        s.source = gameObject.AddComponent<AudioSource>();
-        s.source.clip = s.clip;
-
-        s.source.volume = s.volume;
-        s.source.pitch = s.pitch;
-        s.source.loop = s.loop;
-        s.source.playOnAwake = s.playonawake;
-
-        s.source.outputAudioMixerGroup = s.output;
-
-        s.originalVolume = s.volume;
-        */
-
-        //sources were not truly playing on awake. Perhaps they were being created after awake had been called?
-        //regardless, this manually takes 
-        //if (s.playonawake)
-        //s.source.Play();
     }
 
     public void SetMasterVolume(float vol)

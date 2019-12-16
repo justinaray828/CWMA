@@ -96,6 +96,8 @@ public class AudioEventHandler : MonoBehaviour
     private void Setup_Theater()
     {
         am.FadeInSFX("theater_lobby_loop");
+        EventManager.StartListening("EnterBrainRoomQuick",EnterBrainRoomQuick);
+        EventManager.StartListening("ExitBrainRoom", ExitBrainRoom);
     }
 
     private void Setup_2ndCar()
@@ -161,6 +163,11 @@ public class AudioEventHandler : MonoBehaviour
     {
         am.SetBrainroomSnapshot(false, 2f);
         am.SetSourceOutput("blip", "SFX");
+    }
+    private void EnterBrainRoomQuick()
+    {
+        am.SetBrainroomSnapshot(true, 0f);
+        am.SetSourceOutput("blip", "Headroom");
     }
 
     private void Pause()

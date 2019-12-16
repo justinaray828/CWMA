@@ -237,7 +237,9 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
         switch (command.text)
         {
             case "setscene innerDateCut":
+                EventManager.TriggerEvent("EnterBrainRoomQuick");
                 cameraTransition.ToggleBrainRoomCut();
+                inBrainRoom = true;
                 break;
 
             case "setscene innerDate":

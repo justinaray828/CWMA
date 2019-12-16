@@ -12,7 +12,7 @@ public class ResturantAnimation : MonoBehaviour
     void Start()
     {
         restaurantAnimator = GetComponent<Animator>();
-        SetReaLeavesBool(true);
+        restaurantAnimator.SetBool("ReaLeaving", true); ;
     }
 
     [YarnCommand("GinaLeaves")]
@@ -41,11 +41,14 @@ public class ResturantAnimation : MonoBehaviour
 
     private void SetGinaLeavesBool(bool boolean)
     {
+        EventManager.TriggerEvent("GinaWalking");
         restaurantAnimator.SetBool("GinaLeaving", boolean);
     }
 
     private void SetReaLeavesBool(bool boolean)
     {
+        if (boolean) { EventManager.TriggerEvent("ReaWalking"); }
+        else { EventManager.TriggerEvent("ReaWalkingAway"); }
         restaurantAnimator.SetBool("ReaLeaving", boolean);
     }
 }

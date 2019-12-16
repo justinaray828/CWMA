@@ -99,7 +99,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 9f21e3fc197ef404f8f09327630a5aa7, type: 3}
     output: {fileID: -8622729306382389199, guid: 8470804748a124767a11093462dd9bf8,
       type: 2}
-    volume: 1
+    volume: 0.32
     pitch: 1
     loop: 1
     playonawake: 0
@@ -289,6 +289,39 @@ MonoBehaviour:
     volume: 0.28
     pitch: 1
     loop: 1
+    playonawake: 0
+    ignoreListenerPause: 0
+    originalVolume: 0
+    source: {fileID: 0}
+  - name: footsteps1
+    clip: {fileID: 8300000, guid: 68cb2c36b751848ecb27abce6a33e2a9, type: 3}
+    output: {fileID: 6065668692900454425, guid: 8470804748a124767a11093462dd9bf8,
+      type: 2}
+    volume: 0.457
+    pitch: 1
+    loop: 0
+    playonawake: 0
+    ignoreListenerPause: 0
+    originalVolume: 0
+    source: {fileID: 0}
+  - name: footsteps2
+    clip: {fileID: 8300000, guid: 1db546e0f0670430ca5c01858b8cd990, type: 3}
+    output: {fileID: 6065668692900454425, guid: 8470804748a124767a11093462dd9bf8,
+      type: 2}
+    volume: 0.456
+    pitch: 1
+    loop: 0
+    playonawake: 0
+    ignoreListenerPause: 0
+    originalVolume: 0
+    source: {fileID: 0}
+  - name: footsteps1_2
+    clip: {fileID: 8300000, guid: 35aa872e2df354e668764cb9a002adc8, type: 3}
+    output: {fileID: 6065668692900454425, guid: 8470804748a124767a11093462dd9bf8,
+      type: 2}
+    volume: 0.456
+    pitch: 1
+    loop: 0
     playonawake: 0
     ignoreListenerPause: 0
     originalVolume: 0

@@ -78,8 +78,12 @@ public class AudioEventHandler : MonoBehaviour
         EventManager.StopListening("Car_stop", Car_stop);
         EventManager.StopListening("EnterBrainRoom", EnterBrainRoom);
         EventManager.StopListening("ExitBrainRoom", ExitBrainRoom);
+        EventManager.StopListening("EnterBrainRoomQuick", EnterBrainRoomQuick);
         EventManager.StopListening("brainOpen", BrainOpen);
         EventManager.StopListening("brainClose", BrainClose);
+        EventManager.StopListening("GinaWalking", GinaWalking);
+        EventManager.StopListening("ReaWalking", ReaWalking);
+        EventManager.StopListening("ReaWalkingAway", ReaWalkingAway);
     }
 
     private void Setup_1stCar()
@@ -126,6 +130,11 @@ public class AudioEventHandler : MonoBehaviour
     private void Setup_Resturant()
     {
         am.FadeInSFX("restaurant_loop");
+        EventManager.StartListening("EnterBrainRoomQuick", EnterBrainRoomQuick);
+        EventManager.StartListening("ExitBrainRoom", ExitBrainRoom);
+        EventManager.StartListening("GinaWalking", GinaWalking);
+        EventManager.StartListening("ReaWalking", ReaWalking);
+        EventManager.StartListening("ReaWalkingAway", ReaWalkingAway);
     }
 
     private void SceneChange()
@@ -152,6 +161,19 @@ public class AudioEventHandler : MonoBehaviour
     private void BrainClose()
     {
         am.PlayFX("brain_close");
+    }
+
+    private void GinaWalking()
+    {
+        am.PlayFX("footsteps2");
+    }
+    private void ReaWalking()
+    {
+        am.PlayFX("footsteps1");
+    }
+    private void ReaWalkingAway()
+    {
+        am.PlayFX("footsteps1_2");
     }
 
     private void EnterBrainRoom()

@@ -29,51 +29,36 @@ public class AudioEventHandler : MonoBehaviour
 
         string sceneName = SceneManager.GetActiveScene().name;
 
-        Debug.Log("scene name: " +sceneName);
         //If no scene music is playing, start the scene music
-        Debug.Log("Is music playing: " + am.IsMusicPlaying());
-        if (!am.IsMusicPlaying())
-        {
-            Debug.Log("fresh start");
-            am.PlayMusic(sceneName);
-        }
-        else
-        {
-            Debug.Log("transition");
-            am.SceneTransition(sceneName);
-        }
+        if (!am.IsMusicPlaying()) { am.PlayMusic(sceneName); }
+        else { am.SceneTransition(sceneName); }
 
-        if (sceneName == "01a_StartUp")
+        switch (sceneName)
         {
-            Setup_StartUp();
-        }
-        if (sceneName == "02_1stCar")
-        {
-            Setup_1stCar();
-        }
-        if (sceneName == "03_Theater")
-        {
-            Setup_Theater();
-        }
-        if (sceneName == "04_2ndCar")
-        {
-            Setup_2ndCar();
-        }
-        if (sceneName == "05_Resturant")
-        {
-            Setup_Resturant();
-        }
-        if (sceneName == "06_Ending_SecondDate")
-        {
-            Setup_SecondDate();
-        }
-        if (sceneName == "07_Ending_Jordy")
-        {
-            Setup_Jordy();
-        }
-        if (sceneName == "08_Ending_Alone")
-        {
-            Setup_Alone();
+            case "01a_StartUp":
+                Setup_StartUp();
+                break;
+            case "02_1stCar":
+                Setup_1stCar();
+                break;
+            case "03_Theater":
+                Setup_Theater();
+                break;
+            case "04_2ndCar":
+                Setup_2ndCar();
+                break;
+            case "05_Resturant":
+                Setup_Resturant();
+                break;
+            case "06_Ending_SecondDate":
+                Setup_SecondDate();
+                break;
+            case "07_Ending_Jordy":
+                Setup_Jordy();
+                break;
+            case "08_Ending_Alone":
+                Setup_Alone();
+                break;
         }
     }
 

@@ -66,7 +66,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 3e12951184f7e4627beb9dfa70095445, type: 3}
     output: {fileID: -8622729306382389199, guid: 8470804748a124767a11093462dd9bf8,
       type: 2}
-    volume: 0.56
+    volume: 0.46
     pitch: 1
     loop: 1
     playonawake: 0

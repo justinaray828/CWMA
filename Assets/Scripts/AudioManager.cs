@@ -58,14 +58,8 @@ public class AudioManager : MonoBehaviour
 
     public void SetBrainroomSnapshot(bool state, float transitionTime = 1f)
     {
-        if(state == false)
-        {
-            def.TransitionTo(transitionTime);
-        }
-        else
-        {
-            inBrainRoom.TransitionTo(transitionTime);
-        }
+        if(state == false) { def.TransitionTo(transitionTime); }
+        else { inBrainRoom.TransitionTo(transitionTime); }
     }
 
     public void SetSourceOutput(string soundName, string groupName)
@@ -79,7 +73,7 @@ public class AudioManager : MonoBehaviour
                 return;
             }
         }
-        Debug.Log("could not find AudioMixerGroup name: " + groupName);
+        Debug.LogWarning("could not find AudioMixerGroup name: " + groupName);
 
         return;
     }
@@ -91,7 +85,7 @@ public class AudioManager : MonoBehaviour
 
         AudioSource nextSource = GetSource(nextS);
 
-        StartCoroutine(FadeIn(nextSource, fadeTimeDefault));
+        StartCoroutine(FadeIn(nextSource, fadeTimeDefault, nextS.volume));
         StartCoroutine(FadeOutAndUnload(currentS, fadeTimeDefault));
 
         currMusicName = nextSceneName;
@@ -116,7 +110,6 @@ public class AudioManager : MonoBehaviour
 
     public void LoadMusic(string sceneName)
     {
-        Debug.Log("loading audio data for: " + sceneName);
         Sound sound = GetSound(sceneName);
         sound.clip.LoadAudioData();
     }

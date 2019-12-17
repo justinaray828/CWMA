@@ -326,6 +326,28 @@ MonoBehaviour:
     ignoreListenerPause: 0
     originalVolume: 0
     source: {fileID: 0}
+  - name: woodblock_1
+    clip: {fileID: 8300000, guid: c486c77bdb44b446899750f7db807a16, type: 3}
+    output: {fileID: 6065668692900454425, guid: 8470804748a124767a11093462dd9bf8,
+      type: 2}
+    volume: 0.701
+    pitch: 1
+    loop: 0
+    playonawake: 0
+    ignoreListenerPause: 0
+    originalVolume: 0
+    source: {fileID: 0}
+  - name: woodblock_2
+    clip: {fileID: 8300000, guid: 32a5dcec7bdf64aefb5dcd495fdae0ae, type: 3}
+    output: {fileID: 6065668692900454425, guid: 8470804748a124767a11093462dd9bf8,
+      type: 2}
+    volume: 0.702
+    pitch: 1
+    loop: 0
+    playonawake: 0
+    ignoreListenerPause: 0
+    originalVolume: 0
+    source: {fileID: 0}
   currSceneName: 
 --- !u!82 &3824741328796003454
 AudioSource:

@@ -140,6 +140,11 @@ public class AudioEventHandler : MonoBehaviour
         EventManager.StartListening("ReaWalkingAway", ReaWalkingAway);
     }
 
+    public void ButtonHover()
+    {
+        am.PlayFX("woodblock_"+UnityEngine.Random.Range(1, 2), 0.1f);
+    }
+
     private void SceneChange()
     {
         am.SceneEnd();
@@ -193,16 +198,22 @@ public class AudioEventHandler : MonoBehaviour
     {
         am.SetBrainroomSnapshot(true, 2f);
         am.SetSourceOutput("blip", "Headroom");
+        am.SetSourceOutput("woodblock_1", "Headroom");
+        am.SetSourceOutput("woodblock_2", "Headroom");
     }
     private void ExitBrainRoom()
     {
         am.SetBrainroomSnapshot(false, 2f);
         am.SetSourceOutput("blip", "SFX");
+        am.SetSourceOutput("woodblock_1", "SFX");
+        am.SetSourceOutput("woodblock_2", "SFX");
     }
     private void EnterBrainRoomQuick()
     {
         am.SetBrainroomSnapshot(true, 0f);
         am.SetSourceOutput("blip", "Headroom");
+        am.SetSourceOutput("woodblock_1", "Headroom");
+        am.SetSourceOutput("woodblock_2", "Headroom");
     }
 
     private void Pause()

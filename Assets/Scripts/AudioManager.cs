@@ -70,7 +70,7 @@ public class AudioManager : MonoBehaviour
             AudioMixerGroup ag = Array.Find(aga, group => group.name == groupName);
             if(ag != null)
             {
-                GetSound(soundName).source.outputAudioMixerGroup = ag;
+                GetSource(GetSound(soundName)).outputAudioMixerGroup = ag;
                 return;
             }
         }
@@ -150,6 +150,14 @@ public class AudioManager : MonoBehaviour
         if(currentS != null) { fxSource.PlayOneShot(currentS.clip, currentS.volume); }
     }
 
+    public void PlayFX(string s, float randomPitch)
+    {
+        Sound currentS = GetSound(s, SoundType.FX);
+        if (currentS.source == null) { MakeSource(currentS); }
+        currentS.source.pitch = currentS.pitch * (1 + UnityEngine.Random.Range(-randomPitch / 2f, randomPitch / 2f));
+        currentS.source.Play();
+    }
+
     [YarnCommand("Play")]
     public void Play(string s)
     {
@@ -207,6 +215,23 @@ public class AudioManager : MonoBehaviour
             s.source.ignoreListenerPause = s.ignoreListenerPause;
         }
         return;
+    }
+
+    private AudioSource GetSource(Sound s)
+    {
+        if (s.source == null)
+        {
+            s.source = gameObject.AddComponent<AudioSource>();
+            s.source.clip = s.clip;
+            s.source.volume = s.volume;
+            s.source.outputAudioMixerGroup = s.output;
+            s.source.pitch = s.pitch;
+            s.source.loop = s.loop;
+            s.source.playOnAwake = s.playonawake;
+            s.source.ignoreListenerPause = s.ignoreListenerPause;
+        }
+
+        return s.source;
     }
 
     private Sound GetSound(string str, SoundType type = SoundType.Both)

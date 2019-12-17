@@ -133,6 +133,7 @@ public class AudioManager : MonoBehaviour
             s.source.loop = s.loop;
             s.source.playOnAwake = s.playonawake;
         }
+        s.volume = s.originalVolume;
         s.source.pitch = pitch;
         s.source.time = UnityEngine.Random.Range(0, s.source.clip.length);
         s.source.Play();
@@ -145,7 +146,8 @@ public class AudioManager : MonoBehaviour
         {
             Debug.Log("cannot stop blip, blip source has not been initialzied");
         }
-        s.source.Stop();
+        StartCoroutine(FadeOutBlip(s.source,0.04f));
+        //s.source.Stop();
     }
 
     [YarnCommand("PlayFX")]
@@ -282,6 +284,18 @@ public class AudioManager : MonoBehaviour
         }
         audioSource.Stop();
         audioSource.clip.UnloadAudioData();
+    }
+
+    public IEnumerator FadeOutBlip(AudioSource audioSource, float FadeTime)
+    {
+        float startVolume = audioSource.volume;
+        while (audioSource.volume > 0)
+        {
+            audioSource.volume -= startVolume * Time.deltaTime / FadeTime;
+            yield return null;
+        }
+        audioSource.Stop();
+        audioSource.volume = startVolume;
     }
 
 }

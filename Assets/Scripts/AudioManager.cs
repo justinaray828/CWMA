@@ -17,6 +17,8 @@ public class AudioManager : MonoBehaviour
     public Sound[] SFXSounds;
     public static AudioManager instance;
 
+    public string currMusicName;
+
     enum SoundType { FX, Music, Both };
 
     private void Awake()
@@ -30,25 +32,15 @@ public class AudioManager : MonoBehaviour
             return;
         }
         DontDestroyOnLoad(gameObject);
+    }
 
-        //intialize audiosource for opening music
-        Sound s = Array.Find(MusicSounds, sound => sound.name == "Scene1");
-        s.source = gameObject.AddComponent<AudioSource>();
-        s.source.clip = s.clip;
-
-        s.source.volume = s.volume;
-        s.source.pitch = s.pitch;
-        s.source.loop = s.loop;
-        s.source.playOnAwake = s.playonawake;
-
-        s.source.outputAudioMixerGroup = s.output;
-
-        s.originalVolume = s.volume;
-
-        //sources were not truly playing on awake. Perhaps they were being created after awake had been called?
-        //regardless, this manually takes 
-        if (s.playonawake)
-            s.source.Play();
+    public bool IsMusicPlaying()
+    {
+        foreach (Sound s in MusicSounds)
+            if(s.source != null) { 
+                if (s.source.isPlaying) { return true; }
+            }
+        return false;
     }
 
     public void SetMasterVolume(float vol)
@@ -66,14 +58,8 @@ public class AudioManager : MonoBehaviour
 
     public void SetBrainroomSnapshot(bool state, float transitionTime = 1f)
     {
-        if(state == false)
-        {
-            def.TransitionTo(transitionTime);
-        }
-        else
-        {
-            inBrainRoom.TransitionTo(transitionTime);
-        }
+        if(state == false) { def.TransitionTo(transitionTime); }
+        else { inBrainRoom.TransitionTo(transitionTime); }
     }
 
     public void SetSourceOutput(string soundName, string groupName)
@@ -83,57 +69,49 @@ public class AudioManager : MonoBehaviour
             AudioMixerGroup ag = Array.Find(aga, group => group.name == groupName);
             if(ag != null)
             {
-                GetSound(soundName).source.outputAudioMixerGroup = ag;
+                GetSource(GetSound(soundName)).outputAudioMixerGroup = ag;
                 return;
             }
         }
-        Debug.Log("could not find AudioMixerGroup name: " + groupName);
+        Debug.LogWarning("could not find AudioMixerGroup name: " + groupName);
 
         return;
     }
 
-    public void SceneTransition(int nextSceneNumber)
+    public void SceneTransition(string nextSceneName)
     {
-        string nextSoundName = "Scene" + nextSceneNumber;
-        string currentSoundName = "Scene" + (nextSceneNumber - 1);
+        Sound nextS = GetSound(nextSceneName, SoundType.Music);
+        Sound currentS = GetSound(currMusicName, SoundType.Music);
 
-        Sound nextS = Array.Find(MusicSounds, sound => sound.name == nextSoundName);
-        if (nextS == null)
-        {
-            Debug.LogWarning("Sound: " + nextSoundName + " was not found!");
-            return;
-        }
-        Sound currentS = Array.Find(MusicSounds, sound => sound.name == currentSoundName);
+        AudioSource nextSource = GetSource(nextS);
 
-        nextS.source = gameObject.AddComponent<AudioSource>();
-        nextS.source.clip = nextS.clip;
-        nextS.source.volume = nextS.volume;
-        nextS.source.outputAudioMixerGroup = nextS.output;
-        nextS.source.pitch = nextS.pitch;
-        nextS.source.loop = nextS.loop;
-        nextS.source.playOnAwake = nextS.playonawake;
+        StartCoroutine(FadeIn(nextSource, fadeTimeDefault, nextS.volume));
+        StartCoroutine(FadeOutAndUnload(currentS, fadeTimeDefault));
 
-        StartCoroutine(FadeIn(nextS.source, fadeTimeDefault));
-        StartCoroutine(FadeOut(currentS.source, fadeTimeDefault));
+        currMusicName = nextSceneName;
 
         return;
     }
 
     public void SceneEnd()
     {
-        Debug.Log("in sceneTransition");
         foreach (Sound s in SFXSounds)
         {
             if (s.source != null)
             {
                 if (s.source.isPlaying)
                 {
-                    Debug.Log("stopping: " + s.name);
                     StartCoroutine(FadeOut(s.source, fadeTimeDefault));
                 }
             }
         }
         return;
+    }
+
+    public void LoadMusic(string sceneName)
+    {
+        Sound sound = GetSound(sceneName);
+        sound.clip.LoadAudioData();
     }
 
     public void PlayPop()
@@ -155,6 +133,7 @@ public class AudioManager : MonoBehaviour
             s.source.loop = s.loop;
             s.source.playOnAwake = s.playonawake;
         }
+        s.volume = s.originalVolume;
         s.source.pitch = pitch;
         s.source.time = UnityEngine.Random.Range(0, s.source.clip.length);
         s.source.Play();
@@ -167,7 +146,8 @@ public class AudioManager : MonoBehaviour
         {
             Debug.Log("cannot stop blip, blip source has not been initialzied");
         }
-        s.source.Stop();
+        StartCoroutine(FadeOutBlip(s.source,0.04f));
+        //s.source.Stop();
     }
 
     [YarnCommand("PlayFX")]
@@ -175,6 +155,19 @@ public class AudioManager : MonoBehaviour
     {
         Sound currentS = GetSound(s, SoundType.FX);
         if(currentS != null) { fxSource.PlayOneShot(currentS.clip, currentS.volume); }
+    }
+
+    /// <summary>
+    /// Play sound effect at random pitch
+    /// </summary>
+    /// <param name="s">Name of sound</param>
+    /// <param name="randomPitch">Total range of randomness. ex) 0.2f = +-0.1f in either direction</param>
+    public void PlayFX(string s, float randomPitch)
+    {
+        Sound currentS = GetSound(s, SoundType.FX);
+        if (currentS.source == null) { MakeSource(currentS); }
+        currentS.source.pitch = currentS.pitch * (1 + UnityEngine.Random.Range(-randomPitch / 2f, randomPitch / 2f));
+        currentS.source.Play();
     }
 
     [YarnCommand("Play")]
@@ -190,6 +183,7 @@ public class AudioManager : MonoBehaviour
         Sound currentS = GetSound(s, SoundType.Music);
         if (currentS.source == null) { MakeSource(currentS); }
         currentS.source.Play();
+        currMusicName = s;
     }
 
     public void Stop(string name)
@@ -202,11 +196,7 @@ public class AudioManager : MonoBehaviour
     public void FadeInSFX(string name)
     {
         Sound s = GetSound(name);
-        if (s.source == null)
-        {
-            MakeSource(s);
-        }
-        StartCoroutine(FadeIn(s.source, fadeTimeDefault, s.volume));
+        StartCoroutine(FadeIn(GetSource(s), fadeTimeDefault, s.volume));
     }
 
     public void FadeOutSFX(string name)
@@ -234,6 +224,12 @@ public class AudioManager : MonoBehaviour
             s.source.ignoreListenerPause = s.ignoreListenerPause;
         }
         return;
+    }
+
+    private AudioSource GetSource(Sound s)
+    {
+        if (s.source == null) { MakeSource(s); }
+        return s.source;
     }
 
     private Sound GetSound(string str, SoundType type = SoundType.Both)
@@ -275,6 +271,31 @@ public class AudioManager : MonoBehaviour
             audioSource.volume += Time.deltaTime / FadeTime;
             yield return null;
         }
+    }
+
+    public IEnumerator FadeOutAndUnload(Sound sound, float FadeTime)
+    {
+        AudioSource audioSource = GetSource(sound);
+        float startVolume = audioSource.volume;
+        while (audioSource.volume > 0)
+        {
+            audioSource.volume -= startVolume * Time.deltaTime / FadeTime;
+            yield return null;
+        }
+        audioSource.Stop();
+        audioSource.clip.UnloadAudioData();
+    }
+
+    public IEnumerator FadeOutBlip(AudioSource audioSource, float FadeTime)
+    {
+        float startVolume = audioSource.volume;
+        while (audioSource.volume > 0)
+        {
+            audioSource.volume -= startVolume * Time.deltaTime / FadeTime;
+            yield return null;
+        }
+        audioSource.Stop();
+        audioSource.volume = startVolume;
     }
 
 }

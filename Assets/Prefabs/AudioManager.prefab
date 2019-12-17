@@ -51,7 +51,7 @@ MonoBehaviour:
     type: 2}
   fadeTimeDefault: 1
   MusicSounds:
-  - name: Scene1
+  - name: 01a_StartUp
     clip: {fileID: 8300000, guid: d5c3cb1b346374a68acdac4b42520b68, type: 3}
     output: {fileID: -8622729306382389199, guid: 8470804748a124767a11093462dd9bf8,
       type: 2}
@@ -62,7 +62,29 @@ MonoBehaviour:
     ignoreListenerPause: 0
     originalVolume: 0
     source: {fileID: 0}
-  - name: Scene2
+  - name: 02_1stCar
+    clip: {fileID: 8300000, guid: 3e12951184f7e4627beb9dfa70095445, type: 3}
+    output: {fileID: -8622729306382389199, guid: 8470804748a124767a11093462dd9bf8,
+      type: 2}
+    volume: 0.46
+    pitch: 1
+    loop: 1
+    playonawake: 0
+    ignoreListenerPause: 0
+    originalVolume: 0
+    source: {fileID: 0}
+  - name: 03_Theater
+    clip: {fileID: 8300000, guid: d5c3cb1b346374a68acdac4b42520b68, type: 3}
+    output: {fileID: -8622729306382389199, guid: 8470804748a124767a11093462dd9bf8,
+      type: 2}
+    volume: 0.81
+    pitch: 1
+    loop: 1
+    playonawake: 0
+    ignoreListenerPause: 0
+    originalVolume: 0
+    source: {fileID: 0}
+  - name: 04_2ndCar
     clip: {fileID: 8300000, guid: 3e12951184f7e4627beb9dfa70095445, type: 3}
     output: {fileID: -8622729306382389199, guid: 8470804748a124767a11093462dd9bf8,
       type: 2}
@@ -73,33 +95,11 @@ MonoBehaviour:
     ignoreListenerPause: 0
     originalVolume: 0
     source: {fileID: 0}
-  - name: Scene3
+  - name: 05_Resturant
     clip: {fileID: 8300000, guid: 9f21e3fc197ef404f8f09327630a5aa7, type: 3}
     output: {fileID: -8622729306382389199, guid: 8470804748a124767a11093462dd9bf8,
       type: 2}
-    volume: 1
-    pitch: 1
-    loop: 1
-    playonawake: 0
-    ignoreListenerPause: 0
-    originalVolume: 0
-    source: {fileID: 0}
-  - name: Scene4
-    clip: {fileID: 8300000, guid: 3e12951184f7e4627beb9dfa70095445, type: 3}
-    output: {fileID: -8622729306382389199, guid: 8470804748a124767a11093462dd9bf8,
-      type: 2}
-    volume: 1
-    pitch: 1
-    loop: 1
-    playonawake: 0
-    ignoreListenerPause: 0
-    originalVolume: 0
-    source: {fileID: 0}
-  - name: Scene5
-    clip: {fileID: 8300000, guid: 9f21e3fc197ef404f8f09327630a5aa7, type: 3}
-    output: {fileID: -8622729306382389199, guid: 8470804748a124767a11093462dd9bf8,
-      type: 2}
-    volume: 1
+    volume: 0.32
     pitch: 1
     loop: 1
     playonawake: 0
@@ -107,6 +107,39 @@ MonoBehaviour:
     originalVolume: 0
     source: {fileID: 0}
   - name: PauseMusic
+    clip: {fileID: 8300000, guid: 9f21e3fc197ef404f8f09327630a5aa7, type: 3}
+    output: {fileID: -8622729306382389199, guid: 8470804748a124767a11093462dd9bf8,
+      type: 2}
+    volume: 0.23
+    pitch: 1
+    loop: 1
+    playonawake: 0
+    ignoreListenerPause: 1
+    originalVolume: 0
+    source: {fileID: 0}
+  - name: 06_Ending_SecondDate
+    clip: {fileID: 8300000, guid: 9f21e3fc197ef404f8f09327630a5aa7, type: 3}
+    output: {fileID: -8622729306382389199, guid: 8470804748a124767a11093462dd9bf8,
+      type: 2}
+    volume: 0.23
+    pitch: 1
+    loop: 1
+    playonawake: 0
+    ignoreListenerPause: 1
+    originalVolume: 0
+    source: {fileID: 0}
+  - name: 07_Ending_Jordy
+    clip: {fileID: 8300000, guid: 9f21e3fc197ef404f8f09327630a5aa7, type: 3}
+    output: {fileID: -8622729306382389199, guid: 8470804748a124767a11093462dd9bf8,
+      type: 2}
+    volume: 0.23
+    pitch: 1
+    loop: 1
+    playonawake: 0
+    ignoreListenerPause: 1
+    originalVolume: 0
+    source: {fileID: 0}
+  - name: 08_Ending_Alone
     clip: {fileID: 8300000, guid: 9f21e3fc197ef404f8f09327630a5aa7, type: 3}
     output: {fileID: -8622729306382389199, guid: 8470804748a124767a11093462dd9bf8,
       type: 2}
@@ -166,7 +199,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: eaf071e08d94b470eb3c7c98c52ccb6d, type: 3}
     output: {fileID: 6065668692900454425, guid: 8470804748a124767a11093462dd9bf8,
       type: 2}
-    volume: 1
+    volume: 0.86
     pitch: 1
     loop: 0
     playonawake: 0
@@ -177,7 +210,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 7c28155e67c82461481760b877ee8b29, type: 3}
     output: {fileID: 6065668692900454425, guid: 8470804748a124767a11093462dd9bf8,
       type: 2}
-    volume: 1
+    volume: 0.86
     pitch: 1
     loop: 0
     playonawake: 0
@@ -188,7 +221,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: c0b0bb26b4cd14a9498a7027672a0d24, type: 3}
     output: {fileID: 6065668692900454425, guid: 8470804748a124767a11093462dd9bf8,
       type: 2}
-    volume: 1
+    volume: 0.92
     pitch: 1
     loop: 0
     playonawake: 0
@@ -199,7 +232,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: c22645a0465b24827a0cc9529df35950, type: 3}
     output: {fileID: 6065668692900454425, guid: 8470804748a124767a11093462dd9bf8,
       type: 2}
-    volume: 1
+    volume: 0.79
     pitch: 1
     loop: 1
     playonawake: 0
@@ -230,7 +263,8 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: theater_lobby_loop
     clip: {fileID: 8300000, guid: 393cab7eae5294670a2da31234f643ac, type: 3}
-    output: {fileID: 966205321842030654, guid: 8470804748a124767a11093462dd9bf8, type: 2}
+    output: {fileID: 6065668692900454425, guid: 8470804748a124767a11093462dd9bf8,
+      type: 2}
     volume: 0.19
     pitch: 1
     loop: 1
@@ -259,6 +293,62 @@ MonoBehaviour:
     ignoreListenerPause: 0
     originalVolume: 0
     source: {fileID: 0}
+  - name: footsteps1
+    clip: {fileID: 8300000, guid: 68cb2c36b751848ecb27abce6a33e2a9, type: 3}
+    output: {fileID: 6065668692900454425, guid: 8470804748a124767a11093462dd9bf8,
+      type: 2}
+    volume: 0.457
+    pitch: 1
+    loop: 0
+    playonawake: 0
+    ignoreListenerPause: 0
+    originalVolume: 0
+    source: {fileID: 0}
+  - name: footsteps2
+    clip: {fileID: 8300000, guid: 1db546e0f0670430ca5c01858b8cd990, type: 3}
+    output: {fileID: 6065668692900454425, guid: 8470804748a124767a11093462dd9bf8,
+      type: 2}
+    volume: 0.456
+    pitch: 1
+    loop: 0
+    playonawake: 0
+    ignoreListenerPause: 0
+    originalVolume: 0
+    source: {fileID: 0}
+  - name: footsteps1_2
+    clip: {fileID: 8300000, guid: 35aa872e2df354e668764cb9a002adc8, type: 3}
+    output: {fileID: 6065668692900454425, guid: 8470804748a124767a11093462dd9bf8,
+      type: 2}
+    volume: 0.456
+    pitch: 1
+    loop: 0
+    playonawake: 0
+    ignoreListenerPause: 0
+    originalVolume: 0
+    source: {fileID: 0}
+  - name: woodblock_1
+    clip: {fileID: 8300000, guid: c486c77bdb44b446899750f7db807a16, type: 3}
+    output: {fileID: 6065668692900454425, guid: 8470804748a124767a11093462dd9bf8,
+      type: 2}
+    volume: 0.701
+    pitch: 1
+    loop: 0
+    playonawake: 0
+    ignoreListenerPause: 0
+    originalVolume: 0
+    source: {fileID: 0}
+  - name: woodblock_2
+    clip: {fileID: 8300000, guid: 32a5dcec7bdf64aefb5dcd495fdae0ae, type: 3}
+    output: {fileID: 6065668692900454425, guid: 8470804748a124767a11093462dd9bf8,
+      type: 2}
+    volume: 0.702
+    pitch: 1
+    loop: 0
+    playonawake: 0
+    ignoreListenerPause: 0
+    originalVolume: 0
+    source: {fileID: 0}
+  currMusicName: 
 --- !u!82 &3824741328796003454
 AudioSource:
   m_ObjectHideFlags: 0

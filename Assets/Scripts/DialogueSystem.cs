@@ -208,7 +208,7 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
             yield return null;
         }
 
-        audioM.PlayPop();
+        EventManager.TriggerEvent("ButtonClicked");
 
         // Hide all the buttons
         foreach (var button in optionButtons)
@@ -237,10 +237,13 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
         switch (command.text)
         {
             case "setscene innerDateCut":
+                EventManager.TriggerEvent("EnterBrainRoomQuick");
                 cameraTransition.ToggleBrainRoomCut();
+                inBrainRoom = true;
                 break;
 
             case "setscene innerDate":
+                EventManager.TriggerEvent("EnterBrainRoom");
                 cameraTransition.ZoomIn();
                 inBrainRoom = true;
                 break;
@@ -268,6 +271,7 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
                 break;
             
             default:
+                if (inBrainRoom) { EventManager.TriggerEvent("ExitBrainRoom"); }
                 cameraTransition.ZoomOut();
                 inBrainRoom = false;
                 break;

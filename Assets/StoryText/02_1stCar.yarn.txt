@@ -96,7 +96,6 @@ title: Start
 
 <<StartTalking Jordy>> Rule three my guy.
 
-<<TriggerEvent EventManager EnterBrainRoom>>
 <<setscene innerDate>>
 
 <<StartTalking PlayersAnxiety>> Should have listened to the ride share guru.

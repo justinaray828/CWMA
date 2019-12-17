@@ -8,7 +8,7 @@ title: Start
 
 <<StartTalking Player>> He found a way to speed through every light and miss every turn.
 
-<<StartTalking Gina>> It takes skills to be that terrible.
+<<StartTalking Gina>> It takes skill to be that terrible.
 
 <<StartTalking Player>> So...
 <<StartTalking Player>> Five Stars?

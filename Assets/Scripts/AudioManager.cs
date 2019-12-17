@@ -84,9 +84,9 @@ public class AudioManager : MonoBehaviour
         Sound nextS = GetSound(nextSceneName, SoundType.Music);
         Sound currentS = GetSound(currSceneName, SoundType.Music);
 
-        MakeSource(nextS);
+        AudioSource nextSource = GetSource(nextS);
 
-        StartCoroutine(FadeIn(nextS.source, fadeTimeDefault));
+        StartCoroutine(FadeIn(nextSource, fadeTimeDefault));
         StartCoroutine(FadeOut(currentS.source, fadeTimeDefault));
 
         currSceneName = nextSceneName;
@@ -150,6 +150,11 @@ public class AudioManager : MonoBehaviour
         if(currentS != null) { fxSource.PlayOneShot(currentS.clip, currentS.volume); }
     }
 
+    /// <summary>
+    /// Play sound effect at random pitch
+    /// </summary>
+    /// <param name="s">Name of sound</param>
+    /// <param name="randomPitch">Total range of randomness. ex) 0.2f = +-0.1f in either direction</param>
     public void PlayFX(string s, float randomPitch)
     {
         Sound currentS = GetSound(s, SoundType.FX);
@@ -183,11 +188,7 @@ public class AudioManager : MonoBehaviour
     public void FadeInSFX(string name)
     {
         Sound s = GetSound(name);
-        if (s.source == null)
-        {
-            MakeSource(s);
-        }
-        StartCoroutine(FadeIn(s.source, fadeTimeDefault, s.volume));
+        StartCoroutine(FadeIn(GetSource(s), fadeTimeDefault, s.volume));
     }
 
     public void FadeOutSFX(string name)
@@ -219,18 +220,7 @@ public class AudioManager : MonoBehaviour
 
     private AudioSource GetSource(Sound s)
     {
-        if (s.source == null)
-        {
-            s.source = gameObject.AddComponent<AudioSource>();
-            s.source.clip = s.clip;
-            s.source.volume = s.volume;
-            s.source.outputAudioMixerGroup = s.output;
-            s.source.pitch = s.pitch;
-            s.source.loop = s.loop;
-            s.source.playOnAwake = s.playonawake;
-            s.source.ignoreListenerPause = s.ignoreListenerPause;
-        }
-
+        if (s.source == null) { MakeSource(s); }
         return s.source;
     }
 

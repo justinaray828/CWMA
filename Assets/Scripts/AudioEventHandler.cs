@@ -25,6 +25,7 @@ public class AudioEventHandler : MonoBehaviour
         EventManager.StartListening("Pause", Pause);
         EventManager.StartListening("Unpause", Unpause);
         EventManager.StartListening("SceneChange", SceneChange);
+        EventManager.StartListening("ButtonClicked", ButtonClicked);
 
         string sceneName = SceneManager.GetActiveScene().name;
 
@@ -84,6 +85,7 @@ public class AudioEventHandler : MonoBehaviour
         EventManager.StopListening("GinaWalking", GinaWalking);
         EventManager.StopListening("ReaWalking", ReaWalking);
         EventManager.StopListening("ReaWalkingAway", ReaWalkingAway);
+        EventManager.StopListening("ButtonClicked", ButtonClicked);
     }
 
     private void Setup_1stCar()
@@ -141,6 +143,11 @@ public class AudioEventHandler : MonoBehaviour
     private void SceneChange()
     {
         am.SceneEnd();
+    }
+
+    private void ButtonClicked()
+    {
+        am.PlayPop();
     }
 
     private void Car_go()

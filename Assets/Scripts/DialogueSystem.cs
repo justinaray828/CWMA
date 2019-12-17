@@ -208,7 +208,7 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
             yield return null;
         }
 
-        audioM.PlayPop();
+        EventManager.TriggerEvent("ButtonClicked");
 
         // Hide all the buttons
         foreach (var button in optionButtons)

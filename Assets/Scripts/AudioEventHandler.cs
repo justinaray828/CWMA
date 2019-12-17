@@ -102,6 +102,7 @@ public class AudioEventHandler : MonoBehaviour
         am.FadeInSFX("theater_lobby_loop");
         EventManager.StartListening("EnterBrainRoomQuick",EnterBrainRoomQuick);
         EventManager.StartListening("ExitBrainRoom", ExitBrainRoom);
+        EventManager.StartListening("StartMovie", StartMovie);
     }
 
     private void Setup_2ndCar()
@@ -161,6 +162,11 @@ public class AudioEventHandler : MonoBehaviour
     private void BrainClose()
     {
         am.PlayFX("brain_close");
+    }
+
+    private void StartMovie()
+    {
+        am.FadeOutSFX("theater_lobby_loop");
     }
 
     private void GinaWalking()

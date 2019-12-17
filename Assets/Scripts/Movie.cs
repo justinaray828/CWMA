@@ -24,6 +24,7 @@ public class Movie : MonoBehaviour
     [YarnCommand("Start")]
     public void StartMovie()
     {
+        EventManager.TriggerEvent("StartMovie");
         startMovie = true;
     }
 

@@ -32,7 +32,10 @@ public class SceneHandler : MonoBehaviour
     public void LoadScene(string SceneName)
     {
         if (SceneNameCheck(SceneName))
+        {
             SceneManager.LoadScene(SceneName);
+            EventManager.TriggerEvent("SceneChange");
+        }
     }
 
     public void LoadScene(int sceneIndex)

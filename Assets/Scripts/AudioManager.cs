@@ -96,14 +96,12 @@ public class AudioManager : MonoBehaviour
 
     public void SceneEnd()
     {
-        Debug.Log("in sceneTransition");
         foreach (Sound s in SFXSounds)
         {
             if (s.source != null)
             {
                 if (s.source.isPlaying)
                 {
-                    Debug.Log("stopping: " + s.name);
                     StartCoroutine(FadeOut(s.source, fadeTimeDefault));
                 }
             }

@@ -29,22 +29,28 @@ public class AudioEventHandler : MonoBehaviour
 
         string sceneName = SceneManager.GetActiveScene().name;
 
+        Debug.Log("scene name: " +sceneName);
         //If no scene music is playing, start the scene music
-        if (am.currSceneName == null)
+        Debug.Log("Is music playing: " + am.IsMusicPlaying());
+        if (!am.IsMusicPlaying())
         {
+            Debug.Log("fresh start");
             am.PlayMusic(sceneName);
-            am.currSceneName = sceneName;
         }
         else
         {
+            Debug.Log("transition");
             am.SceneTransition(sceneName);
         }
 
+        if (sceneName == "01a_StartUp")
+        {
+            Setup_StartUp();
+        }
         if (sceneName == "02_1stCar")
         {
             Setup_1stCar();
         }
-        //Debug.Log(SceneManager.GetActiveScene().name);
         if (sceneName == "03_Theater")
         {
             Setup_Theater();
@@ -88,6 +94,11 @@ public class AudioEventHandler : MonoBehaviour
         EventManager.StopListening("ButtonClicked", ButtonClicked);
     }
 
+    private void Setup_StartUp()
+    {
+        am.LoadMusic("02_1stCar");
+    }
+
     private void Setup_1stCar()
     {
         am.FadeInSFX("car_loop");
@@ -97,6 +108,7 @@ public class AudioEventHandler : MonoBehaviour
         EventManager.StartListening("ExitBrainRoom", ExitBrainRoom);
         EventManager.StartListening("brainOpen", BrainOpen);
         EventManager.StartListening("brainClose", BrainClose);
+        am.LoadMusic("03_Theater");
     }
 
     private void Setup_Theater()

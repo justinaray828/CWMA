@@ -66,7 +66,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 3e12951184f7e4627beb9dfa70095445, type: 3}
     output: {fileID: -8622729306382389199, guid: 8470804748a124767a11093462dd9bf8,
       type: 2}
-    volume: 0.68
+    volume: 0.56
     pitch: 1
     loop: 1
     playonawake: 0
@@ -77,7 +77,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: d5c3cb1b346374a68acdac4b42520b68, type: 3}
     output: {fileID: -8622729306382389199, guid: 8470804748a124767a11093462dd9bf8,
       type: 2}
-    volume: 1
+    volume: 0.81
     pitch: 1
     loop: 1
     playonawake: 0
@@ -348,7 +348,7 @@ MonoBehaviour:
     ignoreListenerPause: 0
     originalVolume: 0
     source: {fileID: 0}
-  currSceneName: 
+  currMusicName: 
 --- !u!82 &3824741328796003454
 AudioSource:
   m_ObjectHideFlags: 0

@@ -5,17 +5,17 @@ title: Start
 <<Play AudioManager car_loop>>
 <<StartTalking Jordy>> So weird how that last guy forgot to tip.
 <<StartTalking Jordy>> I was sure he'd remember after all the shortcuts.
-<<StartTalking Jordy>> Sure we arrived 20 minutes later,
+<<StartTalking Jordy>> Sure, we arrived 20 minutes later.
 <<StartTalking Jordy>> But seeing the city is why people take ride shares, 
 <<StartTalking Jordy>> Right?
 <<StartTalking Jordy>> I even setup the back seat with air freshers and lotion.
 
 <<TriggerEvent EventManager Car_stop>>
 
-<<StartTalking Jordy>> Who doesn't love soft skin?
-
 <<PlayFX AudioManager car_door>>
 <<PlayerEnters Characters>>
+
+<<StartTalking Jordy>> Who doesn't love soft skin?
 
 <<StartTalking Jordy>> Who doesn't love lotion?!?!
 
@@ -24,7 +24,7 @@ title: Start
 <<StartTalking Player>> Jordy, right?
 
 <<StartTalking Jordy>> Hey there!
-<<StartTalking Jordy>> The almighty App says you've got two stop?
+<<StartTalking Jordy>> The almighty app says you've got two stop?
 
 <<StartTalking Player>> Yep, an apartment a few blocks away and the theater.
 
@@ -53,7 +53,7 @@ title: Start
 <<StartTalking Jordy>> But seriously, listen more than you talk.
 <<StartTalking Jordy>> Don't give advice unless it's requested.
 <<StartTalking Jordy>> And silence is better than saying something dumb.
-<<StartTalking Jordy>> Anyway, it works me.
+<<StartTalking Jordy>> Anyway, it works for me.
 
 <<StartTalking Player>> I'll keep that in mind.
 
@@ -269,7 +269,8 @@ title: MakeAJoke
 <<StartTalking Player>> Turn left here!
 
 //Awkward back and forth stare down between Jordy and Player
-
+<<StartTalking Gina>> ...
+<<StartTalking Player>> ...
 <<StartTalking Jordy>> Get out...
 
 <<setScene nextScene>>

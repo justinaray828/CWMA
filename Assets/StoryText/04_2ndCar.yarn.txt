@@ -76,7 +76,7 @@ title: ListenToTheStory
 
 title: AskHerAboutHerDay_B
 ---
-(If the player has asked this before, present this scene)
+//If the player has asked this before, present this scene
 <<setscene Dryve>>
 <<StartTalking Player>> Hey, can you tell me about your day
 

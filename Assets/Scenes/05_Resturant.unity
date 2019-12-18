@@ -431,7 +431,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3205465290328666999, guid: 6f038585176a84b4c9c682d9035d1bab,
+          - target: {fileID: 3205465290328666999, guid: 6f038585176a84b4c9c682d9035d1bab,
         type: 3}
       propertyPath: m_Name
       value: Player
@@ -575,6 +575,11 @@ PrefabInstance:
       propertyPath: sourceText.Array.data[0]
       value: 
       objectReference: {fileID: 4900000, guid: 09b828c7b0784b84498612a9e4cd6b77, type: 3}
+    - target: {fileID: 5713818038341176069, guid: 5479a4882c427ff4f8f43768d58d7ed6,
+        type: 3}
+      propertyPath: characterData.name
+      value: Anxiety
+      objectReference: {fileID: 0}
     - target: {fileID: 6179828911605785465, guid: 5479a4882c427ff4f8f43768d58d7ed6,
         type: 3}
       propertyPath: m_AnchoredPosition.x

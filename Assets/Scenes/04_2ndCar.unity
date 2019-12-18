@@ -937,6 +937,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -4
       objectReference: {fileID: 0}
+    - target: {fileID: 5713818038341176069, guid: 5479a4882c427ff4f8f43768d58d7ed6,
+        type: 3}
+      propertyPath: characterData.name
+      value: Anxiety
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5479a4882c427ff4f8f43768d58d7ed6, type: 3}
 --- !u!1001 &1425674946

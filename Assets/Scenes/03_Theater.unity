@@ -630,6 +630,11 @@ PrefabInstance:
       propertyPath: talkingStop
       value: 
       objectReference: {fileID: 435629431}
+    - target: {fileID: 5713818038341176069, guid: 5479a4882c427ff4f8f43768d58d7ed6,
+        type: 3}
+      propertyPath: characterData.name
+      value: Anxiety
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5479a4882c427ff4f8f43768d58d7ed6, type: 3}
 --- !u!1001 &1663674466
@@ -726,7 +731,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentExpression: 
-  characterName: Emily
+  characterData:
+    name: Emily
 --- !u!4 &1674389764 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4899502158329937298, guid: feca0f149b5a21347ad797a352079305,

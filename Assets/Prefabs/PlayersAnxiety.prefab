@@ -193,6 +193,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentExpression: Happy
-  facialExpressionGameObject: {fileID: 1231565567195472636}
+    facialExpressionGameObject: {fileID: 1231565567195472636}
   dialoguePanelController: {fileID: 0}
   characterName: Players Anxiety
+  characterData:
+    name: Anxiety

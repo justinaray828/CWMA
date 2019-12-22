@@ -588,6 +588,11 @@ PrefabInstance:
       propertyPath: sourceText.Array.data[0]
       value: 
       objectReference: {fileID: 4900000, guid: d020d95c1cde3474ea7c72f66ce48531, type: 3}
+    - target: {fileID: 5713818038341176069, guid: 5479a4882c427ff4f8f43768d58d7ed6,
+        type: 3}
+      propertyPath: characterData.name
+      value: Anxiety
+      objectReference: {fileID: 0}
     - target: {fileID: 6179828911605785465, guid: 5479a4882c427ff4f8f43768d58d7ed6,
         type: 3}
       propertyPath: m_AnchoredPosition.x

@@ -12,9 +12,11 @@ title: Start
 
 <<StartTalking Jordy>> Crazy the Dryve app put y’all in my car again.
 
-<<StartTalking Player>> Yeah… (Slow)
+//TODO: Slow text
+<<StartTalking Player>> Yeah…
 
-<<StartTalking Gina>> Crazy (Slow)
+//TODO: Slow text
+<<StartTalking Gina>> Crazy
 
 <<StartTalking Jordy>> Must be the universe saying “This is a great driver!!!”  Btw remember to rate, I noticed I didn’t get any feedback on the last one.
 

@@ -95,6 +95,7 @@ public class AudioEventHandler : MonoBehaviour
         EventManager.StartListening("brainOpen", BrainOpen);
         EventManager.StartListening("brainClose", BrainClose);
         am.LoadMusic("03_Theater");
+        am.LoadMusic("PauseMusic");
     }
 
     private void Setup_Theater()

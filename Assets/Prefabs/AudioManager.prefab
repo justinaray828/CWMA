@@ -63,10 +63,10 @@ MonoBehaviour:
     originalVolume: 0
     source: {fileID: 0}
   - name: 02_1stCar
-    clip: {fileID: 8300000, guid: 3e12951184f7e4627beb9dfa70095445, type: 3}
+    clip: {fileID: 8300000, guid: 8d7c8bf499f334201bb86cfa50d10e90, type: 3}
     output: {fileID: -8622729306382389199, guid: 8470804748a124767a11093462dd9bf8,
       type: 2}
-    volume: 0.46
+    volume: 0.59
     pitch: 1
     loop: 1
     playonawake: 0
@@ -107,7 +107,7 @@ MonoBehaviour:
     originalVolume: 0
     source: {fileID: 0}
   - name: PauseMusic
-    clip: {fileID: 8300000, guid: 9f21e3fc197ef404f8f09327630a5aa7, type: 3}
+    clip: {fileID: 8300000, guid: d5c3cb1b346374a68acdac4b42520b68, type: 3}
     output: {fileID: -8622729306382389199, guid: 8470804748a124767a11093462dd9bf8,
       type: 2}
     volume: 0.23
@@ -232,7 +232,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: c22645a0465b24827a0cc9529df35950, type: 3}
     output: {fileID: 6065668692900454425, guid: 8470804748a124767a11093462dd9bf8,
       type: 2}
-    volume: 0.79
+    volume: 0.49
     pitch: 1
     loop: 1
     playonawake: 0

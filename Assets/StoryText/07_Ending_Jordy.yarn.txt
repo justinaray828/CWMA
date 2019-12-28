@@ -38,4 +38,6 @@ title: EndingJordy_Continued
 
 <<StartTalking Player>> That makes sense.  
 <<StartTalking Player>> But I probably need more time to work on myself before I try this whole thing again.
+
+<<setscene 09_Credits>>
 ===

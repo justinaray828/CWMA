@@ -20,4 +20,6 @@ title: Start
 <<StartTalking Player>> That might be a good idea, and there's less pressure.
 
 <<StartTalking Gina>> Yeah, It couldn't get much worse.
+
+<<setscene 09_Credits>>
 ===

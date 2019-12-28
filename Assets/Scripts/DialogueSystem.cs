@@ -269,6 +269,10 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
             case "listenToJordy":
                 Choices.listenedToJordy = true;
                 break;
+
+            case "setscene 09_Credits":
+                sceneHandler.LoadScene("09_Credits");
+                break;
             
             default:
                 if (inBrainRoom) { EventManager.TriggerEvent("ExitBrainRoom"); }

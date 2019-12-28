@@ -80,4 +80,6 @@ title: Start
 <<StartTalking PlayersAnxiety>> You'll screw this up eventually.
 
 <<StartTalking PlayersBrain>> Probably, but eventually isn't something I have to worry about right now.
+
+<<setscene 09_Credits>>
 ===

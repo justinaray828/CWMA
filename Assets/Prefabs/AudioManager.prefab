@@ -74,7 +74,7 @@ MonoBehaviour:
     originalVolume: 0
     source: {fileID: 0}
   - name: 03_Theater
-    clip: {fileID: 8300000, guid: d5c3cb1b346374a68acdac4b42520b68, type: 3}
+    clip: {fileID: 8300000, guid: 342dba71092fa41e1ac8541a1ad69fcc, type: 3}
     output: {fileID: -8622729306382389199, guid: 8470804748a124767a11093462dd9bf8,
       type: 2}
     volume: 0.81
@@ -85,7 +85,7 @@ MonoBehaviour:
     originalVolume: 0
     source: {fileID: 0}
   - name: 04_2ndCar
-    clip: {fileID: 8300000, guid: 3e12951184f7e4627beb9dfa70095445, type: 3}
+    clip: {fileID: 8300000, guid: 8d7c8bf499f334201bb86cfa50d10e90, type: 3}
     output: {fileID: -8622729306382389199, guid: 8470804748a124767a11093462dd9bf8,
       type: 2}
     volume: 1
@@ -140,7 +140,7 @@ MonoBehaviour:
     originalVolume: 0
     source: {fileID: 0}
   - name: 08_Ending_Alone
-    clip: {fileID: 8300000, guid: 9f21e3fc197ef404f8f09327630a5aa7, type: 3}
+    clip: {fileID: 8300000, guid: b8164f641071a403ba79f76ba3487872, type: 3}
     output: {fileID: -8622729306382389199, guid: 8470804748a124767a11093462dd9bf8,
       type: 2}
     volume: 0.23

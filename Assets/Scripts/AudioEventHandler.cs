@@ -82,6 +82,7 @@ public class AudioEventHandler : MonoBehaviour
     private void Setup_StartUp()
     {
         am.LoadMusic("02_1stCar");
+        EventManager.StartListening("Click_start", Click_start);
     }
 
     private void Setup_1stCar()
@@ -140,6 +141,18 @@ public class AudioEventHandler : MonoBehaviour
     public void ButtonHover()
     {
         am.PlayFX("woodblock_"+UnityEngine.Random.Range(1, 2), 0.1f);
+    }
+
+    private void Click_start()
+    {
+        am.PlayPop();
+        StartCoroutine(PlaySoundAfterDelay("harp", 2.5f));
+    }
+
+    private IEnumerator PlaySoundAfterDelay(string soundName, float delayTime)
+    {
+        yield return new WaitForSeconds(delayTime);
+        am.Play(soundName);
     }
 
     private void SceneChange()

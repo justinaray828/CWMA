@@ -189,7 +189,7 @@ title: TrustGina
 
 [[Gina was justified|Justified]]
 [[Rea's Got a Point|ReaRight]]
-[[I have made a huge mistake|MistakeRestaurant]]
+[[I've made a huge mistake|MistakeRestaurant]]
 [[We should go|WeShouldGo]]
 ===
 
@@ -258,6 +258,7 @@ title: MistakeRestaurant
 <<StartTalking Rea>> No!!!! She can’t know I was using her account. 
 
 <<StartTalking Gina>> This is unbelievable. 
+<<GinaDitches Characters>>
 <<StartTalking Gina>> I’m done! 
 //Gina walks out while still zoomed in on the characters face
 //Camera zooms back out

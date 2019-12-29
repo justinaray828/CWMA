@@ -39,6 +39,12 @@ public class ResturantAnimation : MonoBehaviour
         SetReaLeavesBool(false);
     }
 
+    [YarnCommand("GinaDitches")]
+    public void GinaDitches()
+    {
+        EventManager.TriggerEvent("GinaWalking");        
+        restaurantAnimator.SetTrigger("GinaDitches");
+    }
     private void SetGinaLeavesBool(bool boolean)
     {
         EventManager.TriggerEvent("GinaWalking");

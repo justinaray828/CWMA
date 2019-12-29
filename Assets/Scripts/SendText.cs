@@ -31,5 +31,6 @@ public class SendText : MonoBehaviour
         typedMessage.SetActive(false);
         sentMessage.SetActive(true);
         startTimer = true;
+        EventManager.TriggerEvent("Click_start");
     }
 }

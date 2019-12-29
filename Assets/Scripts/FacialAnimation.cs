@@ -45,6 +45,13 @@ public class FacialAnimation : MonoBehaviour
             SetSpeakerOnPanel();
     }
 
+    [YarnCommand("Silent")]
+    public void Silent()
+    {
+        StartCoroutine("TalkingDelay");
+        StopTalking();
+    }
+
     [YarnCommand("StartTalking")]
     public void StartTalking()
     {

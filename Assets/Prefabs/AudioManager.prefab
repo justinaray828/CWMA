@@ -359,6 +359,28 @@ MonoBehaviour:
     ignoreListenerPause: 0
     originalVolume: 0
     source: {fileID: 0}
+  - name: marimba_ascend
+    clip: {fileID: 8300000, guid: 033b0a404dc59456082291fd914166ff, type: 3}
+    output: {fileID: 6065668692900454425, guid: 8470804748a124767a11093462dd9bf8,
+      type: 2}
+    volume: 0.92
+    pitch: 1
+    loop: 0
+    playonawake: 0
+    ignoreListenerPause: 0
+    originalVolume: 0
+    source: {fileID: 0}
+  - name: marimba_descend
+    clip: {fileID: 8300000, guid: 961fd643005a342e19eed9c34c4d6d6c, type: 3}
+    output: {fileID: 6065668692900454425, guid: 8470804748a124767a11093462dd9bf8,
+      type: 2}
+    volume: 0.92
+    pitch: 1
+    loop: 0
+    playonawake: 0
+    ignoreListenerPause: 0
+    originalVolume: 0
+    source: {fileID: 0}
   currMusicName: 
 --- !u!82 &3824741328796003454
 AudioSource:

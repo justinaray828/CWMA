@@ -207,6 +207,7 @@ public class AudioEventHandler : MonoBehaviour
 
     private void EnterBrainRoom()
     {
+        am.PlayFX("marimba_descend");
         am.SetBrainroomSnapshot(true, 2f);
         am.SetSourceOutput("blip", "Headroom");
         am.SetSourceOutput("woodblock_1", "Headroom");
@@ -214,6 +215,7 @@ public class AudioEventHandler : MonoBehaviour
     }
     private void ExitBrainRoom()
     {
+        am.PlayFX("marimba_ascend");
         am.SetBrainroomSnapshot(false, 2f);
         am.SetSourceOutput("blip", "SFX");
         am.SetSourceOutput("woodblock_1", "SFX");

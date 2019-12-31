@@ -278,6 +278,75 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &330626280
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 29674115283232152, guid: 11524af92240f43419d12c2303b289f9,
+        type: 3}
+      propertyPath: m_Name
+      value: CylinderBackgroundNight Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 243317826781168458, guid: 11524af92240f43419d12c2303b289f9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -60.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 243317826781168458, guid: 11524af92240f43419d12c2303b289f9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -125.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 243317826781168458, guid: 11524af92240f43419d12c2303b289f9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 35.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 243317826781168458, guid: 11524af92240f43419d12c2303b289f9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.043845456
+      objectReference: {fileID: 0}
+    - target: {fileID: 243317826781168458, guid: 11524af92240f43419d12c2303b289f9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.04384546
+      objectReference: {fileID: 0}
+    - target: {fileID: 243317826781168458, guid: 11524af92240f43419d12c2303b289f9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7057462
+      objectReference: {fileID: 0}
+    - target: {fileID: 243317826781168458, guid: 11524af92240f43419d12c2303b289f9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7057461
+      objectReference: {fileID: 0}
+    - target: {fileID: 243317826781168458, guid: 11524af92240f43419d12c2303b289f9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 243317826781168458, guid: 11524af92240f43419d12c2303b289f9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 243317826781168458, guid: 11524af92240f43419d12c2303b289f9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 243317826781168458, guid: 11524af92240f43419d12c2303b289f9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 11524af92240f43419d12c2303b289f9, type: 3}
 --- !u!1 &506603462
 GameObject:
   m_ObjectHideFlags: 0
@@ -729,6 +798,11 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 7972490963681189877, guid: cdd5ae7170ecda441bc9331863e6376d,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cdd5ae7170ecda441bc9331863e6376d, type: 3}
 --- !u!4 &1025535604 stripped
@@ -917,6 +991,31 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3269315599032571070, guid: 5479a4882c427ff4f8f43768d58d7ed6,
+        type: 3}
+      propertyPath: sourceText.Array.data[0]
+      value: 
+      objectReference: {fileID: 4900000, guid: a1c1dffdd5d28c64e83c2a166e0445b9, type: 3}
+    - target: {fileID: 5713818038341176069, guid: 5479a4882c427ff4f8f43768d58d7ed6,
+        type: 3}
+      propertyPath: characterData.name
+      value: Anxiety
+      objectReference: {fileID: 0}
+    - target: {fileID: 3269315598130190273, guid: 5479a4882c427ff4f8f43768d58d7ed6,
+        type: 3}
+      propertyPath: orthographic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3269315598130190273, guid: 5479a4882c427ff4f8f43768d58d7ed6,
+        type: 3}
+      propertyPath: field of view
+      value: 94
+      objectReference: {fileID: 0}
+    - target: {fileID: 3269315598130190273, guid: 5479a4882c427ff4f8f43768d58d7ed6,
+        type: 3}
+      propertyPath: far clip plane
+      value: 100000
+      objectReference: {fileID: 0}
     - target: {fileID: 3269315598130190303, guid: 5479a4882c427ff4f8f43768d58d7ed6,
         type: 3}
       propertyPath: brainSceneCube
@@ -927,20 +1026,10 @@ PrefabInstance:
       propertyPath: brainOpenAnimator
       value: 
       objectReference: {fileID: 1231219038}
-    - target: {fileID: 3269315599032571070, guid: 5479a4882c427ff4f8f43768d58d7ed6,
-        type: 3}
-      propertyPath: sourceText.Array.data[0]
-      value: 
-      objectReference: {fileID: 4900000, guid: a1c1dffdd5d28c64e83c2a166e0445b9, type: 3}
     - target: {fileID: 3269315598440971575, guid: 5479a4882c427ff4f8f43768d58d7ed6,
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5713818038341176069, guid: 5479a4882c427ff4f8f43768d58d7ed6,
-        type: 3}
-      propertyPath: characterData.name
-      value: Anxiety
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5479a4882c427ff4f8f43768d58d7ed6, type: 3}
@@ -1085,7 +1174,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -10
+  m_SortingOrder: -9
   m_Sprite: {fileID: 21300000, guid: 5c6839f0fca82004e8f0f3779de6b7cc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

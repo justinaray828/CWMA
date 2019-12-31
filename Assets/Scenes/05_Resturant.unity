@@ -595,6 +595,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: NamePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3269315598130190273, guid: 5479a4882c427ff4f8f43768d58d7ed6,
+        type: 3}
+      propertyPath: m_Depth
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3269315598130190273, guid: 5479a4882c427ff4f8f43768d58d7ed6,
+        type: 3}
+      propertyPath: orthographic
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5479a4882c427ff4f8f43768d58d7ed6, type: 3}
 --- !u!1 &1901501984

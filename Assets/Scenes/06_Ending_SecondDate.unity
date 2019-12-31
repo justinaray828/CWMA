@@ -120,6 +120,75 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &181026196
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 29674115283232152, guid: 11524af92240f43419d12c2303b289f9,
+        type: 3}
+      propertyPath: m_Name
+      value: CylinderBackgroundNight Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 243317826781168458, guid: 11524af92240f43419d12c2303b289f9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -60.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 243317826781168458, guid: 11524af92240f43419d12c2303b289f9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -125.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 243317826781168458, guid: 11524af92240f43419d12c2303b289f9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 35.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 243317826781168458, guid: 11524af92240f43419d12c2303b289f9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.043845456
+      objectReference: {fileID: 0}
+    - target: {fileID: 243317826781168458, guid: 11524af92240f43419d12c2303b289f9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.04384546
+      objectReference: {fileID: 0}
+    - target: {fileID: 243317826781168458, guid: 11524af92240f43419d12c2303b289f9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7057462
+      objectReference: {fileID: 0}
+    - target: {fileID: 243317826781168458, guid: 11524af92240f43419d12c2303b289f9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7057461
+      objectReference: {fileID: 0}
+    - target: {fileID: 243317826781168458, guid: 11524af92240f43419d12c2303b289f9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 243317826781168458, guid: 11524af92240f43419d12c2303b289f9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 243317826781168458, guid: 11524af92240f43419d12c2303b289f9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 243317826781168458, guid: 11524af92240f43419d12c2303b289f9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 11524af92240f43419d12c2303b289f9, type: 3}
 --- !u!1001 &607593629
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -683,11 +752,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3269315598130190303, guid: 5479a4882c427ff4f8f43768d58d7ed6,
-        type: 3}
-      propertyPath: brainSceneCube
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 3269315599032571070, guid: 5479a4882c427ff4f8f43768d58d7ed6,
         type: 3}
       propertyPath: sourceText.Array.data[0]
@@ -697,6 +761,26 @@ PrefabInstance:
         type: 3}
       propertyPath: characterData.name
       value: Anxiety
+      objectReference: {fileID: 0}
+    - target: {fileID: 3269315598130190273, guid: 5479a4882c427ff4f8f43768d58d7ed6,
+        type: 3}
+      propertyPath: orthographic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3269315598130190273, guid: 5479a4882c427ff4f8f43768d58d7ed6,
+        type: 3}
+      propertyPath: far clip plane
+      value: 100000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3269315598130190273, guid: 5479a4882c427ff4f8f43768d58d7ed6,
+        type: 3}
+      propertyPath: field of view
+      value: 93
+      objectReference: {fileID: 0}
+    - target: {fileID: 3269315598130190303, guid: 5479a4882c427ff4f8f43768d58d7ed6,
+        type: 3}
+      propertyPath: brainSceneCube
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5479a4882c427ff4f8f43768d58d7ed6, type: 3}

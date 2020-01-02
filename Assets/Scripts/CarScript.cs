@@ -8,6 +8,7 @@ public class CarScript : MonoBehaviour
 {
     private backgroundcylinder bc;
     private Coroutine currentCR;
+    private Animator anim;
 
     public float speedChangeTime;
 
@@ -15,7 +16,7 @@ public class CarScript : MonoBehaviour
     void Start()
     {
         bc = FindObjectOfType<backgroundcylinder>();
-        Debug.Log("bc: " + bc);
+        anim = GameObject.Find("Main Camera").GetComponent<Animator>();
     }
 
     void OnEnable()
@@ -35,6 +36,7 @@ public class CarScript : MonoBehaviour
     {
         if (currentCR != null) { StopCoroutine(currentCR); }
         currentCR = StartCoroutine(SlowVid());
+        anim.SetBool("carStop", true);
     }
 
     [YarnCommand("CarGo")]
@@ -42,6 +44,7 @@ public class CarScript : MonoBehaviour
     {
         if (currentCR != null) { StopCoroutine(currentCR); }
         StartCoroutine(SpeedUpVid());
+        anim.SetBool("carStop", false);
     }
 
     private IEnumerator SlowVid()

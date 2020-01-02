@@ -100,7 +100,6 @@ title: AskHerAboutHerDay_B
 
 <<StartTalking PlayersAnxiety>> No. You are still an idiot. 
 
-[[Listen to the Story (Option not available if you made a joke about Jordy)|ListenToTheStory]]
 [[Discuss the movie|DiscussTheMovie]]
 ===
 

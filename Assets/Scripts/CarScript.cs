@@ -6,14 +6,17 @@ using Yarn.Unity;
 
 public class CarScript : MonoBehaviour
 {
-    private VideoPlayer vp;
+    //private VideoPlayer vp;
+    private backgroundcylinder bc;
     public float slowVidTime;
     private Coroutine currentCR;
 
     // Start is called before the first frame update
     void Start()
     {
-        vp = GetComponentInChildren<VideoPlayer>();
+        //vp = GetComponentInChildren<VideoPlayer>();
+        bc = FindObjectOfType<backgroundcylinder>();
+        Debug.Log("bc: " + bc);
     }
 
     void OnEnable()
@@ -49,25 +52,28 @@ public class CarScript : MonoBehaviour
 
     private IEnumerator SlowVid()
     {
-        while (vp.playbackSpeed > 0.50)
+        float startingSpeed = bc.speed;
+        Debug.Log("starting speed: " + startingSpeed);
+        while (bc.speed > 0f)
         {
-            vp.playbackSpeed -= 0.2f * (slowVidTime);
+            bc.speed -= startingSpeed * (Time.deltaTime/slowVidTime);
             //Debug.Log(vp.playbackSpeed);
-            yield return new WaitForSeconds(1f); ;
+            yield return null;
         }
-        vp.Pause();
+        bc.speed = 0f;
         currentCR = null;
     }
 
     private IEnumerator SpeedUpVid()
     {
-        vp.Play();
-        while (vp.playbackSpeed < 1f)
+        float endSpeed = bc.GetStartingSpeed();
+        while (bc.speed < endSpeed)
         {
-            vp.playbackSpeed += 0.2f * (slowVidTime);
+            bc.speed += endSpeed * (Time.deltaTime / slowVidTime);
             //Debug.Log(vp.playbackSpeed);
-            yield return new WaitForSeconds(1f); ;
+            yield return null;
         }
+        bc.speed = endSpeed;
         currentCR = null;
     }
 

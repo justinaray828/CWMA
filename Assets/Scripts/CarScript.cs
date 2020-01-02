@@ -9,7 +9,7 @@ public class CarScript : MonoBehaviour
     private backgroundcylinder bc;
     private Coroutine currentCR;
 
-    public float slowVidTime;
+    public float speedChangeTime;
 
     // Start is called before the first frame update
     void Start()
@@ -49,7 +49,7 @@ public class CarScript : MonoBehaviour
         float startingSpeed = bc.speed;
         while (bc.speed > 0f)
         {
-            bc.speed -= startingSpeed * (Time.deltaTime/slowVidTime);
+            bc.speed -= startingSpeed * (Time.deltaTime/speedChangeTime);
             yield return null;
         }
         bc.speed = 0f;
@@ -61,7 +61,7 @@ public class CarScript : MonoBehaviour
         float endSpeed = bc.GetStartingSpeed();
         while (bc.speed < endSpeed)
         {
-            bc.speed += endSpeed * (Time.deltaTime / slowVidTime);
+            bc.speed += endSpeed * (Time.deltaTime / speedChangeTime);
             yield return null;
         }
         bc.speed = endSpeed;

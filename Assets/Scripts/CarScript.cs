@@ -6,31 +6,28 @@ using Yarn.Unity;
 
 public class CarScript : MonoBehaviour
 {
-    private VideoPlayer vp;
-    public float slowVidTime;
+    private backgroundcylinder bc;
     private Coroutine currentCR;
+
+    public float slowVidTime;
 
     // Start is called before the first frame update
     void Start()
     {
-        vp = GetComponentInChildren<VideoPlayer>();
+        bc = FindObjectOfType<backgroundcylinder>();
+        Debug.Log("bc: " + bc);
     }
 
     void OnEnable()
     {
         EventManager.StartListening("Car_go", CarGo);
         EventManager.StartListening("Car_stop", CarStop);
-        EventManager.StartListening("Pause", PauseVideo);
-        EventManager.StartListening("Unpause", PlayVideo);
     }
 
     void OnDisable()
     {
         EventManager.StopListening("Car_go", CarGo);
         EventManager.StopListening("Car_stop", CarStop);
-        EventManager.StopListening("Pause", PauseVideo);
-        EventManager.StopListening("Unpause", PlayVideo);
-
     }
 
     [YarnCommand("CarStop")]
@@ -49,34 +46,26 @@ public class CarScript : MonoBehaviour
 
     private IEnumerator SlowVid()
     {
-        while (vp.playbackSpeed > 0.50)
+        float startingSpeed = bc.speed;
+        while (bc.speed > 0f)
         {
-            vp.playbackSpeed -= 0.2f * (slowVidTime);
-            //Debug.Log(vp.playbackSpeed);
-            yield return new WaitForSeconds(1f); ;
+            bc.speed -= startingSpeed * (Time.deltaTime/slowVidTime);
+            yield return null;
         }
-        vp.Pause();
+        bc.speed = 0f;
         currentCR = null;
     }
 
     private IEnumerator SpeedUpVid()
     {
-        vp.Play();
-        while (vp.playbackSpeed < 1f)
+        float endSpeed = bc.GetStartingSpeed();
+        while (bc.speed < endSpeed)
         {
-            vp.playbackSpeed += 0.2f * (slowVidTime);
-            //Debug.Log(vp.playbackSpeed);
-            yield return new WaitForSeconds(1f); ;
+            bc.speed += endSpeed * (Time.deltaTime / slowVidTime);
+            yield return null;
         }
+        bc.speed = endSpeed;
         currentCR = null;
     }
 
-    private void PauseVideo()
-    {
-        //vp.Pause();
-    }
-    private void PlayVideo()
-    {
-        //vp.Play();
-    }
 }

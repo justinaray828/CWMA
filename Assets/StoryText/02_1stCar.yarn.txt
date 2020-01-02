@@ -12,10 +12,10 @@ title: Start
 
 <<TriggerEvent EventManager Car_stop>>
 
+<<StartTalking Jordy>> Who doesn't love soft skin?
+
 <<PlayFX AudioManager car_door>>
 <<PlayerEnters Characters>>
-
-<<StartTalking Jordy>> Who doesn't love soft skin?
 
 <<StartTalking Jordy>> Who doesn't love lotion?!?!
 

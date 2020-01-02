@@ -6,15 +6,14 @@ using Yarn.Unity;
 
 public class CarScript : MonoBehaviour
 {
-    //private VideoPlayer vp;
     private backgroundcylinder bc;
-    public float slowVidTime;
     private Coroutine currentCR;
+
+    public float slowVidTime;
 
     // Start is called before the first frame update
     void Start()
     {
-        //vp = GetComponentInChildren<VideoPlayer>();
         bc = FindObjectOfType<backgroundcylinder>();
         Debug.Log("bc: " + bc);
     }
@@ -23,17 +22,12 @@ public class CarScript : MonoBehaviour
     {
         EventManager.StartListening("Car_go", CarGo);
         EventManager.StartListening("Car_stop", CarStop);
-        EventManager.StartListening("Pause", PauseVideo);
-        EventManager.StartListening("Unpause", PlayVideo);
     }
 
     void OnDisable()
     {
         EventManager.StopListening("Car_go", CarGo);
         EventManager.StopListening("Car_stop", CarStop);
-        EventManager.StopListening("Pause", PauseVideo);
-        EventManager.StopListening("Unpause", PlayVideo);
-
     }
 
     [YarnCommand("CarStop")]
@@ -53,11 +47,9 @@ public class CarScript : MonoBehaviour
     private IEnumerator SlowVid()
     {
         float startingSpeed = bc.speed;
-        Debug.Log("starting speed: " + startingSpeed);
         while (bc.speed > 0f)
         {
             bc.speed -= startingSpeed * (Time.deltaTime/slowVidTime);
-            //Debug.Log(vp.playbackSpeed);
             yield return null;
         }
         bc.speed = 0f;
@@ -70,19 +62,10 @@ public class CarScript : MonoBehaviour
         while (bc.speed < endSpeed)
         {
             bc.speed += endSpeed * (Time.deltaTime / slowVidTime);
-            //Debug.Log(vp.playbackSpeed);
             yield return null;
         }
         bc.speed = endSpeed;
         currentCR = null;
     }
 
-    private void PauseVideo()
-    {
-        //vp.Pause();
-    }
-    private void PlayVideo()
-    {
-        //vp.Play();
-    }
 }

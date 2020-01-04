@@ -495,6 +495,16 @@ PrefabInstance:
       propertyPath: brainSceneCube
       value: 
       objectReference: {fileID: 1966344294}
+    - target: {fileID: 2576594590172727198, guid: 91eb66bf04c6716429c1ffe3a74b4936,
+        type: 3}
+      propertyPath: sourceText.Array.data[0]
+      value: 
+      objectReference: {fileID: 4900000, guid: 670bc2611f939f9448ff693ecd430e40, type: 3}
+    - target: {fileID: 7522178595747300659, guid: 91eb66bf04c6716429c1ffe3a74b4936,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91eb66bf04c6716429c1ffe3a74b4936, type: 3}
 --- !u!1001 &1159462789
@@ -572,7 +582,7 @@ PrefabInstance:
     - target: {fileID: 51652434149034926, guid: cdd5ae7170ecda441bc9331863e6376d,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7972490963681189877, guid: cdd5ae7170ecda441bc9331863e6376d,
         type: 3}

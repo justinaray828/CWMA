@@ -278,11 +278,6 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 5806463218850350668, guid: cdd5ae7170ecda441bc9331863e6376d,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 7972490963681189877, guid: cdd5ae7170ecda441bc9331863e6376d,
         type: 3}
       propertyPath: m_SortingOrder
@@ -292,6 +287,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5806463218850350668, guid: cdd5ae7170ecda441bc9331863e6376d,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cdd5ae7170ecda441bc9331863e6376d, type: 3}
@@ -665,6 +665,11 @@ PrefabInstance:
       propertyPath: brainOpenAnimator
       value: 
       objectReference: {fileID: 1965963456}
+    - target: {fileID: 7522178595747300659, guid: 91eb66bf04c6716429c1ffe3a74b4936,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91eb66bf04c6716429c1ffe3a74b4936, type: 3}
 --- !u!1001 &3732169595581011550
@@ -739,6 +744,11 @@ PrefabInstance:
       propertyPath: dialoguePanelController
       value: 
       objectReference: {fileID: 7643504925115992560}
+    - target: {fileID: 3732169595412138122, guid: f7d6c212bb2839747bb453915a6e1332,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7d6c212bb2839747bb453915a6e1332, type: 3}
 --- !u!1001 &5530593370258424259

@@ -802,7 +802,7 @@ PrefabInstance:
     - target: {fileID: 51652434149034926, guid: cdd5ae7170ecda441bc9331863e6376d,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7972490963681189877, guid: cdd5ae7170ecda441bc9331863e6376d,
         type: 3}
@@ -965,6 +965,16 @@ PrefabInstance:
       propertyPath: brainOpenAnimator
       value: 
       objectReference: {fileID: 1231219038}
+    - target: {fileID: 2576594590172727198, guid: 91eb66bf04c6716429c1ffe3a74b4936,
+        type: 3}
+      propertyPath: sourceText.Array.data[0]
+      value: 
+      objectReference: {fileID: 4900000, guid: a1c1dffdd5d28c64e83c2a166e0445b9, type: 3}
+    - target: {fileID: 7522178595747300659, guid: 91eb66bf04c6716429c1ffe3a74b4936,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91eb66bf04c6716429c1ffe3a74b4936, type: 3}
 --- !u!1 &1322021965

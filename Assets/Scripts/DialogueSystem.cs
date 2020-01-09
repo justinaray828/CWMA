@@ -234,6 +234,16 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
         // "Perform" the command
         //Debug.Log("Command: " + command.text);
         //Debug.Log("listenToJordy Variable: " + Choices.listenedToJordy);
+        if(command.text.StartsWith("setscene") && inBrainRoom)
+        {
+            Debug.Log("In here!");
+            if (command.text == "setscene Dryve") { 
+                EventManager.TriggerEvent("ExitBrainRoom");
+                cameraTransition.ZoomOut();
+            }
+            else { EventManager.TriggerEvent("ExitBrainRoomQuick"); }
+            inBrainRoom = false;
+        }
         switch (command.text)
         {
             case "setscene innerDateCut":
@@ -273,10 +283,8 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
             case "setscene 09_Credits":
                 sceneHandler.LoadScene("09_Credits");
                 break;
-            
+
             default:
-                if (inBrainRoom) { EventManager.TriggerEvent("ExitBrainRoom"); }
-                cameraTransition.ZoomOut();
                 inBrainRoom = false;
                 break;
         }

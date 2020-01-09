@@ -284,12 +284,6 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
                 sceneHandler.LoadScene("09_Credits");
                 break;
 
-            //case "setscene Dryve":
-                //if (inBrainRoom) { EventManager.TriggerEvent("ExitBrainRoom"); }
-                //cameraTransition.ZoomOut();
-                //inBrainRoom = false;
-                //break;
-
             default:
                 inBrainRoom = false;
                 break;

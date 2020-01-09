@@ -364,7 +364,7 @@ title: AskHerAboutHerDay
 
 <<StartTalking PlayersAnxiety>> Yeah, you’ve got experience with confronting thieves.
 
-<<ChangeExpression PlayersBrain Talking>> I feel like I should say something, to show I care?
+<<ChangeExpression PlayersBrain Talking>> I feel like I should say something and show I care.
 
 [[That sounds rough, but I believe in your ability to handle it well.|ThatSoundsRough]]
 [[Sneak in at night and search everyone’s desks|Sneak]]

@@ -97,10 +97,11 @@ title: Start
 
 <<StartTalking Player>> Oh, I was looking forward to...
 <<StartTalking Player>> ooohhh
-<<StartTalking Player>> You two were
+<<StartTalking Player>> You two were..
 
 <<StartTalking Gina>> Together, but that was a few months ago.
-<<StartTalking Gina>> We both past that... right?
+<<StartTalking Gina>> We're both past that. 
+<<StartTalking Gina>> Right?
 [textPauseTime=4.0][pause]
 <<StartTalking Rea>> I’m heading back to the kitchen.
 

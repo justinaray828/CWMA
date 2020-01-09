@@ -356,7 +356,7 @@ title: AskHerAboutHerDay
 <<StartTalking Gina>> I think. 
 <<StartTalking Gina>> But how do you ask your coworker that?
 
-<<StartTalking Player>> Right, that’s would be awkward.
+<<StartTalking Player>> Right.  It'd be a bit awkward.
 
 <<setscene innerDate>>
 

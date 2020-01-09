@@ -18,7 +18,8 @@ title: Start
 //TODO: Slow text
 <<StartTalking Gina>> Crazy
 
-<<StartTalking Jordy>> Must be the universe saying “This is a great driver!!!”  Btw remember to rate, I noticed I didn’t get any feedback on the last one.
+<<StartTalking Jordy>> Must be the universe saying “This is a great driver!!!”  
+<<StartTalking Jordy>> By the way, remember to rate! I noticed I didn’t get any feedback on the last one.
 
 <<StartTalking Gina>> We were running late
 

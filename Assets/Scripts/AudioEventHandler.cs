@@ -71,6 +71,7 @@ public class AudioEventHandler : MonoBehaviour
         EventManager.StopListening("EnterBrainRoom", EnterBrainRoom);
         EventManager.StopListening("ExitBrainRoom", ExitBrainRoom);
         EventManager.StopListening("EnterBrainRoomQuick", EnterBrainRoomQuick);
+        EventManager.StopListening("ExitBrainRoomQuick", ExitBrainRoomQuick);
         EventManager.StopListening("brainOpen", BrainOpen);
         EventManager.StopListening("brainClose", BrainClose);
         EventManager.StopListening("GinaWalking", GinaWalking);
@@ -102,7 +103,7 @@ public class AudioEventHandler : MonoBehaviour
     {
         am.FadeInSFX("theater_lobby_loop");
         EventManager.StartListening("EnterBrainRoomQuick",EnterBrainRoomQuick);
-        EventManager.StartListening("ExitBrainRoom", ExitBrainRoom);
+        EventManager.StartListening("ExitBrainRoomQuick", ExitBrainRoomQuick);
         EventManager.StartListening("StartMovie", StartMovie);
     }
 
@@ -133,7 +134,7 @@ public class AudioEventHandler : MonoBehaviour
     {
         am.FadeInSFX("restaurant_loop");
         EventManager.StartListening("EnterBrainRoomQuick", EnterBrainRoomQuick);
-        EventManager.StartListening("ExitBrainRoom", ExitBrainRoom);
+        EventManager.StartListening("ExitBrainRoomQuick", ExitBrainRoomQuick);
         EventManager.StartListening("GinaWalking", GinaWalking);
         EventManager.StartListening("ReaWalking", ReaWalking);
         EventManager.StartListening("ReaWalkingAway", ReaWalkingAway);
@@ -216,6 +217,13 @@ public class AudioEventHandler : MonoBehaviour
     private void ExitBrainRoom()
     {
         am.PlayFX("marimba_ascend");
+        am.SetBrainroomSnapshot(false, 2f);
+        am.SetSourceOutput("blip", "SFX");
+        am.SetSourceOutput("woodblock_1", "SFX");
+        am.SetSourceOutput("woodblock_2", "SFX");
+    }
+    private void ExitBrainRoomQuick()
+    {
         am.SetBrainroomSnapshot(false, 2f);
         am.SetSourceOutput("blip", "SFX");
         am.SetSourceOutput("woodblock_1", "SFX");

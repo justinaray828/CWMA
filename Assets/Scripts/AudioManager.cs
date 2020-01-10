@@ -83,6 +83,11 @@ public class AudioManager : MonoBehaviour
         Sound nextS = GetSound(nextSceneName, SoundType.Music);
         Sound currentS = GetSound(currMusicName, SoundType.Music);
 
+        if(nextS.clip == currentS.clip)
+        {
+            return;
+        }
+
         AudioSource nextSource = GetSource(nextS);
 
         StartCoroutine(FadeIn(nextSource, fadeTimeDefault, nextS.volume));

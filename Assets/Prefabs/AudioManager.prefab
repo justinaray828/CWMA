@@ -150,6 +150,17 @@ MonoBehaviour:
     ignoreListenerPause: 1
     originalVolume: 0
     source: {fileID: 0}
+  - name: 09_Credits
+    clip: {fileID: 8300000, guid: d5c3cb1b346374a68acdac4b42520b68, type: 3}
+    output: {fileID: -8622729306382389199, guid: 8470804748a124767a11093462dd9bf8,
+      type: 2}
+    volume: 0.407
+    pitch: 1
+    loop: 1
+    playonawake: 0
+    ignoreListenerPause: 1
+    originalVolume: 0
+    source: {fileID: 0}
   SFXSounds:
   - name: pop1
     clip: {fileID: 8300000, guid: 9ad9a991cab01494ca8b6013efe6eb3a, type: 3}

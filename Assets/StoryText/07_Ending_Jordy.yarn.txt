@@ -16,7 +16,7 @@ title: EndingJordy_Continued
 <<StartTalking Jordy>> I’ll tell you, that’s all crap you’re telling yourself.  
 <<StartTalking Jordy>> You were nice to the rideshare guy while simultaneously trying to have a date yourself.
 
-<<StartTalking Player>> Yeah, but didn’t get a second date…
+<<StartTalking Player>> Yeah, but I didn’t get a second date…
 
 <<StartTalking Jordy>> But you will.  You will get a second date with someone.. eventually.
 
@@ -34,7 +34,7 @@ title: EndingJordy_Continued
 <<StartTalking Player>> Thanks, *laughs* I needed that, Not sure if I can become The Rock.
 
 <<StartTalking Jordy>> And that's ok! Everyone settles for who they are right now. 
-<<StartTalking Jordy>> Life's an work in progress, like driving without missing all my turns.
+<<StartTalking Jordy>> Life's a work in progress, like driving without missing all my turns.
 
 <<StartTalking Player>> That makes sense.  
 <<StartTalking Player>> But I probably need more time to work on myself before I try this whole thing again.

@@ -120,14 +120,17 @@ public class AudioEventHandler : MonoBehaviour
 
     private void Setup_Alone()
     {
+        EventManager.StartListening("FinishGame", FinishGame);
     }
 
     private void Setup_Jordy()
     {
+        EventManager.StartListening("FinishGame", FinishGame);
     }
 
     private void Setup_SecondDate()
     {
+        EventManager.StartListening("FinishGame", FinishGame);
     }
 
     private void Setup_Resturant()
@@ -235,6 +238,11 @@ public class AudioEventHandler : MonoBehaviour
         am.SetSourceOutput("blip", "Headroom");
         am.SetSourceOutput("woodblock_1", "Headroom");
         am.SetSourceOutput("woodblock_2", "Headroom");
+    }
+
+    private void FinishGame()
+    {
+        am.FadeOutMusic(SceneManager.GetActiveScene().name, 3.1f);
     }
 
     private void Pause()

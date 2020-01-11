@@ -281,7 +281,7 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
                 break;
 
             case "setscene 09_Credits":
-                sceneHandler.LoadScene("09_Credits");
+                StartCoroutine(RollCredits());
                 break;
 
             default:
@@ -289,6 +289,20 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
                 break;
         }
         yield break;
+    }
+
+    public IEnumerator RollCredits()
+    {
+        EventManager.TriggerEvent("FinishGame");
+        FadeScript fade = FindObjectOfType<FadeScript>();
+        if(fade != null)
+        {
+            fade.Fade();
+        }
+        yield return new WaitForSeconds(1.6f);
+        dialoguePanelController.PopUp = false;
+        yield return new WaitForSeconds(1.5f);
+        sceneHandler.LoadScene("09_Credits");
     }
 
     /// Called when the dialogue system has started running.
@@ -313,6 +327,8 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
     public override IEnumerator DialogueComplete()
     {
         Debug.Log("Complete!");
+
+        yield return new WaitForSeconds(5f);
 
         // Hide the dialogue interface.
         if (dialogueContainer != null)

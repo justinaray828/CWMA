@@ -242,7 +242,11 @@ public class AudioEventHandler : MonoBehaviour
 
     private void FinishGame()
     {
-        am.FadeOutMusic(SceneManager.GetActiveScene().name, 3.1f);
+        if(SceneManager.GetActiveScene().name != "06_Ending_SecondDate")
+        {
+            am.FadeOutMusic(SceneManager.GetActiveScene().name, 3.1f);
+        }
+        return;
     }
 
     private void Pause()

@@ -177,7 +177,7 @@ MonoBehaviour:
   currentExpression: Happy
   characterData:
     name: Gina
-    talkingPitch: 1.43
+    talkingPitch: 1.452
 --- !u!95 &1663674469
 Animator:
   serializedVersion: 3

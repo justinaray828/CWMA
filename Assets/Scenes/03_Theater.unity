@@ -425,6 +425,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 435629430}
     m_Modifications:
+    - target: {fileID: 3205465290328666999, guid: 6f038585176a84b4c9c682d9035d1bab,
+        type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 8463444281345878377, guid: 6f038585176a84b4c9c682d9035d1bab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -484,11 +489,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3205465290328666999, guid: 6f038585176a84b4c9c682d9035d1bab,
-        type: 3}
-      propertyPath: m_Name
-      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f038585176a84b4c9c682d9035d1bab, type: 3}
@@ -635,6 +635,11 @@ PrefabInstance:
       propertyPath: characterData.name
       value: Anxiety
       objectReference: {fileID: 0}
+    - target: {fileID: 5713818038341176069, guid: 5479a4882c427ff4f8f43768d58d7ed6,
+        type: 3}
+      propertyPath: characterData.talkingPitch
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5479a4882c427ff4f8f43768d58d7ed6, type: 3}
 --- !u!1001 &1663674466
@@ -712,27 +717,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1663674466}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1674389762 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4899502158329937300, guid: feca0f149b5a21347ad797a352079305,
-    type: 3}
-  m_PrefabInstance: {fileID: 4899502159886734486}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1674389763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1674389762}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03a7bd42f6990f248b93f5ea65c49f69, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentExpression: 
-  characterData:
-    name: Emily
 --- !u!4 &1674389764 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4899502158329937298, guid: feca0f149b5a21347ad797a352079305,

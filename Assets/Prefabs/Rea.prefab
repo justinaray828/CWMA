@@ -177,7 +177,7 @@ MonoBehaviour:
   currentExpression: Happy
   characterData:
     name: Rea
-    talkingPitch: 1.4
+    talkingPitch: 1.243
 --- !u!95 &7041949430447871943
 Animator:
   serializedVersion: 3

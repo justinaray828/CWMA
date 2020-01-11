@@ -24,7 +24,7 @@ title: Start
 <<StartTalking Player>> Jordy, right?
 
 <<StartTalking Jordy>> Hey there!
-<<StartTalking Jordy>> The almighty app says you've got two stop?
+<<StartTalking Jordy>> The almighty app says you've got two stops?
 
 <<StartTalking Player>> Yep, an apartment a few blocks away and the theater.
 

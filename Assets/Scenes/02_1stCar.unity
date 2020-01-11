@@ -675,7 +675,8 @@ PrefabInstance:
       propertyPath: characterData.talkingPitch
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1053585128946777890, guid: 91eb66bf04c6716429c1ffe3a74b4936, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 91eb66bf04c6716429c1ffe3a74b4936, type: 3}
 --- !u!1001 &3732169595581011550
 PrefabInstance:

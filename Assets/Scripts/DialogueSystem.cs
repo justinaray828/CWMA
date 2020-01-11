@@ -215,6 +215,7 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
         {
             button.gameObject.SetActive(false);
         }
+        inputPressed = false;
     }
 
     /// Called by buttons to make a selection.

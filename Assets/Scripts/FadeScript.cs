@@ -11,7 +11,6 @@ public class FadeScript : MonoBehaviour
     [YarnCommand("Fade")]
     public void Fade()
     {
-        Debug.Log("fading!!");
         FadePanel.SetActive(true);
     }
 }

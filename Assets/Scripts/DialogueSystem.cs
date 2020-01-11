@@ -328,6 +328,7 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
     {
         Debug.Log("Complete!");
 
+        //wait to accomodate for animations when finishing dialogue
         yield return new WaitForSeconds(5f);
 
         // Hide the dialogue interface.

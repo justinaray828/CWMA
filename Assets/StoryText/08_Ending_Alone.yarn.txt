@@ -1,6 +1,6 @@
 title: Start
 ---
-<<setscene Restaurant>>
+<<setscene innerDateCut>>
 <<StartTalking PlayersAnxiety>> Great job.  You nailed it!
 
 <<StartTalking PlayersBrain>> Shut up.

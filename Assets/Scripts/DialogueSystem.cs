@@ -237,7 +237,6 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
         //Debug.Log("listenToJordy Variable: " + Choices.listenedToJordy);
         if(command.text.StartsWith("setscene") && inBrainRoom)
         {
-            Debug.Log("In here!");
             if (command.text == "setscene Dryve") { 
                 EventManager.TriggerEvent("ExitBrainRoom");
                 cameraTransition.ZoomOut();

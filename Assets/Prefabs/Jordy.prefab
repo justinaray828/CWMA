@@ -256,7 +256,7 @@ MonoBehaviour:
   currentExpression: Happy
   characterData:
     name: Jordy
-    talkingPitch: 1.25
+    talkingPitch: 1.148
 --- !u!95 &6145422631967178683
 Animator:
   serializedVersion: 3

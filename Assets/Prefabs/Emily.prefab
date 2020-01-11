@@ -197,7 +197,7 @@ MonoBehaviour:
   currentExpression: 
   characterData:
     name: Emily
-    talkingPitch: 1.39
+    talkingPitch: 1.198
 --- !u!1 &4899502159582737781
 GameObject:
   m_ObjectHideFlags: 0

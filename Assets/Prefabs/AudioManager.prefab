@@ -125,7 +125,7 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     playonawake: 0
-    ignoreListenerPause: 1
+    ignoreListenerPause: 0
     originalVolume: 0
     source: {fileID: 0}
   - name: 07_Ending_Jordy
@@ -136,7 +136,7 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     playonawake: 0
-    ignoreListenerPause: 1
+    ignoreListenerPause: 0
     originalVolume: 0
     source: {fileID: 0}
   - name: 08_Ending_Alone
@@ -147,7 +147,7 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     playonawake: 0
-    ignoreListenerPause: 1
+    ignoreListenerPause: 0
     originalVolume: 0
     source: {fileID: 0}
   - name: 09_Credits

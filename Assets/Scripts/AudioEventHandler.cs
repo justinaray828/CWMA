@@ -260,7 +260,7 @@ public class AudioEventHandler : MonoBehaviour
     {
         AudioListener.pause = false;
         am.Stop("PauseMusic");
-        
+        am.currMusicName = SceneManager.GetActiveScene().name;
     }
 
 

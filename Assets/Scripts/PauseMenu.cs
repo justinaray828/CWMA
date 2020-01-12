@@ -40,10 +40,17 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = true;
     }
 
-    public void QuitGame()
+    public void ReturnToTitle()
     {
         //Resume the game after quiting so it doesn't remain Paused
         Resume();
         SceneManager.ReturnToMainMenu();
+    }
+
+    public void QuitGame()
+    {
+        //Resume the game after quiting so it doesn't remain Paused
+        Resume();
+        SceneManager.ExitGame();
     }
 }

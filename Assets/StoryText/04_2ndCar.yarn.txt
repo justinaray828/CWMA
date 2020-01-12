@@ -201,7 +201,6 @@ title: WrongToSayThat
 
 <<StartTalking Player>> Hopefully we both enjoy dinner.
 
-$Inspiration is true
 <<setScene nextScene>>
 ===
 

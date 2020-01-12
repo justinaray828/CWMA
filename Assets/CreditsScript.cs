@@ -7,6 +7,7 @@ public class CreditsScript : MonoBehaviour
     public GameObject title;
     public GameObject team;
     public GameObject assets;
+    public GameObject audio;
     public GameObject specialThanks;
     public GameObject thankYou;
     public SceneHandler sceneHandler;
@@ -38,13 +39,17 @@ public class CreditsScript : MonoBehaviour
                 break;
             case 3:
                 assets.SetActive(false);
-                specialThanks.SetActive(true);
+                audio.SetActive(true);
                 break;
             case 4:
+                audio.SetActive(false);
+                specialThanks.SetActive(true);
+                break;
+            case 5:
                 specialThanks.SetActive(false);
                 thankYou.SetActive(true);
                 break;
-            case 5:
+            case 6:
                 sceneHandler.LoadScene(sceneToLoad);
                 break;
             default:

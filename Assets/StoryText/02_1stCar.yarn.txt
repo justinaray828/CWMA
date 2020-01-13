@@ -384,7 +384,6 @@ title: ThatSoundsRough
 
 <<StartTalking Jordy>> And we’re here!!!  Hope y’all enjoy the movie!
 
-$inspiraton is true
 <<setScene nextScene>>
 ===
 

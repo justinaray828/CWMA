@@ -31,13 +31,13 @@ title: Start
 
 <<StartTalking PlayersAnxiety>> Relationship??? When was the last time you went on a second date?
 
-<<StartTalking PlayersBrain>> I need confidence.  And I won’t have any confidence if I stay in this toxic relationship with you.
+<<StartTalking PlayersBrain>> I need confidence. And I won’t have any confidence if I stay in this toxic relationship with you.
 
 <<StartTalking PlayersAnxiety>> Everyone's got anxiety...
 
 <<StartTalking PlayersBrain>> But not this much.
 
-<<StartTalking PlayersAnxiety>> Here’s the truth.  You wouldn’t date yourself.  
+<<StartTalking PlayersAnxiety>> Here’s the truth. You wouldn’t date yourself.  
 <<StartTalking PlayersAnxiety>> You’ve spent this entire night arguing with and ridiculing yourself.  
 <<StartTalking PlayersAnxiety>> No one would find that appealing.  
 <<StartTalking PlayersAnxiety>> Until you make peace with that, you’re going to be single.
@@ -54,7 +54,7 @@ title: Start
 
 <<StartTalking PlayersBrain>> I hear you. 
 
-<<StartTalking PlayersAnxiety>> Then it's time to start
+<<StartTalking PlayersAnxiety>> Yeah, but you're not listening. It's time to start
  
 <<StartTalking PlayersBrain>> Listening?  I've been doing that.
 <<StartTalking PlayersBrain>> It's time to start coping.

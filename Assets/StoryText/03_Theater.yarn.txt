@@ -4,7 +4,7 @@ title: Start
 <<StartTalking Player>> Finally.
 <<StartTalking Player>> We made it!
 
-<<StartTalking Gina>> We could have walked here faster.
+<<StartTalking Gina>> Could have walked here faster.
 
 <<StartTalking Player>> He found a way to speed through every light and miss every turn.
 
@@ -15,12 +15,12 @@ title: Start
 
 <<StartTalking Gina>> But of course!
 
-<<StartTalking Emily>> What movie are you seeing?
+<<StartTalking Emily>> Movie Title?
 
 <<StartTalking Player>> I bought tickets online.
 
 <<StartTalking Emily>> Cool story... 
-<<StartTalking Emily>> I still need the movie's name to find your tickets in our system.
+<<StartTalking Emily>> Still need the movie's name to find your tickets in our system.
 
 <<setscene innerDateCut>>
 
@@ -31,7 +31,7 @@ title: Start
 <<StartTalking PlayersBrain>> I think it’s either 'Love in New York' or 'Brooklyn Hearts', something like that.  
 <<StartTalking PlayersBrain>> How many date movies could there be?
 
-<<StartTalking PlayersAnxiety>> Well, that’s a 50% chance of looking like an idiot.
+<<StartTalking PlayersAnxiety>> So you've got a 50% chance of looking like an idiot.
 <<StartTalking PlayersAnxiety>> Assuming either is even right.
 
 [[Umm 'Love in New York'|LoveInNewYork]]
@@ -48,7 +48,7 @@ title: LoveInNewYork
 <<StartTalking Emily>> Great… glad someone knew.
 
 <<StartTalking Gina>> Saw you struggling. 
-<<StartTalking Gina>> These names are generic.
+<<StartTalking Gina>> These names aren't great.
 
 <<StartTalking Player>> Thanks for the save.
 
@@ -57,7 +57,7 @@ title: LoveInNewYork
 <<StartTalking Player>> Huh…
 
 <<StartTalking Emily>> Give. Me. Your. Card. So. I. Can. Print. Your. Ticket.
-<<StartTalking Emily>> There are other people dying slowly behind.
+<<StartTalking Emily>> There are other people dying slowly in line behind you.
 
 <<setscene innerDateCut>>
  
@@ -83,8 +83,8 @@ title: BrooklynHearts
 <<StartTalking Gina>> That is definitely not the movie.
 
 <<StartTalking Emily>> Great… 
-<<StartTalking Emily>> You bought a ticket for a movie you can’t even remember it's name.  
-<<StartTalking Emily>> Real art connoisseur.
+<<StartTalking Emily>> You bought a ticket for a movie you and can’t even remember it's name.  
+<<StartTalking Emily>> Real connoisseur here.
 
 <<StartTalking Gina>> I am pretty sure it is 'Brooklyn Sleeps Alone Tonight.' 
 
@@ -151,6 +151,9 @@ title: CreditCard
 <<StartTalking Player>> Great, I sorta just guessed.
 
 <<StartTalking Emily>> Not! Try Again.
+<<StartTalking Emily>> Must be another high interest low reward card you haven't paid off.
+
+<<StartTalking Gina>> Whoa
 
 <<StartTalking Player>> Why are you like this?
  
@@ -226,7 +229,7 @@ title: OtherCreditCard
 
 <<StartTalking Emily>> Jeez, I’m running it.
 <<StartTalking Emily>> And it’s printing.
-<<StartTalking Emily>> Enjoy the show.
+<<StartTalking Emily>> Enjoy the 'show.'
 
 <<StartTalking Player>> YES.
 <<StartTalking Player>> And you’re not joking this time?
@@ -252,7 +255,7 @@ title: BuyANewTicket
 
 <<StartTalking Emily>> You have THAT many cards.
 
-<<StartTalking Player>> So I’m just going to buy a new ticket.
+<<StartTalking Player>> So.. I’m just going to buy a new ticket.
 
 <<StartTalking Gina>> Really?
 
@@ -261,7 +264,7 @@ title: BuyANewTicket
 <<StartTalking Gina>> You've got to be joking.
 
 <<StartTalking Emily>> It’s a Friday Night.
-<<StartTalking Emily>> And Y’all are late.
+<<StartTalking Emily>> And Y’all are VERY late.
 
 <<StartTalking Player>> Seriously?
 <<StartTalking Player>> The previews are just starting, we aren’t that late.

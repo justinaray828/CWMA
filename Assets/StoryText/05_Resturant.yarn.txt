@@ -3,7 +3,7 @@ title: Start
 <<setscene Restaurant>>
 <<StartTalking Player>> This place has great reviews.
 
-<<StartTalking Gina>> Great! Excuse me for a second.
+<<StartTalking Gina>> Wonderful! Excuse me for a second.
 <<StartTalking Gina>> I need to visit the restroom.
 
 <<StartTalking Player>> Oh, ok.
@@ -86,14 +86,15 @@ title: Start
 
 <<StartTalking Gina>> Rea!
 
-<<StartTalking Rea>> Oh hey, wait are you on a date with…
+<<StartTalking Rea>> Gina?
+<<StartTalking Rea>> Wait are you on a date with…
 
 <<Silent Gina>> ...
 
 <<StartTalking Player>> Yep, me.  
 <<StartTalking Player>> Do you two know each other?
 
-<<StartTalking Rea>> I’m gonna go cancel that order of flaming shrimp.
+<<StartTalking Rea>> I should cancel that order of flaming shrimp.
 
 <<StartTalking Player>> Oh, I was looking forward to...
 <<StartTalking Player>> ooohhh
@@ -109,10 +110,11 @@ title: Start
 <<StartTalking Player>> Should we go?
 
 <<StartTalking Gina>> Nah, it's ok.  
-<<StartTalking Gina>> She must have gottent a new job recently.  
-<<StartTalking Gina>> I’ll ask if we can get a new server.  She’ll understand.
+<<StartTalking Gina>> She must have gotten a new job recently.  
+<<StartTalking Gina>> I’ll ask if we can get a different server.
+<<StartTalking Gina>> She’ll understand.
 
-<<StartTalking Player>> Or.. we could leave quickly and go somewhere else.  
+<<StartTalking Player>> Or.. we could go somewhere else.  
 
 <<ReaReturns Characters>>
 
@@ -142,11 +144,11 @@ title: TrustGina
 <<setscene innerDateCut>>
 <<setscene Restaurant>>
 
-<<StartTalking Player>> I'm ready to order if you are, Gina. 
+<<StartTalking Player>> I'm ready to order if you are. 
 
 <<StartTalking Gina>> Hold on! I still need another minute.
 
-<<StartTalking Rea>> so decisive. 
+<<StartTalking Rea>> So decisive. 
 
 <<StartTalking Gina>> Excuse me? 
 
@@ -200,7 +202,7 @@ title: ReaRight
 
 <<StartTalking Player>> She has a point. A year is a long time to spend with someone in a relationship. 
 
-<<StartTalking Rea>> See!  He feels the same way. I'll let you two have a minute. 
+<<StartTalking Rea>> See! He feels the same way. I'll let you two have a minute. 
 
 <<ReaLeaves Characters>>
 
@@ -211,10 +213,10 @@ title: ReaRight
 <<StartTalking Gina>> So you don’t actually believe that a year is too long to decide? 
 
 <<StartTalking Player>> How am I supposed to know the answer?
-<<StartTalking Player>> Honestly, this is embarressing...
-<<StartTalking Player>>  I've never been in a relationship that long.
+<<StartTalking Player>> Honestly, this is embarrassing but,
+<<StartTalking Player>> I've never been in a relationship that long.
 
-<<StartTalking Gina>> Don't be embarressed.  You have a point. 
+<<StartTalking Gina>> Don't be embarrassed.  You have a point. 
 <<StartTalking Gina>> Lucky for you it won’t take me that long to figure out what to order.
 
 <<StartTalking Player>> If you take a year to decide what to eat then wouldn’t this date last a year, therefore, we would have been dating for a year.
@@ -229,15 +231,15 @@ title: MistakeRestaurant
 <<setscene innerDateCut>>
 <<setscene Restaurant>>
 
-<<StartTalking Gina>> A year isn’t enough time to decide if should spend your life with someone! 
+<<StartTalking Gina>> A year isn’t enough time to decide if you should spend the rest of your life with someone! 
 <<StartTalking Gina>> Rom coms and reality tv has warped your perception of relationships.
 
 <<StartTalking Rea>> My uncle Carl proposed to his wife after two weeks when he was eighteen.
 <<StartTalking Rea>> They've been happily married ever since!
 
-<<StartTalking Gina>> This is insane. I’m on a date. I don’t need this from you right now. 
+<<StartTalking Gina>> This is ridiculous. I’m on a date. I don’t need this from you right now. 
 
-<<StartTalking Rea>> You told me that you need more time to figure out if you want to be with someone forever. 
+<<StartTalking Rea>> You told me that you needed more time to figure out if you wanted to be with someone forever. 
 <<StartTalking Rea>> But you’re instantly dating again after we broke up. 
 
 <<StartTalking Gina>> We broke up SIX MONTHS AGO! It's just a date. I’m not getting married.
@@ -247,7 +249,7 @@ title: MistakeRestaurant
 <<StartTalking Gina>> That’s not your concern. My life is none of your business.  
 <<StartTalking Gina>> This is why I blocked you online.
 
-<<StartTalking Rea>> You never blocked Janice.
+<<StartTalking Rea>> Well.. you never blocked Janice.
 
 <<StartTalking Gina>> YOU HAVE JANICE SPYING ON ME!?
 
@@ -288,7 +290,7 @@ title: Justified
 
 <<StartTalking Player>> No problem and you don’t have to be sorry.
 <<StartTalking Player>> I’m over it... Mostly.
-<<StartTalking Player>> Are you a two Christmas kid too?
+<<StartTalking Player>> Are you also a two Christmases kid?
 
 <<StartTalking Gina>> Nope.  
 <<StartTalking Gina>> They are happily terrible together.  
@@ -355,7 +357,7 @@ title: WeShouldGo
 <<StartTalking Player>> Not done yet. 
 <<StartTalking Player>> I get that you want to stay in this uncomfortable situation, but maybe I don’t.  
 <<StartTalking Player>> And you’re ignoring that.  
-<<StartTalking Player>> And that doesn't seem fair either.
+<<StartTalking Player>> Which doesn't seem fair either.
 
 <<StartTalking Gina>> Hmmm...
 [textPauseTime=4.0][pause]

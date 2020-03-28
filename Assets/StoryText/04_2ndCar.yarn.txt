@@ -10,13 +10,13 @@ title: Start
 
 <<StartTalking Gina>> Well here we are again
 
-<<StartTalking Jordy>> Crazy the Dryve app put y’all in my car again.
+<<StartTalking Jordy>> That's Wild! The Dryve app put y’all in my car again.
 
 //TODO: Slow text
 <<StartTalking Player>> Yeah…
 
 //TODO: Slow text
-<<StartTalking Gina>> Crazy
+<<StartTalking Gina>> Crazy...
 
 <<StartTalking Jordy>> Must be the universe saying “This is a great driver!!!”  Btw remember to rate, I noticed I didn’t get any feedback on the last one.
 
@@ -116,16 +116,20 @@ title: DiscussTheMovie
 
 <<setscene innerDate>>
 
-<<StartTalking PlayersAnxiety>> Here’s your chance to relate.
+<<StartTalking PlayersAnxiety>> Here’s your chance to relate and show you're a normal guy with normal movie tastes.
 
-<<StartTalking PlayersBrain>> Great, but how should I respond?
+<<StartTalking PlayersBrain>> Doesn't sound too hard, but how should I respond?
 
-<<StartTalking PlayersAnxiety>> You have two choices. Do you want to be like a parrot and repeat what she said? 
+<<StartTalking PlayersAnxiety>> You have two choices.
+<<StartTalking PlayersAnxiety>> Do you want to parrot what she said? 
 <<StartTalking PlayersAnxiety>> Or do you want to form your own opinion and give an honest, well thought out answer?
 
 <<StartTalking PlayersBrain>> I feel like there should be more choices.
 
-<<StartTalking PlayersAnxiety>> Nope.  Only two possibilities.  In existence.  Two choices.  Pick One.
+<<StartTalking PlayersAnxiety>> Nope.
+<<StartTalking PlayersAnxiety>> Only two possibilities.
+<<StartTalking PlayersAnxiety>> In existence.
+<<StartTalking PlayersAnxiety>> Pick One.
 
 [[I liked it, I think the critics were wrong.|CriticsWereWrong]]
 [[The critics were right, I don’t know how that terrible movie got made.|CriticsWereRight]]
@@ -145,8 +149,12 @@ title: CriticsWereWrong
 
 <<StartTalking Player>> I think the critics were still wrong.
 
-<<StartTalking Gina>> Everyone is entitled to their opinion, whether you agree or not. 
+<<StartTalking Gina>> Everyone is entitled to their opinion about art, whether you agree or not. 
 <<StartTalking Gina>> Not everything has to be made for everyone.
+
+<<StartTalking Player>> Wait, so you agree with critics that it wasn't good, but..
+
+<<StartTalking Gina>> But I enjoyed it.  It's ok to like things while still aknowledging their flaws.
 
 <<StartTalking Player>> …
 
@@ -192,7 +200,8 @@ title: CriticsWereRight
 title: WrongToSayThat
 ---
 <<setscene Dryve>>
-<<StartTalking Player>> I’m sorry, I shouldn’t have said that.  It’s ok for different people to like different things.  Just because me and bunch of other people hated something that doesn’t mean you have to too.
+<<StartTalking Player>> I’m sorry, I shouldn’t have said that.  It’s ok for different people to like different things.  
+<<StartTalking Player>> Just because me and bunch of other people hated something that doesn’t mean you have to as well.
 
 <<StartTalking Gina>> Thanks for apologizing.
 
@@ -225,7 +234,9 @@ title: DefendBoth
 
 <<StartTalking Player>> Not helping.
 
-<<StartTalking Gina>> I’m sure you’re a nice guy… no actually I’m not sure of that.  Dryver can you drop me off here, I’ll get another ride.
+<<StartTalking Gina>> I’m sure you’re a nice guy… 
+<<StartTalking Gina>> no actually I’m not sure of that.  
+<<StartTalking Gina>> Dryver can you drop me off here, I’ll get another ride.
 
 <<StartTalking Jordy>> Sure.
 
@@ -247,7 +258,7 @@ title: IDontKnow
 
 <<StartTalking Gina>> Some things in life are just mediocre, and that is ok.
 
-<<StartTalking Jordy>> And we’re here!  Hope you two have a good night.
+<<StartTalking Jordy>> And we’re here!  Hope you two have a good rest of your night.
 
 <<StartTalking Player>> Hopefully we both enjoy dinner.
 

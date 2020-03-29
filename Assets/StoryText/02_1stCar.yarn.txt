@@ -19,8 +19,6 @@ title: Start
 
 <<StartTalking Jordy>> Who doesn't love lotion?!?!
 
-//TODO: Player Character reacts in shock
-
 <<StartTalking Player>> Umm.. Jordy, right?
 
 <<StartTalking Jordy>> Hey there!

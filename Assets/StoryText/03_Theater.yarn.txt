@@ -255,7 +255,8 @@ title: BuyANewTicket
 
 <<StartTalking Emily>> You have THAT many cards.
 
-<<StartTalking Player>> So.. I’m just going to buy a new ticket.
+<<StartTalking Player>> So.. 
+<<StartTalking Player>> I’m just going to buy a new ticket.
 
 <<StartTalking Gina>> Really?
 

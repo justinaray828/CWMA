@@ -49,7 +49,7 @@ title: Start
 <<StartTalking Rea>> I love the flaming shrimp.
 <<StartTalking Rea>> Couldn’t have them before, because my ex was super allergic.
 
-<<StartTalking Player>> Sucks for your ex, shrimp are delicious. 
+<<StartTalking Player>> Sucks for your ex, Shrimp is delicious. 
 <<StartTalking Player>> I’ll get an order of those.
 
 <<StartTalking Rea>> Sounds good, back in a jif.
@@ -100,8 +100,9 @@ title: Start
 <<StartTalking Player>> ooohhh
 <<StartTalking Player>> You two were
 
-<<StartTalking Gina>> Together, but that was a few months ago.
-<<StartTalking Gina>> We both past that... right?
+<<StartTalking Gina>> Together
+<<StartTalking Gina>> but that was a few months ago.
+<<StartTalking Gina>> We are both past that... right?
 [textPauseTime=4.0][pause]
 <<StartTalking Rea>> I’m heading back to the kitchen.
 
@@ -160,7 +161,7 @@ title: TrustGina
 <<StartTalking Rea>> Gratuity is added by default hun.
 <<StartTalking Rea>> And your guy here already poured the wine.
 
-<<StartTalking Player>> So it looks like you're both over very over this.
+<<StartTalking Player>> So it looks like you're both over this.
 
 <<StartTalking Gina>> One of us.
 
@@ -172,7 +173,7 @@ title: TrustGina
 
 <<StartTalking Rea>> A year is more than enough time to know if you want to spend the rest of your life with someone. 
 
-<<StartTalking Gina>> For some people, 
+<<StartTalking Gina>> For some people. 
 
 <<setscene innerDateCut>>
 
@@ -214,7 +215,7 @@ title: ReaRight
 
 <<StartTalking Player>> How am I supposed to know the answer?
 <<StartTalking Player>> Honestly, this is embarrassing but,
-<<StartTalking Player>> I've never been in a relationship that long.
+<<StartTalking Player>> i've never been in a relationship that long.
 
 <<StartTalking Gina>> Don't be embarrassed.  You have a point. 
 <<StartTalking Gina>> Lucky for you it won’t take me that long to figure out what to order.

@@ -17,7 +17,7 @@ title: Start
 <<PlayFX AudioManager car_door>>
 <<PlayerEnters Characters>>
 
-<<StartTalking Jordy>> Who doesn't love lotion?!?!
+<<StartTalking Jordy>> Who doesn't love lotion!?
 
 <<StartTalking Player>> Umm.. Jordy, right?
 
@@ -98,7 +98,6 @@ title: Start
 <<StartTalking Player>> That's not what I meant.. 
 <<StartTalking Player>> ..not that being experienced is bad, 
 <<StartTalking Player>> I just assumed... 
-<<StartTalking Player>> umm..
 
 <<StartTalking Jordy>> You forgot tip Number Three my guy.
 
@@ -223,7 +222,6 @@ title: PlayItCool
 
 <<StartTalking Jordy>> Nah dude. It was in the 30s for Critics AND User Reviews.
 
-//Gina rolls her eyes
 <<StartTalking Gina>> Great, we’re about to sit through a 2 hour bomb.
 
 <<StartTalking Jordy>> 2 hours and 45 minutes.
@@ -248,8 +246,6 @@ title: MakeAJoke
 
 <<StartTalking Jordy>> Probably closer to 5.
 <<StartTalking Jordy>> Just ran that red light. 
-
-//both characters get Wtf looks
 
 <<StartTalking Player>> Anyway… I tried to be a Dryver driver once. 
 <<StartTalking Player>> Trouble is, my passengers didn’t appreciate when I went the extra mile. 
@@ -292,9 +288,10 @@ title: MakeAJoke
 
 <<StartTalking Player>> Turn left here!
 
-//Awkward back and forth stare down between Jordy and Player
 <<Silent Gina>> ...
+
 <<Silent Player>> ...
+
 <<StartTalking Jordy>> Get out...
 
 <<setScene nextScene>>
@@ -363,13 +360,13 @@ title: AskAboutTheirDay
 
 <<StartTalking Player>> Oh ok…
 
-<<StartTalking Gina>> …
+<<Silent Gina>> …
 
 <<Silent Player>> ... 
 
 <<StartTalking Jordy>> Did something crappy happen?
 
-<<StartTalking Gina>> Yeah sorta, over the past few weeks my pens kept going missing.
+<<StartTalking Gina>> Yeah sorta, over the past few weeks my pens kept disappearing.
 
 <<StartTalking Player>> Like a pen thief?
 
@@ -388,7 +385,7 @@ title: AskAboutTheirDay
 
 <<ChangeExpression PlayersBrain Talking>> Should I give some advice.
 
-<<StartTalking PlayersAnxiety>> Yeah, you’ve got experience with confronting thieves.
+<<StartTalking PlayersAnxiety>> Yeah, you’ve got SO much experience with confronting thieves.
 
 <<ChangeExpression PlayersBrain Talking>> I feel like I should say something, to show I care?
 

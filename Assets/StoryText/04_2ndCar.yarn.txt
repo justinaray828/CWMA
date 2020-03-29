@@ -10,12 +10,10 @@ title: Start
 
 <<StartTalking Gina>> Well here we are again
 
-<<StartTalking Jordy>> That's Wild! The Dryve app put y’all in my car again.
+<<StartTalking Jordy>> That's wild! The Dryve app put y’all in my car again.
 
-//TODO: Slow text
 <<StartTalking Player>> Yeah…
 
-//TODO: Slow text
 <<StartTalking Gina>> Crazy...
 
 <<StartTalking Jordy>> Must be the universe saying “This is a great driver!!!”  Btw remember to rate, I noticed I didn’t get any feedback on the last one.
@@ -156,14 +154,14 @@ title: CriticsWereWrong
 
 <<StartTalking Gina>> But I enjoyed it.  It's ok to like things while still aknowledging their flaws.
 
-<<StartTalking Player>> …
+<<Silent Player>> …
 
-<<StartTalking Gina>> …
+<<Silent Gina>> …
 
-<<StartTalking Jordy>> Wise words. (delay) Also, We’re here!
+<<StartTalking Jordy>> Wise words. Also, We’re here!
 <<setScene nextScene>>
 ===
-
+
 title: CriticsWereRight
 ---
 <<setscene Dryve>>
@@ -179,9 +177,9 @@ title: CriticsWereRight
 
 <<StartTalking Gina>> Cool.
 
-<<StartTalking Player>> …
+<<Silent Player>> …
 
-<<StartTalking Gina>> …
+<<Silent Gina>> …
 
 <<StartTalking Player>> It’s cool that you liked it though
 
@@ -230,7 +228,7 @@ title: DefendBoth
 
 <<StartTalking Player>> That’s not what I meant.
 
-<<StartTalking Jordy>> Dude, You referenced Trash like 3 times in 4 sentences.
+<<StartTalking Jordy>> Dude, You referenced trash like 3 times in 4 sentences.
 
 <<StartTalking Player>> Not helping.
 

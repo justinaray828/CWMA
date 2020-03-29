@@ -144,13 +144,13 @@ title: CreditCard
 <<StartTalking Emily>> You think!  
 <<StartTalking Emily>> How many cards do you have?
 
-<<StartTalking Gina>> Oh my god, Just run the card.
+<<StartTalking Gina>> Oh my god, just run the card.
 
 <<StartTalking Emily>> Fine… Bingo.
 
 <<StartTalking Player>> Great, I sorta just guessed.
 
-<<StartTalking Emily>> Not! Try Again.
+<<StartTalking Emily>> Not! Try again.
 <<StartTalking Emily>> Must be another high interest low reward card you haven't paid off.
 
 <<StartTalking Gina>> Whoa
@@ -265,7 +265,7 @@ title: BuyANewTicket
 <<StartTalking Gina>> You've got to be joking.
 
 <<StartTalking Emily>> It’s a Friday Night.
-<<StartTalking Emily>> And Y’all are VERY late.
+<<StartTalking Emily>> And Yyall are VERY late.
 
 <<StartTalking Player>> Seriously?
 <<StartTalking Player>> The previews are just starting, we aren’t that late.

@@ -22,7 +22,7 @@ title: Start
 <<StartTalking Player>> Umm.. Jordy, right?
 
 <<StartTalking Jordy>> Hey there!
-<<StartTalking Jordy>> The almighty app says you've got two stop?
+<<StartTalking Jordy>> The almighty app says you've got two stops?
 
 <<StartTalking Player>> Yep, an apartment a few blocks away then the movie theater.
 
@@ -379,7 +379,7 @@ title: AskAboutTheirDay
 <<StartTalking Gina>> I think. 
 <<StartTalking Gina>> But how do you ask your coworker that?
 
-<<StartTalking Player>> Right, that’s would be awkward.
+<<StartTalking Player>> Right.  It'd be a bit awkward.
 
 <<setscene innerDate>>
 
@@ -387,7 +387,7 @@ title: AskAboutTheirDay
 
 <<StartTalking PlayersAnxiety>> Yeah, you’ve got SO much experience with confronting thieves.
 
-<<ChangeExpression PlayersBrain Talking>> I feel like I should say something, to show I care?
+<<ChangeExpression PlayersBrain Talking>> I feel like I should say something and show I care.
 
 [[That sounds rough, but I believe in your ability to handle it well|ThatSoundsRough]]
 [[Sneak in at night and search everyone’s desks|Sneak]]
@@ -409,7 +409,6 @@ title: ThatSoundsRough
 <<StartTalking Jordy>> Remember to tip!
 <<StartTalking Jordy>> 5 Star Ride Times, 5 Star Ratings!
 
-$inspiraton is true
 <<setScene nextScene>>
 ===
 

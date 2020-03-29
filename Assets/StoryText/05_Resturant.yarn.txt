@@ -98,7 +98,7 @@ title: Start
 
 <<StartTalking Player>> Oh, I was looking forward to...
 <<StartTalking Player>> ooohhh
-<<StartTalking Player>> You two were
+<<StartTalking Player>> You two were..
 
 <<StartTalking Gina>> Together
 <<StartTalking Gina>> but that was a few months ago.

@@ -74,6 +74,7 @@ public class CameraTransition : MonoBehaviour
     /// </summary>
     public void ZoomIn()
     {
+        GetComponent<Animator>().enabled = false;
         zoomIn = true;
         startZoom = true;
         SetCameraPositions();
@@ -145,6 +146,7 @@ public class CameraTransition : MonoBehaviour
 
             if (mainCamera.orthographicSize >= cameraStartSize - zoomTolerance)
             {
+                GetComponent<Animator>().enabled = true;
                 startZoom = false;
             }
         }

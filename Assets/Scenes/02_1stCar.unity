@@ -668,9 +668,15 @@ PrefabInstance:
     - target: {fileID: 7522178595747300659, guid: 91eb66bf04c6716429c1ffe3a74b4936,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 4743584723681482789, guid: 91eb66bf04c6716429c1ffe3a74b4936,
+        type: 3}
+      propertyPath: characterData.talkingPitch
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1053585128946777890, guid: 91eb66bf04c6716429c1ffe3a74b4936, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 91eb66bf04c6716429c1ffe3a74b4936, type: 3}
 --- !u!1001 &3732169595581011550
 PrefabInstance:

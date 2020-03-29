@@ -444,6 +444,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3706871984638885326, guid: 6f038585176a84b4c9c682d9035d1bab,
+        type: 3}
+      propertyPath: characterData.talkingPitch
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f038585176a84b4c9c682d9035d1bab, type: 3}
 --- !u!4 &2598642789658761921 stripped

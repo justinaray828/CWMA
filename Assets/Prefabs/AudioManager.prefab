@@ -55,7 +55,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: d5c3cb1b346374a68acdac4b42520b68, type: 3}
     output: {fileID: -8622729306382389199, guid: 8470804748a124767a11093462dd9bf8,
       type: 2}
-    volume: 1
+    volume: 0.78
     pitch: 1
     loop: 1
     playonawake: 0
@@ -121,29 +121,40 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: d5c3cb1b346374a68acdac4b42520b68, type: 3}
     output: {fileID: -8622729306382389199, guid: 8470804748a124767a11093462dd9bf8,
       type: 2}
-    volume: 0.23
+    volume: 0.39
     pitch: 1
     loop: 1
     playonawake: 0
-    ignoreListenerPause: 1
+    ignoreListenerPause: 0
     originalVolume: 0
     source: {fileID: 0}
   - name: 07_Ending_Jordy
     clip: {fileID: 8300000, guid: b8164f641071a403ba79f76ba3487872, type: 3}
     output: {fileID: -8622729306382389199, guid: 8470804748a124767a11093462dd9bf8,
       type: 2}
-    volume: 0.23
+    volume: 0.452
     pitch: 1
     loop: 1
     playonawake: 0
-    ignoreListenerPause: 1
+    ignoreListenerPause: 0
     originalVolume: 0
     source: {fileID: 0}
   - name: 08_Ending_Alone
     clip: {fileID: 8300000, guid: b8164f641071a403ba79f76ba3487872, type: 3}
     output: {fileID: -8622729306382389199, guid: 8470804748a124767a11093462dd9bf8,
       type: 2}
-    volume: 0.23
+    volume: 0.407
+    pitch: 1
+    loop: 1
+    playonawake: 0
+    ignoreListenerPause: 0
+    originalVolume: 0
+    source: {fileID: 0}
+  - name: 09_Credits
+    clip: {fileID: 8300000, guid: d5c3cb1b346374a68acdac4b42520b68, type: 3}
+    output: {fileID: -8622729306382389199, guid: 8470804748a124767a11093462dd9bf8,
+      type: 2}
+    volume: 0.51
     pitch: 1
     loop: 1
     playonawake: 0
@@ -199,7 +210,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: eaf071e08d94b470eb3c7c98c52ccb6d, type: 3}
     output: {fileID: 6065668692900454425, guid: 8470804748a124767a11093462dd9bf8,
       type: 2}
-    volume: 0.86
+    volume: 0.763
     pitch: 1
     loop: 0
     playonawake: 0
@@ -352,7 +363,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: ad49db66fa1644e029708f90d50c9c13, type: 3}
     output: {fileID: 6065668692900454425, guid: 8470804748a124767a11093462dd9bf8,
       type: 2}
-    volume: 0.92
+    volume: 0.51
     pitch: 1
     loop: 0
     playonawake: 0

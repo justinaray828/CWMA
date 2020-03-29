@@ -215,6 +215,7 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
         {
             button.gameObject.SetActive(false);
         }
+        inputPressed = false;
     }
 
     /// Called by buttons to make a selection.
@@ -234,6 +235,15 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
         // "Perform" the command
         //Debug.Log("Command: " + command.text);
         //Debug.Log("listenToJordy Variable: " + Choices.listenedToJordy);
+        if(command.text.StartsWith("setscene") && inBrainRoom)
+        {
+            if (command.text == "setscene Dryve") { 
+                EventManager.TriggerEvent("ExitBrainRoom");
+                cameraTransition.ZoomOut();
+            }
+            else { EventManager.TriggerEvent("ExitBrainRoomQuick"); }
+            inBrainRoom = false;
+        }
         switch (command.text)
         {
             case "setscene innerDateCut":
@@ -271,16 +281,28 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
                 break;
 
             case "setscene 09_Credits":
-                sceneHandler.LoadScene("09_Credits");
+                StartCoroutine(RollCredits());
                 break;
-            
+
             default:
-                if (inBrainRoom) { EventManager.TriggerEvent("ExitBrainRoom"); }
-                cameraTransition.ZoomOut();
                 inBrainRoom = false;
                 break;
         }
         yield break;
+    }
+
+    public IEnumerator RollCredits()
+    {
+        EventManager.TriggerEvent("FinishGame");
+        FadeScript fade = FindObjectOfType<FadeScript>();
+        if(fade != null)
+        {
+            fade.Fade();
+        }
+        yield return new WaitForSeconds(1.6f);
+        dialoguePanelController.PopUp = false;
+        yield return new WaitForSeconds(1.5f);
+        sceneHandler.LoadScene("09_Credits");
     }
 
     /// Called when the dialogue system has started running.
@@ -305,6 +327,9 @@ public class DialogueSystem : Yarn.Unity.DialogueUIBehaviour
     public override IEnumerator DialogueComplete()
     {
         Debug.Log("Complete!");
+
+        //wait to accomodate for animations when finishing dialogue
+        yield return new WaitForSeconds(5f);
 
         // Hide the dialogue interface.
         if (dialogueContainer != null)

@@ -83,6 +83,11 @@ public class AudioManager : MonoBehaviour
         Sound nextS = GetSound(nextSceneName, SoundType.Music);
         Sound currentS = GetSound(currMusicName, SoundType.Music);
 
+        if(nextS.clip == currentS.clip)
+        {
+            return;
+        }
+
         AudioSource nextSource = GetSource(nextS);
 
         StartCoroutine(FadeIn(nextSource, fadeTimeDefault, nextS.volume));
@@ -210,6 +215,16 @@ public class AudioManager : MonoBehaviour
         StartCoroutine(FadeOut(s.source, fadeTimeDefault));
     }
 
+    public void FadeOutMusic(string soundName, float fadeTime)
+    {
+        Sound s = GetSound(soundName,SoundType.Music);
+        if (s.source == null)
+        {
+            return;
+        }
+        StartCoroutine(FadeOutAndUnload(s, fadeTime));
+    }
+
     private void MakeSource(Sound s)
     {
         if (s.source == null)
@@ -279,7 +294,7 @@ public class AudioManager : MonoBehaviour
         float startVolume = audioSource.volume;
         while (audioSource.volume > 0)
         {
-            audioSource.volume -= startVolume * Time.deltaTime / FadeTime;
+            audioSource.volume -= startVolume * (Time.deltaTime / FadeTime);
             yield return null;
         }
         audioSource.Stop();

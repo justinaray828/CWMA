@@ -965,15 +965,20 @@ PrefabInstance:
       propertyPath: brainOpenAnimator
       value: 
       objectReference: {fileID: 1231219038}
+    - target: {fileID: 7522178595747300659, guid: 91eb66bf04c6716429c1ffe3a74b4936,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2576594590172727198, guid: 91eb66bf04c6716429c1ffe3a74b4936,
         type: 3}
       propertyPath: sourceText.Array.data[0]
       value: 
       objectReference: {fileID: 4900000, guid: a1c1dffdd5d28c64e83c2a166e0445b9, type: 3}
-    - target: {fileID: 7522178595747300659, guid: 91eb66bf04c6716429c1ffe3a74b4936,
+    - target: {fileID: 4743584723681482789, guid: 91eb66bf04c6716429c1ffe3a74b4936,
         type: 3}
-      propertyPath: m_Enabled
-      value: 0
+      propertyPath: characterData.talkingPitch
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91eb66bf04c6716429c1ffe3a74b4936, type: 3}

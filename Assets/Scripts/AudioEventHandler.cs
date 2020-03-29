@@ -71,6 +71,7 @@ public class AudioEventHandler : MonoBehaviour
         EventManager.StopListening("EnterBrainRoom", EnterBrainRoom);
         EventManager.StopListening("ExitBrainRoom", ExitBrainRoom);
         EventManager.StopListening("EnterBrainRoomQuick", EnterBrainRoomQuick);
+        EventManager.StopListening("ExitBrainRoomQuick", ExitBrainRoomQuick);
         EventManager.StopListening("brainOpen", BrainOpen);
         EventManager.StopListening("brainClose", BrainClose);
         EventManager.StopListening("GinaWalking", GinaWalking);
@@ -102,7 +103,7 @@ public class AudioEventHandler : MonoBehaviour
     {
         am.FadeInSFX("theater_lobby_loop");
         EventManager.StartListening("EnterBrainRoomQuick",EnterBrainRoomQuick);
-        EventManager.StartListening("ExitBrainRoom", ExitBrainRoom);
+        EventManager.StartListening("ExitBrainRoomQuick", ExitBrainRoomQuick);
         EventManager.StartListening("StartMovie", StartMovie);
     }
 
@@ -119,21 +120,24 @@ public class AudioEventHandler : MonoBehaviour
 
     private void Setup_Alone()
     {
+        EventManager.StartListening("FinishGame", FinishGame);
     }
 
     private void Setup_Jordy()
     {
+        EventManager.StartListening("FinishGame", FinishGame);
     }
 
     private void Setup_SecondDate()
     {
+        EventManager.StartListening("FinishGame", FinishGame);
     }
 
     private void Setup_Resturant()
     {
         am.FadeInSFX("restaurant_loop");
         EventManager.StartListening("EnterBrainRoomQuick", EnterBrainRoomQuick);
-        EventManager.StartListening("ExitBrainRoom", ExitBrainRoom);
+        EventManager.StartListening("ExitBrainRoomQuick", ExitBrainRoomQuick);
         EventManager.StartListening("GinaWalking", GinaWalking);
         EventManager.StartListening("ReaWalking", ReaWalking);
         EventManager.StartListening("ReaWalkingAway", ReaWalkingAway);
@@ -221,12 +225,28 @@ public class AudioEventHandler : MonoBehaviour
         am.SetSourceOutput("woodblock_1", "SFX");
         am.SetSourceOutput("woodblock_2", "SFX");
     }
+    private void ExitBrainRoomQuick()
+    {
+        am.SetBrainroomSnapshot(false, 2f);
+        am.SetSourceOutput("blip", "SFX");
+        am.SetSourceOutput("woodblock_1", "SFX");
+        am.SetSourceOutput("woodblock_2", "SFX");
+    }
     private void EnterBrainRoomQuick()
     {
         am.SetBrainroomSnapshot(true, 0f);
         am.SetSourceOutput("blip", "Headroom");
         am.SetSourceOutput("woodblock_1", "Headroom");
         am.SetSourceOutput("woodblock_2", "Headroom");
+    }
+
+    private void FinishGame()
+    {
+        if(SceneManager.GetActiveScene().name != "06_Ending_SecondDate")
+        {
+            am.FadeOutMusic(SceneManager.GetActiveScene().name, 3.1f);
+        }
+        return;
     }
 
     private void Pause()
@@ -240,7 +260,7 @@ public class AudioEventHandler : MonoBehaviour
     {
         AudioListener.pause = false;
         am.Stop("PauseMusic");
-        
+        am.currMusicName = SceneManager.GetActiveScene().name;
     }
 
 

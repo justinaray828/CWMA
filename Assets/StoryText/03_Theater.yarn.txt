@@ -83,7 +83,7 @@ title: BrooklynHearts
 <<StartTalking Gina>> That is definitely not the movie.
 
 <<StartTalking Emily>> Great… 
-<<StartTalking Emily>> You bought a ticket for a movie you and can’t even remember it's name.  
+<<StartTalking Emily>> You bought a ticket for a movie and can’t remember it's name.  
 <<StartTalking Emily>> Real connoisseur here.
 
 <<StartTalking Gina>> I am pretty sure it is 'Brooklyn Sleeps Alone Tonight.' 

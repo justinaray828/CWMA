@@ -18,7 +18,8 @@ title: EndingJordy_Continued
 
 <<StartTalking Player>> Yeah, but I didn’t get a second date…
 
-<<StartTalking Jordy>> But you will.  You will get a second date with someone.. eventually.
+<<StartTalking Jordy>> But you will.
+<<StartTalking Jordy>> With someone.. eventually.
 
 <<StartTalking Player>> Thanks, I needed to hear that.
 

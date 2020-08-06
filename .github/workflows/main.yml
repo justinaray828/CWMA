@@ -9,7 +9,7 @@ jobs:
         uses: actions/checkout@v1
         
       - name: Decrypt the license file
-        run: openssl aes-256-cbc -d in .github/Unity_v2019.x.ulf.aes -k ${{ secrets.UNITY_LICENSE_DECRYPT_KEY }} >> .github/Unity_v2019.x.ulf
+        run: openssl aes-256 -d in .github/Unity_v2019.x.ulf.aes -k ${{ secrets.UNITY_LICENSE_DECRYPT_KEY }} >> .github/Unity_v2019.x.ulf
         
       - name: Activate Unity
         run: /opt/Unity/Editor/Unity -quit -batchmode -nographics -silent-crashes -logFile -manualLicenseFile .github/Unity_v2018.x.ulf || exit 0

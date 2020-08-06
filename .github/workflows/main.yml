@@ -15,7 +15,7 @@ jobs:
         run: /opt/Unity/Editor/Unity -quit -batchmode -nographics -silent-crashes -logFile -manualLicenseFile .github/Unity_v2018.x.ulf || exit 0
         
       - name: Build Windows Player
-        runs: /opt/Unity/Editor/Unity -quit -batchmode -nographics -silent-crashes -noUPM -logFile -projectPath . -buildWindows64Player ./bin-win64/CISample.exe
+        run: /opt/Unity/Editor/Unity -quit -batchmode -nographics -silent-crashes -noUPM -logFile -projectPath . -buildWindows64Player ./bin-win64/CISample.exe
         
       - name: Archive Windows Build
         uses: actions/upload-artifact@v1

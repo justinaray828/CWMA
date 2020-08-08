@@ -1,33 +1,39 @@
 name: CI
 on: [push]
-jobs:
-  builds:
-    runs-on: ubuntu-latest
-    container: gableroux/unity3d:2019.1.0f2
-    steps:
-      - name: Checkout Project
-        uses: actions/checkout@v1
-        
-      - name: Decrypt the license file
-        run: openssl aes-256-cbc -d -in .github/Unity_v2019.x.ulf.enc -k ${{ secrets.UNITY_LICENSE_DECRYPT_KEY }} >> .github/Unity_v2019.x.ulf
-        
-      - name: Activate Unity
-        run: /opt/Unity/Editor/Unity -quit -batchmode -nographics -logFile -manualLicenseFile .github/Unity_v2019.x.ulf || exit 0
-        
-        # Build Windows and OSX
-      - name: Build Windows Player
-        run: /opt/Unity/Editor/Unity -quit -batchmode -nographics -silent-crashes -noUpm -projectPath . -buildWindows64Player ./bin-win64/CISample.exe
-      - name: Build OSX Player
-        run: /opt/Unity/Editor/Unity -quit -batchmode -nographics -silent-crashes -noUpm -projectPath . -buildOSXUniversalPlayer ./bin-osx/CISample.app      
-        
-      - name: Archive Windows Build
-        uses: actions/upload-artifact@v1
-        with:
-          name: CISampleWin64Binary
-          path: ./bin-win64
+env: 
+  UNITY_LICENSE: ${{ secrets.UNITY_LICENSE_DECRYPT_KEY }}
 
-      - name: Archive Mac Build
-        uses: actions/upload-artifact@v1
+jobs:
+  buildForPlatforms:
+    name: Build for ${{ matrix.platform }} on version ${{ matrix.unityVersion }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: true
+      matrix:
+        unityVersion: [2019.1.0f2]
+        targetPlatform:
+          - StandaloneOSX # Build a macOS standalone (Intel 64-bit).
+          - StandaloneWindows # Build a Windows standalone.
+          - StandaloneWindows64 # Build a Windows 64-bit standalone.
+          - StandaloneLinux64 # Build a Linux 64-bit standalone.
+          - WebGL # WebGL.
+    steps:
+      - uses: actions/checkout@v2
         with:
-          name: CISampleOSXBinary
-          path: ./bin-osx
+          lfs: true
+      - uses: actions/cache@v1.1.0
+        with:
+          path: ${{ matrix.projectPath }}/Library
+          key: Library-${{ matrix.targetPlatform }}
+          restore-keys: |
+            Library-
+      - uses: webbertakken/unity-builder@v0.11
+        with:
+          unityVersion: ${{ matrix.unityVersion }}
+          targetPlatform: ${{ matrix.targetPlatform }}
+          buildName: cerke-online
+          buildPath: build/${{ matrix.targetPlatform }}  
+      - uses: actions/upload-artifact@v1
+        with:
+          name: ${{ matrix.targetPlatform }}
+          path: build/${{ matrix.targetPlatform }}

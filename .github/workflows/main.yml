@@ -11,7 +11,7 @@ jobs:
       fail-fast: true
       matrix:
         unityVersion: [2019.1.0f2]
-        targetPlatform:
+        platform:
           - StandaloneOSX # Build a macOS standalone (Intel 64-bit).
           - StandaloneWindows # Build a Windows standalone.
           - StandaloneWindows64 # Build a Windows 64-bit standalone.
@@ -24,16 +24,16 @@ jobs:
       - uses: actions/cache@v1.1.0
         with:
           path: ${{ matrix.projectPath }}/Library
-          key: Library-${{ matrix.targetPlatform }}
+          key: Library-${{ matrix.platform }}
           restore-keys: |
             Library-
       - uses: webbertakken/unity-builder@v0.11
         with:
           unityVersion: ${{ matrix.unityVersion }}
-          targetPlatform: ${{ matrix.targetPlatform }}
+          targetPlatform: ${{ matrix.platform }}
           buildName: cerke-online
-          buildPath: build/${{ matrix.targetPlatform }}  
+          buildPath: build/${{ matrix.platform }}  
       - uses: actions/upload-artifact@v1
         with:
-          name: ${{ matrix.targetPlatform }}
-          path: build/${{ matrix.targetPlatform }}
+          name: ${{ matrix.platform }}
+          path: build/${{ matrix.platform }}

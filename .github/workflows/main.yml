@@ -14,10 +14,10 @@ jobs:
           - 2019.1.0f2
         targetPlatform:
           - StandaloneOSX # Build a macOS standalone (Intel 64-bit).
-          - StandaloneWindows # Build a Windows standalone.
-          - StandaloneWindows64 # Build a Windows 64-bit standalone.
-          - StandaloneLinux64 # Build a Linux 64-bit standalone.
-          - WebGL # WebGL.
+          #- StandaloneWindows # Build a Windows standalone.
+          #- StandaloneWindows64 # Build a Windows 64-bit standalone.
+          #- StandaloneLinux64 # Build a Linux 64-bit standalone.
+          #- WebGL # WebGL.
       
     steps:
       - uses: actions/checkout@v2
@@ -39,3 +39,10 @@ jobs:
         with:
           name: ${{ matrix.targetPlatform }}
           path: build/${{ matrix.targetPlatform }}
+  update_release_draft:
+    runs-on: ubuntu-latest
+    steps:
+      # Drafts your next Release notes as Pull Requests are merged into "master"
+      - uses: release-drafter/release-drafter@v5
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

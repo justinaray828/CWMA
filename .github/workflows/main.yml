@@ -4,19 +4,21 @@ env:
   UNITY_LICENSE: ${{ secrets.UNITY_LICENSE_DECRYPT_KEY }}
 
 jobs:
-  buildForPlatforms:
-    name: Build for ${{ matrix.platform }} on version ${{ matrix.unityVersion }}
+  buildForSomePlatforms:
+    name: Build for ${{ matrix.targetPlatform }} on version ${{ matrix.unityVersion }}
     runs-on: ubuntu-latest
     strategy:
-      fail-fast: true
+      fail-fast: false
       matrix:
-        unityVersion: [2019.1.0f2]
-        platform:
-          - StandaloneOSX # Build a macOS standalone (Intel 64-bit).
+        unityVersion:
+          - 2019.1.0f2
+        targetPlatform:
+          #- StandaloneOSX # Build a macOS standalone (Intel 64-bit).
           - StandaloneWindows # Build a Windows standalone.
-          - StandaloneWindows64 # Build a Windows 64-bit standalone.
-          - StandaloneLinux64 # Build a Linux 64-bit standalone.
-          - WebGL # WebGL.
+          #- StandaloneWindows64 # Build a Windows 64-bit standalone.
+          #- StandaloneLinux64 # Build a Linux 64-bit standalone.
+          #- WebGL # WebGL.
+      
     steps:
       - uses: actions/checkout@v2
         with:
@@ -24,16 +26,16 @@ jobs:
       - uses: actions/cache@v1.1.0
         with:
           path: ${{ matrix.projectPath }}/Library
-          key: Library-${{ matrix.platform }}
+          key: Library-${{ matrix.targetPlatform }}
           restore-keys: |
             Library-
       - uses: webbertakken/unity-builder@v0.11
         with:
           unityVersion: ${{ matrix.unityVersion }}
-          targetPlatform: ${{ matrix.platform }}
+          targetPlatform: ${{ matrix.targetPlatform }}
           buildName: cerke-online
-          buildPath: build/${{ matrix.platform }}  
+          buildPath: build/${{ matrix.targetPlatform }}  
       - uses: actions/upload-artifact@v1
         with:
-          name: ${{ matrix.platform }}
-          path: build/${{ matrix.platform }}
+          name: ${{ matrix.targetPlatform }}
+          path: build/${{ matrix.targetPlatform }}

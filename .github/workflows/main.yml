@@ -1,4 +1,4 @@
-﻿name: CI
+name: CI
 on: [push]
 jobs:
   builds:
@@ -14,12 +14,20 @@ jobs:
       - name: Activate Unity
         run: /opt/Unity/Editor/Unity -quit -batchmode -nographics -logFile -manualLicenseFile .github/Unity_v2019.x.ulf || exit 0
         
-      - name: Build Game for Platform 
-        run: /opt/Unity/Editor/Unity -quit -batchmode -nographics -silent-crashes -noUpm -logFile -projectPath . -buildLinux64Player  ./bin-Linux/build
+        # Build Windows and OSX
+      - name: Build Windows Player
+        run: /opt/Unity/Editor/Unity -quit -batchmode -nographics -silent-crashes -noUpm -logFile -projectPath . -buildWindows64Player ./bin-win64/CISample.exe
+      - name: Build OSX Player
+        run: /opt/Unity/Editor/Unity -quit -batchmode -nographics -silent-crashes -noUpm -logFile -projectPath . -buildOSXUniversalPlayer ./bin-osx/CISample.app      
         
       - name: Archive Windows Build
         uses: actions/upload-artifact@v1
         with:
           name: CISampleWin64Binary
           path: ./bin-win64
-          
+
+      - name: Archive Mac Build
+        uses: actions/upload-artifact@v1
+        with:
+          name: CISampleOSXBinary
+          path: ./bin-osx

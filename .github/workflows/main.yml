@@ -22,7 +22,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          lfs: false
+          lfs: true
       - uses: actions/cache@v1.1.0
         with:
           path: ${{ matrix.projectPath }}/Library
@@ -35,7 +35,7 @@ jobs:
           targetPlatform: ${{ matrix.targetPlatform }}
           buildName: cerke-online
           buildPath: build/${{ matrix.targetPlatform }}  
-      - uses: actions/upload-artifact@v1
-        with:
-          name: ${{ matrix.targetPlatform }}
-          path: build/${{ matrix.targetPlatform }}
+      #- uses: actions/upload-artifact@v1
+      #  with:
+      #    name: ${{ matrix.targetPlatform }}
+      #    path: build/${{ matrix.targetPlatform }}
